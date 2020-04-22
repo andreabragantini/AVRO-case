@@ -1,0 +1,21 @@
+RangeIndex: 1458 entries, 0 to 1457
+Data columns (total 17 columns):
+status                    1458 non-null object
+priority                  1458 non-null object
+updated                   1458 non-null object
+issue_type                1458 non-null object
+reporter                  1458 non-null object
+created                   1458 non-null object
+resolutiondate            1134 non-null object
+vote_count                1458 non-null int64
+project                   1458 non-null object
+assignee                  1063 non-null object
+comment_count             1458 non-null int64
+key                       1458 non-null object
+description_length        1388 non-null float64
+summary_length            1458 non-null int64
+watch_count               1458 non-null int64
+resolution                1134 non-null object
+days_in_current_status    1458 non-null float64
+dtypes: float64(2), int64(4), object(11)
+memory usage: 193.7+ KB

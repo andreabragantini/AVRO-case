@@ -1,0 +1,39 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               duration   R-squared:                       0.336
+Model:                            OLS   Adj. R-squared:                  0.325
+Method:                 Least Squares   F-statistic:                     32.22
+Date:                Sun, 19 Apr 2020   Prob (F-statistic):           8.99e-70
+Time:                        01:38:46   Log-Likelihood:                -1985.4
+No. Observations:                 907   AIC:                             4001.
+Df Residuals:                     892   BIC:                             4073.
+Df Model:                          14                                         
+Covariance Type:            nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+Intercept                7.2511      0.301     24.090      0.000       6.660       7.842
+comment_count            1.3064      0.121     10.794      0.000       1.069       1.544
+issue_type_Short        -0.7722      0.207     -3.722      0.000      -1.179      -0.365
+priority_Minor          -0.3206      0.205     -1.562      0.119      -0.723       0.082
+reporter_cutting        -0.4158      0.221     -1.884      0.060      -0.849       0.017
+reporter_dcreager       -0.3075      0.475     -0.648      0.517      -1.239       0.624
+reporter_hammer         -0.3498      0.294     -1.189      0.235      -0.927       0.228
+reporter_massie         -3.1950      0.345     -9.262      0.000      -3.872      -2.518
+reporter_sbanacho       -0.5392      0.430     -1.255      0.210      -1.383       0.304
+reporter_scott_carey    -0.6868      0.434     -1.582      0.114      -1.539       0.165
+reporter_sharadag       -0.3194      0.702     -0.455      0.649      -1.697       1.059
+reporter_tomwhite       -0.7173      0.614     -1.168      0.243      -1.923       0.488
+reporter_vnadkarni       0.6887      0.696      0.989      0.323      -0.678       2.055
+vote_count               0.5922      0.309      1.917      0.056      -0.014       1.198
+watch_count              0.5013      0.136      3.675      0.000       0.234       0.769
+==============================================================================
+Omnibus:                       11.011   Durbin-Watson:                   1.937
+Prob(Omnibus):                  0.004   Jarque-Bera (JB):               11.273
+Skew:                          -0.237   Prob(JB):                      0.00356
+Kurtosis:                       3.270   Cond. No.                         22.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+R-squared score (training): 0.336
