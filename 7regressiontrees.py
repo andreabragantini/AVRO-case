@@ -36,7 +36,7 @@ if not os.path.exists('RegressionTree'):
     os.makedirs('RegressionTree')
 
 #%% Regression Tree
-# create a regressor object 
+# create a regressor object
 tree = DecisionTreeRegressor(max_depth=5, random_state = 0, max_leaf_nodes=35)
 y = data['duration']
 X = predictors
@@ -44,7 +44,7 @@ X = predictors
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
 # fit the regressor with X and Y data  from training set
-tree.fit(X_train, y_train) 
+tree.fit(X_train, y_train)
 
 # predict
 y_pred = tree.predict(X_test)
@@ -75,14 +75,14 @@ with plt.style.context('dark_background'):
     plt.savefig('RegressionTree/ParametersImportance_tree.png')
 
 #%% Visualizing Results
-# import export_graphviz 
-from sklearn.tree import export_graphviz  
-  
-# export the decision tree to a tree.dot file 
-# for visualizing the plot easily anywhere 
-export_graphviz(tree, out_file ='tree.dot') 
+# import export_graphviz
+from sklearn.tree import export_graphviz
+
+# export the decision tree to a tree.dot file
+# for visualizing the plot easily anywhere
+export_graphviz(tree, out_file ='tree.dot')
                #feature_names =['duration']
-              
+
 ''' Single Regression Tree is highly overfitting data'''
 
 #%% Random Forest Regressor
@@ -121,14 +121,14 @@ with plt.style.context('dark_background'):
     plt.barh(range(n_features+1,1,-1),width=rfr.feature_importances_,height=0.5)
     plt.savefig('RegressionTree/ParametersImportance_rfr.png')
 
-    
+
 #%% Comparison with Linear Model
 ''' Show the relative importance of regressors side by side
-For Random Forest Model, show the relative importance of features as determined by 
+For Random Forest Model, show the relative importance of features as determined by
 the meta-estimator. For the OLS model, show normalized t-statistic values.
 
-It will be clear that although the RandomForest regressor identifies the 
-important regressors correctly, it does not assign the same level of relative 
+It will be clear that although the RandomForest regressor identifies the
+important regressors correctly, it does not assign the same level of relative
 importance to them as done by OLS method t-statistic.'''
 
 #df_importance = pd.DataFrame(data=[rfr.feature_importances_,fitted.tvalues[1:]/sum(fitted.tvalues[1:])],
@@ -136,34 +136,6 @@ importance to them as done by OLS method t-statistic.'''
 #                             index=['RF Regressor relative importance', 'OLS method normalized t-statistic'])
 #df_importance
 
-
-#%% Removing useless predictors
-# rerun Random Forest Regressor
-col = predictors.columns[rfr.feature_importances_ > 1e-3]
-X = predictors[col]
-n_features = X.shape[1]
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-
-rfr = RandomForestRegressor(max_depth=50, random_state=0,max_features='auto',
-                              max_leaf_nodes=50,n_estimators=100)
-
-# fit the regressor with X and Y data  from training set
-rfr.fit(X_train, y_train)
-
-# predict
-y_pred = rfr.predict(X_test)
-
-# comparison
-df=pd.DataFrame({'Actual':y_test, 'Predicted':y_pred})
-
-print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))
-print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))
-print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
-
-# compute and print the R Square
-print('R-squared score (training): {:.3f}'.format(rfr.score(X_train, y_train)))
-print('R-squared score (test): {:.3f}'.format(rfr.score(X_test, y_test)))
 
 #%% Analysis of Results
 print("Relative importance of the features: ",rfr.feature_importances_)
@@ -176,8 +148,8 @@ with plt.style.context('dark_background'):
     plt.tight_layout()
     plt.barh(range(n_features+1,1,-1),width=rfr.feature_importances_,height=0.5)
     plt.savefig('RegressionTree/ParametersImportance_rfr2.png')
-    
-#%% Plots 
+
+#%% Plots
 
 # fitted VS training set
 fitted = rfr.predict(X_train)
@@ -253,10 +225,10 @@ random_grid = {'n_estimators': n_estimators,
 # Use the random grid to search for best hyperparameters
 # First create the base model to tune
 rf = RandomForestRegressor()
-# Random search of parameters, using 3 fold cross validation, 
+# Random search of parameters, using 3 fold cross validation,
 # search across 100 different combinations, and use all available cores
-rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid, 
-                               n_iter = 100, cv = 3, verbose=2, random_state=None, 
+rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid,
+                               n_iter = 100, cv = 3, verbose=2, random_state=None,
                                n_jobs = -1)
 # Fit the random search model
 rf_random.fit(X_train, y_train)
@@ -273,7 +245,7 @@ def evaluate(model, X_test, y_test):
     print('Model Performance')
     print('Average Error: {:0.4f} degrees.'.format(np.mean(errors)))
     print('Accuracy = {:0.2f}%.'.format(accuracy))
-    
+
     return accuracy
 
 base_model = rfr
