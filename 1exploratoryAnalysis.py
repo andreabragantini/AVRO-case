@@ -236,6 +236,6 @@ ax[2].pie(sizes2, labels=labels2, autopct='%1.1f%%',
 ax[2].legend(loc='lower left')
 
 plt.tight_layout()
-plt.savefig('ExploratoryAnalysis\comparison.png', bbox_inches='tight')
+plt.savefig('ExploratoryAnalysis/comparison.png', bbox_inches='tight')
 plt.show()
 
