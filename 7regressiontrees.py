@@ -80,7 +80,7 @@ from sklearn.tree import export_graphviz
 
 # export the decision tree to a tree.dot file
 # for visualizing the plot easily anywhere
-export_graphviz(tree, out_file ='tree.dot')
+export_graphviz(tree, out_file ='RegressionTree/tree.dot')
                #feature_names =['duration']
 
 ''' Single Regression Tree is highly overfitting data'''
