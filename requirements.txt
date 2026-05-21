@@ -1,0 +1,10 @@
+ijson==3.5.0
+matplotlib
+mlxtend
+numpy
+pandas
+scikit_learn
+scipy
+seaborn
+statsmodels
+tabulate
