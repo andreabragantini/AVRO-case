@@ -13,7 +13,7 @@ from tabulate import tabulate
 import seaborn as sns
 sns.set()
 
-dataset = pd.read_csv('avro-issues.csv')
+dataset = pd.read_csv('DataSets/Raw/avro-issues.csv')
 
 #%% Data Pre-Processing - Split Training Validation Sets
 ''' To calculate the required time to solve an alert we have to look only at

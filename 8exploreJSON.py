@@ -12,7 +12,7 @@ import pandas as pd
 from pprint import pprint
 
 # You should pass the file contents (i.e. a string) to json.loads(), not the file object itself
-with open('avro-issues.json','r') as json_file:
+with open('DataSets/Raw/avro-issues.json','r') as json_file:
     for line in json_file:    
         alert_dict = json.loads(line)
         objects = ijson.items(alert_dict,'transitions')
@@ -20,12 +20,12 @@ with open('avro-issues.json','r') as json_file:
 
         
 # with pandas
-with open('avro-issues.json','r') as json_file:
+with open('DataSets/Raw/avro-issues.json','r') as json_file:
     alert_df = pd.read_json(json_file, lines=True)    
 
       
 # these reads the json as a long string (do not print)
-with open('avro-issues.json', 'r', encoding='utf-8') as data_file:    
+with open('DataSets/Raw/avro-issues.json', 'r', encoding='utf-8') as data_file:    
     data = data_file.read()
 
     
@@ -34,7 +34,7 @@ with open('avro-issues.json', 'r', encoding='utf-8') as data_file:
 # JSON files has 1458 lines = N# alerts in our dataset
     
 list_of_alerts = []
-for line in open('avro-issues.json', 'r'):
+for line in open('DataSets/Raw/avro-issues.json', 'r'):
     list_of_alerts.append(json.loads(line))
 
 len(list_of_alerts)
@@ -45,7 +45,7 @@ len(list_of_alerts)
 ##################################################
 # general approach
 objects = []
-for obj in open('avro-issues.json', 'r'):
+for obj in open('DataSets/Raw/avro-issues.json', 'r'):
     objects.append(json.loads(obj))
 
 for obj in objects[0]:

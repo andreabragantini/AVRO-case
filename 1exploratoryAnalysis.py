@@ -17,7 +17,7 @@ import seaborn as sns
 sns.set()
 
 # read data
-dataset = pd.read_csv('avro-issues.csv')
+dataset = pd.read_csv('DataSets/Raw/avro-issues.csv')
 dataset.head()
 dataset.columns
 n = len(dataset)
