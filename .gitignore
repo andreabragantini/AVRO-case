@@ -17,6 +17,7 @@ project.lock.json
 .project
 .classpath
 .settings/
+.codex/
 
 # --- Build / Compiled Folders ---
 node_modules/
