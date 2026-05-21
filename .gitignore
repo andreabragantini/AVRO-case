@@ -1,0 +1,48 @@
+# --- System & OS files ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+ehthumbs_vista.db
+
+# --- Editors & IDEs ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+project.lock.json
+.project
+.classpath
+.settings/
+
+# --- Build / Compiled Folders ---
+node_modules/
+dist/
+build/
+out/
+bin/
+obj/
+target/
+vendor/
+
+# --- Logs ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Temporary/Backup Files ---
+*.tmp
+*.bak
+*.swp
+temp/
+tmp/
+
+# --- Folders ---
+ExploratoryAnalysis/*
+RegressionTree/*
+
