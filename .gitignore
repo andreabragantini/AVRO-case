@@ -7,6 +7,12 @@ ehthumbs.db
 Desktop.ini
 ehthumbs_vista.db
 
+# --- Virtual Environments ---
+venv/
+env/
+pyenv/
+.venv/
+
 # --- Editors & IDEs ---
 .idea/
 .vscode/
