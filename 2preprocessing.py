@@ -13,6 +13,8 @@ from tabulate import tabulate
 import seaborn as sns
 sns.set()
 
+import os
+
 dataset = pd.read_csv('DataSets/Raw/avro-issues.csv')
 
 #%% Data Pre-Processing - Split Training Validation Sets
@@ -58,16 +60,15 @@ dataset.updated = pd.to_datetime(dataset['updated'])
 dataset.created = pd.to_datetime(dataset['created'])
 # duration
 dataset['duration'] = dataset['resolutiondate'] - dataset['created']
-# from [ns] to [days]
-dataset['duration'].astype('timedelta64[D]')
+duration_days = dataset['duration'].dt.total_seconds() / 86400
 
 
 #%% Save datasets
 '''After have created the target variable we can now save the datasets'''
-# Directory creation
-import os
 if not os.path.exists('DataSets'):
     os.mkdir('DataSets')
+if not os.path.exists('ExploratoryAnalysis'):
+    os.mkdir('ExploratoryAnalysis')
 
 # 1st appraoch - selected only fixed
 fixed.to_csv('DataSets/dataset.csv', index=False)
@@ -80,17 +81,17 @@ validationset.to_csv('DataSets/validationset.csv', index=False)
 #%% plot distribution of target variable
 print('\nPlot Histogram for target variable:')
 plt.figure(figsize=(12,8))
-dataset['duration'].astype('timedelta64[D]').hist(bins=range(0,200,1))
+duration_days.hist(bins=range(0,200,1))
 plt.ylabel('N# of observations')
 plt.xlabel('1st 200 Time classes [1 day]')
 plt.savefig('ExploratoryAnalysis\histogram.png', bbox_inches='tight')
-plt.show()
+plt.close()
 
 print('\nBoxPlot for target variable:')
 plt.figure(figsize=(12,8))
-dataset['duration'].astype('timedelta64[D]').plot.box()
+duration_days.plot.box()
 plt.savefig('ExploratoryAnalysis\plotbox.png', bbox_inches='tight')
-plt.show()
+plt.close()
 
 ''' Almot all the observations are characterized by small resolution times [min,hours...}
 but the distribution is highly skewed to the left and there are lots of outliers with
@@ -118,7 +119,7 @@ dropped.isnull().sum()
 
 
 ''' Notice how some description lengths are not available, we put 0 instead.'''
-dropped['description_length'][dropped['description_length'].isna()] = 0
+dropped.loc[dropped['description_length'].isna(), 'description_length'] = 0
 
 #%% Reporter VS Assignee
 # Build confusion matrix

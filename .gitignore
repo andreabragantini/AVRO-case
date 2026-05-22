@@ -18,6 +18,8 @@ project.lock.json
 .classpath
 .settings/
 .codex/
+venv/
+.venv/
 
 # --- Build / Compiled Folders ---
 node_modules/

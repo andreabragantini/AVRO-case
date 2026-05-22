@@ -149,7 +149,8 @@ plt.savefig('ExploratoryAnalysis/freq_sum_length.png')
 # q-q plot
 qqplot(dataset[col], line='s')
 plt.title('Q-Q plot: summary_length')
-plt.show()
+plt.savefig('ExploratoryAnalysis/qq_summary_length.png', bbox_inches='tight')
+plt.close()
 # normality test
 stat, p = shapiro(dataset[col])
 print('Statistics=%.3f, p=%.3f' % (stat, p))
@@ -237,5 +238,5 @@ ax[2].legend(loc='lower left')
 
 plt.tight_layout()
 plt.savefig('ExploratoryAnalysis/comparison.png', bbox_inches='tight')
-plt.show()
+plt.close()
 

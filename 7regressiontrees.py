@@ -87,7 +87,7 @@ export_graphviz(tree, out_file ='RegressionTree/tree.dot')
 
 #%% Random Forest Regressor
 
-rfr = RandomForestRegressor(max_depth=50, random_state=0,max_features='auto',
+rfr = RandomForestRegressor(max_depth=50, random_state=0,max_features='sqrt',
                               max_leaf_nodes=50,n_estimators=100)
 
 # fit the regressor with X and Y data  from training set
@@ -161,7 +161,7 @@ plt.ylabel("LOG(Duration)",fontsize=15)
 plt.title("Fitted vs. TrainSet",fontsize=18)
 plt.legend()
 plt.savefig('RegressionTree/fittedVStraining.png')
-plt.show()
+plt.close()
 
 # predicted VS test set
 df.reset_index(drop=True).plot(figsize=(12,8),marker='.')
@@ -169,7 +169,7 @@ plt.xlabel("Test Set observations",fontsize=15)
 plt.ylabel("LOG(Duration)",fontsize=15)
 plt.title("Predicted vs. TestSet",fontsize=18)
 plt.savefig('RegressionTree/predictedVStest.png')
-plt.show()
+plt.close()
 
 # predicted VS test set - TRASFORMED
 df = np.exp(df)
@@ -178,7 +178,7 @@ plt.xlabel("Test Set observations",fontsize=15)
 plt.ylabel("Duration",fontsize=15)
 plt.title("Predicted vs. TestSet",fontsize=18)
 plt.savefig('RegressionTree/predictedVStest_transf.png')
-plt.show()
+plt.close()
 
 
 # Fitted VS Residuals
@@ -193,7 +193,7 @@ plt.ylabel("Residuals",fontsize=15)
 plt.title("Fitted vs. residuals plot",fontsize=18)
 plt.grid(True)
 plt.savefig('RegressionTree/fittedVSresiduals.png')
-plt.show()
+plt.close()
 
 #%% Random Search Cross Validation - Tuning Random Forest Parameter
 from sklearn.model_selection import RandomizedSearchCV
@@ -201,7 +201,7 @@ from sklearn.model_selection import RandomizedSearchCV
 # Number of trees in random forest
 n_estimators = [int(x) for x in np.linspace(start = 10, stop = 1000, num = 100)]
 # Number of features to consider at every split
-max_features = ['auto', 'sqrt']
+max_features = ['sqrt', None]
 # Maximum number of levels in tree
 max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
 max_depth.append(None)
@@ -228,8 +228,8 @@ rf = RandomForestRegressor()
 # Random search of parameters, using 3 fold cross validation,
 # search across 100 different combinations, and use all available cores
 rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid,
-                               n_iter = 100, cv = 3, verbose=2, random_state=None,
-                               n_jobs = -1)
+                               n_iter = 25, cv = 3, verbose=2, random_state=None,
+                               n_jobs = 1)
 # Fit the random search model
 rf_random.fit(X_train, y_train)
 

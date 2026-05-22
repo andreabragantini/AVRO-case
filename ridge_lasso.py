@@ -7,14 +7,28 @@ RIDGE REGRESSION
 LASSO REGRESSION
 """
 
+import os
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from sklearn import linear_model
+from sklearn.linear_model import Lasso, Ridge
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+
+
+data = pd.read_csv("DataSets/encoded.csv")
+x = data.iloc[:, :-1]
+y = data["duration"]
+
+if not os.path.exists("FeatureSelection"):
+    os.makedirs("FeatureSelection")
+
 #%% RIDGE REGRESSION
 # Least Angle Regression model a.k.a. LARS package
-
-from sklearn.preprocessing import MinMaxScaler
 scaler = MinMaxScaler()
-
-from sklearn.linear_model import Ridge
-X_train, X_test, y_train, y_test = train_test_split(x, y, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(x, y, random_state=0, test_size=0.2)
 
 # Scale the X_train and X_test
 X_train_scaled = scaler.fit_transform(X_train)
@@ -104,8 +118,6 @@ As alpha increases the coefficients shrink to 0.'''
 Unlike the Ridge Regression where the coefficients of features which do not 
 influence the target tend to zero, in the lasso regualrization the coefficients become 0.'''
 
-from sklearn.linear_model import Lasso
-
 linlasso = Lasso(alpha=1000, max_iter = 10000).fit(X_train_scaled, y_train)
 
 print('Non-zero features: {}'
@@ -150,7 +162,7 @@ fig7.figure.savefig('FeatureSelection/fig7.png', bbox_inches='tight')
 
 ### Plot the coefficient shrinkage using the LARS package
 print("Computing regularization path using the LARS ...")
-alphas, _, coefs = linear_model.lars_path(X_train_scaled, y_train, method='lasso', verbose=True)
+alphas, _, coefs = linear_model.lars_path(X_train_scaled, y_train.to_numpy(), method='lasso', verbose=True)
 
 xx = np.sum(np.abs(coefs.T), axis=1)
 xx /= xx[-1]

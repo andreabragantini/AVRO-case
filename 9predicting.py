@@ -37,7 +37,7 @@ test = test.drop(['project','updated','created','resolutiondate','key',
 # Check for missing values
 test.isnull().values.any()
 test.isnull().sum()    
-test['description_length'][test['description_length'].isna()] = 0
+test.loc[test['description_length'].isna(), 'description_length'] = 0
     
 #%% Reduce classes
 # Reporter
@@ -72,10 +72,14 @@ newcolumns = [x for x in training.columns if x not in test.columns]
 for col in newcolumns:
     test['{}'.format(col)] = 0
 
+# Align each validation matrix to the feature set used by each fitted model.
+test_full = test.reindex(columns=training.columns, fill_value=0)
+test_linreg = test_full.reindex(columns=linreg.feature_names_in_, fill_value=0)
+
 #%% Prediction
-lr_pred = linreg.predict(test)          # multivariate linear model
-tree_pred = tree.predict(test)          # regression tree model
-rf_pred = rfr.predict(test)             # random forest regression model
+lr_pred = linreg.predict(test_linreg)    # multivariate linear model
+tree_pred = tree.predict(test_full)      # regression tree model
+rf_pred = rfr.predict(test_full)         # random forest regression model
 
 # comparison
 df_pred=pd.DataFrame({'LinearModel':lr_pred, 'RegrTree':tree_pred, 'RandomForest':rf_pred})
@@ -86,7 +90,7 @@ plt.xlabel("Validation Set observations",fontsize=15)
 plt.ylabel("LOG(Duration)",fontsize=15)
 plt.title("Validation Set Prediction - trasformed",fontsize=18)
 plt.savefig('Question2\predictionComparison_log.png')
-plt.show()
+plt.close()
 
 df_pred = np.exp(df_pred)
 df_pred.plot(figsize=(12,5),marker='.')
@@ -94,7 +98,7 @@ plt.xlabel("Validation Set observations",fontsize=15)
 plt.ylabel("Duration",fontsize=15)
 plt.title("Validation Set Prediction",fontsize=18)
 plt.savefig('Question2\predictionComparison.png')
-plt.show()
+plt.close()
 
 # from float64 to timedelta64
 df_pred['LinearModel'] = pd.to_timedelta(df_pred['LinearModel'], unit='m')

@@ -270,7 +270,7 @@ len(b4)
 x.columns[b4]
 
 # Display results in array
-selected= set(x.columns[b1]) | set(x.columns[b2]) | set(x.columns[b3]) | set(x.columns[b4])
+selected = sorted(set(x.columns[b1]) | set(x.columns[b2]) | set(x.columns[b3]) | set(x.columns[b4]))
 l1 = [1 if i in set(x.columns[b1]) else 0 for i in selected ]
 l2 = [1 if i in set(x.columns[b2]) else 0 for i in selected ]
 l3 = [1 if i in set(x.columns[b3]) else 0 for i in selected ]

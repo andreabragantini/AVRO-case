@@ -32,32 +32,16 @@ if not os.path.exists('ModelDesign'):
     os.makedirs('ModelDesign')
 
 #%% Results from features selection
-col =   ['comment_count',
-         'issue_type_Short',
-         'priority_Minor',
-         'reporter_cutting',
-         'reporter_dcreager',
-         'reporter_hammer',
-         'reporter_massie',
-         'reporter_sbanacho',
-         'reporter_scott_carey',
-         'reporter_sharadag',
-         'reporter_tomwhite',
-         'reporter_vnadkarni',
-         'vote_count',
-         'watch_count']
-# after dropping non significant predictors
-#col =   ['comment_count',
-#         'issue_type_Short',
-#         'reporter_massie',
-#         'watch_count']
+if 'b1' in globals():
+    col = list(predictors.columns[b1])
+else:
+    col = ['vote_count', 'comment_count', 'watch_count']
 
 predictors[col].describe()
       
 #%% Multiple Linear Regression - Sklearn
-# Remove features that do not impact the target
-selected=predictors.iloc[:,:]
-#selected = predictors[col]
+# Use the forward feature-selection output when available.
+selected = predictors[col]
 
 X=selected
 y=data['duration']
@@ -134,7 +118,8 @@ for c in col:
     plt.hlines(y=0,xmin=xmin*0.9,xmax=xmax*1.1,color='red',linestyle='--',lw=3)
     plt.xlabel(c,fontsize=14)
     plt.ylabel('Residuals',fontsize=14)
-    plt.show()
+    plt.savefig(f'ModelDesign/residualsVS{c}.png')
+    plt.close()
 
 # Fitted VS Residuals
 plt.figure(figsize=(12,8))
@@ -147,7 +132,7 @@ plt.ylabel("Residuals",fontsize=15)
 plt.title("Fitted vs. residuals plot",fontsize=18)
 plt.grid(True)
 plt.savefig('ModelDesign/resVSfit.png')
-plt.show()
+plt.close()
     
 # Histogram of normalized residuals
 plt.figure(figsize=(12,8))
@@ -156,7 +141,7 @@ plt.ylabel('Count',fontsize=15)
 plt.xlabel('Normalized residuals',fontsize=15)
 plt.title("Histogram of normalized residuals",fontsize=18)
 plt.savefig('ModelDesign/resHist.png')
-plt.show()
+plt.close()
 
 # QQ plot of residuals
 from statsmodels.graphics.gofplots import qqplot
@@ -170,7 +155,7 @@ plt.ylabel("Sample quantiles",fontsize=15)
 plt.title("Q-Q plot of normalized residuals",fontsize=18)
 plt.grid(True)
 plt.savefig('ModelDesign/resQQplot.png')
-plt.show()
+plt.close()
 
 # Shapiro Test on Residuals
 from scipy.stats import shapiro
@@ -200,7 +185,7 @@ plt.xlabel("Test Set observations",fontsize=15)
 plt.ylabel("LOG(Duration)",fontsize=15)
 plt.title("Predicted vs. TestSet",fontsize=18)
 plt.savefig('ModelDesign/predictedVStest.png')
-plt.show()
+plt.close()
 
 # predicted VS test set - TRASFORMED
 df_ols = np.exp(df_ols)
@@ -209,7 +194,7 @@ plt.xlabel("Test Set observations",fontsize=15)
 plt.ylabel("Duration",fontsize=15)
 plt.title("Predicted vs. TestSet",fontsize=18)
 plt.savefig('ModelDesign/predictedVStest_transf.png')
-plt.show()
+plt.close()
 
 
 
