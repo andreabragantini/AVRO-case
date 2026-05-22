@@ -7,12 +7,6 @@ ehthumbs.db
 Desktop.ini
 ehthumbs_vista.db
 
-# --- Virtual Environments ---
-venv/
-env/
-pyenv/
-.venv/
-
 # --- Editors & IDEs ---
 .idea/
 .vscode/
@@ -23,6 +17,9 @@ project.lock.json
 .project
 .classpath
 .settings/
+.codex/
+venv/
+.venv/
 
 # --- Build / Compiled Folders ---
 node_modules/
