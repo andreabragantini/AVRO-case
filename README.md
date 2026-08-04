@@ -1,8 +1,33 @@
 # AVRO-case
 
-This project studies how long it takes to resolve an AVRO issue and tries to
-predict that time from the issue details that are available when the issue is
-still open.
+## Introduction
+
+This repository contains a **data science exercise** built around the public
+issue tracker of **Apache Avro**, an open-source data serialization framework
+(a bit like JSON or Protobuf) used mainly in big-data systems. The Apache
+Avro project manages its bug reports, feature requests and other tasks as
+"issues" in a JIRA tracker, just like many other open-source projects.
+
+Every issue comes with a set of details: who reported it, its priority, its
+type (bug, feature request, ...), how many people voted for or commented on
+it, and when it was created. If the issue has already been resolved, the
+tracker also knows *when* it was resolved.
+
+The question this exercise tries to answer is a practical one:
+
+> Given the information available when a new issue is opened, can we predict
+> **how long it will take to resolve it**?
+
+Knowing the expected resolution time in advance would help a project plan its
+work, allocate contributors, and set expectations with the community.
+
+The repository uses a snapshot of **1,458 issues** from the Apache Avro JIRA
+tracker, explores the data, and trains several machine-learning models — a
+simple linear regression, Ridge/Lasso, and tree-based models — to predict the
+resolution time. The focus is on **simple, explainable models** that can be
+inspected and understood, rather than on squeezing out the last bit of
+accuracy. The rest of this document describes the dataset, the preprocessing
+choices, the models that were tried, and the main findings.
 
 ## What This Study Does
 

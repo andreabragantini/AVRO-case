@@ -8,3 +8,5 @@ scipy
 seaborn
 statsmodels
 tabulate
+lifelines==0.28.0
+scikit-survival==0.20.0
