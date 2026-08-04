@@ -6,6 +6,9 @@ Created on Wed Apr  8 23:39:52 2020
 """
 import pandas as pd
 import matplotlib.pyplot as plt
+from avro_common import print_section
+
+print_section('4. ENCODING')
 
 data = pd.read_csv('DataSets/processed.csv')
 data = pd.read_csv('DataSets/trasformed_nonencoded.csv')
@@ -64,6 +67,7 @@ data = data[[c for c in data if c not in ['duration']] + ['duration']]
 
 #%% Save encoded dataset
 data.to_csv('DataSets/encoded.csv', index=False)
+print('\nSaved one-hot encoded dataset to DataSets/encoded.csv')
 
 
 #%% Other methods

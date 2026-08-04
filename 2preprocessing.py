@@ -14,6 +14,9 @@ import seaborn as sns
 sns.set()
 
 import os
+from avro_common import print_section
+
+print_section('2. PREPROCESSING')
 
 dataset = pd.read_csv('DataSets/Raw/avro-issues.csv')
 
@@ -36,6 +39,8 @@ trainset.shape
 
 validationset = dataset[~dataset.index.isin(trainset.index)].reset_index(drop=True)
 validationset.shape
+print('\nTraining set: {} resolved issues'.format(len(trainset)))
+print('Forecasting pilot: {} issues still open (no resolution date)'.format(len(validationset)))
 
 # NB: from now we will call for simplicity the trainset as DATASET
 dataset = trainset.reset_index(drop=True)
@@ -79,7 +84,7 @@ validationset.to_csv('DataSets/validationset.csv', index=False)
 
 
 #%% plot distribution of target variable
-print('\nPlot Histogram for target variable:')
+print('\n-- Plotting distribution of the target variable (resolution time) --')
 plt.figure(figsize=(12,8))
 duration_days.hist(bins=range(0,200,1))
 plt.ylabel('N# of observations')
@@ -87,7 +92,7 @@ plt.xlabel('1st 200 Time classes [1 day]')
 plt.savefig('ExploratoryAnalysis\histogram.png', bbox_inches='tight')
 plt.close()
 
-print('\nBoxPlot for target variable:')
+print('\n-- Boxplot of the target variable --')
 plt.figure(figsize=(12,8))
 duration_days.plot.box()
 plt.savefig('ExploratoryAnalysis\plotbox.png', bbox_inches='tight')

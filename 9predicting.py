@@ -21,11 +21,15 @@ import numpy as np
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
+from avro_common import print_section
+
+print_section('PREDICTING (FORECASTING PILOT)')
 
 test = pd.read_csv('DataSets/validationset.csv')
-test.info()
+print('\nForecasting pilot on issues that were still open at snapshot time:')
+print('  shape: {} rows x {} columns'.format(*test.shape))
+print('  statuses: {}'.format(sorted(test['status'].unique())))
 test.columns
-test.shape
 
 training = pd.read_csv('DataSets/encoded.csv')
 training = training.drop('duration',axis=1)
@@ -111,7 +115,10 @@ plt.close()
 df_pred['LinearModel'] = pd.to_timedelta(df_pred['LinearModel'], unit='m')
 df_pred['RegrTree'] = pd.to_timedelta(df_pred['RegrTree'], unit='m')
 df_pred['RandomForest'] = pd.to_timedelta(df_pred['RandomForest'], unit='m')
-df_pred
+
+print('\nPredicted resolution times for the discussed forecasting cases (days):')
+interesting = df_pred.loc[[321, 120, 235, 231, 77, 243, 113]]
+print((interesting.astype('timedelta64[h]') / 24).round(1).to_string())
 
 
 #%% 3 Interesting Cases

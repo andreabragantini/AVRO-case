@@ -15,6 +15,9 @@ import numpy as np
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
+from avro_common import print_section
+
+print_section('REGRESSION TREES')
 
 data = pd.read_csv('DataSets/encoded.csv')
 data.columns
@@ -37,6 +40,7 @@ if not os.path.exists('RegressionTree'):
 
 #%% Regression Tree
 # create a regressor object
+print_section('Decision tree regression')
 tree = DecisionTreeRegressor(max_depth=5, random_state = 0, max_leaf_nodes=35)
 y = data['duration']
 X = predictors
@@ -69,7 +73,7 @@ print('R-squared score (training): {:.3f}'.format(tree.score(X_train, y_train)))
 print('R-squared score (test): {:.3f}'.format(tree.score(X_test, y_test)))
 
 #%% Feature Importance
-print("Relative importance of the features: ",tree.feature_importances_)
+# (feature importances are shown in the saved bar chart: RegressionTree/ParametersImportance_tree.png)
 with plt.style.context('dark_background'):
     plt.figure(figsize=(12,8))
     plt.grid(True)
@@ -92,6 +96,7 @@ export_graphviz(tree, out_file ='RegressionTree/tree.dot')
 ''' Single Regression Tree is highly overfitting data'''
 
 #%% Random Forest Regressor
+print_section('Random forest regression')
 
 rfr = RandomForestRegressor(max_depth=50, random_state=0,max_features='sqrt',
                               max_leaf_nodes=50,n_estimators=100)
@@ -122,7 +127,7 @@ print('R-squared score (training): {:.3f}'.format(rfr.score(X_train, y_train)))
 print('R-squared score (test): {:.3f}'.format(rfr.score(X_test, y_test)))
 
 #%% Feature Importance
-print("Relative importance of the features: ",rfr.feature_importances_)
+# (feature importances are shown in the saved bar chart: RegressionTree/ParametersImportance_rfr.png)
 with plt.style.context('dark_background'):
     plt.figure(figsize=(12,8))
     plt.grid(True)
@@ -150,7 +155,7 @@ importance to them as done by OLS method t-statistic.'''
 
 
 #%% Analysis of Results
-print("Relative importance of the features: ",rfr.feature_importances_)
+# (feature importances are shown in the saved bar chart: RegressionTree/ParametersImportance_rfr2.png)
 with plt.style.context('dark_background'):
     plt.figure(figsize=(12,8))
     plt.grid(True)
@@ -239,14 +244,15 @@ random_grid = {'n_estimators': n_estimators,
 rf = RandomForestRegressor()
 # Random search of parameters, using 3 fold cross validation,
 # search across 100 different combinations, and use all available cores
+print_section('Hyperparameter tuning (RandomizedSearchCV)')
 rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid,
-                               n_iter = 25, cv = 3, verbose=2, random_state=42,
+                               n_iter = 25, cv = 3, verbose=0, random_state=42,
                                n_jobs = 1)
 # Fit the random search model
 rf_random.fit(X_train, y_train)
 
 # View best params
-rf_random.best_params_
+print('Best hyperparameters:', rf_random.best_params_)
 
 # Comparison
 def evaluate(model, X_test, y_test):
@@ -255,7 +261,7 @@ def evaluate(model, X_test, y_test):
     mape = 100 * np.mean(errors / y_test)
     accuracy = 100 - mape
     print('Model Performance')
-    print('Average Error: {:0.4f} degrees.'.format(np.mean(errors)))
+    print('Average Error: {:0.4f} days.'.format(np.mean(errors)))
     print('Accuracy = {:0.2f}%.'.format(accuracy))
 
     return accuracy

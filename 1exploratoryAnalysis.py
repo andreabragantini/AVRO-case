@@ -15,6 +15,9 @@ from statsmodels.graphics.gofplots import qqplot
 from scipy.stats import shapiro
 import seaborn as sns
 sns.set()
+from avro_common import print_section
+
+print_section('1. EXPLORATORY ANALYSIS')
 
 # read data
 dataset = pd.read_csv('DataSets/Raw/avro-issues.csv')
@@ -32,8 +35,8 @@ if not os.path.exists('ExploratoryAnalysis'):
 # var "status"
 col = "status"
 count = dataset[col].value_counts()
-print('\nFrequency of %d categories for var %s'%(len(count), col))
-print(count)
+print('\n-- %s (%d categories) --' % (col, len(count)))
+print(count.to_string())
 
 plt.figure(figsize=(12,8))
 dataset[col].value_counts().plot(kind='bar')
@@ -43,8 +46,8 @@ plt.savefig('ExploratoryAnalysis/freq_status.png')
 # var "priority"
 col = 'priority'
 count = dataset[col].value_counts()
-print('\nFrequency of the %d categories for var %s'%(len(count), col))
-print(count)
+print('\n-- %s (%d categories) --' % (col, len(count)))
+print(count.to_string())
 
 plt.figure(figsize=(12,8))
 dataset[col].value_counts().plot(kind='bar')
@@ -54,8 +57,8 @@ plt.savefig('ExploratoryAnalysis/freq_priority.png')
 # var 'issue_type'
 col = 'issue_type'
 count = dataset[col].value_counts()
-print('\nFrequency of %d categories for var %s'%(len(count),col))
-print(count)
+print('\n-- %s (%d categories) --' % (col, len(count)))
+print(count.to_string())
 
 plt.figure(figsize=(12,8))
 dataset[col].value_counts().plot(kind='bar')
@@ -65,8 +68,8 @@ plt.savefig('ExploratoryAnalysis/freq_issue_type.png')
 # var 'resolution'
 col = 'resolution'
 count = dataset[col].value_counts()
-print('\nFrequency of %d categories for var %s'%(len(count),col))
-print(count)
+print('\n-- %s (%d categories) --' % (col, len(count)))
+print(count.to_string())
 
 plt.figure(figsize=(12,8))
 dataset[col].value_counts().plot(kind='bar')
@@ -78,8 +81,8 @@ plt.savefig('ExploratoryAnalysis/freq_resolution.png')
 # var 'vote_count'
 col = 'vote_count'
 count = dataset[col].value_counts()
-print('\nFrequency of %d categories for var %s'%(len(count),col))
-print(count)
+print('\n-- %s (%d categories) --' % (col, len(count)))
+print(count.to_string())
 
 plt.figure(figsize=(12,8))
 dataset[col].value_counts().sort_index().plot(kind='bar')
@@ -98,8 +101,8 @@ plt.savefig('ExploratoryAnalysis/freq_vote_count_log.png')
 # var 'comment_count'
 col = 'comment_count'
 count = dataset[col].value_counts()
-print('\nFrequency of %d categories for var %s'%(len(count),col))
-print(count)
+print('\n-- %s (%d categories) --' % (col, len(count)))
+print(count.to_string())
 
 plt.figure(figsize=(12,8))
 count.sort_index().plot(kind='bar')
@@ -112,8 +115,8 @@ plt.savefig('ExploratoryAnalysis/freq_comm_count.png')
 # var 'description_length'
 col = 'description_length'
 count = dataset[col].value_counts()
-print('\nFrequency of %d categories for var %s'%(len(count),col))
-print(count)
+print('\n-- %s (%d categories) --' % (col, len(count)))
+print(count.to_string())
 
 plt.figure(figsize=(12,8))
 count.sort_index().plot(marker='.')
@@ -134,8 +137,8 @@ plt.savefig('ExploratoryAnalysis/freq_descr_length_short.png')
 # var 'summary_length'
 col = 'summary_length'
 count = dataset[col].value_counts()
-print('\nFrequency of %d categories for var %s'%(len(count),col))
-print(count)
+print('\n-- %s (%d categories) --' % (col, len(count)))
+print(count.to_string())
 
 plt.figure(figsize=(12,8))
 #count.sort_index().plot(kind='bar')
@@ -152,6 +155,7 @@ plt.title('Q-Q plot: summary_length')
 plt.savefig('ExploratoryAnalysis/qq_summary_length.png', bbox_inches='tight')
 plt.close()
 # normality test
+print('\n-- Normality check on summary_length (Shapiro-Wilk) --')
 stat, p = shapiro(dataset[col])
 print('Statistics=%.3f, p=%.3f' % (stat, p))
 # interpret
@@ -164,8 +168,8 @@ else:
 # var 'watch_count'
 col = 'watch_count'
 count = dataset[col].value_counts()
-print('\nFrequency of %d categories for var %s'%(len(count),col))
-print(count)
+print('\n-- %s (%d categories) --' % (col, len(count)))
+print(count.to_string())
 
 plt.figure(figsize=(12,8))
 count.sort_index().plot(kind='bar')
@@ -207,7 +211,7 @@ closed[closed.resolution != 'Fixed']
 resolved[resolved.resolution != 'Fixed']
 
 #%% Plots
-print('\nPlotting differences in dataset composition:')
+print('\n-- Dataset composition comparison --')
 
 fig, ax = plt.subplots(1,3, figsize=(15,10))
 labels = ['Fixed','AllOthers-closed','AllOthers-resolved']

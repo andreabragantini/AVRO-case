@@ -14,6 +14,9 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from mlxtend.feature_selection import ExhaustiveFeatureSelector as EFS
 from mlxtend.plotting import plot_sequential_feature_selection as plot_sfs
 from mlxtend.feature_selection import SequentialFeatureSelector as SFS
+from avro_common import print_section
+
+print_section('5. FEATURE SELECTION')
 
 data = pd.read_csv('DataSets/encoded.csv')
 data.columns
@@ -81,6 +84,7 @@ I have taken the -ve of this neg_mean_squared_error. This should give mean_squar
 #print(x.columns[b])
 
 #%% FORWARD FIT - Sequential Search (SFS)
+print_section('Sequential Forward Selection (SFS_f)')
 sfs_f = SFS(lr, 
           k_features=(1,predictors.shape[1]), 
           forward=True, # Forward fit
@@ -108,22 +112,18 @@ plt.ylabel('MSE')
 
 # Forward steps with Cross-Validation
 metrics = pd.DataFrame.from_dict(sfs_f.get_metric_dict(confidence_interval=0.90)).T
-print(metrics)
+# (step-by-step CV metrics table omitted for brevity)
 
 # Get the index of the minimum CV score
 idx = np.argmin(n)
-print("N# of features = %s" % idx)
+print("Best number of features: {}".format(idx))
 #Get the features indices for the best forward fit and convert to list
 b1=list(a[idx]['feature_idx'])
-print(b1)
-
-# Index the column names. 
-# Features from forward fit
-print("Features selected in forward fit")
-print(x.columns[b1])
+print("Selected columns ({}): {}".format(len(b1), list(x.columns[b1])))
 
 #%% BACKWARD FIT - Sequential Search (SBS)
 # Create the SBS model
+print_section('Sequential Backward Selection (SBS)')
 sfs_b = SFS(lr, 
           k_features=(1,predictors.shape[1]), 
           forward=False, # Backward
@@ -147,20 +147,16 @@ fig2=plt.plot(m,n,label='SFS_b')
 
 # Backward steps with Cross-Validation
 metrics = pd.DataFrame.from_dict(sfs_b.get_metric_dict(confidence_interval=0.90)).T
-print(metrics)
+# (step-by-step CV metrics table omitted for brevity)
 
 # Get the index of minimum cross validation error
 idx = np.argmin(n)
-print("N# of features = %s" % idx)
+print("Best number of features: {}".format(idx))
 #Get the features indices for the best backward fit and convert to list
 b2=list(a[idx]['feature_idx'])
-print(b2)
+print("Selected columns ({}): {}".format(len(b2), list(x.columns[b2])))
 
-# Index the column names. 
-# Features from backward fit
-print("Features selected in backward fit")
-print(x.columns[b2])
-
+# Create a model
 #%% Sequential Floating Forward Selection - SFFS
 '''The Sequential Feature search also includes ‘floating’ variants which 
 include or exclude features conditionally, once they were excluded or included. 
@@ -169,6 +165,7 @@ if it results in a better fit.
 This option will tend to a better solution, than plain simple SFS.'''
 
 # Create the floating forward search
+print_section('Sequential Floating Forward Selection (SFFS)')
 sffs = SFS(lr, 
           k_features=(1,predictors.shape[1]), 
           forward=True,  # Forward
@@ -192,23 +189,19 @@ fig3=plt.plot(m,n, label='SFFS')
 
 # Backward steps with Cross-Validation
 metrics = pd.DataFrame.from_dict(sffs.get_metric_dict(confidence_interval=0.90)).T
-print(metrics)
+# (step-by-step CV metrics table omitted for brevity)
 
 # Get the index of minimum cross validation error
 idx = np.argmin(n)
-print("N# of features = %s" % idx)
+print("Best number of features: {}".format(idx))
 #Get the features indices for the best forward fit and convert to list
 b3=list(a[idx]['feature_idx'])
-print(b3)
-
-# Index the column names. 
-# Features from floating forward fit
-print("Features selected in floating forward fit")
-print(x.columns[b3])
+print("Selected columns ({}): {}".format(len(b3), list(x.columns[b3])))
 
 #%% Sequential Floating Backward Selection - SFBS
 
 # Create the floating backward search
+print_section('Sequential Floating Backward Selection (SFBS)')
 sfbs = SFS(lr, 
           k_features=(1,predictors.shape[1]), 
           forward=False,  # Backward
@@ -232,25 +225,22 @@ fig3=plt.plot(m,n,label='SFBS')
 
 # Backward steps with Cross-Validation
 metrics = pd.DataFrame.from_dict(sffs.get_metric_dict(confidence_interval=0.90)).T
-print(metrics)
+# (step-by-step CV metrics table omitted for brevity)
 
 # Get the index of minimum cross validation error
 idx = np.argmin(n)
-print("N# of features = %s" % idx)
+print("Best number of features: {}".format(idx))
 #Get the features indices for the best backward fit and convert to list
 b4=list(a[idx]['feature_idx'])
-print(b4)
-
-# Index the column names. 
-# Features from flaoting backward fit
-print("Features selected in floating backward fit")
-print(x.columns[b4])
+print("Selected columns ({}): {}".format(len(b4), list(x.columns[b4])))
 
 #%% Wrapping final results from SFS tecniques
 
 # save the comparison plot with legend
 plt.legend()
 plt.savefig('FeatureSelection/CVscoresVSfeatures_comparison.png', bbox_inches='tight')
+
+print_section('Final feature selection summary')
 
 # selected features by different sequential searches
 b1 # SFS_f
@@ -278,7 +268,8 @@ l4 = [1 if i in set(x.columns[b4]) else 0 for i in selected ]
 columns = ['SFS_f','SFS_b','SFFS','SFBS']
 data = np.array([l1,l2,l3,l4]).transpose()
 results = pd.DataFrame(data=data, columns=columns, index=selected)
-results
+print('\nWhich features are selected by each technique (1 = selected):')
+print(results)
 
 
 

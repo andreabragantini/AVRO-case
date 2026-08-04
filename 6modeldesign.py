@@ -11,6 +11,9 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
+from avro_common import print_section
+
+print_section('MODEL DESIGN - MULTIPLE LINEAR REGRESSION')
 
 
 data = pd.read_csv('DataSets/encoded.csv')
@@ -41,6 +44,7 @@ predictors[col].describe()
       
 #%% Multiple Linear Regression - Sklearn
 # Use the forward feature-selection output when available.
+print_section('Multiple Linear Regression (sklearn)')
 selected = predictors[col]
 
 X=selected
@@ -81,6 +85,8 @@ print('Median AE on day scale: {:.1f} days'.format(np.median(np.abs(days_actual 
 #%% Multiple Linear Regression - statsmodel.OLS()
 import statsmodels.formula.api as sm
 
+print_section('Multiple Linear Regression (statsmodels OLS)')
+
 # Creating a formula string for using in the statsmodels.OLS()
 formula_str = data.columns[-1]+' ~ '+'+'.join(col)                             # selected feature model
 #formula_str = data.columns[-1]+' ~ '+'+'.join(predictors.columns)                            # full feature model
@@ -112,6 +118,7 @@ df_result['Statistically significant?']= df_result['pvalues'].apply(yes_no)
 df_result
 
 #%% Analysis of Residuals
+print_section('Residual diagnostics')
 
 # Residuals vs. predicting variables plots
 for c in col:
@@ -173,6 +180,7 @@ else:
     print("The normality assumption may not hold")
 
 #%% Prediction
+print_section('Prediction on test set')
 y_pred = fitted.predict(X_test)
 
 # comparison and performances

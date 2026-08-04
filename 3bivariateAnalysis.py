@@ -13,6 +13,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import re
+from avro_common import print_section
+
+print_section('3. BIVARIATE ANALYSIS')
 
 # load data
 data = pd.read_csv('DataSets/processed.csv')
@@ -48,6 +51,8 @@ if not os.path.exists('BivariateAnalysis/ReducedClasses'):
 if not os.path.exists('ExploratoryAnalysis'):
     os.makedirs('ExploratoryAnalysis')
 
+print_section('Target vs categorical predictors (full classes)')
+
 #%% Target Variable VS Categorical Predictors - FullClasses
 
 subset = data #data[data["closing_time"] < 60]
@@ -60,15 +65,14 @@ for c in cat_vars:
     confusion_matrix = confusion_matrix.reindex(confusion_matrix.sum().sort_values(ascending = False).index, axis=1)
     
     confusion_matrix = confusion_matrix / confusion_matrix.sum()
-    print("####################################################################################################")
-    print("\n\033[1m" + "Analisi Bivariata closing_time" + "-" + c + "\033[0;0m \n")
 
     confusion_matrix.plot.line(title = "Analisi Bivariata duration" + "-" + c, figsize= (8,8))
     plt.savefig('BivariateAnalysis/FullClasses/durationVS{}.png'.format(c_safe))
     data.boxplot(column="duration",by= c, figsize= (8,8)) 
     plt.savefig('BivariateAnalysis/FullClasses/durationVS{}_box.png'.format(c_safe))
     plt.close()
-    print("####################################################################################################")
+
+print_section('Reduce classes: reporters and issue types')
 
 #%% Reduce Classes - Combine Methods
 ''' The objective is to try to reduce the many levels present in our categorical vars'''
@@ -129,6 +133,8 @@ set2 = set(data['issue_type'])
 #3'reporter'   
 set3 = set(data['reporter'])
     
+print_section('Target vs categorical predictors (reduced classes)')
+
 #%% Target Variable VS Categorical Predictors - ReducedClasses
 cat_vars.append('reporter')
 
@@ -142,15 +148,14 @@ for c in cat_vars:
     confusion_matrix = confusion_matrix.reindex(confusion_matrix.sum().sort_values(ascending = False).index, axis=1)
     
     confusion_matrix = confusion_matrix / confusion_matrix.sum()
-    print("####################################################################################################")
-    print("\n\033[1m" + "Analisi Bivariata closing_time" + "-" + c + "\033[0;0m \n")
 
     confusion_matrix.plot.line(title = "Analisi Bivariata duration" + "-" + c, figsize= (8,8))
     plt.savefig('BivariateAnalysis/ReducedClasses/durationVS{}.png'.format(c_safe))
     data.boxplot(column="duration",by= c, figsize= (8,8), rot=45) 
     plt.savefig('BivariateAnalysis/ReducedClasses/durationVS{}_box.png'.format(c_safe))
     plt.close()
-    print("####################################################################################################")
+
+print_section('Target vs numerical predictors')
 
 #%% Target Variable VS Numerical Predictors
 
@@ -208,6 +213,8 @@ plt.close()
 ''' The heatmap shows some correlation between 'watch_count' and both
 'vote_count' and 'comment_count'. These last two are also a bit correlated.'''
 
+print_section('Log transform of skewed features')
+
 #%% DATA TRASFORMATION - LOGARITHMIC
 ''' some predictors and the target variable present a very skewed distribution.
 THerefore we should consider to apply the logarithmic transformation.
@@ -260,6 +267,8 @@ plt.close()
 #%% Save trasformed dataset
 data.to_csv('DataSets/trasformed_nonencoded.csv', index=False)
 
+print_section('Bivariate analysis on log-transformed data')
+
 #%% Repeat Bivariate Analysis on trasformed data
 
 ### Target Variable VS Numerical Predictors
@@ -281,9 +290,6 @@ for c in cat_vars:
     c_safe = safe_name(c)
     x = subset['duration'].values
     y = subset[c].values
-    print("####################################################################################################")
-    print("\n\033[1m" + "Analisi Bivariata closing_time" + "-" + c + "\033[0;0m \n")
     data.boxplot(column="duration",by= c, figsize= (8,8), rot=45) 
     plt.savefig('BivariateAnalysis/ReducedClasses/trasf_durationVS{}_box.png'.format(c_safe))
     plt.close()
-    print("####################################################################################################")

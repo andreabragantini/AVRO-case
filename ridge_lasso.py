@@ -16,6 +16,9 @@ from sklearn import linear_model
 from sklearn.linear_model import Lasso, Ridge
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
+from avro_common import print_section
+
+print_section('REGULARIZATION CHECK (RIDGE / LASSO)')
 
 
 data = pd.read_csv("DataSets/encoded.csv")
@@ -34,6 +37,8 @@ X_train, X_test, y_train, y_test = train_test_split(x, y, random_state=0, test_s
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
+print_section('Ridge regression')
+
 # Fit a ridge regression with alpha=20
 linridge = Ridge(alpha=20.0).fit(X_train_scaled, y_train)
 
@@ -49,7 +54,7 @@ print('Number of non-zero features: {}'
 trainingRsquared=[]
 testRsquared=[]
 # Plot the effect of alpha on the test Rsquared
-print('Ridge regression: effect of alpha regularization parameter\n')
+print('-- Effect of the regularization parameter alpha --')
 # Choose a list of alpha values
 for this_alpha in [0.001,.01,.1,0, 1, 10, 20, 50, 100, 1000]:
     linridge = Ridge(alpha = this_alpha).fit(X_train_scaled, y_train)
@@ -118,6 +123,8 @@ As alpha increases the coefficients shrink to 0.'''
 Unlike the Ridge Regression where the coefficients of features which do not 
 influence the target tend to zero, in the lasso regualrization the coefficients become 0.'''
 
+print_section('Lasso regression')
+
 linlasso = Lasso(alpha=1000, max_iter = 10000).fit(X_train_scaled, y_train)
 
 print('Non-zero features: {}'
@@ -133,8 +140,7 @@ for e in sorted(list(zip(list(x), linlasso.coef_)), key = lambda e: -abs(e[1])):
         print('\t{}, {:.3f}'.format(e[0], e[1]))
         
 
-print('Lasso regression: effect of alpha regularization\n\
-parameter on number of features kept in final model\n')
+print('-- Effect of the regularization parameter alpha on the number of features --')
 
 trainingRsquared=[]
 testRsquared=[]
@@ -161,8 +167,8 @@ fig5=plt.ylabel('SE')
 fig7.figure.savefig('FeatureSelection/fig7.png', bbox_inches='tight')
 
 ### Plot the coefficient shrinkage using the LARS package
-print("Computing regularization path using the LARS ...")
-alphas, _, coefs = linear_model.lars_path(X_train_scaled, y_train.to_numpy(), method='lasso', verbose=True)
+print("Computing regularization path ...")
+alphas, _, coefs = linear_model.lars_path(X_train_scaled, y_train.to_numpy(), method='lasso', verbose=False)
 
 xx = np.sum(np.abs(coefs.T), axis=1)
 xx /= xx[-1]
