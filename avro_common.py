@@ -18,6 +18,12 @@ NUMERIC_LOG_COLUMNS = [
 CAT_COLUMNS = ["priority", "issue_type", "reporter"]
 SHORT_ISSUE_TYPES = ["Bug", "Improvement", "Task", "Test"]
 
+
+def print_section(title):
+    print("\n" + "=" * 72)
+    print(title)
+    print("=" * 72)
+
 SELECTED_FEATURES = [
     "comment_count",
     "issue_type_Short",
@@ -62,6 +68,10 @@ def reduce_categories(dataset, reporter_min_count=10):
     frame["reporter"] = frame["reporter"].map(
         lambda value: value if value in selected_reporters else "Other"
     )
+    # NOTE: the Short/Long split below was chosen in the bivariate analysis
+    # after observing which issue types tend to have short vs long resolution
+    # times (3bivariateAnalysis.py). That makes it mildly target-informed;
+    # it is kept as a simplification and documented here for transparency.
     frame["issue_type"] = frame["issue_type"].map(
         lambda value: "Short" if value in SHORT_ISSUE_TYPES else "Long"
     )

@@ -72,6 +72,12 @@ print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))
 print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
 
+# Error on the original day scale (the model is trained on log(minutes))
+days_actual = np.exp(y_test) / 1440
+days_pred = np.exp(y_pred) / 1440
+print('MAE on day scale: {:.1f} days'.format(metrics.mean_absolute_error(days_actual, days_pred)))
+print('Median AE on day scale: {:.1f} days'.format(np.median(np.abs(days_actual - days_pred))))
+
 #%% Multiple Linear Regression - statsmodel.OLS()
 import statsmodels.formula.api as sm
 
@@ -176,6 +182,12 @@ print('R-squared score (test): {:.3f}'.format(metrics.r2_score(y_test, y_pred)))
 print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))
 print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
+
+# Error on the original day scale (the model is trained on log(minutes))
+days_actual = np.exp(y_test) / 1440
+days_pred = np.exp(y_pred) / 1440
+print('MAE on day scale: {:.1f} days'.format(metrics.mean_absolute_error(days_actual, days_pred)))
+print('Median AE on day scale: {:.1f} days'.format(np.median(np.abs(days_actual - days_pred))))
 
 #%% Plots
 

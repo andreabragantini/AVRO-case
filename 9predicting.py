@@ -6,6 +6,13 @@ Created on Sun Apr 19 13:01:07 2020
 QUESTION 2:
 Implement the proposed model using the data and extract the predicted resolution 
 time for 3 interesting cases.
+
+NOTE: the rows in validationset.csv are issues that were still OPEN at the time
+of the snapshot, so they have no resolution date and no ground truth for the
+target. This script is therefore a FORECASTING PILOT (a qualitative sanity
+check on realistic, still-open cases), not a quantitative model evaluation.
+Quantitative evaluation is done on the random 80/20 train/test split inside
+6modeldesign.py and 7regressiontrees.py.
 """
 import os
 import pandas as pd

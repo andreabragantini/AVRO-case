@@ -37,8 +37,13 @@ date can tell us the real closing time.
 
 After preprocessing:
 
-- 1,134 issues are used for training.
-- 324 issues are kept aside as a validation set.
+- 1,134 issues (those with a valid resolution date) are used for training.
+- 324 issues were still open at the time of the snapshot. They have no
+  resolution date and therefore no ground truth. 
+  They are kept as a *forecasting pilot*: a qualitative sanity
+  check on realistic, still-open cases (see `9predicting.py`). Quantitative
+  evaluation is done on a random 80/20 train/test split of the 1,134 resolved
+  issues inside the modeling scripts.
 - The target variable is the resolution time, measured from `created` to
   `resolutiondate`.
 
@@ -158,6 +163,26 @@ The main end-to-end flow is:
 8. `7regressiontrees.py`
 9. `9predicting.py`
 
+## Known Limitations
+
+The baseline analysis below has two documented limitations:
+
+- **`issue_type` grouping is mildly target-informed.** The decision to group
+  issue types into `Short` and `Long` was taken in the bivariate analysis
+  after observing the resolution times per type. This is a simplification that
+  is kept for clarity, but it means the target has influenced how the feature
+  was built.
+- **Activity counts are partly circular.** `comment_count`, `vote_count` and
+  `watch_count` grow with the age of an issue, so they correlate with the
+  resolution time partly *because* a long-lived issue has simply had more time
+  to accumulate activity. This inflates their apparent predictive power and
+  makes them imperfect for forecasting a brand-new issue, where those counts
+  are not yet known.
+
+Both caveats are acknowledged rather than hidden; a more rigorous treatment
+would require a fixed-snapshot definition of the count features and raw
+`issue_type` classes.
+
 ## Notes
 
 - `ridge_lasso.py` is part of the main analysis, not a separate side project.
@@ -165,5 +190,5 @@ The main end-to-end flow is:
   Ridge and Lasso against the encoded feature set used by the linear models.
 - `8exploreJSON.py` is a standalone inspection helper for the raw JSON source.
   It is useful for data exploration, but it is not part of the main pipeline.
-- `9predicting.py` produces the validation-set comparison figures in
-  `Question2/`.
+- `9predicting.py` produces the forecasting-pilot comparison figures for the
+  still-open issues in `Question2/`.

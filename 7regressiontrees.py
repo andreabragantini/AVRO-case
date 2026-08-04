@@ -58,6 +58,12 @@ print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))
 print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
 
+# Error on the original day scale (the model is trained on log(minutes))
+days_actual = np.exp(y_test) / 1440
+days_pred = np.exp(y_pred) / 1440
+print('MAE on day scale: {:.1f} days'.format(metrics.mean_absolute_error(days_actual, days_pred)))
+print('Median AE on day scale: {:.1f} days'.format(np.median(np.abs(days_actual - days_pred))))
+
 # compute and print the R Square
 print('R-squared score (training): {:.3f}'.format(tree.score(X_train, y_train)))
 print('R-squared score (test): {:.3f}'.format(tree.score(X_test, y_test)))
@@ -104,6 +110,12 @@ from sklearn import metrics
 print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))
 print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
+
+# Error on the original day scale (the model is trained on log(minutes))
+days_actual = np.exp(y_test) / 1440
+days_pred = np.exp(y_pred) / 1440
+print('MAE on day scale: {:.1f} days'.format(metrics.mean_absolute_error(days_actual, days_pred)))
+print('Median AE on day scale: {:.1f} days'.format(np.median(np.abs(days_actual - days_pred))))
 
 # compute and print the R Square
 print('R-squared score (training): {:.3f}'.format(rfr.score(X_train, y_train)))
@@ -228,7 +240,7 @@ rf = RandomForestRegressor()
 # Random search of parameters, using 3 fold cross validation,
 # search across 100 different combinations, and use all available cores
 rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid,
-                               n_iter = 25, cv = 3, verbose=2, random_state=None,
+                               n_iter = 25, cv = 3, verbose=2, random_state=42,
                                n_jobs = 1)
 # Fit the random search model
 rf_random.fit(X_train, y_train)
