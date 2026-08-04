@@ -1,12 +1,12 @@
 import numpy as np
 import pandas as pd
 
-RAW_DATA_PATH = "DataSets/Raw/avro-issues.csv"
-TRAIN_DATA_PATH = "DataSets/dataset.csv"
-PROCESSED_DATA_PATH = "DataSets/processed.csv"
-TRANSFORMED_DATA_PATH = "DataSets/transformed_nonencoded.csv"
-VALIDATION_DATA_PATH = "DataSets/validationset.csv"
-ENCODED_DATA_PATH = "DataSets/encoded.csv"
+RAW_DATA_PATH = "data_sets/raw/avro-issues.csv"
+TRAIN_DATA_PATH = "data_sets/dataset.csv"
+PROCESSED_DATA_PATH = "data_sets/processed.csv"
+TRANSFORMED_DATA_PATH = "data_sets/transformed_nonencoded.csv"
+VALIDATION_DATA_PATH = "data_sets/validationset.csv"
+ENCODED_DATA_PATH = "data_sets/encoded.csv"
 
 NUMERIC_LOG_COLUMNS = [
     "vote_count",
@@ -70,7 +70,7 @@ def reduce_categories(dataset, reporter_min_count=10):
     )
     # NOTE: the Short/Long split below was chosen in the bivariate analysis
     # after observing which issue types tend to have short vs long resolution
-    # times (3bivariateAnalysis.py). That makes it mildly target-informed;
+    # times (3_bivariate_analysis.py). That makes it mildly target-informed;
     # it is kept as a simplification and documented here for transparency.
     frame["issue_type"] = frame["issue_type"].map(
         lambda value: "Short" if value in SHORT_ISSUE_TYPES else "Long"

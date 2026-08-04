@@ -20,30 +20,30 @@ import matplotlib.pyplot as plt
 ROOT = Path(__file__).resolve().parent
 
 OUTPUT_DIRS = [
-    "ExploratoryAnalysis",
-    "BivariateAnalysis",
-    "BivariateAnalysis/Numerical",
-    "BivariateAnalysis/FullClasses",
-    "BivariateAnalysis/ReducedClasses",
-    "DataSets",
-    "FeatureSelection",
-    "ModelDesign",
-    "Question2",
-    "RegressionTree",
+    "about",
+    "bivariate_analysis",
+    "bivariate_analysis/numerical",
+    "bivariate_analysis/full_classes",
+    "bivariate_analysis/reduced_classes",
+    "data_sets",
+    "feature_selection",
+    "multi_lin_reg",
+    "question2",
+    "regression_tree",
 ]
 
 # Core analysis chain.  The JSON inspection script is intentionally left out
 # because it is a standalone helper and does not feed the main workflow.
 SCRIPTS = [
-    "1exploratoryAnalysis.py",
-    "2preprocessing.py",
-    "3bivariateAnalysis.py",
-    "4encoding.py",
-    "5featureselection.py",
+    "1_exploratory_analysis.py",
+    "2_preprocessing.py",
+    "3_bivariate_analysis.py",
+    "4_encoding.py",
+    "5_feature_selection.py",
     "ridge_lasso.py",
-    "6modeldesign.py",
-    "7regressiontrees.py",
-    "9predicting.py",
+    "6_multi_lin_reg.py",
+    "7_regression_trees.py",
+    "9_predicting.py",
 ]
 
 

@@ -21,12 +21,12 @@ from avro_common import print_section
 print_section('REGULARIZATION CHECK (RIDGE / LASSO)')
 
 
-data = pd.read_csv("DataSets/encoded.csv")
+data = pd.read_csv("data_sets/encoded.csv")
 x = data.iloc[:, :-1]
 y = data["duration"]
 
-if not os.path.exists("FeatureSelection"):
-    os.makedirs("FeatureSelection")
+if not os.path.exists("feature_selection"):
+    os.makedirs("feature_selection")
 
 #%% RIDGE REGRESSION
 # Least Angle Regression model a.k.a. LARS package
@@ -82,7 +82,7 @@ fig5=df3.plot(figsize=(12,8), marker='.')
 fig5=plt.title('Ridge training and test squared error vs Alpha')
 fig5=plt.xlabel('alpha')
 fig5=plt.ylabel('SE')
-fig5.figure.savefig('FeatureSelection/fig5.png', bbox_inches='tight')
+fig5.figure.savefig('feature_selection/fig5.png', bbox_inches='tight')
 
 
 ### Plot the coefficient shrinkage using the LARS package
@@ -112,7 +112,7 @@ fig6=plt.xlabel('alpha')
 fig6=plt.ylabel('weights')
 fig6=plt.title('Ridge coefficients as a function of the regularization')
 fig6=plt.axis('tight')
-plt.savefig('FeatureSelection/fig6.png', bbox_inches='tight')
+plt.savefig('feature_selection/fig6.png', bbox_inches='tight')
 
 '''For Python the coefficient shrinkage with LARS must be viewed from right 
 to left, where you have increasing alpha. 
@@ -164,7 +164,7 @@ fig7=df3.plot(figsize=(12,8), marker='.')
 fig7=plt.title('LASSO training and test squared error vs Alpha')
 fig5=plt.xlabel('alpha')
 fig5=plt.ylabel('SE')
-fig7.figure.savefig('FeatureSelection/fig7.png', bbox_inches='tight')
+fig7.figure.savefig('feature_selection/fig7.png', bbox_inches='tight')
 
 ### Plot the coefficient shrinkage using the LARS package
 print("Computing regularization path ...")
@@ -182,7 +182,7 @@ fig8=plt.xlabel('|coef| / max|coef|')
 fig8=plt.ylabel('Coefficients')
 fig8=plt.title('LASSO Path - Coefficient Shrinkage vs L1')
 fig8=plt.axis('tight')
-plt.savefig('FeatureSelection/fig8.png', bbox_inches='tight')
+plt.savefig('feature_selection/fig8.png', bbox_inches='tight')
 
 
 

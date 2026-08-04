@@ -41,7 +41,7 @@ After preprocessing:
 - 324 issues were still open at the time of the snapshot. They have no
   resolution date and therefore no ground truth. 
   They are kept as a *forecasting pilot*: a qualitative sanity
-  check on realistic, still-open cases (see `9predicting.py`). Quantitative
+  check on realistic, still-open cases (see `9_predicting.py`). Quantitative
   evaluation is done on a random 80/20 train/test split of the 1,134 resolved
   issues inside the modeling scripts.
 - The target variable is the resolution time, measured from `created` to
@@ -153,15 +153,15 @@ opening windows during execution.
 
 The main end-to-end flow is:
 
-1. `1exploratoryAnalysis.py`
-2. `2preprocessing.py`
-3. `3bivariateAnalysis.py`
-4. `4encoding.py`
-5. `5featureselection.py`
+1. `1_exploratory_analysis.py`
+2. `2_preprocessing.py`
+3. `3_bivariate_analysis.py`
+4. `4_encoding.py`
+5. `5_feature_selection.py`
 6. `ridge_lasso.py`
-7. `6modeldesign.py`
-8. `7regressiontrees.py`
-9. `9predicting.py`
+7. `6_multi_lin_reg.py`
+8. `7_regression_trees.py`
+9. `9_predicting.py`
 
 ## Known Limitations
 
@@ -190,5 +190,5 @@ would require a fixed-snapshot definition of the count features and raw
   Ridge and Lasso against the encoded feature set used by the linear models.
 - `8exploreJSON.py` is a standalone inspection helper for the raw JSON source.
   It is useful for data exploration, but it is not part of the main pipeline.
-- `9predicting.py` produces the forecasting-pilot comparison figures for the
-  still-open issues in `Question2/`.
+- `9_predicting.py` produces the forecasting-pilot comparison figures for the
+  still-open issues in `question2/`.
