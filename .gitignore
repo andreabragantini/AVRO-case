@@ -30,6 +30,9 @@ bin/
 obj/
 target/
 vendor/
+__pycache__/
+**/__pycache__/
+
 
 # --- Logs ---
 logs/
@@ -46,6 +49,3 @@ temp/
 tmp/
 
 # --- Folders ---
-ExploratoryAnalysis/*
-RegressionTree/*
-
