@@ -73,7 +73,7 @@ print('R-squared score (training): {:.3f}'.format(tree.score(X_train, y_train)))
 print('R-squared score (test): {:.3f}'.format(tree.score(X_test, y_test)))
 
 #%% Feature Importance
-# (feature importances are shown in the saved bar chart: regression_tree/ParametersImportance_tree.png)
+# (single tree importance is displayed but not saved; the RF version is saved below)
 with plt.style.context('dark_background'):
     plt.figure(figsize=(12,8))
     plt.grid(True)
@@ -82,7 +82,7 @@ with plt.style.context('dark_background'):
     plt.ylabel("Features\n",fontsize=20)
     plt.tight_layout()
     plt.barh(range(n_features+1,1,-1),width=tree.feature_importances_,height=0.5)
-    plt.savefig('regression_tree/ParametersImportance_tree.png')
+    #plt.savefig('regression_tree/ParametersImportance_tree.png')  # single tree overfits; RF importance is the useful one
 
 #%% Visualizing Results
 # import export_graphviz
@@ -155,7 +155,7 @@ importance to them as done by OLS method t-statistic.'''
 
 
 #%% Analysis of Results
-# (feature importances are shown in the saved bar chart: regression_tree/ParametersImportance_rfr2.png)
+# (RandomForest importance was saved above in ParametersImportance_rfr.png)
 with plt.style.context('dark_background'):
     plt.figure(figsize=(12,8))
     plt.grid(True)
@@ -164,7 +164,7 @@ with plt.style.context('dark_background'):
     plt.ylabel("Features\n",fontsize=20)
     plt.tight_layout()
     plt.barh(range(n_features+1,1,-1),width=rfr.feature_importances_,height=0.5)
-    plt.savefig('regression_tree/ParametersImportance_rfr2.png')
+    #plt.savefig('regression_tree/ParametersImportance_rfr2.png')  # duplicate of ParametersImportance_rfr.png
 
 #%% Plots
 
@@ -177,7 +177,7 @@ plt.xlabel("Training Set observations",fontsize=15)
 plt.ylabel("LOG(Duration)",fontsize=15)
 plt.title("Fitted vs. TrainSet",fontsize=18)
 plt.legend()
-plt.savefig('regression_tree/fittedVStraining.png')
+#plt.savefig('regression_tree/fittedVStraining.png')  # training fit; test fit is what matters
 plt.close()
 
 # predicted VS test set
@@ -185,7 +185,7 @@ df.reset_index(drop=True).plot(figsize=(12,8),marker='.')
 plt.xlabel("Test Set observations",fontsize=15)
 plt.ylabel("LOG(Duration)",fontsize=15)
 plt.title("Predicted vs. TestSet",fontsize=18)
-plt.savefig('regression_tree/predictedVStest.png')
+#plt.savefig('regression_tree/predictedVStest.png')  # same concept as multi_lin_reg/predictedVStest.png
 plt.close()
 
 # predicted VS test set - TRASFORMED
@@ -194,7 +194,7 @@ df.reset_index(drop=True).plot(figsize=(12,8),marker='.')
 plt.xlabel("Test Set observations",fontsize=15)
 plt.ylabel("Duration",fontsize=15)
 plt.title("Predicted vs. TestSet",fontsize=18)
-plt.savefig('regression_tree/predictedVStest_transf.png')
+#plt.savefig('regression_tree/predictedVStest_transf.png')  # same concept as multi_lin_reg/predictedVStest_transf.png
 plt.close()
 
 
@@ -209,7 +209,7 @@ plt.xlabel("Fitted values",fontsize=15)
 plt.ylabel("Residuals",fontsize=15)
 plt.title("Fitted vs. residuals plot",fontsize=18)
 plt.grid(True)
-plt.savefig('regression_tree/fittedVSresiduals.png')
+#plt.savefig('regression_tree/fittedVSresiduals.png')  # duplicates multi_lin_reg/resVSfit.png
 plt.close()
 
 #%% Random Search Cross Validation - Tuning Random Forest Parameter

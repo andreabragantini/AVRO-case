@@ -90,7 +90,7 @@ dataset[col].value_counts().sort_index().plot(kind='bar')
 plt.title('vote_count - Full Dataset')
 plt.xlabel('N# of votes')
 plt.ylabel('N# of alerts')
-plt.savefig('exploratory_analysis/freq_vote_count.png')
+#plt.savefig('exploratory_analysis/freq_vote_count.png')  # redundant: log version is informative
 
 plt.figure(figsize=(12,8))
 dataset[col].value_counts().sort_index().map(lambda x: np.log(x)).plot(kind='bar')
@@ -124,7 +124,7 @@ count.sort_index().plot(marker='.')
 plt.title('description_length - Full Dataset')
 plt.xlabel('Length in characters')
 plt.ylabel('N# of alerts')
-plt.savefig('exploratory_analysis/freq_descr_length.png')
+#plt.savefig('exploratory_analysis/freq_descr_length.png')  # redundant: 'short' version shows the range
 
 ''' There are a few outliers with very long descriptions'''
 # Looking only at short descriptions
@@ -153,7 +153,7 @@ plt.savefig('exploratory_analysis/freq_sum_length.png')
 # q-q plot
 qqplot(dataset[col], line='s')
 plt.title('Q-Q plot: summary_length')
-plt.savefig('exploratory_analysis/qq_summary_length.png', bbox_inches='tight')
+#plt.savefig('exploratory_analysis/qq_summary_length.png', bbox_inches='tight')  # low-value diagnostic
 plt.close()
 # normality test
 print('\n-- Normality check on summary_length (Shapiro-Wilk) --')
@@ -242,6 +242,6 @@ ax[2].pie(sizes2, labels=labels2, autopct='%1.1f%%',
 ax[2].legend(loc='lower left')
 
 plt.tight_layout()
-plt.savefig('exploratory_analysis/comparison.png', bbox_inches='tight')
+#plt.savefig('exploratory_analysis/comparison.png', bbox_inches='tight')  # secondary composition plot
 plt.close()
 

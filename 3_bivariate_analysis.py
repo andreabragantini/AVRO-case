@@ -81,7 +81,7 @@ print_section('Reduce classes: reporters and issue types')
 data['reporter'].value_counts()[:40].plot(kind='bar')
 plt.title('Most frequent Reporters - Training Set')
 plt.tight_layout()
-plt.savefig('exploratory_analysis/Reporters.png', bbox_inches='tight')
+plt.savefig('bivariate_analysis/Reporters.png', bbox_inches='tight')
 plt.close()
 # Only reporters with more than 10 counts are considered
 counts = data['reporter'].value_counts()
@@ -96,7 +96,7 @@ Therefore we try to encode this two different groups'''
 plt.barh(data['issue_type'].value_counts().index,data['issue_type'].value_counts())
 plt.title('Issue Types - Training Set')
 plt.tight_layout()
-plt.savefig('exploratory_analysis/Issue_types.png', bbox_inches='tight')
+plt.savefig('bivariate_analysis/Issue_types.png', bbox_inches='tight')
 plt.close()
 # Create the 2 levels for issue_types
 group1 = ['Bug', 'Improvement', 'Task', 'Test']
@@ -260,7 +260,7 @@ data['duration'].hist()
 plt.ylabel('N# of observations')
 plt.xlabel('Log(Time)')
 plt.title('Log-trasformed target variable')
-plt.savefig('exploratory_analysis/duration_log.png', bbox_inches='tight')
+plt.savefig('bivariate_analysis/duration_log.png', bbox_inches='tight')
 plt.close()
 
 

@@ -122,6 +122,10 @@ print_section('Residual diagnostics')
 
 # Residuals vs. predicting variables plots
 for c in col:
+    # One plot per one-hot reporter column is overwhelming; save only the
+    # meaningful non-reporter predictors.
+    if c.startswith('reporter'):
+        continue
     plt.figure(figsize=(12,8))
     plt.title("{} vs. Model residuals".format(c),fontsize=16)
     plt.scatter(x=X_train[c],y=fitted.resid,color='blue',edgecolor='k')

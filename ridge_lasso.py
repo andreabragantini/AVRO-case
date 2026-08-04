@@ -82,7 +82,7 @@ fig5=df3.plot(figsize=(12,8), marker='.')
 fig5=plt.title('Ridge training and test squared error vs Alpha')
 fig5=plt.xlabel('alpha')
 fig5=plt.ylabel('SE')
-fig5.figure.savefig('feature_selection/fig5.png', bbox_inches='tight')
+fig5.figure.savefig('feature_selection/ridge_train_test_r2_vs_alpha.png', bbox_inches='tight')
 
 
 ### Plot the coefficient shrinkage using the LARS package
@@ -112,7 +112,7 @@ fig6=plt.xlabel('alpha')
 fig6=plt.ylabel('weights')
 fig6=plt.title('Ridge coefficients as a function of the regularization')
 fig6=plt.axis('tight')
-plt.savefig('feature_selection/fig6.png', bbox_inches='tight')
+plt.savefig('feature_selection/ridge_coefficient_paths.png', bbox_inches='tight')
 
 '''For Python the coefficient shrinkage with LARS must be viewed from right 
 to left, where you have increasing alpha. 
@@ -164,7 +164,7 @@ fig7=df3.plot(figsize=(12,8), marker='.')
 fig7=plt.title('LASSO training and test squared error vs Alpha')
 fig5=plt.xlabel('alpha')
 fig5=plt.ylabel('SE')
-fig7.figure.savefig('feature_selection/fig7.png', bbox_inches='tight')
+fig7.figure.savefig('feature_selection/lasso_train_test_r2_vs_alpha.png', bbox_inches='tight')
 
 ### Plot the coefficient shrinkage using the LARS package
 print("Computing regularization path ...")
@@ -182,7 +182,7 @@ fig8=plt.xlabel('|coef| / max|coef|')
 fig8=plt.ylabel('Coefficients')
 fig8=plt.title('LASSO Path - Coefficient Shrinkage vs L1')
 fig8=plt.axis('tight')
-plt.savefig('feature_selection/fig8.png', bbox_inches='tight')
+plt.savefig('feature_selection/lasso_coefficient_paths.png', bbox_inches='tight')
 
 
 
