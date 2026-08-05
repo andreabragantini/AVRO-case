@@ -215,11 +215,11 @@ plt.close()
 
 print_section('Log transform of skewed features')
 
-#%% DATA TRASFORMATION - LOGARITHMIC
+#%% DATA TRANSFORMATION - LOGARITHMIC
 ''' some predictors and the target variable present a very skewed distribution.
 THerefore we should consider to apply the logarithmic transformation.
 This helps in turning the distribution is something more gaussian.
-Let's apply a log-log trasformation '''
+Let's apply a log-log transformation '''
 
 import numpy as np
 from statsmodels.stats.stattools import jarque_bera as jb
@@ -250,26 +250,26 @@ lzip(name, test_results)                        # very improved! :)
 
 # Pairplot transformed
 pairplot(data[num_vars])    
-plt.title('Pairplot for trasformed numerical features')
+plt.title('Pairplot for transformed numerical features')
 plt.savefig('bivariate_analysis/numerical/pairplot_num_vars_log.png')
 plt.close()
 
-# trasformed duration (target variable)
+# transformed duration (target variable)
 #plt.figure(figsize=(12,8))
 data['duration'].hist()
 plt.ylabel('N# of observations')
 plt.xlabel('Log(Time)')
-plt.title('Log-trasformed target variable')
+plt.title('Log-transformed target variable')
 plt.savefig('bivariate_analysis/duration_log.png', bbox_inches='tight')
 plt.close()
 
 
-#%% Save trasformed dataset
-data.to_csv('data_sets/trasformed_nonencoded.csv', index=False)
+#%% Save transformed dataset
+data.to_csv('data_sets/transformed_nonencoded.csv', index=False)
 
 print_section('Bivariate analysis on log-transformed data')
 
-#%% Repeat Bivariate Analysis on trasformed data
+#%% Repeat Bivariate Analysis on transformed data
 
 ### Target Variable VS Numerical Predictors
 # simple scatter plots 
@@ -281,7 +281,7 @@ for c in num_vars:
     plt.grid(True)
     plt.xlabel(c,fontsize=14)
     plt.ylabel('Log Alert Duration [D]',fontsize=14)
-    plt.savefig('bivariate_analysis/numerical/trasf_durationVS{}.png'.format(c_safe))
+    plt.savefig('bivariate_analysis/numerical/transf_durationVS{}.png'.format(c_safe))
     plt.close()
 
 ### Target Variable VS Categorical Predictors - ReducedClasses
@@ -291,5 +291,5 @@ for c in cat_vars:
     x = subset['duration'].values
     y = subset[c].values
     data.boxplot(column="duration",by= c, figsize= (8,8), rot=45) 
-    plt.savefig('bivariate_analysis/reduced_classes/trasf_durationVS{}_box.png'.format(c_safe))
+    plt.savefig('bivariate_analysis/reduced_classes/transf_durationVS{}_box.png'.format(c_safe))
     plt.close()

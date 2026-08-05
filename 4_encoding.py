@@ -10,8 +10,8 @@ from avro_common import print_section
 
 print_section('4. ENCODING')
 
-data = pd.read_csv('data_sets/processed.csv')
-data = pd.read_csv('data_sets/trasformed_nonencoded.csv')
+#data = pd.read_csv('data_sets/processed.csv')
+data = pd.read_csv('data_sets/transformed_nonencoded.csv')
 data.columns
 
 targetvar = pd.to_timedelta(data['duration']).dt.total_seconds() / 86400
