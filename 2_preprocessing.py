@@ -12,7 +12,7 @@ from avro_common import print_section
 
 print_section('2. PREPROCESSING')
 
-dataset = pd.read_csv('data_sets/raw/avro-issues.csv')
+dataset = pd.read_csv('data_sets/raw/avro-issues-merged.csv')
 
 #%% Data Pre-Processing - Split Training and Forecasting-Pilot Sets
 ''' To calculate the required time to solve an alert we have to look only at

@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 
 RAW_DATA_PATH = "data_sets/raw/avro-issues.csv"
+MERGED_DATA_PATH = "data_sets/raw/avro-issues-merged.csv"
 TRAIN_DATA_PATH = "data_sets/dataset.csv"
 PROCESSED_DATA_PATH = "data_sets/processed.csv"
 TRANSFORMED_DATA_PATH = "data_sets/transformed_nonencoded.csv"
@@ -9,10 +10,7 @@ FORECASTING_PILOT_DATA_PATH = "data_sets/forecasting_pilot.csv"
 ENCODED_DATA_PATH = "data_sets/encoded.csv"
 
 NUMERIC_LOG_COLUMNS = [
-    "vote_count",
-    "comment_count",
     "description_length",
-    "watch_count",
 ]
 
 CAT_COLUMNS = ["priority", "issue_type", "reporter"]
@@ -25,7 +23,6 @@ def print_section(title):
     print("=" * 72)
 
 SELECTED_FEATURES = [
-    "comment_count",
     "issue_type_Short",
     "priority_Minor",
     "reporter_cutting",
@@ -37,13 +34,11 @@ SELECTED_FEATURES = [
     "reporter_sharadag",
     "reporter_tomwhite",
     "reporter_vnadkarni",
-    "vote_count",
-    "watch_count",
 ]
 
 
 def load_raw_dataset():
-    return pd.read_csv(RAW_DATA_PATH)
+    return pd.read_csv(MERGED_DATA_PATH)
 
 
 def split_train_forecasting_pilot(dataset):

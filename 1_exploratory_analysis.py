@@ -21,7 +21,7 @@ print_section('1. EXPLORATORY ANALYSIS')
 
 # read data
 print('\n-- Reading dataset --')
-dataset = pd.read_csv('data_sets/raw/avro-issues.csv')
+dataset = pd.read_csv('data_sets/raw/avro-issues-merged.csv')
 dataset.head()
 dataset.columns
 n = len(dataset)

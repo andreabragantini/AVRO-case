@@ -41,7 +41,7 @@ _b1 = globals().get('b1')
 if _b1 is not None:
     col = list(predictors.columns[_b1])
 else:
-    col = ['vote_count', 'comment_count', 'watch_count']
+    col = ['description_length', 'summary_length', 'issue_type_Short']
 
 predictors[col].describe()
       

@@ -13,6 +13,11 @@ print_section('4. ENCODING')
 data = pd.read_csv('data_sets/transformed_nonencoded.csv')
 data.columns
 
+# The activity counts grow with the age of an issue and are ~0 for a brand new
+# one, so they are not available at prediction time and would leak the issue's
+# age. Remove them before modeling (they are still explored in scripts 1 and 3).
+data = data.drop(columns=['vote_count', 'comment_count', 'watch_count'])
+
 targetvar = pd.to_timedelta(data['duration']).dt.total_seconds() / 86400
 
 #############################################################################

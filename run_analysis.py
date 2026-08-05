@@ -32,9 +32,11 @@ OUTPUT_DIRS = [
     "regression_tree",
 ]
 
-# Core analysis chain.  The JSON inspection script is intentionally left out
-# because it is a standalone helper and does not feed the main workflow.
+# Core analysis chain.  The JSON inspection script (2_explore_json.py) is
+# intentionally left out because it is a standalone helper and does not feed
+# the main workflow.
 SCRIPTS = [
+    "0_merge_input_datasets.py",
     "1_exploratory_analysis.py",
     "2_preprocessing.py",
     "3_bivariate_analysis.py",
