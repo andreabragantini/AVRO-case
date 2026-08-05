@@ -5,13 +5,7 @@ Created on Sun Apr 12 23:33:53 2020
 @author: andre
 """
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-from statsmodels.graphics.gofplots import qqplot
-from scipy.stats import shapiro
-from tabulate import tabulate
-import seaborn as sns
-sns.set()
 
 import os
 from avro_common import print_section
@@ -20,7 +14,7 @@ print_section('2. PREPROCESSING')
 
 dataset = pd.read_csv('data_sets/raw/avro-issues.csv')
 
-#%% Data Pre-Processing - Split Training Validation Sets
+#%% Data Pre-Processing - Split Training and Forecasting-Pilot Sets
 ''' To calculate the required time to solve an alert we have to look only at
 successfully solved alerts in the available dataset to be able to train our model.
 This means we will look for Closed and Resolved ones.
@@ -37,32 +31,32 @@ creation and the resolution date. '''
 trainset = dataset[(~dataset["resolutiondate"].isnull()) & (~dataset["created"].isnull())]
 trainset.shape
 
-validationset = dataset[~dataset.index.isin(trainset.index)].reset_index(drop=True)
-validationset.shape
+forecasting_pilot = dataset[~dataset.index.isin(trainset.index)].reset_index(drop=True)
+forecasting_pilot.shape
 print('\nTraining set: {} resolved issues'.format(len(trainset)))
-print('Forecasting pilot: {} issues still open (no resolution date)'.format(len(validationset)))
+print('Forecasting pilot: {} issues still open (no resolution date)'.format(len(forecasting_pilot)))
 
 # NB: from now we will call for simplicity the trainset as DATASET
 dataset = trainset.reset_index(drop=True)
 
 #%% Data Pre-Processing - Target Variable
 
-### 1st approach:
-fixed['resolutiondate']
-# remove useless +0000 at the end
-fixed['resolutiondate'] = fixed['resolutiondate'].str.replace('+000','',regex=False)
-fixed['created'] = fixed['created'].str.replace('+000','',regex=False)
+### 1st approach (kept for reference only - superseded by the 2nd approach below)
+# fixed['resolutiondate']
+# # remove useless +0000 at the end
+# fixed['resolutiondate'] = fixed['resolutiondate'].str.replace('+000','',regex=False)
+# fixed['created'] = fixed['created'].str.replace('+000','',regex=False)
+#
+# import datetime
+# fixed['resolutiondate'] = fixed['resolutiondate'].apply(datetime.datetime.strptime, args=('%Y-%m-%dT%H:%M:%S.%f',))
+# fixed['created'] = fixed['created'].apply(datetime.datetime.strptime, args=('%Y-%m-%dT%H:%M:%S.%f',))
+# # duration
+# fixed['duration'] = fixed['resolutiondate'] - fixed['created']
 
-import datetime
-fixed['resolutiondate'] = fixed['resolutiondate'].apply(datetime.datetime.strptime, args=('%Y-%m-%dT%H:%M:%S.%f',))
-fixed['created'] = fixed['created'].apply(datetime.datetime.strptime, args=('%Y-%m-%dT%H:%M:%S.%f',))
-# duration
-fixed['duration'] = fixed['resolutiondate'] - fixed['created']
-
-### Other way: from str to datetime
-dataset.resolutiondate = pd.to_datetime(dataset['resolutiondate'])
-dataset.updated = pd.to_datetime(dataset['updated'])
-dataset.created = pd.to_datetime(dataset['created'])
+### 2nd approach: from str to datetime
+dataset['resolutiondate'] = pd.to_datetime(dataset['resolutiondate'])
+dataset['updated'] = pd.to_datetime(dataset['updated'])
+dataset['created'] = pd.to_datetime(dataset['created'])
 # duration
 dataset['duration'] = dataset['resolutiondate'] - dataset['created']
 duration_days = dataset['duration'].dt.total_seconds() / 86400
@@ -75,12 +69,12 @@ if not os.path.exists('data_sets'):
 if not os.path.exists('exploratory_analysis'):
     os.mkdir('exploratory_analysis')
 
-# 1st appraoch - selected only fixed
-fixed.to_csv('data_sets/dataset.csv', index=False)
-# 2nd appraoch - selected with resolutiondate
+# 2nd approach (used by the pipeline): selected with resolutiondate.
+# NOTE: the 1st approach (only "Fixed" alerts) used to be written to the same
+# file right before this and was silently overwritten, so it has been removed.
 dataset.to_csv('data_sets/dataset.csv', index=False)
 
-validationset.to_csv('data_sets/validationset.csv', index=False)
+forecasting_pilot.to_csv('data_sets/forecasting_pilot.csv', index=False)
 
 
 #%% plot distribution of target variable
@@ -180,8 +174,8 @@ available dataset it shows always "NaN".
 
 CONCLUSION: We should remove "status" and "resolution" predictors.'''
 
-set(validationset['resolution'])
-set(validationset['status'])
+set(forecasting_pilot['resolution'])
+set(forecasting_pilot['status'])
 
 dropped = dropped.drop(['status','resolution'], axis=1)
 

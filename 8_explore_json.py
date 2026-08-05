@@ -48,9 +48,7 @@ len(list_of_alerts)
 objects = []
 for obj in open('data_sets/raw/avro-issues.json', 'r'):
     objects.append(json.loads(obj))
-for obj in objects[0]:
-    pp_json(obj)
-    
+
 ######################################################
 # Use this function and don't sweat having to remember if your JSON is a str or dict again - 
 # just look at the pretty print:
@@ -61,6 +59,12 @@ def pp_json(json_thing, sort=True, indents=4):
     else:
         pprint(json.dumps(json_thing, sort_keys=sort, indent=indents))
     return None
+######################################################
+# print the first alert for inspection
+if objects:
+    for obj in objects[0]:
+        pp_json(obj)
+
 ######################################################
 # print values of single keys in dict: objects[...]
 

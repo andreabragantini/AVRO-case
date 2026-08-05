@@ -118,9 +118,9 @@ far from the average case. In practice, that means the linear model is good for
 interpretation, while the tree models are better for prediction on messy real
 data.
 
-### 5. What happens on the interesting validation cases?
+### 5. What happens on the interesting forecasting-pilot cases?
 
-The validation examples show two patterns:
+The forecasting-pilot examples show two patterns:
 
 - Issues that have stayed open for a long time tend to receive long predicted
   resolution times.

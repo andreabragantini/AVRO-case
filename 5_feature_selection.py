@@ -8,11 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.model_selection import train_test_split, cross_val_score
 from mlxtend.feature_selection import ExhaustiveFeatureSelector as EFS
-from mlxtend.plotting import plot_sequential_feature_selection as plot_sfs
 from mlxtend.feature_selection import SequentialFeatureSelector as SFS
 from avro_common import print_section
 
@@ -266,8 +262,8 @@ l2 = [1 if i in set(x.columns[b2]) else 0 for i in selected ]
 l3 = [1 if i in set(x.columns[b3]) else 0 for i in selected ]
 l4 = [1 if i in set(x.columns[b4]) else 0 for i in selected ]
 columns = ['SFS_f','SFS_b','SFFS','SFBS']
-data = np.array([l1,l2,l3,l4]).transpose()
-results = pd.DataFrame(data=data, columns=columns, index=selected)
+selection_matrix = np.array([l1,l2,l3,l4]).transpose()
+results = pd.DataFrame(data=selection_matrix, columns=columns, index=selected)
 print('\nWhich features are selected by each technique (1 = selected):')
 print(results)
 

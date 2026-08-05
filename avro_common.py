@@ -5,7 +5,7 @@ RAW_DATA_PATH = "data_sets/raw/avro-issues.csv"
 TRAIN_DATA_PATH = "data_sets/dataset.csv"
 PROCESSED_DATA_PATH = "data_sets/processed.csv"
 TRANSFORMED_DATA_PATH = "data_sets/transformed_nonencoded.csv"
-VALIDATION_DATA_PATH = "data_sets/validationset.csv"
+FORECASTING_PILOT_DATA_PATH = "data_sets/forecasting_pilot.csv"
 ENCODED_DATA_PATH = "data_sets/encoded.csv"
 
 NUMERIC_LOG_COLUMNS = [
@@ -46,11 +46,11 @@ def load_raw_dataset():
     return pd.read_csv(RAW_DATA_PATH)
 
 
-def split_train_validation(dataset):
+def split_train_forecasting_pilot(dataset):
     train_mask = dataset["resolutiondate"].notna() & dataset["created"].notna()
     trainset = dataset.loc[train_mask].copy().reset_index(drop=True)
-    validationset = dataset.loc[~train_mask].copy().reset_index(drop=True)
-    return trainset, validationset
+    forecasting_pilot = dataset.loc[~train_mask].copy().reset_index(drop=True)
+    return trainset, forecasting_pilot
 
 
 def add_duration(dataset):
@@ -85,8 +85,8 @@ def log_transform_numeric_features(dataset):
     return frame
 
 
-def prepare_validation_features(validation_dataset, training_columns):
-    frame = validation_dataset.copy()
+def prepare_forecasting_pilot_features(forecasting_pilot, training_columns):
+    frame = forecasting_pilot.copy()
     frame = frame.drop(
         [
             "project",

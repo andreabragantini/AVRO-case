@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures
 from avro_common import print_section
 
 print_section('MODEL DESIGN - MULTIPLE LINEAR REGRESSION')
@@ -35,8 +34,12 @@ if not os.path.exists('multi_lin_reg'):
     os.makedirs('multi_lin_reg')
 
 #%% Results from features selection
-if 'b1' in globals():
-    col = list(predictors.columns[b1])
+# 'b1' comes from the feature-selection step (5_feature_selection.py) which is
+# run in the same shared session by run_analysis.py. Fall back to the known
+# good features when running this script standalone.
+_b1 = globals().get('b1')
+if _b1 is not None:
+    col = list(predictors.columns[_b1])
 else:
     col = ['vote_count', 'comment_count', 'watch_count']
 

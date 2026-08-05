@@ -10,7 +10,6 @@ NB: This means that we are looking only at our new processed dataset of
 closed/resolved issues for the training phase-
 """
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 import re
 from avro_common import print_section
@@ -20,13 +19,13 @@ print_section('3. BIVARIATE ANALYSIS')
 # load data
 data = pd.read_csv('data_sets/processed.csv')
 data.columns = data.columns.map(lambda col: str(col).strip().replace('\ufeff', ''))
-data.duration = pd.to_timedelta(data['duration']).dt.total_seconds() / 60
+data['duration'] = pd.to_timedelta(data['duration']).dt.total_seconds() / 60
 data.columns
 cat_vars = [ col for col in data.columns if data[col].dtype.kind not in 'biufcm']
 cat_vars.remove('reporter')
 num_vars = [ col for col in data.columns if data[col].dtype.kind in 'biufc' ]
 num_vars.remove('duration')
-target = data.duration
+target = data['duration']
 
 # NB The meaning of biufc: b bool, i int (signed), u unsigned int, f float, c complex, m timedelta
 
@@ -223,28 +222,27 @@ Let's apply a log-log transformation '''
 
 import numpy as np
 from statsmodels.stats.stattools import jarque_bera as jb
-from statsmodels.stats.stattools import omni_normtest as omb
 from statsmodels.compat import lzip
 
 # Jarque-Bera normality test 
 name = ['Jarque-Bera', 'Chi^2 two-tail probability', 'Skewness', 'Kurtosis']
-test_results = jb(data.duration)
+test_results = jb(data['duration'])
 lzip(name, test_results)
 
 
 # vote_count
-data.vote_count = np.log(data.vote_count+1)
+data['vote_count'] = np.log(data['vote_count']+1)
 # comment_count
-data.comment_count = np.log(data.comment_count+1)
+data['comment_count'] = np.log(data['comment_count']+1)
 # description_length
-data.description_length = np.log(data.description_length+1)
+data['description_length'] = np.log(data['description_length']+1)
 # watch-count
-data.watch_count = np.log(data.watch_count+1)
+data['watch_count'] = np.log(data['watch_count']+1)
 # duration
-data.duration = np.log(data.duration)
+data['duration'] = np.log(data['duration'])
 
 # run test again
-test_results = jb(data.duration)
+test_results = jb(data['duration'])
 lzip(name, test_results)                        # very improved! :)
 
 
@@ -277,7 +275,7 @@ for c in num_vars:
     c_safe = safe_name(c)
     #plt.figure(figsize=(12,8))
     plt.title("{} vs. duration (transformed)".format(c),fontsize=16)
-    plt.scatter(x=data[c],y=data.duration,color='blue',edgecolor='k')
+    plt.scatter(x=data[c],y=data['duration'],color='blue',edgecolor='k')
     plt.grid(True)
     plt.xlabel(c,fontsize=14)
     plt.ylabel('Log Alert Duration [D]',fontsize=14)

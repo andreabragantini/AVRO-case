@@ -255,10 +255,10 @@ rf_random.fit(X_train, y_train)
 print('Best hyperparameters:', rf_random.best_params_)
 
 # Comparison
-def evaluate(model, X_test, y_test):
-    predictions = model.predict(X_test)
-    errors = abs(predictions - y_test)
-    mape = 100 * np.mean(errors / y_test)
+def evaluate(model, X_eval, y_eval):
+    predictions = model.predict(X_eval)
+    errors = abs(predictions - y_eval)
+    mape = 100 * np.mean(errors / y_eval)
     accuracy = 100 - mape
     print('Model Performance')
     print('Average Error: {:0.4f} days.'.format(np.mean(errors)))

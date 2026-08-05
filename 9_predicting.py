@@ -7,7 +7,7 @@ QUESTION 2:
 Implement the proposed model using the data and extract the predicted resolution 
 time for 3 interesting cases.
 
-NOTE: the rows in validationset.csv are issues that were still OPEN at the time
+NOTE: the rows in forecasting_pilot.csv are issues that were still OPEN at the time
 of the snapshot, so they have no resolution date and no ground truth for the
 target. This script is therefore a FORECASTING PILOT (a qualitative sanity
 check on realistic, still-open cases), not a quantitative model evaluation.
@@ -18,17 +18,29 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
 from avro_common import print_section
 
 print_section('PREDICTING (FORECASTING PILOT)')
 
-test = pd.read_csv('data_sets/validationset.csv')
+# The fitted models below come from the earlier modeling scripts
+# (6_multi_lin_reg.py and 7_regression_trees.py), which run in the same
+# shared session when invoked via run_analysis.py. If they are not present
+# (e.g. running this file standalone), fail with a clear message instead of
+# an obscure NameError.
+linreg = globals().get('linreg')
+tree = globals().get('tree')
+rfr = globals().get('rfr')
+if linreg is None or tree is None or rfr is None:
+    raise RuntimeError(
+        "This script must be run through run_analysis.py so it can reuse the "
+        "models fitted by 6_multi_lin_reg.py and 7_regression_trees.py."
+    )
+
+forecasting_pilot = pd.read_csv('data_sets/forecasting_pilot.csv')
 print('\nForecasting pilot on issues that were still open at snapshot time:')
-print('  shape: {} rows x {} columns'.format(*test.shape))
-print('  statuses: {}'.format(sorted(test['status'].unique())))
+print('  shape: {} rows x {} columns'.format(*forecasting_pilot.shape))
+print('  statuses: {}'.format(sorted(forecasting_pilot['status'].unique())))
+test = forecasting_pilot.copy()
 test.columns
 
 training = pd.read_csv('data_sets/encoded.csv')
@@ -61,13 +73,13 @@ group1 = ['Bug', 'Improvement', 'Task', 'Test']
 test['issue_type'] = test['issue_type'].map(lambda x : 'Short' if x in group1 else 'Long') 
 
 #%% Log trasformation
-test.vote_count = np.log(test.vote_count+1)
+test['vote_count'] = np.log(test['vote_count']+1)
 # comment_count
-test.comment_count = np.log(test.comment_count+1)
+test['comment_count'] = np.log(test['comment_count']+1)
 # description_length
-test.description_length = np.log(test.description_length+1)
+test['description_length'] = np.log(test['description_length']+1)
 # watch-count
-test.watch_count = np.log(test.watch_count+1)
+test['watch_count'] = np.log(test['watch_count']+1)
 
 #%% Encoding
 cat_vars = ['priority','issue_type','reporter']
@@ -83,7 +95,7 @@ newcolumns = [x for x in training.columns if x not in test.columns]
 for col in newcolumns:
     test['{}'.format(col)] = 0
 
-# Align each validation matrix to the feature set used by each fitted model.
+# Align each forecasting-pilot matrix to the feature set used by each fitted model.
 test_full = test.reindex(columns=training.columns, fill_value=0)
 test_linreg = test_full.reindex(columns=linreg.feature_names_in_, fill_value=0)
 
@@ -97,17 +109,17 @@ df_pred=pd.DataFrame({'LinearModel':lr_pred, 'RegrTree':tree_pred, 'RandomForest
 
 # Plots
 df_pred.plot(figsize=(12,5),marker='.')
-plt.xlabel("Validation Set observations",fontsize=15)
+plt.xlabel("Forecasting pilot observations",fontsize=15)
 plt.ylabel("LOG(Duration)",fontsize=15)
-plt.title("Validation Set Prediction - trasformed",fontsize=18)
+plt.title("Forecasting Pilot Prediction - trasformed",fontsize=18)
 plt.savefig('question2/predictionComparison_log.png')
 plt.close()
 
 df_pred = np.exp(df_pred)
 df_pred.plot(figsize=(12,5),marker='.')
-plt.xlabel("Validation Set observations",fontsize=15)
+plt.xlabel("Forecasting pilot observations",fontsize=15)
 plt.ylabel("Duration",fontsize=15)
-plt.title("Validation Set Prediction",fontsize=18)
+plt.title("Forecasting Pilot Prediction",fontsize=18)
 plt.savefig('question2/predictionComparison.png')
 plt.close()
 
@@ -122,7 +134,7 @@ print((interesting.astype('timedelta64[h]') / 24).round(1).to_string())
 
 
 #%% 3 Interesting Cases
-test = pd.read_csv('data_sets/validationset.csv')
+test = pd.read_csv('data_sets/forecasting_pilot.csv')
 
 df_pred.loc[321,:]
 test.loc[321,:]

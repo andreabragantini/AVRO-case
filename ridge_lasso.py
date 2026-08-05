@@ -78,10 +78,10 @@ df3.columns=['trainingRsquared','testRsquared']
 '''The plot below shows the training and test error when increasing the tuning 
 or regularization parameter ‘alpha’'''
 
-fig5=df3.plot(figsize=(12,8), marker='.')
-fig5=plt.title('Ridge training and test squared error vs Alpha')
-fig5=plt.xlabel('alpha')
-fig5=plt.ylabel('SE')
+fig5 = df3.plot(figsize=(12,8), marker='.')
+fig5.set_title('Ridge training and test squared error vs Alpha')
+fig5.set_xlabel('alpha')
+fig5.set_ylabel('SE')
 fig5.figure.savefig('feature_selection/ridge_train_test_r2_vs_alpha.png', bbox_inches='tight')
 
 
@@ -104,14 +104,15 @@ for a in alphas:
 
 ax = plt.gca()
 
-fig6=ax.figure.set_size_inches(12,8)
-fig6=ax.plot(alphas, coefs)
-fig6=ax.set_xscale('log')
-fig6=ax.set_xlim(ax.get_xlim()[::-1])  # reverse axis
-fig6=plt.xlabel('alpha')
-fig6=plt.ylabel('weights')
-fig6=plt.title('Ridge coefficients as a function of the regularization')
-fig6=plt.axis('tight')
+ax = plt.gca()
+ax.figure.set_size_inches(12,8)
+ax.plot(alphas, coefs)
+ax.set_xscale('log')
+ax.set_xlim(ax.get_xlim()[::-1])  # reverse axis
+ax.set_xlabel('alpha')
+ax.set_ylabel('weights')
+ax.set_title('Ridge coefficients as a function of the regularization')
+plt.axis('tight')
 plt.savefig('feature_selection/ridge_coefficient_paths.png', bbox_inches='tight')
 
 '''For Python the coefficient shrinkage with LARS must be viewed from right 
@@ -160,10 +161,10 @@ testRsquared=pd.DataFrame(testRsquared,index=alpha)
 df3=pd.concat([trainingRsquared,testRsquared],axis=1)
 df3.columns=['trainingRsquared','testRsquared']
 
-fig7=df3.plot(figsize=(12,8), marker='.')
-fig7=plt.title('LASSO training and test squared error vs Alpha')
-fig5=plt.xlabel('alpha')
-fig5=plt.ylabel('SE')
+fig7 = df3.plot(figsize=(12,8), marker='.')
+fig7.set_title('LASSO training and test squared error vs Alpha')
+fig7.set_xlabel('alpha')
+fig7.set_ylabel('SE')
 fig7.figure.savefig('feature_selection/lasso_train_test_r2_vs_alpha.png', bbox_inches='tight')
 
 ### Plot the coefficient shrinkage using the LARS package
@@ -173,15 +174,15 @@ alphas, _, coefs = linear_model.lars_path(X_train_scaled, y_train.to_numpy(), me
 xx = np.sum(np.abs(coefs.T), axis=1)
 xx /= xx[-1]
 
-fig8=plt.figure(figsize=(12,8))
-fig8=plt.plot(xx, coefs.T, marker='.')
+plt.figure(figsize=(12,8))
+plt.plot(xx, coefs.T, marker='.')
 
 ymin, ymax = plt.ylim()
-fig8=plt.vlines(xx, ymin, ymax, linestyle='dashed')
-fig8=plt.xlabel('|coef| / max|coef|')
-fig8=plt.ylabel('Coefficients')
-fig8=plt.title('LASSO Path - Coefficient Shrinkage vs L1')
-fig8=plt.axis('tight')
+plt.vlines(xx, ymin, ymax, linestyle='dashed')
+plt.xlabel('|coef| / max|coef|')
+plt.ylabel('Coefficients')
+plt.title('LASSO Path - Coefficient Shrinkage vs L1')
+plt.axis('tight')
 plt.savefig('feature_selection/lasso_coefficient_paths.png', bbox_inches='tight')
 
 
