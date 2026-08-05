@@ -1,1135 +1,1135 @@
-priority,issue_type,reporter,vote_count,comment_count,description_length,summary_length,watch_count,duration
-Critical,Bug,scott_carey,0,2,41.0,43,2,0 days 00:11:42.315000
-Major,Bug,skye,0,6,528.0,55,6,13 days 23:36:48.400000
-Minor,Improvement,bdechoux,0,7,279.0,40,5,77 days 21:50:06.270000
-Critical,Bug,kirwin,0,4,1025.0,45,3,1 days 05:16:18.660000
-Minor,New Feature,vince83,6,4,1260.0,45,4,13 days 03:21:04.719000
-Minor,New Feature,vince83,6,4,1409.0,43,4,17 days 22:31:41.713000
-Major,Improvement,bw123,0,4,463.0,49,3,17 days 02:03:29.325000
-Major,Bug,trochee,0,6,625.0,44,4,0 days 23:38:54.608000
-Major,Improvement,hernan.otero,0,4,449.0,69,3,1 days 03:55:19.035000
-Major,Bug,massie,0,8,170.0,59,3,2 days 23:49:23.706000
-Major,Bug,cutting,0,8,161.0,46,2,1 days 21:12:00.143000
-Major,New Feature,cutting,0,3,235.0,32,2,3 days 00:47:28.846000
-Minor,Improvement,scott_carey,0,5,119.0,49,2,15 days 01:20:55.177000
-Major,Bug,scott_carey,0,4,300.0,45,2,21 days 06:13:20.199000
-Major,Bug,szesch,0,4,835.0,51,3,0 days 23:44:18.858000
-Major,Bug,szesch,0,7,424.0,41,3,1 days 03:35:00.231000
-Minor,New Feature,vince83,0,7,1206.0,51,4,4 days 05:38:12.233000
-Minor,Improvement,minaguib,0,7,171.0,72,4,3 days 14:15:23.355000
-Major,Bug,kryzthov,0,4,799.0,115,3,4 days 13:20:31.194000
-Major,Bug,cutting,0,5,221.0,60,2,6 days 04:52:33.869000
-Major,New Feature,martinkl,0,5,158.0,41,3,10 days 00:00:30.190000
-Major,Bug,martinkl,0,4,382.0,56,3,8 days 22:16:21.021000
-Minor,Improvement,sujesh.chirackkal,0,0,189.0,40,1,0 days 00:19:42.417000
-Major,Bug,drussel,0,6,186.0,61,4,69 days 20:35:20.645000
-Minor,Improvement,romixlev,0,21,562.0,51,3,32 days 23:51:24.347000
-Major,Bug,ahanna,0,1,2105.0,45,2,0 days 02:07:38.846000
-Major,Bug,cutting,0,0,139.0,54,1,0 days 05:46:10.012000
-Major,Bug,martinkl,0,4,150.0,47,3,0 days 06:54:55.145000
-Major,Bug,martinkl,0,4,440.0,41,3,0 days 07:34:33.438000
-Minor,Improvement,trochee,0,6,709.0,75,3,0 days 02:35:53.245000
-Minor,Improvement,ted.m,0,7,312.0,37,3,5 days 02:02:53.715000
-Minor,Improvement,ted.m,0,3,478.0,42,3,0 days 06:50:45.326000
-Minor,New Feature,cutting,0,5,283.0,55,2,7 days 01:23:51.095000
-Minor,Bug,ted.m,0,12,433.0,49,4,2 days 20:32:41.035000
-Major,New Feature,njw45,0,4,333.0,51,3,1 days 07:00:36.389000
-Major,Bug,esammer,0,6,779.0,53,3,1 days 20:56:34.312000
-Minor,Improvement,gareth@logicalpractice.com,0,5,265.0,65,3,0 days 02:58:05.639000
-Major,Bug,chengas123,0,5,1097.0,37,3,4 days 21:22:28.112000
-Minor,Improvement,qwertymaniac,0,1,1626.0,78,1,0 days 00:01:07.396000
-Minor,Improvement,ted.m,0,21,769.0,39,4,5 days 11:00:56.215000
-Major,Bug,ted.m,1,8,411.0,52,5,1 days 01:34:20.966000
-Major,Improvement,jadler,1,6,486.0,52,6,3 days 01:20:38.990000
-Major,Bug,brocknoland,0,8,1331.0,93,3,3 days 22:23:53.519000
-Minor,Bug,baunz,0,3,629.0,34,3,3 days 04:38:12.054000
-Major,Improvement,mic159,0,7,343.0,35,4,112 days 07:44:32.041000
-Minor,Bug,mwagner,0,1,171.0,59,2,2 days 20:58:43.982000
-Minor,Improvement,gwu,0,5,707.0,71,2,6 days 22:05:32.023000
-Major,Bug,mwagner,0,1,349.0,55,3,3 days 00:07:01.009000
-Blocker,Bug,tomwhite,1,10,177.0,57,3,4 days 23:23:42.495000
-Major,Improvement,mwagner,1,14,234.0,36,4,8 days 18:22:34.478000
-Major,Bug,mwagner,0,7,243.0,47,4,25 days 21:13:52.415000
-Major,Bug,scott_carey,0,3,1604.0,51,2,15 days 00:45:40.603000
-Trivial,Bug,logicnut,0,1,384.0,30,2,40 days 03:38:44.296000
-Trivial,Improvement,ctm,0,4,264.0,69,2,29 days 05:31:23.335000
-Major,Bug,rodrigotrujillo,0,4,1746.0,46,3,0 days 05:06:09.103000
-Major,Bug,slandelle,0,10,641.0,10,4,57 days 02:29:45.330000
-Major,Bug,pjsg,0,3,258.0,67,2,0 days 03:47:00.141000
-Major,Bug,matterhayes,0,33,1294.0,62,7,73 days 13:47:07.421000
-Major,Improvement,skye,0,9,76.0,29,5,27 days 16:54:34.671000
-Trivial,Improvement,dbeech,0,2,147.0,51,2,7 days 12:25:53.847000
-Minor,Improvement,jeffkole,0,9,582.0,52,2,9 days 23:08:32.819000
-Minor,Improvement,saden1,0,4,44.0,34,2,3 days 05:30:53.618000
-Major,Bug,cvigny,0,9,1332.0,29,2,12 days 09:08:04.374000
-Minor,New Feature,saden1,0,6,1158.0,44,2,7 days 07:05:21.030000
-Major,Improvement,skye,0,11,284.0,44,5,7 days 04:54:01.407000
-Major,Bug,saden1,0,10,174.0,47,2,12 days 06:30:55.366000
-Major,Bug,tomwhite,0,3,231.0,75,2,0 days 13:03:05.728000
-Major,Bug,kimslbing,0,8,835.0,72,2,6 days 15:49:53.073000
-Major,Bug,mpercy,0,6,279.0,70,3,96 days 18:50:58.967000
-Major,Bug,mpercy,0,5,2502.0,68,2,0 days 20:28:24.210000
-Major,New Feature,saden1,0,20,1599.0,39,4,10 days 09:36:28.869000
-Major,New Feature,saden1,0,9,1743.0,24,2,6 days 04:06:14.880000
-Minor,Bug,jeffreyt,0,8,909.0,70,2,21 days 15:04:23.103000
-Major,Bug,drussel,0,5,285.0,80,5,233 days 10:31:20.017000
-Major,Bug,viji_r,0,5,523.0,78,4,133 days 22:54:26.286000
-Trivial,Bug,martinkl,0,3,96.0,27,3,42 days 21:06:01.209000
-Major,Bug,mintman,0,3,1461.0,44,2,58 days 13:57:02.686000
-Major,Bug,sandyr,0,14,364.0,112,3,61 days 23:40:22.482000
-Minor,Bug,sl.sy.ifm,0,3,112.0,31,3,64 days 03:31:41.649000
-Major,Bug,sjoverend,2,7,2171.0,47,5,271 days 21:09:22.022000
-Minor,Bug,dbeech,0,3,415.0,62,2,2 days 12:52:58.069000
-Major,Bug,tomwhite,0,17,132.0,50,3,7 days 22:52:38.145000
-Major,Improvement,hernan.otero,0,3,1392.0,52,2,6 days 02:22:14.540000
-Minor,Bug,onetoinfinity@yahoo.com,0,1,680.0,69,2,0 days 00:22:41.164000
-Minor,Improvement,lmartinking,0,2,435.0,38,2,0 days 18:24:07.159000
-Major,Bug,jbaldassari,0,8,331.0,67,4,94 days 22:55:30.380000
-Major,Bug,jbaldassari,0,10,4674.0,85,4,83 days 20:37:13.552000
-Major,Test,martinkl,0,5,249.0,40,3,10 days 00:01:00.445000
-Major,Bug,cwsteinbach,0,5,0.0,67,4,126 days 18:51:41.997000
-Major,New Feature,tomwhite,0,37,86.0,24,7,47 days 20:18:45.920000
-Major,Improvement,cutting,0,3,143.0,35,1,3 days 23:18:25.837000
-Major,Bug,nagav.ashish,0,14,131.0,95,5,43 days 08:30:18.980000
-Minor,Bug,cconner,0,10,754.0,71,5,132 days 02:36:57.728000
-Major,Improvement,martinkl,0,6,818.0,42,2,9 days 17:25:09.547000
-Major,Improvement,cutting,0,7,349.0,40,2,35 days 22:59:53.651000
-Major,Bug,mic159,0,10,244.0,54,5,320 days 07:55:11.820000
-Major,Bug,dbeech,1,17,517.0,72,9,329 days 11:14:10.684000
-Major,Bug,tomwhite,0,8,194.0,84,4,0 days 21:16:19.341000
-Major,Bug,gffletch,0,6,875.0,57,3,3 days 00:41:41.496000
-Major,Bug,vnadkarni,0,4,1505.0,56,2,3 days 05:39:09.018000
-Trivial,Bug,vnadkarni,0,3,477.0,55,2,3 days 06:01:00.768000
-Major,Bug,mpugachev,0,4,74.0,44,3,76 days 21:08:39.723000
-Major,Bug,alexandre.normand,0,6,414.0,80,2,0 days 02:26:02.826000
-Major,Bug,lmartinking,0,7,1333.0,43,3,4 days 17:01:19.166000
-Major,Bug,lmartinking,0,2,256.0,52,2,0 days 18:30:25.909000
-Major,Bug,lmartinking,0,3,186.0,52,2,0 days 18:36:46.231000
-Minor,Improvement,onetoinfinity@yahoo.com,0,12,315.0,74,3,50 days 00:26:15.615000
-Major,Bug,karel1980,0,6,273.0,47,3,2 days 11:00:34.712000
-Major,Bug,alexandre.normand,0,9,1424.0,84,2,1 days 23:52:08.580000
-Major,Bug,cutting,0,1,190.0,38,1,0 days 00:06:59.805000
-Minor,Improvement,hshreedharan,0,6,133.0,73,2,1 days 05:09:36.856000
-Minor,Bug,gabriel.reid,0,9,294.0,48,2,9 days 23:55:08.764000
-Major,Improvement,gabriel.reid,0,3,375.0,55,2,4 days 01:55:14.623000
-Major,Bug,netvisao,0,3,742.0,55,3,157 days 22:31:15.242000
-Major,Improvement,alexandre.normand,0,10,485.0,75,2,5 days 04:04:08.976000
-Major,Bug,alexandre.normand,0,12,583.0,86,2,9 days 19:41:14.065000
-Major,Bug,alexandre.normand,0,5,3284.0,82,2,0 days 04:02:02.801000
-Major,Bug,janlugt,0,4,177.0,53,3,11 days 11:33:15.767000
-Major,Bug,mnagy,0,4,367.0,73,2,24 days 07:40:05.987000
-Major,Bug,mnagy,0,3,198.0,43,2,5 days 15:38:46.280000
-Major,Bug,janlugt,0,3,359.0,42,2,4 days 11:02:24.969000
-Minor,Improvement,lewismc,0,6,187.0,46,2,0 days 07:31:15.110000
-Major,Bug,mpugachev,0,3,285.0,61,2,31 days 07:15:10.800000
-Minor,Bug,jeremy@lewi.us,0,3,606.0,35,2,0 days 20:42:09.184000
-Major,Bug,thiru_mg,0,3,392.0,30,1,15 days 04:41:31.372000
-Major,Bug,pdlug,1,4,11762.0,55,3,124 days 21:22:45.387000
-Minor,Bug,lmoss,0,2,667.0,73,2,1 days 09:41:29.301000
-Major,Improvement,mpugachev,0,3,260.0,23,2,56 days 10:27:46.800000
-Critical,Bug,ekohlwey,0,4,1342.0,72,2,2 days 05:48:24.077000
-Major,Improvement,cutting,0,2,303.0,51,1,0 days 00:26:05.166000
-Major,Bug,stevenwillis,0,4,199.0,61,3,35 days 02:21:01.311000
-Major,Improvement,nagav.ashish,0,4,125.0,107,2,11 days 00:35:00.272000
-Major,Bug,sortega,0,11,517.0,27,2,15 days 14:28:03.416000
-Major,Bug,mpercy,0,4,1546.0,96,3,0 days 03:33:05.738000
-Major,Improvement,lmartinking,0,6,172.0,83,2,4 days 05:22:03.956000
-Major,Bug,thiru_mg,0,3,252.0,43,1,18 days 14:46:52.937000
-Critical,Bug,mpugachev,0,5,569.0,50,2,9 days 00:46:16.543000
-Major,Bug,cutting,0,1,89.0,52,1,0 days 00:01:44.005000
-Minor,Bug,matthewcmead,0,8,127.0,54,3,6 days 16:50:37.926000
-Major,Bug,hshreedharan,0,7,771.0,53,9,94 days 13:13:16.858000
-Major,Bug,spachev,0,3,235.0,59,3,10 days 23:35:59.315000
-Major,Bug,mfarnan,0,4,275.0,49,2,35 days 17:12:28.715000
-Major,New Feature,nagav.ashish,0,6,121.0,45,2,13 days 21:10:39.313000
-Major,New Feature,nagav.ashish,0,8,50.0,43,3,11 days 12:50:52.971000
-Major,New Feature,lmartinking,1,5,135.0,15,4,21 days 16:50:22.082000
-Major,Improvement,jacobmetcalf,0,10,1594.0,58,4,67 days 03:02:58.981000
-Major,Bug,mpugachev,0,2,77.0,45,2,13 days 10:58:08.258000
-Critical,Bug,mpugachev,0,10,123.0,78,3,112 days 06:57:55.374000
-Major,Bug,jojenki,0,11,1229.0,29,2,16 days 21:20:22.316000
-Major,Bug,cutting,0,3,264.0,52,2,1 days 23:40:21.300000
-Major,Bug,thiru_mg,0,4,580.0,43,3,2 days 14:49:47.171000
-Major,Bug,dcreager,0,4,318.0,41,2,0 days 00:05:11.504000
-Minor,Improvement,thiru_mg,0,1,112.0,114,1,1 days 13:53:43.045000
-Major,Bug,ekohlwey,0,9,341.0,48,2,1 days 03:32:13.766000
-Major,Bug,catalinalexandru.zamfir@gameloft.com,0,1,2511.0,72,1,1 days 03:56:09.745000
-Critical,Bug,mpugachev,0,8,176.0,56,3,4 days 03:45:24.788000
-Minor,Improvement,vnadkarni,0,3,328.0,60,2,4 days 20:46:29.871000
-Major,Bug,catalinalexandru.zamfir@gameloft.com,0,11,2023.0,88,3,3 days 08:41:29.008000
-Major,Bug,vnadkarni,0,3,1100.0,63,1,201 days 08:36:18.397000
-Major,Improvement,vnadkarni,0,6,1745.0,64,2,6 days 06:01:30.193000
-Blocker,Bug,mpugachev,0,4,833.0,64,1,9 days 01:22:10.964000
-Critical,Bug,mpugachev,0,2,197.0,58,1,8 days 03:28:12.922000
-Major,New Feature,ewhauser,0,2,99.0,21,1,4 days 17:56:06.533000
-Major,Bug,mpugachev,0,3,161.0,68,1,9 days 04:08:28.316000
-Major,Bug,mpugachev,0,5,45.0,29,1,9 days 05:15:00.006000
-Major,Bug,mpugachev,0,2,146.0,39,2,9 days 06:27:23.505000
-Major,Bug,rfuller,0,8,607.0,54,5,7 days 05:40:05.262000
-Major,Bug,kehli,0,4,1982.0,51,0,3 days 02:06:36.865000
-Minor,Improvement,nurf,0,3,844.0,47,1,11 days 19:38:42.996000
-Major,Bug,nurf,0,2,127.0,50,1,11 days 19:44:54.579000
-Major,Bug,nurf,0,2,198.0,39,1,11 days 19:40:09.259000
-Major,Bug,kaykay.unique,0,3,54.0,41,1,18 days 16:44:39.147000
-Minor,Improvement,kaykay.unique,0,1,139.0,29,0,9 days 17:12:54.159000
-Major,Improvement,hernan.otero,0,4,464.0,40,2,20 days 03:07:38.400000
-Minor,Bug,jghoman,0,2,222.0,59,0,15 days 01:26:22.632000
-Major,Bug,thiru_mg,0,3,111.0,49,0,16 days 18:45:00.362000
-Major,Bug,thomasoa,0,4,913.0,85,1,52 days 22:30:07.452000
-Major,Improvement,thiru_mg,0,3,159.0,66,0,2 days 06:41:48.156000
-Major,Bug,dlord,0,9,6603.0,115,0,22 days 18:04:02.832000
-Major,Bug,kehli,0,5,642.0,62,0,24 days 20:36:32.245000
-Major,Improvement,kevinzhao,0,4,187.0,117,1,29 days 12:50:40.801000
-Major,Improvement,kaykay.unique,0,1,308.0,29,0,1 days 00:40:16.604000
-Major,Bug,kevinzhao,0,4,142.0,67,1,34 days 19:18:21.166000
-Minor,Bug,thiru_mg,0,3,333.0,42,0,4 days 23:08:57.888000
-Major,Bug,susanths,0,1,3933.0,72,1,0 days 18:16:55.014000
-Major,New Feature,nagav.ashish,0,13,134.0,36,4,51 days 23:10:36.929000
-Major,Bug,hasghari,1,4,418.0,61,2,50 days 01:53:45.216000
-Major,Bug,abawany,0,8,708.0,81,2,56 days 06:31:47.302000
-Minor,Bug,adwkenworthy,0,3,1234.0,80,1,54 days 08:37:14.318000
-Major,Bug,dcreager,1,3,298.0,44,0,36 days 23:18:25.721000
-Minor,Bug,gabriel.reid,0,6,964.0,82,2,62 days 07:01:15.504000
-Minor,Bug,jeremy@lewi.us,0,9,1084.0,37,0,2 days 05:46:15.527000
-Trivial,Improvement,qwertymaniac,0,1,247.0,59,1,63 days 23:00:00.572000
-Trivial,Improvement,lewismc,0,2,130.0,49,1,0 days 04:16:31.788000
-Minor,Bug,irvingd,0,2,1427.0,43,0,1 days 00:17:47.262000
-Minor,Bug,vnadkarni,0,2,1303.0,79,0,0 days 18:35:04.972000
-Major,Bug,vnadkarni,0,2,792.0,108,0,0 days 19:41:55.303000
-Major,Bug,scott_carey,0,4,682.0,51,1,0 days 23:49:44.767000
-Major,Bug,gffletch,1,11,249.0,52,2,1 days 05:58:28.042000
-Major,New Feature,detonator413,0,3,955.0,54,3,350 days 08:34:59.396000
-Major,Bug,vnadkarni,0,7,921.0,95,0,8 days 00:10:29.895000
-Major,Bug,vnadkarni,0,3,2195.0,72,0,9 days 02:40:54.532000
-Minor,Bug,dcreager,0,2,431.0,48,0,13 days 23:22:20.750000
-Minor,Bug,janhoy,0,2,106.0,26,0,7 days 23:33:23.715000
-Major,Bug,swilkinson,0,17,4634.0,87,0,20 days 23:18:21.644000
-Minor,Bug,raymie,0,8,172.0,49,1,1 days 15:52:44.653000
-Major,Bug,jbaldassari,0,4,1002.0,61,0,0 days 15:24:56.939000
-Minor,Improvement,jbaldassari,0,3,140.0,51,0,0 days 22:01:55.025000
-Trivial,Improvement,scott_carey,0,3,83.0,92,0,0 days 21:59:07.009000
-Trivial,Bug,koert,0,6,283.0,30,0,3 days 06:23:11.731000
-Major,Improvement,thiru_mg,0,3,1249.0,61,0,5 days 04:35:41.167000
-Major,Bug,lmartinking,0,2,234.0,59,0,1 days 16:32:08.916000
-Blocker,Bug,jbaldassari,0,6,1803.0,46,0,9 days 03:39:49.130000
-Minor,Improvement,lars_francke,0,6,256.0,50,0,12 days 02:42:23.685000
-Minor,Improvement,lars_francke,0,9,737.0,21,0,11 days 02:15:59.003000
-Minor,Improvement,lars_francke,0,3,256.0,92,1,13 days 09:42:55.265000
-Major,Improvement,jbaldassari,0,7,1148.0,78,3,330 days 11:03:26.447000
-Major,Bug,jbaldassari,0,20,693.0,76,0,14 days 15:01:25.675000
-Major,New Feature,raymie,0,40,155.0,29,12,42 days 14:20:42.315000
-Minor,Improvement,craigtlandry,0,4,0.0,51,0,14 days 01:08:36.989000
-Major,Bug,dcreager,0,2,242.0,50,0,1 days 21:47:52.488000
-Major,Bug,dcreager,0,2,550.0,61,0,1 days 21:51:32.501000
-Major,Bug,hammer,0,1,350.0,28,1,0 days 15:25:27.881000
-Major,Improvement,shaunw,0,11,406.0,44,0,17 days 11:33:52.071000
-Major,Bug,slebresne,0,3,352.0,52,1,3 days 12:43:36.008000
-Major,Bug,jrutten,1,6,896.0,43,1,35 days 02:04:13.701000
-Major,Bug,nimeshs,0,4,338.0,117,1,0 days 04:12:46.157000
-Critical,Bug,scott_carey,0,10,195.0,80,0,21 days 00:40:02.984000
-Major,Improvement,scott_carey,0,12,3154.0,35,1,22 days 15:42:21.362000
-Minor,Bug,jbaldassari,0,6,958.0,57,0,1 days 07:08:14.793000
-Major,Bug,jbaldassari,0,6,429.0,68,0,1 days 11:54:35.951000
-Major,Improvement,scott_carey,0,5,562.0,85,3,328 days 23:11:25.905000
-Critical,Bug,mic159,1,12,1195.0,79,1,35 days 12:39:43.803000
-Major,Bug,vnadkarni,0,6,1729.0,83,0,7 days 16:07:15.943000
-Major,Improvement,torcq,0,10,2743.0,107,4,329 days 16:25:34.862000
-Minor,Improvement,bruno,0,4,1468.0,53,0,1 days 05:14:17.629000
-Blocker,Bug,russell.jurney,1,20,8984.0,50,6,296 days 14:00:05.442000
-Minor,Bug,mic159,0,6,662.0,50,0,57 days 23:59:41.579000
-Major,Bug,pdlug,0,2,580.0,51,1,434 days 06:27:25.937000
-Major,Bug,cutting,0,3,0.0,50,0,0 days 19:13:10.635000
-Minor,Improvement,hasghari,0,2,51.0,48,0,0 days 01:30:57.734000
-Minor,Improvement,bruno,0,1,481.0,46,0,0 days 07:42:14.353000
-Minor,Bug,brandonb,0,6,1290.0,85,1,1 days 14:08:37.037000
-Minor,Improvement,vchau,0,9,1112.0,33,0,62 days 21:42:43.266000
-Major,Improvement,nimmervoll,0,5,109.0,48,3,413 days 05:51:40.819000
-Minor,Bug,vnadkarni,0,8,969.0,82,0,53 days 11:16:02.940000
-Major,Bug,detonator413,0,1,2284.0,70,1,0 days 00:11:59.990000
-Major,Bug,detonator413,0,7,2284.0,70,2,7 days 09:49:53.916000
-Minor,Improvement,gffletch,0,11,325.0,69,0,10 days 00:08:23.768000
-Major,Improvement,kehli,2,12,1112.0,28,5,99 days 20:09:30.884000
-Major,New Feature,hammer,0,8,126.0,31,5,785 days 11:59:34.218000
-Major,New Feature,scott_carey,0,0,36.0,41,1,0 days 01:35:11.740000
-Major,New Feature,lmartinking,1,8,854.0,29,5,28 days 19:33:46.942000
-Major,New Feature,lmartinking,2,9,94.0,29,3,668 days 12:23:40.348000
-Major,New Feature,joecrobak,1,9,455.0,53,4,634 days 00:01:18.105000
-Minor,Improvement,gffletch,0,7,275.0,69,1,7 days 03:05:18.098000
-Minor,Bug,gffletch,0,2,253.0,79,0,7 days 06:07:13.104000
-Trivial,Improvement,mic159,0,5,171.0,52,1,21 days 19:47:29.033000
-Minor,Improvement,lmartinking,1,6,305.0,34,1,18 days 15:33:55.084000
-Major,Improvement,thiru_mg,0,5,549.0,31,0,87 days 04:41:02.350000
-Minor,Bug,nsabovic,0,2,152.0,26,0,167 days 05:49:16.038000
-Minor,Improvement,craigtlandry,0,5,141.0,20,1,33 days 03:32:25.759000
-Major,Bug,nsabovic,0,3,199.0,54,0,170 days 09:17:10.224000
-Blocker,Bug,puredanger,0,13,3116.0,84,1,0 days 23:35:46.093000
-Major,Bug,mic159,0,2,466.0,50,0,1 days 15:02:24.223000
-Major,Bug,cutting,0,3,73.0,45,0,0 days 03:54:12.969000
-Major,Improvement,hernan.otero,0,16,3044.0,50,0,7 days 23:30:03.825000
-Major,Bug,thiru_mg,0,3,200.0,41,0,0 days 22:22:27.797000
-Major,Bug,cutting,0,4,139.0,47,0,3 days 05:51:12.564000
-Major,Bug,cutting,0,13,67.0,44,0,7 days 02:50:44.338000
-Major,Bug,decster,0,1,67.0,68,0,1 days 14:33:30.933000
-Major,Improvement,massie,0,5,895.0,74,0,6 days 00:13:37.685000
-Major,Improvement,thiru_mg,0,1,497.0,45,0,0 days 09:44:35.647000
-Minor,Improvement,thiru_mg,0,1,64.0,36,0,0 days 12:09:20.017000
-Minor,Improvement,thiru_mg,0,1,169.0,60,0,0 days 15:44:35.883000
-Major,Bug,thiru_mg,0,4,164.0,38,0,1 days 02:05:26.977000
-Blocker,Improvement,scott_carey,0,10,65.0,34,0,6 days 01:31:36.657000
-Major,Improvement,abawany,0,3,915.0,94,0,0 days 03:25:28.966000
-Major,Bug,thiru_mg,0,1,287.0,52,0,0 days 02:45:31.418000
-Major,Improvement,thiru_mg,0,1,0.0,64,0,0 days 12:11:09.710000
-Major,Bug,thiru_mg,0,1,0.0,60,1,0 days 12:17:03.808000
-Blocker,Bug,vnadkarni,0,6,2817.0,42,0,8 days 14:39:57.809000
-Major,Bug,dcreager,0,1,428.0,42,0,0 days 00:05:28.393000
-Minor,Bug,vnadkarni,0,2,254.0,48,0,0 days 13:57:58.457000
-Major,Bug,brocknoland,0,2,588.0,64,2,3 days 05:27:05.668000
-Major,Improvement,cutting,0,3,125.0,26,1,103 days 00:28:23.079000
-Major,Bug,nsabovic,0,2,320.0,53,0,1 days 06:04:31.514000
-Major,New Feature,cutting,0,3,292.0,59,0,5 days 00:51:41.456000
-Major,New Feature,dcreager,0,2,105.0,36,0,4 days 23:42:28.294000
-Major,New Feature,dcreager,0,2,424.0,52,0,4 days 23:46:00.690000
-Major,New Feature,dcreager,0,2,330.0,27,0,4 days 23:49:01.747000
-Major,New Feature,dcreager,0,2,127.0,36,0,4 days 23:47:59.670000
-Major,Improvement,thiru_mg,0,4,156.0,34,0,8 days 17:47:04.868000
-Major,Bug,thiru_mg,0,4,381.0,79,0,3 days 23:43:50.641000
-Major,Bug,thiru_mg,0,2,169.0,53,0,4 days 00:21:12.348000
-Major,Improvement,thiru_mg,0,3,125.0,39,0,4 days 04:17:50.482000
-Major,Bug,philip,0,2,933.0,74,0,0 days 13:22:34.294000
-Major,Bug,nsabovic,0,4,233.0,50,0,5 days 20:01:29.382000
-Major,Bug,thiru_mg,0,3,489.0,38,0,0 days 21:32:05.307000
-Major,Improvement,cutting,0,14,708.0,34,2,1 days 20:16:58.708000
-Major,Improvement,cutting,0,3,353.0,33,0,0 days 00:28:24.825000
-Major,Sub-task,cutting,0,1,553.0,92,0,1 days 22:36:19.431000
-Major,New Feature,nsabovic,0,4,200.0,50,0,3 days 11:31:55.068000
-Major,Improvement,cutting,0,3,99.0,36,0,0 days 19:50:53.497000
-Major,Bug,dkaminsky,1,3,361.0,37,1,0 days 20:54:46.109000
-Minor,Improvement,yangyangyyy,0,6,1586.0,63,0,0 days 23:39:19.695000
-Major,Bug,nsabovic,0,1,152.0,62,0,2 days 15:04:18.405000
-Major,Bug,nsabovic,0,2,187.0,45,0,2 days 14:57:02.910000
-Major,Bug,nsabovic,0,2,275.0,41,0,2 days 19:19:58.919000
-Major,Bug,thiru_mg,0,3,169.0,88,0,3 days 01:15:54.844000
-Major,Bug,thiru_mg,0,2,114.0,59,0,4 days 00:23:46.375000
-Major,Improvement,cutting,0,3,71.0,61,1,2 days 05:22:44.263000
-Critical,Bug,vadimtsarik,0,7,389.0,31,4,6 days 03:51:38.343000
-Major,Bug,gwu,0,3,357.0,42,0,10 days 18:15:51.901000
-Major,Bug,tomwhite,0,8,392.0,69,0,5 days 17:45:29.570000
-Major,Bug,dcreager,0,3,633.0,44,0,0 days 00:18:13.169000
-Major,Improvement,lmartinking,1,2,468.0,99,0,3 days 09:18:11.778000
-Major,Bug,mic159,0,2,1233.0,63,1,1 days 16:15:24.781000
-Major,Improvement,alex.holmes,0,7,2707.0,69,0,2 days 08:26:18.532000
-Minor,Improvement,sgargan,0,9,1277.0,51,0,8 days 19:05:53.943000
-Major,Improvement,cutting,0,4,114.0,66,0,2 days 20:36:00.365000
-Major,Improvement,saleemshafi,0,5,231.0,44,0,4 days 18:10:54.548000
-Trivial,Improvement,cwilkes,0,3,704.0,48,0,12 days 21:08:43.685000
-Major,Improvement,gffletch,0,20,1102.0,63,1,12 days 00:49:03.060000
-Major,Bug,tomwhite,0,3,228.0,53,0,1 days 01:14:41.879000
-Major,New Feature,tomwhite,0,5,117.0,35,0,21 days 23:20:28.167000
-Critical,Task,tucu00,0,2,366.0,29,0,2 days 01:25:11.267000
-Major,Bug,cutting,0,2,80.0,25,0,3 days 05:22:11.980000
-Major,Test,jeremy@lewi.us,0,15,160.0,38,0,55 days 07:08:57.028000
-Major,Improvement,billgraham,0,6,962.0,54,1,8 days 22:34:21.953000
-Critical,Task,tucu00,0,4,455.0,51,0,8 days 03:37:42.458000
-Major,New Feature,billgraham,0,3,116.0,47,0,1 days 05:35:46.012000
-Major,Improvement,cutting,0,3,217.0,55,0,41 days 00:15:24.537000
-Major,Improvement,marmbrus,0,4,651.0,71,1,1 days 17:18:53.874000
-Major,Improvement,billgraham,0,26,851.0,49,0,3 days 00:15:03.518000
-Major,Bug,billgraham,0,1,148.0,45,0,59 days 00:32:06.842000
-Major,Bug,thiru_mg,0,3,447.0,63,0,70 days 11:03:27.306000
-Blocker,Bug,puredanger,0,7,3413.0,65,1,14 days 21:16:46.140000
-Major,New Feature,joecrobak,0,5,227.0,30,2,41 days 01:49:12.691000
-Major,Improvement,dcreager,0,2,415.0,22,0,61 days 02:14:35.003000
-Major,Bug,isabel,0,4,432.0,82,0,3 days 02:27:59.246000
-Major,New Feature,dcreager,0,2,829.0,43,0,65 days 15:48:39.086000
-Minor,Bug,dcreager,0,2,301.0,41,0,0 days 01:47:24.077000
-Major,Bug,tebeka,0,16,1478.0,51,3,427 days 01:31:12.901000
-Major,Improvement,tebeka,0,5,144.0,55,1,67 days 05:18:15.110000
-Minor,Improvement,jendap,0,1,189.0,25,0,14 days 21:24:06.607000
-Major,Improvement,cutting,0,3,221.0,26,0,4 days 00:46:34.675000
-Minor,New Feature,jeremy@lewi.us,1,4,327.0,80,1,201 days 01:57:26.132000
-Major,Improvement,dkaminsky,0,34,460.0,36,1,37 days 00:16:02.136000
-Major,Bug,jmesnil,0,4,279.0,40,2,435 days 13:15:29.060000
-Major,Improvement,h2o,0,1,3617.0,57,0,145 days 14:13:44.418000
-Minor,Test,jeremy@lewi.us,0,4,2835.0,40,0,0 days 20:17:55.058000
-Major,Bug,puredanger,0,2,1028.0,91,0,60 days 12:02:23.405000
-Major,Bug,tebeka,0,3,109.0,38,0,1 days 03:03:39.478000
-Major,Improvement,billgraham,0,5,224.0,35,0,3 days 19:30:13.398000
-Major,Bug,h2o,0,14,639.0,61,0,7 days 03:39:21.244000
-Minor,Improvement,waterdragon,0,3,126.0,43,0,1 days 05:48:11.702000
-Critical,Improvement,ramanasv,1,3,1458.0,63,2,117 days 19:45:50.635000
-Major,Improvement,jbaldassari,0,33,3497.0,91,4,71 days 16:21:12.116000
-Major,Improvement,kkrugler,0,5,367.0,100,0,19 days 20:09:44.823000
-Major,New Feature,dcreager,0,5,447.0,24,0,36 days 10:37:21.184000
-Major,New Feature,tebeka,0,13,121.0,67,3,17 days 08:12:36.430000
-Major,Bug,ewhauser,1,5,417.0,34,0,186 days 21:29:20.248000
-Minor,Bug,tebeka,0,4,216.0,40,0,0 days 01:46:32.145000
-Major,Bug,cutting,0,4,68.0,68,1,2 days 01:34:41.457000
-Major,New Feature,tomwhite,0,2,198.0,61,0,3 days 14:12:17.304000
-Major,Improvement,dbritsch,0,2,547.0,74,0,0 days 19:02:01.958000
-Minor,Improvement,dona,0,4,256.0,48,0,9 days 19:06:58.077000
-Blocker,Bug,ramanasv,0,6,5006.0,83,0,43 days 03:16:46.522000
-Trivial,Bug,david206,0,2,116.0,48,2,42 days 12:55:35.249000
-Major,Bug,patrickangeles,0,5,245.0,26,0,0 days 11:30:19.819000
-Major,New Feature,awick,0,8,43.0,20,2,169 days 00:17:57.678000
-Critical,Bug,scott_carey,0,10,365.0,109,0,5 days 19:21:12.512000
-Major,Bug,dcreager,0,2,302.0,56,0,0 days 00:52:42.094000
-Major,Bug,dcreager,0,3,689.0,42,0,0 days 01:29:48.536000
-Minor,Bug,sgargan,0,4,400.0,51,0,0 days 00:14:38.746000
-Major,Bug,stuhood,0,4,277.0,59,0,4 days 19:10:56.988000
-Minor,Improvement,h2o,0,11,209.0,40,0,2 days 12:53:35.347000
-Minor,Task,alambert,0,2,192.0,37,0,6 days 20:43:49.149000
-Minor,Improvement,ewhauser,0,6,123.0,34,1,69 days 16:02:09.860000
-Major,Bug,decster,0,2,239.0,66,0,26 days 01:52:13.638000
-Major,New Feature,tomwhite,0,4,212.0,61,0,5 days 16:07:22.819000
-Major,New Feature,dona,0,3,383.0,62,0,0 days 01:37:16.379000
-Major,New Feature,cutting,6,40,143.0,30,33,510 days 22:16:49.707000
-Major,New Feature,cutting,0,6,267.0,53,5,145 days 21:14:45.402000
-Major,New Feature,cutting,0,19,252.0,49,7,167 days 22:52:06.548000
-Major,Improvement,spullara,2,17,583.0,66,8,181 days 03:32:18.927000
-Major,Improvement,cutting,0,3,165.0,65,1,6 days 22:35:44.809000
-Major,Bug,nrc,0,4,127.0,28,0,12 days 15:06:00.367000
-Major,Improvement,cutting,0,2,47.0,39,0,12 days 21:41:13.799000
-Major,Improvement,cutting,0,6,360.0,29,0,12 days 22:43:07.683000
-Minor,Bug,dkaminsky,0,4,116.0,37,0,99 days 17:16:00.523000
-Major,Improvement,thiru_mg,0,3,309.0,59,0,0 days 22:27:57.517000
-Minor,Improvement,thiru_mg,0,3,95.0,40,0,0 days 22:36:16.363000
-Critical,Bug,ygnhzeus,0,3,4511.0,83,1,29 days 16:23:07.732000
-Blocker,Bug,eychih,0,32,5722.0,68,1,91 days 21:35:27.521000
-Major,Wish,xiaoluye,1,11,440.0,102,0,30 days 03:37:46.160000
-Major,Bug,scott_carey,0,3,657.0,92,0,20 days 00:50:52.818000
-Major,Improvement,thiru_mg,0,5,51.0,23,0,1 days 13:35:41.422000
-Major,New Feature,cutting,1,9,142.0,22,4,13 days 01:51:47.233000
-Major,Improvement,mlartz,0,3,213.0,49,0,8 days 02:11:51.305000
-Minor,Bug,stuhood,0,3,408.0,57,0,7 days 00:53:13.730000
-Minor,Improvement,smartnut007,0,3,3731.0,43,1,8 days 01:20:07.493000
-Major,Improvement,esammer,1,17,71.0,42,3,199 days 15:28:25.661000
-Major,Improvement,thiru_mg,0,5,133.0,29,0,7 days 17:08:00.068000
-Major,Improvement,thiru_mg,1,5,114.0,27,0,5 days 23:41:40.634000
-Major,Bug,eychih,0,6,2407.0,36,0,19 days 22:55:40.680000
-Minor,Test,milindb,0,5,298.0,65,0,0 days 01:14:57.003000
-Minor,Bug,sgargan,2,2,185.0,42,0,113 days 13:11:00.996000
-Major,Bug,thiru_mg,0,5,464.0,34,0,2 days 21:59:49.607000
-Minor,Improvement,lars_francke,0,6,414.0,51,1,2 days 00:03:46.289000
-Trivial,Improvement,jendap,0,2,69.0,37,1,2 days 05:10:54.447000
-Blocker,Bug,brucem,0,5,162.0,29,1,3 days 00:50:57.473000
-Major,Improvement,scott_carey,0,6,1969.0,36,0,1 days 10:45:01.583000
-Blocker,Improvement,scott_carey,0,9,2153.0,73,1,8 days 19:52:29.158000
-Major,Improvement,ekohlwey,0,1,330.0,47,0,0 days 01:25:29.907000
-Minor,Improvement,scott_carey,0,3,174.0,55,0,0 days 17:43:01.273000
-Critical,Bug,qwertymaniac,0,6,3761.0,62,1,2 days 09:48:02.575000
-Major,Improvement,scott_carey,0,9,407.0,103,2,69 days 21:46:56.502000
-Blocker,New Feature,dcreager,0,9,1574.0,24,1,16 days 00:31:25.028000
-Major,Bug,rahrens,0,5,363.0,75,1,26 days 04:34:19.917000
-Major,Bug,xiaoluye,0,8,1013.0,86,1,7 days 06:25:38.110000
-Minor,Bug,stuhood,0,17,121.0,36,0,151 days 00:51:39.290000
-Major,New Feature,stuhood,0,7,147.0,56,0,3 days 11:49:09.155000
-Major,Improvement,cutting,0,2,267.0,75,0,19 days 21:35:40.483000
-Blocker,Bug,xiaoluye,1,8,273.0,74,1,19 days 22:32:00.382000
-Major,Improvement,bruno,0,1,470.0,56,1,23 days 10:39:14.869000
-Blocker,Improvement,scott_carey,1,28,651.0,40,2,23 days 15:30:50.849000
-Minor,Improvement,scott_carey,0,6,308.0,38,0,7 days 17:03:16.569000
-Blocker,Improvement,dcreager,0,6,972.0,41,0,27 days 22:21:03.050000
-Major,New Feature,dcreager,0,4,130.0,15,0,17 days 23:36:31.690000
-Major,Bug,dcreager,0,3,249.0,46,0,2 days 20:51:12.401000
-Major,Improvement,bruno,1,5,2104.0,78,1,154 days 05:20:59.449000
-Major,Bug,dcreager,0,12,886.0,23,0,168 days 23:00:54.184000
-Major,Bug,dcreager,0,1,311.0,40,0,0 days 00:40:55.095000
-Major,New Feature,dcreager,0,3,410.0,60,0,21 days 23:31:25.109000
-Critical,Bug,scott_carey,0,7,410.0,72,3,14 days 11:11:53.494000
-Major,Bug,dcreager,0,1,458.0,47,0,2 days 08:44:20.111000
-Blocker,Bug,cutting,0,9,536.0,31,0,5 days 05:34:51.494000
-Major,Bug,brucem,0,0,1595.0,34,0,0 days 00:04:31.453000
-Critical,Bug,devsarkar,0,3,371.0,96,0,54 days 10:58:56.140000
-Major,Sub-task,scott_carey,0,28,437.0,54,0,9 days 04:17:23.146000
-Major,Bug,mchugh,0,4,1497.0,54,0,5 days 17:01:18.971000
-Major,Bug,h2o,2,5,1716.0,31,0,13 days 09:44:55.164000
-Trivial,Improvement,h2o,0,4,302.0,43,0,0 days 03:58:26.671000
-Critical,Bug,h2o,0,9,433.0,59,0,0 days 04:12:36.515000
-Major,Improvement,cutting,0,1,64.0,47,0,0 days 23:30:00.508000
-Major,New Feature,cbradford,0,10,246.0,73,1,39 days 20:09:46.414000
-Major,New Feature,dcreager,0,3,553.0,24,1,2 days 22:58:29.552000
-Major,Task,cutting,0,1,185.0,51,0,4 days 20:31:24.480000
-Major,Improvement,dcreager,0,5,1501.0,34,1,5 days 16:58:23.106000
-Major,Improvement,xiaoluye,0,16,521.0,110,3,60 days 22:24:03.752000
-Minor,New Feature,dcreager,0,6,307.0,34,0,6 days 15:23:31.990000
-Minor,Bug,sgargan,0,8,590.0,73,0,5 days 17:44:52.996000
-Minor,Bug,sgargan,0,8,511.0,74,0,8 days 17:38:56.647000
-Minor,Improvement,joecrobak,0,4,241.0,52,0,15 days 02:20:26.053000
-Major,Bug,cwsteinbach,0,2,152.0,27,0,6 days 13:16:53.117000
-Major,Bug,joecrobak,0,6,2200.0,63,0,14 days 02:14:26.135000
-Blocker,Task,scott_carey,0,20,361.0,60,0,46 days 18:04:56.801000
-Major,Task,scott_carey,0,2,278.0,29,1,42 days 04:16:49.057000
-Major,Bug,jkreps,0,2,174.0,47,0,1 days 00:03:04.922000
-Blocker,Improvement,thiru_mg,0,7,62.0,32,0,69 days 01:38:21.502000
-Major,Bug,bshi,0,1,60.0,79,0,1 days 19:50:53.357000
-Minor,Improvement,justinazoff,1,10,240.0,20,2,115 days 22:56:38.051000
-Minor,Bug,sgargan,0,2,632.0,40,0,33 days 18:26:16.587000
-Major,Improvement,cutting,0,3,536.0,22,0,5 days 21:11:59.782000
-Major,Bug,scott_carey,0,4,570.0,53,1,0 days 23:04:26.251000
-Major,Bug,gillouxgaillard@wanadoo.fr,0,3,923.0,66,0,9 days 02:19:58.650000
-Major,Bug,urandom,0,9,239.0,29,0,9 days 19:53:02.073000
-Major,Bug,xiaoluye,0,4,593.0,90,1,5 days 01:29:43.355000
-Critical,Bug,brucem,1,14,216.0,75,0,93 days 00:08:23.152000
-Major,Improvement,thiru_mg,0,11,426.0,32,0,69 days 06:15:10.113000
-Major,Bug,prabhakhar,0,3,1570.0,81,0,2 days 08:29:55.395000
-Major,Test,cutting,0,4,410.0,50,0,4 days 20:17:14.308000
-Major,Bug,plinehan,0,2,119.0,75,0,0 days 15:31:57.368000
-Major,Bug,rahrens,1,7,2027.0,87,2,59 days 23:37:04.734000
-Minor,Bug,sgargan,0,4,394.0,67,0,0 days 22:29:36.833000
-Major,Improvement,cutting,1,6,69.0,34,1,34 days 22:27:36.488000
-Major,New Feature,cutting,0,5,85.0,41,0,35 days 03:10:48.641000
-Major,Bug,califloridan,0,5,389.0,56,0,77 days 02:49:38.806000
-Major,New Feature,cutting,0,4,182.0,47,0,43 days 06:59:47.367000
-Critical,Bug,rahrens,0,6,4065.0,97,1,1 days 03:54:52.386000
-Major,New Feature,plinehan,0,6,648.0,61,0,28 days 01:23:01.624000
-Trivial,Improvement,sgargan,0,3,354.0,53,1,2 days 00:51:39.004000
-Minor,Improvement,qwertymaniac,0,8,492.0,39,1,2 days 05:42:14.776000
-Minor,Bug,yaojingguo,0,2,334.0,23,0,0 days 07:34:06.550000
-Minor,New Feature,stuhood,0,10,513.0,29,2,193 days 21:32:02.859000
-Major,Sub-task,cutting,0,3,72.0,31,0,16 days 02:04:00.714000
-Major,Bug,dcreager,0,5,436.0,47,2,5 days 01:57:37.653000
-Trivial,New Feature,dln,1,3,163.0,32,1,5 days 05:15:48.024000
-Minor,Improvement,erikfrey,0,6,390.0,36,1,13 days 23:52:30.868000
-Major,Bug,rbodkin,0,9,101.0,68,0,18 days 21:20:37.188000
-Major,Improvement,rbodkin,0,5,296.0,55,0,2 days 23:19:15.576000
-Major,Bug,rbodkin,1,14,2376.0,48,3,103 days 15:52:36.692000
-Major,Improvement,scott_carey,0,11,213.0,71,0,5 days 13:37:12.607000
-Blocker,Bug,scott_carey,0,10,1221.0,88,0,0 days 20:52:40.760000
-Major,Bug,hammer,0,1,0.0,62,0,0 days 00:04:36.260000
-Major,Bug,thiru_mg,0,3,225.0,55,0,4 days 04:28:22.066000
-Major,Bug,brianf,0,15,350.0,98,1,127 days 05:34:39.432000
-Major,New Feature,cutting,0,4,357.0,57,0,9 days 04:33:04.551000
-Minor,Bug,phunt,0,2,721.0,44,0,6 days 12:30:32.107000
-Blocker,Bug,cutting,0,30,763.0,77,2,174 days 03:32:00.332000
-Major,Improvement,cutting,0,4,210.0,42,0,10 days 01:03:49.880000
-Major,Bug,urandom,0,3,128.0,55,0,0 days 07:17:33.942000
-Minor,Bug,stuhood,0,3,419.0,36,1,0 days 19:51:50.022000
-Blocker,Bug,urandom,0,11,212.0,33,3,1 days 05:21:58.424000
-Major,Improvement,stuhood,0,7,123.0,46,0,0 days 02:18:54.640000
-Major,Improvement,philip,0,8,1401.0,47,2,61 days 10:03:54.223000
-Major,Improvement,scott_carey,0,47,898.0,62,5,105 days 23:15:35.512000
-Major,Test,cutting,0,2,265.0,25,0,0 days 00:15:17.072000
-Major,Improvement,grzm,0,1,201.0,34,0,0 days 01:24:09.179000
-Major,Bug,scott_carey,0,2,1983.0,54,0,107 days 03:38:39.793000
-Major,Bug,cutting,0,2,304.0,35,0,129 days 22:07:01.828000
-Minor,Improvement,qwertymaniac,0,10,1212.0,82,0,62 days 16:19:53.660000
-Major,New Feature,cutting,1,16,224.0,28,6,21 days 00:24:23.730000
-Blocker,Bug,cutting,0,2,132.0,42,0,0 days 00:31:33.344000
-Major,Improvement,cutting,0,6,138.0,42,0,0 days 02:15:07.182000
-Major,New Feature,cutting,0,1,394.0,50,3,130 days 03:23:04.869000
-Major,New Feature,cutting,1,21,537.0,40,1,4 days 09:31:57.550000
-Major,Sub-task,pwendell,0,8,0.0,39,0,1 days 00:15:19.710000
-Major,Improvement,cutting,0,2,60.0,28,0,18 days 01:07:43.392000
-Major,Bug,jmhodges,0,4,77.0,66,0,0 days 18:17:53.932000
-Major,Bug,cutting,0,3,123.0,53,0,0 days 00:20:37.948000
-Major,Bug,pwendell,0,2,610.0,36,0,0 days 01:27:01.250000
-Major,Improvement,gavinmroy,0,1,158.0,25,1,138 days 16:15:24.997000
-Major,Improvement,gavinmroy,0,1,260.0,28,1,323 days 01:09:50.202000
-Major,New Feature,grzm,0,13,366.0,20,3,4 days 21:42:06.334000
-Minor,Improvement,alexb,0,3,134.0,44,0,0 days 08:36:10.368000
-Major,Bug,philip,0,1,85.0,43,0,0 days 04:48:34.465000
-Major,Bug,philip,0,4,732.0,61,1,3 days 11:28:18.663000
-Trivial,Improvement,qwertymaniac,0,2,281.0,58,0,0 days 02:31:12.463000
-Major,Bug,philip,0,5,501.0,33,0,1 days 08:33:41.489000
-Major,Improvement,jkristian,0,3,1020.0,31,0,6 days 03:40:54.966000
-Major,New Feature,pwendell,0,2,228.0,38,0,1 days 00:23:17.395000
-Major,Improvement,jkristian,0,5,216.0,28,0,2 days 04:52:49.237000
-Major,Sub-task,pwendell,0,4,0.0,25,0,13 days 02:17:47.120000
-Major,Sub-task,pwendell,0,5,0.0,44,1,9 days 13:09:40.677000
-Minor,Bug,darose,0,3,1151.0,39,0,5 days 21:35:16.704000
-Major,New Feature,pwendell,0,3,57.0,26,0,6 days 03:01:20.691000
-Major,Bug,cutting,0,3,93.0,45,0,4 days 02:41:40.839000
-Major,Bug,pwendell,0,1,205.0,58,0,20 days 04:41:38.902000
-Major,Sub-task,pwendell,0,10,0.0,42,0,8 days 22:38:23.319000
-Major,Improvement,cutting,0,11,286.0,38,2,5 days 22:47:21.850000
-Major,Bug,pwendell,0,2,209.0,52,0,0 days 05:32:55.686000
-Minor,Improvement,stuhood,0,5,553.0,67,3,0 days 07:09:07.929000
-Major,Improvement,yaojingguo,0,3,198.0,38,0,1 days 04:14:57.838000
-Minor,Improvement,darose,0,10,935.0,83,1,7 days 01:42:00.015000
-Major,New Feature,cutting,0,9,675.0,43,3,25 days 22:49:51.899000
-Major,Improvement,hammer,0,1,0.0,55,0,8 days 06:39:28.045000
-Major,Bug,jtravis,0,6,451.0,75,0,40 days 21:25:52.243000
-Minor,Bug,plinehan,0,7,331.0,45,2,6 days 14:12:13.384000
-Major,Sub-task,pwendell,0,13,0.0,42,4,31 days 18:58:21.960000
-Major,New Feature,sseverance,8,29,124.0,49,18,646 days 00:47:18.927000
-Major,Bug,spullara,0,2,3030.0,83,1,0 days 02:49:56.571000
-Major,Bug,cutting,0,4,84.0,36,0,53 days 00:32:42.438000
-Major,Bug,cjcdoomed,0,4,1232.0,135,1,3 days 07:37:02.536000
-Major,Improvement,hammer,0,15,0.0,62,1,56 days 09:49:13.873000
-Major,Sub-task,pwendell,0,10,0.0,39,1,33 days 21:46:49.061000
-Minor,Improvement,kkrugler,0,5,138.0,46,1,48 days 08:26:52.941000
-Major,New Feature,cutting,0,3,178.0,21,6,370 days 05:55:04.547000
-Major,Sub-task,pwendell,0,8,0.0,33,0,1 days 00:27:53.710000
-Minor,Bug,spullara,0,14,460.0,116,1,42 days 00:03:47.135000
-Major,Improvement,cutting,0,5,327.0,65,1,35 days 23:28:50.017000
-Major,New Feature,cutting,1,9,602.0,73,1,34 days 03:40:43.494000
-Major,New Feature,cutting,0,5,203.0,41,1,34 days 03:48:03.639000
-Major,Sub-task,pwendell,0,0,0.0,55,1,7 days 18:37:23.336000
-Major,Sub-task,pwendell,0,15,468.0,35,1,10 days 02:05:27.183000
-Major,New Feature,tomwhite,0,4,295.0,37,1,1 days 01:11:21.550000
-Major,Bug,tomwhite,0,4,114.0,90,5,952 days 06:30:19.649000
-Major,Bug,tomwhite,0,1,143.0,43,0,0 days 12:09:36.688000
-Major,Bug,hammer,0,14,75.0,87,2,47 days 14:29:57.569000
-Major,Bug,hammer,0,1,0.0,76,1,0 days 00:42:19.711000
-Major,New Feature,cutting,0,12,105.0,41,3,10 days 20:58:03.939000
-Major,Wish,hammer,0,5,430.0,69,1,0 days 15:10:16.180000
-Major,Bug,hammer,1,13,82.0,33,3,680 days 18:14:24.649000
-Major,Bug,jmhodges,0,4,106.0,39,0,0 days 00:50:39.384000
-Major,Improvement,hammer,0,4,0.0,58,0,0 days 06:26:16.442000
-Major,Improvement,hammer,0,3,104.0,111,1,0 days 13:32:51.442000
-Major,Bug,hammer,0,3,260.0,93,1,0 days 06:42:22.505000
-Major,Improvement,kevinoliver,0,21,252.0,31,3,69 days 02:08:09.046000
-Major,Improvement,wrightd,0,3,845.0,61,1,5 days 06:03:25.997000
-Major,Bug,jmhodges,0,1,357.0,22,0,0 days 00:07:28.860000
-Major,Bug,grantr,0,12,140.0,57,1,4 days 09:43:32.777000
-Major,Sub-task,brucem,0,3,0.0,25,0,704 days 11:06:44.587000
-Major,Improvement,brucem,0,9,68.0,32,0,704 days 17:08:19.127000
-Major,Improvement,brucem,0,1,372.0,27,0,231 days 16:30:12.618000
-Major,New Feature,brucem,0,4,89.0,54,1,233 days 06:02:46.338000
-Major,Bug,hammer,0,6,612.0,67,1,2 days 08:30:03.443000
-Blocker,Sub-task,owen.omalley,1,12,100.0,39,2,211 days 01:28:27.035000
-Major,New Feature,hammer,0,21,152.0,70,1,62 days 19:38:41.815000
-Major,Improvement,jmhodges,0,3,74.0,37,0,4 days 18:20:46.828000
-Major,Bug,dbritsch,0,2,431.0,19,1,0 days 00:24:30.186000
-Critical,Bug,cutting,0,11,726.0,40,1,102 days 22:41:50.312000
-Minor,New Feature,urandom,0,3,568.0,28,0,0 days 00:55:05.442000
-Major,New Feature,hammer,2,32,0.0,91,4,400 days 16:18:14.941000
-Major,Bug,jmhodges,0,5,104.0,53,2,156 days 14:02:35.674000
-Major,Bug,wanliyang,0,2,1622.0,21,0,4 days 07:51:38.612000
-Trivial,New Feature,qwertymaniac,0,10,1008.0,79,2,115 days 06:48:53.498000
-Major,New Feature,hammer,9,58,0.0,27,13,336 days 13:46:43.482000
-Major,Bug,wanliyang,0,3,1983.0,37,0,0 days 07:33:05.809000
-Major,New Feature,esteve,7,13,213.0,23,2,123 days 04:47:23.378000
-Minor,Bug,esteve,0,3,141.0,31,1,11 days 19:33:50.110000
-Minor,Improvement,esteve,0,4,170.0,63,1,11 days 19:29:35.434000
-Minor,Improvement,esteve,0,3,73.0,21,1,11 days 19:17:43.193000
-Major,Bug,thiru_mg,0,4,682.0,72,0,3 days 05:31:42.292000
-Major,Bug,thiru_mg,0,3,107.0,61,0,4 days 02:48:25.447000
-Major,Improvement,sbanacho,0,1,680.0,24,0,0 days 18:14:45.562000
-Major,Bug,jplevyak,0,2,301.0,78,0,1 days 23:23:48.995000
-Critical,Bug,scott_carey,0,5,174.0,37,1,3 days 18:06:28.940000
-Major,Bug,jmhodges,0,2,165.0,61,0,0 days 11:16:58.708000
-Major,Bug,sbanacho,0,2,305.0,36,0,0 days 00:40:27.792000
-Major,Improvement,jmhodges,0,2,45.0,55,0,3 days 08:54:14.385000
-Major,Improvement,cutting,0,14,291.0,69,2,104 days 19:02:36.842000
-Major,New Feature,cutting,0,10,342.0,49,8,69 days 23:58:52.930000
-Major,Improvement,jmhodges,0,4,59.0,43,1,21 days 09:01:07.619000
-Major,Bug,neopallium,0,4,143.0,41,1,141 days 20:00:47.088000
-Major,Improvement,sbanacho,0,2,903.0,61,0,2 days 23:20:06.997000
-Critical,Bug,jmhodges,0,5,100.0,55,0,1 days 15:32:48.229000
-Major,Improvement,jmhodges,0,1,75.0,61,0,1 days 23:03:35.634000
-Major,Bug,neopallium,0,10,150.0,37,1,0 days 12:43:11.704000
-Major,Bug,neopallium,0,5,72.0,75,0,144 days 05:38:17.361000
-Major,Bug,jmhodges,0,3,154.0,23,0,3 days 04:47:06.155000
-Major,Bug,cutting,0,6,315.0,66,2,41 days 00:46:57.148000
-Major,Improvement,sbanacho,0,5,595.0,39,0,144 days 02:52:46.632000
-Major,Improvement,sbanacho,0,1,504.0,30,0,2 days 23:55:31.807000
-Major,Bug,jmhodges,0,4,465.0,38,1,2 days 20:09:39.781000
-Major,Improvement,urandom,0,10,45.0,32,4,138 days 20:10:55.324000
-Minor,Improvement,urandom,0,11,80.0,42,4,90 days 19:23:07.168000
-Major,New Feature,cutting,0,12,76.0,38,9,1 days 21:02:17.857000
-Minor,Improvement,jmhodges,0,2,131.0,52,1,7 days 05:35:13.652000
-Major,Improvement,cutting,0,3,77.0,38,1,0 days 18:53:55.298000
-Major,Bug,jmhodges,0,3,89.0,47,1,9 days 17:25:24.456000
-Major,Bug,cutting,0,3,81.0,44,1,1 days 19:51:37.387000
-Minor,Improvement,jmhodges,0,3,147.0,29,1,13 days 00:32:31.792000
-Major,Wish,brucem,1,15,335.0,28,10,933 days 17:30:09.600000
-Major,Bug,sandys,0,2,6299.0,64,0,0 days 08:37:35.812000
-Major,Improvement,brucem,0,1,26.0,22,0,0 days 00:34:12.737000
-Major,Bug,brucem,0,1,144.0,50,0,0 days 01:12:40.579000
-Major,Bug,cutting,0,1,158.0,42,0,0 days 00:59:13.623000
-Major,Wish,plaes,0,5,72.0,26,0,273 days 13:40:10.177000
-Major,Wish,brucem,0,6,191.0,9,1,2 days 08:34:28.988000
-Major,Sub-task,brucem,0,2,222.0,33,0,578 days 05:59:43.723000
-Major,Sub-task,brucem,0,2,112.0,22,0,578 days 05:58:42.258000
-Major,Sub-task,brucem,0,3,54.0,47,0,578 days 06:02:14.827000
-Major,Sub-task,brucem,0,2,89.0,33,0,578 days 06:06:41.631000
-Major,Sub-task,brucem,0,2,0.0,28,0,578 days 06:07:46.806000
-Major,Sub-task,brucem,0,2,104.0,37,0,441 days 06:38:28.947000
-Major,Sub-task,brucem,0,2,81.0,55,0,441 days 06:59:03.738000
-Major,Sub-task,brucem,0,1,149.0,47,0,578 days 06:33:50.199000
-Major,Improvement,brucem,0,8,105.0,68,0,587 days 07:04:37.076000
-Major,Bug,jmhodges,0,8,879.0,68,2,19 days 23:10:11.659000
-Major,Improvement,brucem,0,6,129.0,63,1,486 days 18:35:10.140000
-Blocker,Improvement,jmhodges,0,2,346.0,48,1,348 days 10:29:56.345000
-Major,Bug,jmhodges,0,6,160.0,32,1,20 days 00:09:04.006000
-Major,Improvement,brucem,0,2,113.0,39,0,0 days 00:39:52.555000
-Major,New Feature,cutting,0,6,113.0,61,5,684 days 20:45:57.433000
-Major,New Feature,cutting,0,2,116.0,62,6,684 days 20:57:11.151000
-Minor,Improvement,dmdabbs,0,3,109.0,38,1,0 days 06:06:55.071000
-Minor,Improvement,ijuma,0,1,70.0,61,2,6 days 07:50:29.513000
-Major,Improvement,brucem,0,1,141.0,20,0,0 days 03:21:40.658000
-Major,Improvement,brucem,0,1,229.0,15,0,0 days 03:12:36.617000
-Major,Improvement,hammer,0,2,288.0,84,0,14 days 12:12:53.617000
-Blocker,Bug,phunt,0,10,1712.0,72,1,32 days 22:12:17.889000
-Major,New Feature,brucem,0,8,325.0,35,1,11 days 16:26:52.631000
-Major,Bug,brucem,0,4,26.0,55,0,0 days 19:19:22.003000
-Blocker,Bug,cutting,0,10,679.0,30,1,99 days 21:28:57.368000
-Major,Improvement,cutting,0,1,329.0,64,1,9 days 19:55:58.529000
-Major,New Feature,brucem,0,3,613.0,80,0,1 days 08:16:17.590000
-Major,Improvement,brucem,0,2,0.0,12,1,1 days 12:04:50.406000
-Major,Sub-task,brucem,0,3,234.0,67,0,1 days 15:31:52.107000
-Major,Sub-task,brucem,0,2,471.0,55,0,1 days 15:59:23.633000
-Major,Bug,brucem,0,5,207.0,42,1,693 days 05:03:52.092000
-Major,Bug,brucem,0,4,514.0,34,0,3 days 09:19:05.985000
-Minor,Improvement,brucem,0,6,129.0,56,0,0 days 17:03:29.025000
-Trivial,Improvement,amichai,0,4,2369.0,48,2,1 days 21:36:27.202000
-Trivial,Bug,amichai,0,2,16.0,22,2,0 days 23:58:18.181000
-Major,Bug,cutting,0,3,80.0,29,0,4 days 23:59:01.074000
-Major,New Feature,cutting,0,5,523.0,51,1,5 days 23:16:29.568000
-Major,Bug,cutting,0,2,118.0,41,0,4 days 23:59:49.944000
-Major,Improvement,massie,0,2,242.0,49,0,0 days 00:04:35.971000
-Major,Improvement,massie,0,4,0.0,47,1,0 days 20:04:18.227000
-Minor,Improvement,kingryan,0,4,152.0,33,1,2 days 07:05:29.873000
-Major,Bug,scott_carey,0,6,465.0,41,1,5 days 00:03:59.889000
-Major,Improvement,urandom,0,10,91.0,42,1,27 days 13:04:38.200000
-Major,Bug,sbanacho,0,2,558.0,34,0,0 days 01:26:00.711000
-Major,Bug,cutting,0,3,167.0,28,1,0 days 17:05:13.123000
-Major,Bug,massie,0,6,52.0,49,1,26 days 20:40:13.709000
-Major,Bug,scott_carey,0,2,352.0,59,0,2 days 02:29:11.420000
-Major,Bug,ryanobjc,0,5,271.0,58,1,1 days 02:05:51.950000
-Major,Improvement,hammer,0,9,1670.0,61,1,3 days 15:13:53.217000
-Major,New Feature,scott_carey,0,8,286.0,71,1,7 days 05:08:13.111000
-Major,Bug,jmhodges,0,1,60.0,46,0,0 days 01:08:02.725000
-Major,Improvement,massie,0,1,129.0,38,0,0 days 02:09:50.704000
-Major,Bug,jmhodges,0,4,73.0,34,1,0 days 17:03:03.093000
-Major,Improvement,massie,0,1,173.0,41,1,0 days 00:04:47.043000
-Major,Improvement,massie,0,1,86.0,83,1,0 days 00:06:16.033000
-Major,Bug,massie,0,2,42.0,29,0,0 days 00:02:39.929000
-Blocker,Bug,cutting,0,7,700.0,28,1,3 days 00:21:34.150000
-Major,New Feature,tlipcon,1,28,617.0,27,12,145 days 22:41:01.851000
-Major,Improvement,massie,0,1,144.0,53,1,0 days 03:52:41.693000
-Major,New Feature,massie,0,1,134.0,66,0,0 days 00:06:55.547000
-Major,Bug,tomwhite,0,2,89.0,86,1,0 days 02:28:43.469000
-Minor,Improvement,eli,0,2,161.0,36,1,1 days 15:22:23.600000
-Major,Test,hammer,0,10,0.0,64,1,6 days 14:57:58.843000
-Major,Bug,eli,0,2,51.0,33,1,1 days 14:51:29.625000
-Trivial,Improvement,hammer,0,1,161.0,58,0,0 days 00:06:51.873000
-Minor,Improvement,eli,0,3,0.0,41,2,525 days 20:23:33.419000
-Major,Improvement,eli,0,2,0.0,28,1,0 days 00:15:10.118000
-Major,Improvement,massie,0,1,231.0,61,1,0 days 00:32:22.375000
-Minor,New Feature,jmhodges,0,4,230.0,35,1,0 days 01:00:33.424000
-Critical,Improvement,scott_carey,0,47,2787.0,51,2,16 days 10:57:10.153000
-Major,Bug,thiru_mg,0,2,438.0,64,0,1 days 12:03:13.746000
-Major,Bug,thiru_mg,0,2,242.0,43,0,1 days 12:21:23.393000
-Major,Improvement,thiru_mg,0,7,3207.0,44,0,3 days 16:14:17.951000
-Minor,Bug,marmbrus,0,12,2020.0,77,1,3 days 23:45:48.035000
-Major,Improvement,philip,0,5,145.0,36,1,4 days 11:39:07.502000
-Major,Bug,thiru_mg,0,2,135.0,54,0,1 days 02:56:56.900000
-Major,Improvement,massie,0,1,196.0,45,0,0 days 02:26:48.802000
-Major,Improvement,thiru_mg,0,9,448.0,46,0,5 days 11:45:46.436000
-Minor,Bug,marmbrus,0,4,2149.0,68,1,0 days 15:04:42.266000
-Major,Improvement,massie,0,1,0.0,75,0,0 days 00:04:34.740000
-Major,Improvement,scott_carey,0,12,427.0,70,2,2 days 18:04:18.169000
-Major,Improvement,massie,0,1,267.0,57,0,0 days 00:08:24.656000
-Major,Improvement,massie,0,1,174.0,65,0,0 days 00:03:35.984000
-Major,Improvement,massie,0,1,217.0,48,0,0 days 00:06:07.820000
-Major,Bug,thiru_mg,0,4,147.0,40,0,1 days 14:18:42.591000
-Minor,Bug,thiru_mg,0,7,607.0,79,0,23 days 18:04:35.583000
-Major,Bug,cutting,0,3,411.0,35,0,3 days 12:34:50.786000
-Major,Task,tlipcon,1,12,263.0,40,2,146 days 19:06:31.073000
-Major,Improvement,massie,0,1,85.0,40,0,0 days 00:05:23.961000
-Major,Improvement,massie,0,1,547.0,44,0,0 days 00:08:11.433000
-Major,Improvement,massie,0,1,100.0,45,0,0 days 00:06:02.286000
-Blocker,Improvement,philip,0,4,297.0,77,1,4 days 00:20:39.144000
-Major,Improvement,massie,0,1,905.0,51,0,0 days 00:47:36.168000
-Major,Improvement,massie,0,1,231.0,41,1,0 days 05:28:28.243000
-Major,Improvement,philip,0,3,375.0,85,1,0 days 16:54:54.037000
-Major,Test,hammer,0,1,0.0,102,0,0 days 00:49:00.818000
-Blocker,Bug,scott_carey,0,5,2294.0,63,2,12 days 04:32:59.317000
-Major,Task,massie,0,1,231.0,48,1,0 days 00:06:10.199000
-Major,Improvement,massie,0,0,109.0,49,1,0 days 00:07:51.489000
-Major,Bug,massie,0,2,0.0,38,0,0 days 00:03:24.023000
-Minor,Bug,kevinoliver,0,4,301.0,68,0,5 days 11:09:55.524000
-Minor,Improvement,kevinoliver,0,7,309.0,50,2,6 days 17:46:58.445000
-Major,Improvement,massie,0,1,160.0,60,0,0 days 00:03:57.057000
-Major,Bug,massie,0,0,130.0,47,0,0 days 00:10:11.943000
-Major,Improvement,philip,0,3,71.0,80,0,0 days 01:59:55.536000
-Major,Sub-task,kevinoliver,0,7,139.0,68,1,14 days 05:07:39.053000
-Major,Improvement,sbanacho,0,3,591.0,34,1,28 days 21:41:33.897000
-Minor,Bug,stevel@apache.org,1,2,446.0,53,0,331 days 09:29:11.252000
-Major,Bug,massie,0,1,221.0,73,0,0 days 00:06:01.331000
-Major,New Feature,massie,0,1,378.0,49,1,0 days 00:28:03.528000
-Major,Improvement,thiru_mg,0,2,847.0,33,1,3 days 02:22:47.261000
-Major,Improvement,massie,0,3,1540.0,36,2,0 days 02:55:05.444000
-Minor,Improvement,philip,0,4,116.0,48,0,10 days 20:14:11.885000
-Major,Improvement,cutting,0,1,158.0,30,0,19 days 22:18:04.056000
-Major,Improvement,cutting,0,9,78.0,30,2,19 days 23:02:35.255000
-Major,Improvement,philip,0,3,49.0,55,0,3 days 03:02:43.834000
-Major,Bug,thiru_mg,0,8,268.0,41,0,0 days 00:35:35.102000
-Major,Bug,thiru_mg,0,1,233.0,54,0,0 days 17:43:01.558000
-Major,Bug,scott_carey,0,6,1544.0,39,2,3 days 16:34:05.465000
-Major,Bug,cutting,0,0,257.0,36,1,0 days 02:42:49.804000
-Major,Improvement,hammer,0,9,125.0,80,1,63 days 13:35:16.240000
-Major,Improvement,hammer,0,2,50.0,108,1,146 days 10:07:11.879000
-Major,Improvement,hammer,0,1,120.0,94,1,0 days 01:32:46.120000
-Major,Bug,hammer,0,1,38.0,62,0,0 days 00:35:16.353000
-Major,Improvement,thiru_mg,0,2,388.0,70,2,1 days 15:07:32.905000
-Major,Improvement,thiru_mg,0,16,344.0,52,4,21 days 14:04:44.630000
-Major,New Feature,hammer,0,1,0.0,42,0,0 days 15:32:09.462000
-Major,New Feature,hammer,0,1,0.0,28,0,35 days 17:55:06.297000
-Major,Improvement,hammer,0,4,17.0,85,1,47 days 22:54:09.387000
-Major,New Feature,hammer,0,10,0.0,43,2,19 days 21:40:15.201000
-Major,New Feature,hammer,0,4,0.0,82,1,21 days 09:47:01.868000
-Major,Test,hammer,0,23,0.0,32,1,21 days 22:43:21.893000
-Major,Improvement,cutting,0,4,514.0,31,0,0 days 02:51:32.830000
-Major,Test,cutting,0,2,59.0,28,1,0 days 04:25:24.171000
-Major,Bug,jfolson,1,4,906.0,101,3,0 days 01:06:04.795000
-Blocker,Bug,hammer,0,14,381.0,100,2,34 days 04:02:48.946000
-Major,Improvement,thiru_mg,0,4,889.0,43,2,2 days 04:39:01.266000
-Major,Improvement,thiru_mg,0,7,621.0,41,1,1 days 05:43:50.482000
-Major,Improvement,kimballa,0,10,153.0,46,2,0 days 20:13:31.756000
-Major,Bug,thiru_mg,0,4,1391.0,88,1,2 days 00:52:04.363000
-Major,Improvement,cutting,0,3,91.0,30,1,0 days 03:09:25.524000
-Major,Bug,hammer,0,5,0.0,89,1,0 days 21:08:59.539000
-Major,Bug,hammer,0,1,330.0,68,1,2 days 18:39:19.740000
-Major,New Feature,hammer,0,1,87.0,22,0,0 days 00:15:17.732000
-Major,Improvement,kingryan,0,6,191.0,9,2,8 days 02:11:59.288000
-Major,Improvement,thiru_mg,0,3,228.0,70,1,2 days 20:13:16.324000
-Major,New Feature,hammer,0,1,0.0,73,0,0 days 00:07:25.587000
-Major,New Feature,hammer,0,12,0.0,73,1,796 days 17:07:53.924000
-Major,New Feature,hammer,0,7,135.0,55,2,796 days 17:12:26.325000
-Major,Test,hammer,0,2,200.0,54,1,1 days 08:22:47.165000
-Major,Improvement,philip,0,1,489.0,68,1,4 days 21:17:37.425000
-Minor,Improvement,philip,0,1,52.0,54,1,4 days 15:22:05.852000
-Minor,New Feature,philip,1,4,77.0,48,2,447 days 20:20:09.597000
-Major,Improvement,jmhsieh,0,5,1837.0,66,1,33 days 06:21:30.024000
-Major,Improvement,hammer,0,2,0.0,104,0,2 days 18:54:48.951000
-Major,Test,hammer,0,4,0.0,43,0,0 days 07:20:49.160000
-Major,Test,hammer,0,2,165.0,108,1,0 days 18:14:50.694000
-Major,Bug,urandom,0,3,265.0,33,1,1 days 19:09:38.574000
-Major,Bug,urandom,0,3,98.0,19,1,0 days 14:27:14.875000
-Major,Test,hammer,0,2,0.0,60,1,3 days 16:47:53.965000
-Major,Improvement,hammer,0,1,0.0,60,1,7 days 20:21:45.693000
-Major,Test,hammer,0,29,0.0,58,3,41 days 20:01:13.770000
-Major,New Feature,cutting,0,12,136.0,21,3,129 days 01:02:35.603000
-Major,Improvement,hammer,0,7,110.0,56,1,162 days 11:40:44.743000
-Minor,Bug,philip,0,2,449.0,43,0,8 days 17:05:24.670000
-Major,Bug,thiru_mg,0,1,665.0,51,0,6 days 14:00:12.796000
-Major,Bug,hammer,0,1,168.0,64,2,3 days 18:45:12.695000
-Minor,New Feature,philip,0,4,143.0,42,1,7 days 19:18:59.742000
-Major,Improvement,cutting,0,7,234.0,53,1,7 days 21:30:17.647000
-Major,Bug,philip,0,3,132.0,48,1,416 days 03:47:50.026000
-Minor,Bug,philip,0,2,168.0,52,0,0 days 00:17:59.083000
-Minor,New Feature,philip,0,4,55.0,40,1,8 days 00:24:11.454000
-Major,New Feature,cutting,0,3,129.0,41,2,13 days 04:33:02.792000
-Minor,New Feature,philip,0,5,256.0,68,1,8 days 17:20:22.344000
-Major,New Feature,philip,0,2,139.0,46,1,0 days 22:10:48.060000
-Major,New Feature,philip,0,6,349.0,67,1,5 days 22:32:13.417000
-Minor,Test,philip,0,2,209.0,62,0,1 days 00:17:09.474000
-Major,Improvement,massie,0,9,704.0,73,2,16 days 19:37:18.266000
-Major,New Feature,philip,0,7,277.0,72,1,2 days 00:54:03.360000
-Major,Improvement,hammer,0,5,96.0,99,1,13 days 05:32:40.159000
-Minor,Improvement,tlipcon,0,5,155.0,36,1,6 days 23:39:12.202000
-Major,Bug,hammer,0,1,243.0,25,0,7 days 18:48:37.300000
-Minor,New Feature,kevinoliver,0,20,266.0,29,2,52 days 08:39:36.516000
-Major,Improvement,kevinoliver,0,3,58.0,42,0,11 days 05:04:35.385000
-Trivial,Bug,kevinoliver,0,3,193.0,70,2,21 days 06:49:01.365000
-Major,New Feature,tlipcon,0,20,219.0,44,5,13 days 11:42:31.455000
-Trivial,Bug,kevinoliver,0,7,196.0,17,1,0 days 02:15:50.066000
-Major,Bug,cutting,1,4,154.0,42,1,1 days 02:43:48.956000
-Major,Bug,cutting,0,5,207.0,43,1,1 days 02:52:44.779000
-Major,New Feature,hammer,0,3,207.0,30,0,21 days 08:44:16.687000
-Major,Improvement,hammer,0,2,305.0,105,1,29 days 15:41:59.247000
-Minor,Improvement,rsgoodman,0,1,745.0,79,1,31 days 09:22:27.329000
-Major,New Feature,cutting,0,3,323.0,85,0,1 days 23:07:20.741000
-Major,Improvement,cutting,0,11,212.0,49,0,1 days 00:03:28.905000
-Major,Bug,philip,0,9,49.0,76,0,7 days 00:20:08.302000
-Minor,Improvement,thiru_mg,1,5,147.0,74,1,7 days 18:17:08.813000
-Minor,New Feature,philip,0,24,91.0,68,0,29 days 18:54:30.161000
-Minor,Improvement,philip,0,3,105.0,30,0,99 days 13:32:03.385000
-Major,Improvement,sbanacho,0,12,236.0,34,1,45 days 19:26:18.401000
-Major,New Feature,cutting,0,7,193.0,35,1,7 days 22:41:39.594000
-Major,Improvement,cutting,0,6,418.0,35,1,9 days 01:06:57.251000
-Major,Improvement,hammer,0,7,231.0,77,1,6 days 14:52:03.313000
-Blocker,Bug,owen.omalley,0,2,208.0,68,1,7 days 00:59:02.567000
-Major,Improvement,cutting,0,5,329.0,26,1,0 days 21:57:25.473000
-Major,Improvement,cutting,0,3,71.0,46,1,0 days 02:01:07.241000
-Major,Improvement,sbanacho,0,3,242.0,23,0,3 days 06:36:53.429000
-Major,Improvement,philip,0,2,393.0,21,1,4 days 16:50:14.472000
-Major,Bug,sbanacho,0,1,0.0,35,0,0 days 00:11:27.936000
-Major,Improvement,sbanacho,0,3,45.0,12,0,54 days 08:25:55.290000
-Major,Improvement,tomwhite,0,4,147.0,42,2,0 days 15:42:00.760000
-Major,Bug,tlipcon,0,2,308.0,50,1,0 days 17:05:33.267000
-Major,Improvement,metcalfc,0,1,328.0,55,1,56 days 12:56:39.990000
-Major,Bug,cutting,0,2,219.0,73,0,0 days 15:21:45.517000
-Major,Improvement,massie,0,1,221.0,68,0,0 days 00:12:04.905000
-Minor,Bug,philip,0,2,129.0,24,0,0 days 01:42:27.460000
-Major,Bug,hammer,0,3,0.0,41,0,0 days 00:18:20.325000
-Major,Improvement,philip,0,5,81.0,51,1,0 days 17:08:25.333000
-Major,Improvement,sbanacho,0,3,1448.0,47,1,1 days 03:23:24.063000
-Major,Improvement,hammer,0,17,225.0,106,1,46 days 07:18:43.935000
-Major,Improvement,hammer,0,1,67.0,65,1,46 days 05:27:28.739000
-Major,Improvement,hammer,0,2,0.0,30,1,0 days 16:30:46.771000
-Major,Improvement,hammer,0,2,210.0,134,0,46 days 07:32:14.759000
-Major,Improvement,cutting,0,2,91.0,35,0,5 days 23:48:39.803000
-Major,Bug,thiru_mg,0,1,230.0,70,1,2 days 12:33:00.319000
-Major,Bug,thiru_mg,0,4,178.0,40,1,1 days 06:02:34.820000
-Major,Bug,thiru_mg,0,7,1314.0,59,1,1 days 06:04:28.158000
-Major,Bug,phunt,0,11,140.0,56,1,78 days 14:06:37.736000
-Minor,Bug,phunt,0,3,205.0,54,1,53 days 11:34:37.351000
-Major,Bug,phunt,0,5,668.0,66,1,56 days 16:58:27.959000
-Major,Improvement,sbanacho,0,1,218.0,35,1,47 days 22:15:48.900000
-Major,Improvement,sbanacho,0,1,637.0,46,1,0 days 02:28:50.657000
-Major,Improvement,hammer,0,3,179.0,73,0,2 days 13:05:00.980000
-Minor,Improvement,hammer,0,14,137.0,34,1,3 days 15:42:26.236000
-Major,Improvement,hammer,0,4,235.0,57,1,2 days 13:54:23.857000
-Minor,Improvement,ehillenius,0,5,256.0,39,2,0 days 14:52:19.607000
-Major,Improvement,hammer,0,12,954.0,29,1,3 days 13:40:46.388000
-Major,Bug,phunt,0,2,394.0,78,1,63 days 23:36:43.310000
-Major,Improvement,sbanacho,0,1,334.0,50,1,1 days 19:37:43.380000
-Major,Improvement,massie,0,1,532.0,38,0,1 days 01:42:36.501000
-Major,Bug,sbanacho,0,1,165.0,33,0,0 days 00:59:18.984000
-Major,Bug,thiru_mg,0,3,129.0,37,0,0 days 16:53:50.769000
-Minor,Improvement,cutting,0,4,162.0,61,1,0 days 00:41:54.661000
-Major,Bug,cutting,0,3,276.0,32,0,1 days 00:52:31.552000
-Major,Improvement,sbanacho,0,2,197.0,45,0,1 days 19:54:51.092000
-Minor,Bug,cutting,0,1,207.0,19,0,0 days 04:54:36.039000
-Trivial,Bug,cutting,0,2,173.0,26,0,0 days 03:31:07.606000
-Major,Improvement,massie,0,6,137.0,76,0,0 days 10:23:19.006000
-Major,Improvement,massie,0,2,228.0,36,1,1 days 02:34:20.659000
-Major,Improvement,cutting,0,8,316.0,37,0,5 days 01:41:53.157000
-Minor,Bug,thiru_mg,0,8,1674.0,36,0,27 days 20:39:53.275000
-Major,Bug,cutting,0,14,264.0,53,0,6 days 00:44:14.797000
-Major,Task,gkesavan,0,4,798.0,55,0,70 days 05:39:26.711000
-Major,Improvement,sbanacho,0,1,185.0,36,0,0 days 00:12:06.624000
-Major,Improvement,massie,0,1,137.0,38,1,0 days 16:50:07.544000
-Major,Improvement,massie,0,1,148.0,67,0,1 days 03:25:03.891000
-Major,Improvement,cutting,0,2,58.0,34,0,6 days 01:47:06.443000
-Major,Bug,sbanacho,0,2,225.0,62,0,0 days 05:59:05.131000
-Major,Improvement,massie,0,1,312.0,75,0,2 days 03:02:55.142000
-Minor,Improvement,philip,0,3,142.0,44,0,133 days 17:34:41.510000
-Minor,New Feature,philip,0,2,78.0,27,0,133 days 17:36:12.838000
-Major,Improvement,massie,0,1,843.0,66,1,0 days 20:07:11.464000
-Major,Bug,mrfish,0,10,736.0,61,1,19 days 10:57:21.495000
-Major,Bug,mrfish,0,1,568.0,33,1,19 days 18:47:53.523000
-Trivial,Bug,hammer,0,2,44.0,25,1,13 days 12:43:05.809000
-Major,Improvement,massie,0,1,1316.0,63,0,0 days 20:54:06.864000
-Major,Improvement,philip,0,1,465.0,57,0,0 days 11:22:56.443000
-Major,Improvement,philip,0,2,536.0,74,0,0 days 11:04:27.891000
-Minor,Bug,philip,0,2,152.0,43,0,0 days 11:20:35.197000
-Major,Improvement,philip,0,2,296.0,70,0,21 days 18:45:42.872000
-Critical,Improvement,massie,0,41,1940.0,56,3,83 days 02:12:34.385000
-Major,Bug,massie,0,1,190.0,45,0,1 days 18:07:28.609000
-Major,Test,hammer,0,6,196.0,110,1,63 days 15:47:32.703000
-Major,Improvement,cutting,1,49,691.0,43,3,71 days 21:01:52.226000
-Major,Sub-task,chirino,1,10,0.0,49,5,421 days 04:27:47.177000
-Major,New Feature,hammer,0,6,68.0,34,1,17 days 04:43:36.421000
-Major,Improvement,sbanacho,0,3,312.0,24,0,8 days 02:07:23.993000
-Trivial,Bug,hammer,0,2,93.0,54,0,0 days 10:00:45.553000
-Major,Improvement,hammer,0,5,367.0,36,1,0 days 21:33:45.377000
-Major,New Feature,philip,0,7,373.0,38,1,34 days 22:22:13.266000
-Major,New Feature,philip,0,16,151.0,70,1,84 days 16:49:44.922000
-Major,New Feature,massie,0,7,1443.0,34,0,0 days 00:08:46.531000
-Major,Bug,cutting,0,12,121.0,50,2,243 days 06:51:06.171000
-Major,New Feature,philip,0,18,178.0,60,1,12 days 18:16:25.311000
-Major,Improvement,sbanacho,0,5,126.0,35,0,6 days 21:04:27.026000
-Major,Improvement,sbanacho,0,11,214.0,43,0,1 days 14:46:32.568000
-Major,New Feature,philip,0,13,1032.0,44,1,8 days 22:12:49.947000
-Minor,Improvement,philip,0,6,472.0,49,0,1 days 00:50:43.198000
-Major,Bug,isabel,0,2,384.0,91,1,1 days 11:13:05.922000
-Major,Improvement,cutting,0,2,41.0,44,0,0 days 23:48:07.012000
-Major,New Feature,cutting,0,2,190.0,42,1,1 days 00:19:20.620000
-Major,Bug,thiru_mg,0,1,618.0,46,0,0 days 00:38:54.520000
-Major,Bug,amareshwari,0,4,108.0,60,0,1 days 23:25:15.498000
-Major,Improvement,phunt,0,19,77.0,46,3,133 days 15:11:30.812000
-Blocker,New Feature,cutting,0,27,71.0,29,8,108 days 03:40:10.304000
-Major,Bug,thiru_mg,0,7,521.0,72,2,1 days 21:31:22.167000
-Major,Bug,jonbratseth,0,7,227.0,39,1,1 days 00:29:08.081000
-Major,Bug,sbanacho,0,4,407.0,68,0,5 days 05:02:36.069000
-Major,Improvement,gkesavan,0,2,99.0,52,0,6 days 10:02:41.643000
-Major,Bug,phunt,0,2,792.0,71,1,99 days 15:17:44.580000
-Major,New Feature,cutting,0,2,45.0,26,2,0 days 23:42:19.025000
-Minor,Improvement,yangyangyyy,0,1,584.0,27,2,107 days 04:36:55.021000
-Major,New Feature,yangyangyyy,0,4,363.0,62,2,0 days 07:41:07.196000
-Major,Improvement,floleibert,0,7,252.0,90,2,106 days 14:37:08.814000
-Major,Bug,cutting,0,2,92.0,43,1,0 days 02:24:53.077000
-Blocker,Bug,phunt,0,5,418.0,58,0,0 days 04:09:41.835000
-Blocker,Bug,phunt,0,4,711.0,67,0,0 days 13:33:40.358000
-Minor,Bug,phunt,0,2,664.0,57,0,0 days 03:35:24.181000
-Critical,Improvement,cutting,0,2,297.0,73,0,1 days 01:57:53.314000
-Major,Improvement,cutting,0,6,276.0,48,0,2 days 02:12:49.944000
-Major,Bug,cutting,0,2,72.0,45,0,1 days 04:29:19.317000
-Major,Bug,cutting,0,5,105.0,60,1,2 days 03:39:14.289000
-Major,Bug,sbanacho,0,6,359.0,38,0,1 days 23:03:36.225000
-Major,Improvement,sbanacho,0,4,244.0,35,1,2 days 22:42:21.122000
-Major,Improvement,cutting,1,2,1107.0,19,2,12 days 03:50:03.176000
-Major,Bug,massie,0,3,58.0,57,1,0 days 12:37:35.827000
-Major,Bug,sbanacho,0,1,348.0,45,0,13 days 21:37:14.555000
-Trivial,Improvement,sbanacho,0,2,70.0,52,0,3 days 21:53:09.687000
-Major,Improvement,cutting,0,1,0.0,31,0,1 days 22:21:13.840000
-Major,Improvement,cutting,0,2,564.0,59,0,0 days 23:39:29.695000
-Major,New Feature,cutting,0,4,259.0,40,0,6 days 04:34:06.615000
-Major,New Feature,cutting,0,5,459.0,21,2,3 days 01:29:00.021000
-Minor,Bug,cutting,0,1,180.0,73,0,0 days 00:03:52.577000
-Major,Bug,ehillenius,0,26,91.0,33,1,5 days 15:46:08.424000
-Major,New Feature,ehillenius,0,4,375.0,79,0,42 days 17:19:55.249000
-Trivial,Task,ehillenius,0,1,66.0,43,0,2 days 18:29:05.803000
-Major,Bug,ehillenius,0,3,478.0,59,0,37 days 17:43:40.615000
-Major,Wish,sbanacho,0,1,146.0,55,0,0 days 01:54:17.099000
-Major,Improvement,sbanacho,0,2,321.0,51,0,35 days 00:08:13.233000
-Major,Improvement,sbanacho,0,9,235.0,31,0,15 days 21:58:56.705000
-Major,Bug,sbanacho,0,2,358.0,21,0,0 days 03:22:13.061000
-Trivial,Improvement,ehillenius,0,4,304.0,47,0,38 days 05:26:01.761000
-Major,Bug,ehillenius,0,13,457.0,72,2,2 days 19:07:07.067000
-Major,Bug,ehillenius,0,7,700.0,64,2,9 days 07:57:41.027000
-Major,Bug,ehillenius,0,3,169.0,42,1,3 days 07:36:32.791000
-Major,New Feature,cutting,0,2,95.0,34,1,13 days 20:44:08.349000
-Major,Bug,cutting,0,4,374.0,46,2,4 days 01:19:41.955000
-Major,Improvement,cutting,0,4,181.0,57,0,0 days 05:28:40.511000
-Major,Bug,ravidotg,0,4,436.0,56,0,7 days 07:47:58.773000
-Major,Bug,cutting,0,4,39.0,28,0,11 days 17:10:36.063000
-Blocker,Bug,cutting,0,6,0.0,92,1,389 days 21:11:37.644000
-Major,Bug,thiru_mg,0,2,946.0,59,1,2 days 21:44:24.272000
-Major,Bug,raymie,0,1,429.0,35,1,3 days 06:26:07.209000
-Major,Improvement,cutting,0,2,147.0,56,1,26 days 03:57:15.256000
-Minor,Improvement,thiru_mg,0,6,290.0,60,0,5 days 13:39:47.954000
-Major,Test,cos,0,6,303.0,63,2,6 days 01:46:22.516000
-Major,Bug,sharadag,0,11,184.0,62,4,123 days 19:13:55.465000
-Major,Bug,thiru_mg,0,1,347.0,62,0,2 days 16:34:23.229000
-Major,Bug,sharadag,0,4,92.0,54,0,1 days 17:23:09.020000
-Major,Bug,massie,0,1,206.0,66,1,0 days 13:52:25.541000
-Major,Sub-task,gmporter,0,15,0.0,56,1,25 days 05:25:09.871000
-Major,Bug,raymie,0,9,830.0,43,2,186 days 07:42:46.825000
-Blocker,Bug,cutting,0,1,281.0,42,0,0 days 00:17:44.905000
-Major,Sub-task,massie,0,7,0.0,28,1,2 days 14:59:51.037000
-Major,Task,massie,0,1,66.0,24,1,11 days 02:29:32.017000
-Major,Improvement,sbanacho,0,7,239.0,51,0,11 days 04:22:43.214000
-Major,Sub-task,massie,0,1,83.0,46,1,0 days 22:24:41.712000
-Major,Sub-task,massie,0,1,201.0,79,1,1 days 11:22:25.242000
-Major,Improvement,massie,0,3,152.0,58,1,0 days 02:51:10.940000
-Major,Sub-task,gmporter,0,2,48.0,48,2,0 days 02:04:14.437000
-Major,New Feature,gmporter,0,16,141.0,55,2,1 days 01:21:15.457000
-Major,New Feature,cutting,0,4,80.0,38,2,16 days 01:48:18.182000
-Major,Bug,gmporter,0,7,218.0,60,1,7 days 19:29:05.327000
-Major,Improvement,cutting,0,1,730.0,58,0,63 days 02:29:00.727000
-Major,Improvement,sharadag,0,3,213.0,49,0,0 days 20:27:41.537000
-Major,Bug,thiru_mg,0,3,901.0,42,1,55 days 13:30:30.781000
-Major,Sub-task,massie,0,3,0.0,54,1,22 days 00:14:04.876000
-Major,Improvement,sbanacho,0,3,751.0,50,1,4 days 23:37:40.989000
-Major,New Feature,massie,0,13,356.0,17,2,3 days 17:36:05.039000
-Major,Improvement,cutting,0,3,342.0,57,0,3 days 23:10:31.356000
-Major,Improvement,cutting,0,2,359.0,28,2,0 days 22:33:53.511000
-Major,Improvement,cutting,0,1,209.0,23,1,0 days 21:00:55.551000
-Major,Improvement,cutting,0,2,117.0,21,1,31 days 07:10:57.082000
-Major,Improvement,cutting,0,3,49.0,32,1,0 days 23:20:56.679000
-Major,Bug,philip,0,1,84.0,33,2,1 days 12:10:59.667000
-Major,New Feature,philip,1,23,752.0,45,3,39 days 03:25:11.076000
-Major,Improvement,ijuma,0,6,402.0,26,2,12 days 23:18:48.556000
-Minor,Task,thiru_mg,0,1,99.0,87,0,2 days 17:41:27.454000
-Major,Bug,anomalizer,0,8,388.0,40,2,231 days 02:21:18.482000
-Major,Bug,sharadag,0,2,70.0,44,0,22 days 12:15:38.947000
-Major,Bug,sbanacho,0,2,328.0,42,0,0 days 17:19:13.559000
-Minor,Bug,cutting,0,3,184.0,41,0,0 days 05:02:35.573000
-Trivial,Bug,anomalizer,0,2,890.0,38,0,0 days 12:59:22.653000
-Minor,New Feature,sbanacho,0,7,990.0,8,1,1 days 00:34:14.568000
-Major,New Feature,cutting,0,5,99.0,58,2,93 days 00:18:39.378000
-Major,Bug,anomalizer,0,1,162.0,22,2,1 days 15:04:13.201000
-Major,Bug,sharadag,0,1,50.0,52,0,0 days 07:37:10.576000
-Major,Improvement,sharadag,0,2,24.0,22,0,0 days 08:43:13.947000
-Major,Improvement,massie,0,7,3065.0,40,1,3 days 19:50:37.242000
-Major,Bug,cutting,0,18,202.0,42,2,32 days 00:50:44.668000
-Major,Improvement,cwalters,0,2,83.0,24,1,7 days 03:42:08.037000
-Major,New Feature,massie,1,7,88.0,39,2,0 days 15:38:44.669000
-Major,Improvement,sharadag,0,7,78.0,53,1,20 days 09:02:49.530000
-Major,Bug,sharadag,0,3,92.0,59,0,0 days 08:52:49.982000
-Major,Bug,cutting,0,6,303.0,37,4,134 days 21:48:51.037000
-Major,Improvement,raymie,0,11,2090.0,52,2,44 days 06:17:46.741000
-Major,Improvement,sharadag,0,3,32.0,47,0,51 days 09:07:15.089000
-Major,New Feature,massie,0,20,3096.0,88,2,47 days 23:51:04.119000
-Major,Test,cos,0,19,397.0,57,2,16 days 23:48:10.188000
-Major,Improvement,raymie,0,15,1560.0,43,0,36 days 23:57:38.364000
-Major,Task,cutting,0,5,559.0,19,6,156 days 01:30:01.443000
-Major,Bug,raymie,0,13,583.0,48,2,41 days 07:40:18.598000
-Major,Improvement,cutting,0,3,372.0,56,0,18 days 20:45:43.985000
-Major,New Feature,cutting,0,2,85.0,24,0,81 days 02:14:13.286000
-Major,New Feature,cutting,0,10,39.0,13,0,25 days 03:33:15.192000
-Major,Improvement,cutting,0,6,158.0,24,0,17 days 23:36:10.920000
-Minor,Improvement,cutting,0,1,282.0,32,0,0 days 00:01:44.712000
-Major,Improvement,sharadag,0,3,0.0,50,0,6 days 17:27:38.952000
-Major,Bug,sharadag,0,3,85.0,52,0,0 days 10:34:22.138000
-Major,Improvement,sharadag,0,3,128.0,45,0,0 days 21:51:14.743000
-Major,Bug,hong.tang,0,8,116.0,39,0,38 days 16:10:27.829000
-Minor,Improvement,hong.tang,0,2,110.0,58,0,0 days 18:07:55.179000
-Major,Improvement,cutting,0,4,247.0,19,0,38 days 21:06:30.743000
-Major,Improvement,cutting,0,3,349.0,28,0,14 days 00:28:17.211000
-Major,Improvement,cutting,0,11,200.0,39,0,27 days 23:15:51.113000
-Major,Bug,hong.tang,0,1,486.0,37,0,1 days 15:25:02.085000
-Major,Improvement,hong.tang,0,16,535.0,103,0,3 days 04:10:30.932000
-Major,Test,sharadag,0,6,50.0,49,0,3 days 18:32:56.596000
-Major,Bug,phunt,0,2,501.0,36,0,3 days 22:51:55.964000
-Critical,Bug,phunt,0,4,263.0,54,0,0 days 03:17:01.682000
-Major,Improvement,cutting,0,7,204.0,22,1,53 days 20:29:14.909000
-Major,Bug,cutting,0,4,208.0,54,0,17 days 22:04:58.356000
-Major,Improvement,tomwhite,0,6,624.0,61,4,6 days 08:55:08.220000
-Major,Bug,eljefe6a,0,4,183.0,32,4,0 days 21:30:49.849000
-Minor,Bug,davidtaylor,0,5,151.0,34,4,3 days 00:18:05.876000
-Major,Bug,gjbaxter@mac.com,0,5,1226.0,51,4,4 days 01:21:49.069000
-Major,Bug,eljefe6a,0,6,279.0,33,5,11 days 20:32:00.561000
-Minor,New Feature,qwertymaniac,0,9,161.0,37,4,20 days 13:42:26.055000
-Trivial,Bug,davidtaylor,0,4,145.0,36,4,15 days 03:02:35.749000
-Major,Bug,davidtaylor,0,5,341.0,35,4,0 days 04:51:03.472000
-Major,Bug,aj987,0,6,207.0,37,4,0 days 23:49:28.394000
-Major,Improvement,cutting,0,5,85.0,23,3,1 days 03:16:35.127000
-Minor,Bug,robair,0,5,1793.0,42,4,3 days 21:00:17.930000
-Major,Improvement,eljefe6a,0,4,336.0,36,4,2 days 04:44:56.438000
-Major,Bug,ramanasv,0,10,328.0,39,5,5 days 01:00:27.791000
-Minor,Improvement,qwertymaniac,0,9,493.0,66,4,13 days 11:40:42.335000
-Major,New Feature,deepujain,0,11,2156.0,52,4,18 days 07:26:33.864000
-Major,Bug,ramanasv,0,6,258.0,64,4,24 days 03:14:36.141000
-Major,Improvement,drussel,0,9,520.0,29,5,21 days 23:47:17.569000
-Major,Bug,russell.jurney,0,1,1594.0,70,1,6 days 04:48:22.775000
-Minor,Improvement,tonyliu73,0,4,1013.0,84,3,0 days 02:34:25.094000
-Major,Bug,esammer,0,11,463.0,68,5,7 days 17:16:14.054000
-Major,New Feature,kryzthov,0,5,355.0,51,5,12 days 16:18:54.840000
-Major,Bug,adamcataldo,0,1,190.0,61,2,9 days 19:34:43.280000
-Major,Bug,zyoma,1,21,145.0,104,6,19 days 22:32:38.508000
-Minor,Bug,mristima,0,17,377.0,84,6,26 days 23:25:31.044000
-Major,Improvement,striderapache,0,7,304.0,46,4,29 days 11:23:11
-Major,Test,robair,0,4,213.0,74,4,9 days 21:42:57.994000
-Minor,Improvement,robair,0,5,49.0,49,4,31 days 01:25:16.598000
-Minor,New Feature,robair,0,9,96.0,69,4,32 days 02:43:30.157000
-Minor,New Feature,robair,1,8,227.0,47,5,35 days 00:08:18.696000
-Minor,Improvement,david@carr.name,0,4,508.0,61,2,1 days 01:34:56.624000
-Major,Bug,hshreedharan,0,2,655.0,75,2,1 days 19:23:46.654000
-Blocker,Bug,balaji.seshadri,1,14,835.0,30,4,1 days 23:07:38.653000
-Major,New Feature,hshreedharan,0,18,243.0,57,5,20 days 23:34:06.028000
-Major,Bug,hshreedharan,0,18,355.0,76,5,8 days 02:40:49.088000
-Major,Bug,kryzthov,0,11,499.0,51,3,8 days 05:16:24.465000
-Major,Improvement,alexandre.normand,0,10,1045.0,94,5,28 days 06:17:04.499000
-Major,Bug,kryzthov,0,31,523.0,19,5,98 days 13:14:54.409000
-Minor,Bug,psangree,0,1,789.0,54,2,101 days 03:53:35.963000
-Major,Improvement,mteodoro,0,6,163.0,47,5,88 days 18:53:52.228000
-Major,Bug,graham sanderson,0,5,2996.0,144,4,9 days 21:50:49.208000
-Minor,Bug,julian.zhou,0,5,1164.0,139,5,1 days 11:43:57.143000
-Major,New Feature,njw45,0,9,524.0,14,4,67 days 04:54:55.655000
-Major,Bug,thinker0,0,3,3240.0,53,4,112 days 07:51:57.618000
-Major,Bug,kryzthov,0,15,0.0,70,6,8 days 03:12:55.287000
-Major,Bug,mchugh,0,5,766.0,80,4,17 days 06:15:56.318000
-Major,Bug,bw123,0,1,623.0,41,2,119 days 00:21:42.008000
-Major,Bug,btibi,0,6,531.0,35,2,126 days 01:30:51.966000
-Major,Improvement,facboy,0,1,113.0,44,1,0 days 16:45:38.171000
-Major,Bug,yahoo_build,0,5,940.0,103,5,146 days 15:04:02.026000
-Major,New Feature,mengxr,0,4,1032.0,73,2,22 days 03:10:01.436000
-Major,Bug,apaulsen,0,4,955.0,64,4,17 days 05:09:09.035000
-Major,Bug,kryzthov,0,5,95.0,49,4,30 days 18:24:18.845000
-Major,Improvement,llasram,0,14,317.0,59,4,20 days 05:41:01.327000
-Major,Improvement,cutting,0,6,145.0,66,3,7 days 01:52:14.924000
-Major,Bug,mwagner,1,23,211.0,33,9,183 days 19:14:18.831000
-Minor,Improvement,fsaintjacques,1,6,67.0,66,5,192 days 08:18:03.697000
-Major,New Feature,vince83,5,19,3289.0,67,6,71 days 09:24:13.119000
-Minor,Improvement,dmcintosh,0,17,359.0,34,4,174 days 02:03:21.581000
-Major,Improvement,scott_carey,0,24,148.0,27,3,82 days 01:51:51.699000
-Minor,Bug,trochee,2,29,829.0,70,6,7 days 22:44:00.615000
-Major,Improvement,scott_carey,0,7,166.0,55,3,1 days 08:41:32.460000
-Minor,Improvement,kryzthov,0,15,94.0,43,4,6 days 11:51:09.869000
-Major,Bug,trochee,0,9,813.0,62,3,13 days 21:41:28.371000
-Major,Bug,jbaldassari,0,8,6015.0,102,4,83 days 11:36:34.805000
-Minor,Improvement,romixlev,0,84,743.0,79,4,38 days 23:21:56.657000
-Minor,Improvement,alexandre.normand,0,47,577.0,98,5,26 days 23:16:03.804000
-Major,Improvement,brocknoland,0,8,46.0,47,4,345 days 17:00:45.737000
-Major,Bug,ssmith,1,7,5596.0,52,6,336 days 06:46:05.026000
-Minor,Improvement,pdlug,1,30,430.0,71,8,611 days 07:38:34.267000
-Major,New Feature,iocanel,0,27,249.0,20,6,737 days 17:47:17.585000
-Major,New Feature,hammer,4,51,0.0,17,11,773 days 09:41:41.627000
-Major,New Feature,patrickangeles,5,20,88.0,29,14,776 days 05:26:28
+priority,issue_type,reporter,vote_count,comment_count,description_length,summary_length,watch_count,issue_number,num_components,component_java,num_affected_versions,num_labels,created_weekday,created_month,duration
+Critical,Bug,scott_carey,0,2,41.0,43,2,1349,0,0,0,0,3,6,0 days 00:11:42.315000
+Major,Bug,skye,0,6,528.0,55,6,1346,1,0,1,0,3,6,13 days 23:36:48.400000
+Minor,Improvement,bdechoux,0,7,279.0,40,5,1337,0,0,1,0,1,5,77 days 21:50:06.270000
+Critical,Bug,kirwin,0,4,1025.0,45,3,1326,1,1,1,0,2,5,1 days 05:16:18.660000
+Minor,New Feature,vince83,6,4,1260.0,45,4,1330,1,1,0,0,2,5,13 days 03:21:04.719000
+Minor,New Feature,vince83,6,4,1409.0,43,4,1328,1,1,0,1,4,5,17 days 22:31:41.713000
+Major,Improvement,bw123,0,4,463.0,49,3,1324,1,0,3,0,1,5,17 days 02:03:29.325000
+Major,Bug,trochee,0,6,625.0,44,4,1331,1,1,0,0,2,5,0 days 23:38:54.608000
+Major,Improvement,hernan.otero,0,4,449.0,69,3,1327,1,1,1,0,2,5,1 days 03:55:19.035000
+Major,Bug,massie,0,8,170.0,59,3,1322,1,0,1,0,0,5,2 days 23:49:23.706000
+Major,Bug,cutting,0,8,161.0,46,2,1320,1,1,0,0,0,5,1 days 21:12:00.143000
+Major,New Feature,cutting,0,3,235.0,32,2,1319,1,1,0,0,0,5,3 days 00:47:28.846000
+Minor,Improvement,scott_carey,0,5,119.0,49,2,1314,1,1,0,0,1,4,15 days 01:20:55.177000
+Major,Bug,scott_carey,0,4,300.0,45,2,1311,0,0,1,0,0,4,21 days 06:13:20.199000
+Major,Bug,szesch,0,4,835.0,51,3,1309,1,1,1,0,0,4,0 days 23:44:18.858000
+Major,Bug,szesch,0,7,424.0,41,3,1308,1,1,0,0,0,4,1 days 03:35:00.231000
+Minor,New Feature,vince83,0,7,1206.0,51,4,1307,1,1,0,0,0,4,4 days 05:38:12.233000
+Minor,Improvement,minaguib,0,7,171.0,72,4,1306,1,1,1,2,6,4,3 days 14:15:23.355000
+Major,Bug,kryzthov,0,4,799.0,115,3,1300,1,1,1,0,3,4,4 days 13:20:31.194000
+Major,Bug,cutting,0,5,221.0,60,2,1295,1,1,0,0,2,4,6 days 04:52:33.869000
+Major,New Feature,martinkl,0,5,158.0,41,3,1288,1,0,0,0,2,4,10 days 00:00:30.190000
+Major,Bug,martinkl,0,4,382.0,56,3,1272,1,0,1,0,6,3,8 days 22:16:21.021000
+Minor,Improvement,sujesh.chirackkal,0,0,189.0,40,1,1298,1,1,2,0,5,4,0 days 00:19:42.417000
+Major,Bug,drussel,0,6,186.0,61,4,1290,1,0,1,0,3,4,69 days 20:35:20.645000
+Minor,Improvement,romixlev,0,21,562.0,51,3,1277,1,1,1,0,3,3,32 days 23:51:24.347000
+Major,Bug,ahanna,0,1,2105.0,45,2,1271,2,1,1,0,2,3,0 days 02:07:38.846000
+Major,Bug,cutting,0,0,139.0,54,1,1264,1,0,0,0,3,2,0 days 05:46:10.012000
+Major,Bug,martinkl,0,4,150.0,47,3,1258,1,0,1,0,1,2,0 days 06:54:55.145000
+Major,Bug,martinkl,0,4,440.0,41,3,1257,1,0,1,0,1,2,0 days 07:34:33.438000
+Minor,Improvement,trochee,0,6,709.0,75,3,1255,1,0,1,1,3,2,0 days 02:35:53.245000
+Minor,Improvement,ted.m,0,7,312.0,37,3,1254,0,0,0,0,3,2,5 days 02:02:53.715000
+Minor,Improvement,ted.m,0,3,478.0,42,3,1253,0,0,1,0,3,2,0 days 06:50:45.326000
+Minor,New Feature,cutting,0,5,283.0,55,2,1252,1,1,0,0,1,2,7 days 01:23:51.095000
+Minor,Bug,ted.m,0,12,433.0,49,4,1251,1,1,1,0,1,2,2 days 20:32:41.035000
+Major,New Feature,njw45,0,4,333.0,51,3,1250,1,1,1,1,0,2,1 days 07:00:36.389000
+Major,Bug,esammer,0,6,779.0,53,3,1249,1,1,1,0,0,2,1 days 20:56:34.312000
+Minor,Improvement,gareth@logicalpractice.com,0,5,265.0,65,3,1248,1,1,0,0,6,2,0 days 02:58:05.639000
+Major,Bug,chengas123,0,5,1097.0,37,3,1247,1,1,1,1,6,2,4 days 21:22:28.112000
+Minor,Improvement,qwertymaniac,0,1,1626.0,78,1,1244,1,1,0,0,3,2,0 days 00:01:07.396000
+Minor,Improvement,ted.m,0,21,769.0,39,4,1243,1,1,1,0,3,2,5 days 11:00:56.215000
+Major,Bug,ted.m,1,8,411.0,52,5,1242,0,0,1,0,2,2,1 days 01:34:20.966000
+Major,Improvement,jadler,1,6,486.0,52,6,1241,1,1,1,0,4,2,3 days 01:20:38.990000
+Major,Bug,brocknoland,0,8,1331.0,93,3,1240,1,1,1,0,4,2,3 days 22:23:53.519000
+Minor,Bug,baunz,0,3,629.0,34,3,1239,1,1,1,2,4,2,3 days 04:38:12.054000
+Major,Improvement,mic159,0,7,343.0,35,4,1238,1,0,0,0,4,2,112 days 07:44:32.041000
+Minor,Bug,mwagner,0,1,171.0,59,2,1233,1,1,0,0,1,1,2 days 20:58:43.982000
+Minor,Improvement,gwu,0,5,707.0,71,2,1232,1,1,1,0,4,1,6 days 22:05:32.023000
+Major,Bug,mwagner,0,1,349.0,55,3,1231,0,0,0,0,4,1,3 days 00:07:01.009000
+Blocker,Bug,tomwhite,1,10,177.0,57,3,1230,1,1,0,0,4,1,4 days 23:23:42.495000
+Major,Improvement,mwagner,1,14,234.0,36,4,1229,0,0,0,0,3,1,8 days 18:22:34.478000
+Major,Bug,mwagner,0,7,243.0,47,4,1228,1,1,1,0,3,1,25 days 21:13:52.415000
+Major,Bug,scott_carey,0,3,1604.0,51,2,1227,0,0,1,0,2,1,15 days 00:45:40.603000
+Trivial,Bug,logicnut,0,1,384.0,30,2,1224,1,0,0,0,5,1,40 days 03:38:44.296000
+Trivial,Improvement,ctm,0,4,264.0,69,2,1223,1,1,1,0,3,12,29 days 05:31:23.335000
+Major,Bug,rodrigotrujillo,0,4,1746.0,46,3,1221,1,1,1,0,2,12,0 days 05:06:09.103000
+Major,Bug,slandelle,0,10,641.0,10,4,1220,1,1,1,0,3,12,57 days 02:29:45.330000
+Major,Bug,pjsg,0,3,258.0,67,2,1217,1,0,1,1,4,12,0 days 03:47:00.141000
+Major,Bug,matterhayes,0,33,1294.0,62,7,1215,1,1,1,2,4,12,73 days 13:47:07.421000
+Major,Improvement,skye,0,9,76.0,29,5,1211,1,0,1,1,3,11,27 days 16:54:34.671000
+Trivial,Improvement,dbeech,0,2,147.0,51,2,1210,0,0,1,0,2,11,7 days 12:25:53.847000
+Minor,Improvement,jeffkole,0,9,582.0,52,2,1209,1,1,1,0,0,11,9 days 23:08:32.819000
+Minor,Improvement,saden1,0,4,44.0,34,2,1207,1,1,1,0,4,11,3 days 05:30:53.618000
+Major,Bug,cvigny,0,9,1332.0,29,2,1206,1,0,1,0,4,11,12 days 09:08:04.374000
+Minor,New Feature,saden1,0,6,1158.0,44,2,1205,1,1,1,0,2,11,7 days 07:05:21.030000
+Major,Improvement,skye,0,11,284.0,44,5,1202,1,0,0,1,4,11,7 days 04:54:01.407000
+Major,Bug,saden1,0,10,174.0,47,2,1201,1,1,1,0,4,11,12 days 06:30:55.366000
+Major,Bug,tomwhite,0,3,231.0,75,2,1200,1,1,1,0,3,11,0 days 13:03:05.728000
+Major,Bug,kimslbing,0,8,835.0,72,2,1199,1,1,1,1,3,11,6 days 15:49:53.073000
+Major,Bug,mpercy,0,6,279.0,70,3,1198,1,1,1,0,3,11,96 days 18:50:58.967000
+Major,Bug,mpercy,0,5,2502.0,68,2,1197,2,1,0,0,3,11,0 days 20:28:24.210000
+Major,New Feature,saden1,0,20,1599.0,39,4,1188,1,1,0,0,5,11,10 days 09:36:28.869000
+Major,New Feature,saden1,0,9,1743.0,24,2,1186,1,1,0,0,1,10,6 days 04:06:14.880000
+Minor,Bug,jeffreyt,0,8,909.0,70,2,1183,1,1,1,0,2,10,21 days 15:04:23.103000
+Major,Bug,drussel,0,5,285.0,80,5,1181,1,0,3,0,1,10,233 days 10:31:20.017000
+Major,Bug,viji_r,0,5,523.0,78,4,1179,1,1,1,0,2,10,133 days 22:54:26.286000
+Trivial,Bug,martinkl,0,3,96.0,27,3,1178,0,0,1,0,2,10,42 days 21:06:01.209000
+Major,Bug,mintman,0,3,1461.0,44,2,1177,1,0,1,1,0,10,58 days 13:57:02.686000
+Major,Bug,sandyr,0,14,364.0,112,3,1175,1,1,1,0,3,9,61 days 23:40:22.482000
+Minor,Bug,sl.sy.ifm,0,3,112.0,31,3,1174,1,0,1,0,3,9,64 days 03:31:41.649000
+Major,Bug,sjoverend,2,7,2171.0,47,5,1172,1,0,1,1,1,9,271 days 21:09:22.022000
+Minor,Bug,dbeech,0,3,415.0,62,2,1171,1,1,1,0,5,9,2 days 12:52:58.069000
+Major,Bug,tomwhite,0,17,132.0,50,3,1170,1,1,1,0,2,9,7 days 22:52:38.145000
+Major,Improvement,hernan.otero,0,3,1392.0,52,2,1169,1,1,1,0,1,9,6 days 02:22:14.540000
+Minor,Bug,onetoinfinity@yahoo.com,0,1,680.0,69,2,1168,1,1,1,0,1,9,0 days 00:22:41.164000
+Minor,Improvement,lmartinking,0,2,435.0,38,2,1160,1,0,1,1,3,9,0 days 18:24:07.159000
+Major,Bug,jbaldassari,0,8,331.0,67,4,1297,1,1,1,2,3,4,94 days 22:55:30.380000
+Major,Bug,jbaldassari,0,10,4674.0,85,4,1292,1,1,1,3,1,4,83 days 20:37:13.552000
+Major,Test,martinkl,0,5,249.0,40,3,1287,1,0,1,0,2,4,10 days 00:01:00.445000
+Major,Bug,cwsteinbach,0,5,0.0,67,4,1279,1,0,1,0,3,3,126 days 18:51:41.997000
+Major,New Feature,tomwhite,0,37,86.0,24,7,1274,1,1,0,0,1,3,47 days 20:18:45.920000
+Major,Improvement,cutting,0,3,143.0,35,1,1267,1,1,0,0,3,2,3 days 23:18:25.837000
+Major,Bug,nagav.ashish,0,14,131.0,95,5,1266,1,1,0,0,3,2,43 days 08:30:18.980000
+Minor,Bug,cconner,0,10,754.0,71,5,1261,1,1,1,0,2,2,132 days 02:36:57.728000
+Major,Improvement,martinkl,0,6,818.0,42,2,1260,1,0,1,0,2,2,9 days 17:25:09.547000
+Major,Improvement,cutting,0,7,349.0,40,2,1259,1,0,0,0,2,2,35 days 22:59:53.651000
+Major,Bug,mic159,0,10,244.0,54,5,1237,1,0,0,0,4,2,320 days 07:55:11.820000
+Major,Bug,dbeech,1,17,517.0,72,9,1234,0,0,1,0,3,1,329 days 11:14:10.684000
+Major,Bug,tomwhite,0,8,194.0,84,4,1155,1,1,0,0,1,9,0 days 21:16:19.341000
+Major,Bug,gffletch,0,6,875.0,57,3,1166,1,1,1,0,4,9,3 days 00:41:41.496000
+Major,Bug,vnadkarni,0,4,1505.0,56,2,1165,1,0,1,0,4,9,3 days 05:39:09.018000
+Trivial,Bug,vnadkarni,0,3,477.0,55,2,1164,1,0,1,0,4,9,3 days 06:01:00.768000
+Major,Bug,mpugachev,0,4,74.0,44,3,1163,1,0,1,0,4,9,76 days 21:08:39.723000
+Major,Bug,alexandre.normand,0,6,414.0,80,2,1162,1,1,1,2,3,9,0 days 02:26:02.826000
+Major,Bug,lmartinking,0,7,1333.0,43,3,1161,1,0,1,1,3,9,4 days 17:01:19.166000
+Major,Bug,lmartinking,0,2,256.0,52,2,1159,1,0,1,2,3,9,0 days 18:30:25.909000
+Major,Bug,lmartinking,0,3,186.0,52,2,1158,1,0,1,2,3,9,0 days 18:36:46.231000
+Minor,Improvement,onetoinfinity@yahoo.com,0,12,315.0,74,3,1157,2,1,1,0,2,9,50 days 00:26:15.615000
+Major,Bug,karel1980,0,6,273.0,47,3,1154,0,0,0,0,1,9,2 days 11:00:34.712000
+Major,Bug,alexandre.normand,0,9,1424.0,84,2,1153,1,1,1,2,1,9,1 days 23:52:08.580000
+Major,Bug,cutting,0,1,190.0,38,1,1152,1,1,1,0,0,9,0 days 00:06:59.805000
+Minor,Improvement,hshreedharan,0,6,133.0,73,2,1151,1,1,0,0,0,9,1 days 05:09:36.856000
+Minor,Bug,gabriel.reid,0,9,294.0,48,2,1150,1,1,0,0,4,9,9 days 23:55:08.764000
+Major,Improvement,gabriel.reid,0,3,375.0,55,2,1149,1,1,0,0,4,9,4 days 01:55:14.623000
+Major,Bug,netvisao,0,3,742.0,55,3,1148,1,1,1,1,4,9,157 days 22:31:15.242000
+Major,Improvement,alexandre.normand,0,10,485.0,75,2,1147,1,1,1,2,2,9,5 days 04:04:08.976000
+Major,Bug,alexandre.normand,0,12,583.0,86,2,1146,1,1,1,1,4,8,9 days 19:41:14.065000
+Major,Bug,alexandre.normand,0,5,3284.0,82,2,1145,1,1,1,0,4,8,0 days 04:02:02.801000
+Major,Bug,janlugt,0,4,177.0,53,3,1143,1,0,1,0,1,8,11 days 11:33:15.767000
+Major,Bug,mnagy,0,4,367.0,73,2,1142,1,0,0,0,1,8,24 days 07:40:05.987000
+Major,Bug,mnagy,0,3,198.0,43,2,1141,1,0,1,0,1,8,5 days 15:38:46.280000
+Major,Bug,janlugt,0,3,359.0,42,2,1140,1,0,1,0,2,8,4 days 11:02:24.969000
+Minor,Improvement,lewismc,0,6,187.0,46,2,1139,1,1,1,0,2,8,0 days 07:31:15.110000
+Major,Bug,mpugachev,0,3,285.0,61,2,1138,1,0,1,0,0,8,31 days 07:15:10.800000
+Minor,Bug,jeremy@lewi.us,0,3,606.0,35,2,1136,1,1,1,0,6,8,0 days 20:42:09.184000
+Major,Bug,thiru_mg,0,3,392.0,30,1,1135,1,0,1,0,6,8,15 days 04:41:31.372000
+Major,Bug,pdlug,1,4,11762.0,55,3,1134,1,0,1,0,4,7,124 days 21:22:45.387000
+Minor,Bug,lmoss,0,2,667.0,73,2,1131,1,0,1,1,6,7,1 days 09:41:29.301000
+Major,Improvement,mpugachev,0,3,260.0,23,2,1129,1,0,1,0,3,7,56 days 10:27:46.800000
+Critical,Bug,ekohlwey,0,4,1342.0,72,2,1128,0,0,2,0,1,7,2 days 05:48:24.077000
+Major,Improvement,cutting,0,2,303.0,51,1,1125,2,1,0,0,3,7,0 days 00:26:05.166000
+Major,Bug,stevenwillis,0,4,199.0,61,3,1123,1,1,3,0,2,6,35 days 02:21:01.311000
+Major,Improvement,nagav.ashish,0,4,125.0,107,2,1120,1,1,1,2,3,6,11 days 00:35:00.272000
+Major,Bug,sortega,0,11,517.0,27,2,1119,1,1,2,0,2,6,15 days 14:28:03.416000
+Major,Bug,mpercy,0,4,1546.0,96,3,1118,0,0,1,0,2,6,0 days 03:33:05.738000
+Major,Improvement,lmartinking,0,6,172.0,83,2,1117,1,0,0,0,0,6,4 days 05:22:03.956000
+Major,Bug,thiru_mg,0,3,252.0,43,1,1116,1,0,10,0,4,6,18 days 14:46:52.937000
+Critical,Bug,mpugachev,0,5,569.0,50,2,1115,1,0,1,0,2,6,9 days 00:46:16.543000
+Major,Bug,cutting,0,1,89.0,52,1,1114,1,1,1,0,0,6,0 days 00:01:44.005000
+Minor,Bug,matthewcmead,0,8,127.0,54,3,1112,1,1,2,2,5,6,6 days 16:50:37.926000
+Major,Bug,hshreedharan,0,7,771.0,53,9,1111,1,1,1,0,4,6,94 days 13:13:16.858000
+Major,Bug,spachev,0,3,235.0,59,3,1110,1,0,1,0,3,6,10 days 23:35:59.315000
+Major,Bug,mfarnan,0,4,275.0,49,2,1109,1,0,3,4,3,6,35 days 17:12:28.715000
+Major,New Feature,nagav.ashish,0,6,121.0,45,2,1108,1,1,1,0,5,6,13 days 21:10:39.313000
+Major,New Feature,nagav.ashish,0,8,50.0,43,3,1106,1,1,1,2,4,6,11 days 12:50:52.971000
+Major,New Feature,lmartinking,1,5,135.0,15,4,1104,1,0,1,2,0,5,21 days 16:50:22.082000
+Major,Improvement,jacobmetcalf,0,10,1594.0,58,4,1103,1,1,1,0,5,5,67 days 03:02:58.981000
+Major,Bug,mpugachev,0,2,77.0,45,2,1102,1,0,2,0,4,5,13 days 10:58:08.258000
+Critical,Bug,mpugachev,0,10,123.0,78,3,1101,1,0,2,0,3,5,112 days 06:57:55.374000
+Major,Bug,jojenki,0,11,1229.0,29,2,1099,1,1,1,1,0,5,16 days 21:20:22.316000
+Major,Bug,cutting,0,3,264.0,52,2,1098,1,0,0,0,0,5,1 days 23:40:21.300000
+Major,Bug,thiru_mg,0,4,580.0,43,3,1097,1,1,0,0,0,5,2 days 14:49:47.171000
+Major,Bug,dcreager,0,4,318.0,41,2,1096,1,0,1,0,6,5,0 days 00:05:11.504000
+Minor,Improvement,thiru_mg,0,1,112.0,114,1,1095,1,0,0,0,5,5,1 days 13:53:43.045000
+Major,Bug,ekohlwey,0,9,341.0,48,2,1094,1,1,2,0,3,5,1 days 03:32:13.766000
+Major,Bug,catalinalexandru.zamfir@gameloft.com,0,1,2511.0,72,1,1093,0,0,2,0,2,5,1 days 03:56:09.745000
+Critical,Bug,mpugachev,0,8,176.0,56,3,1092,1,0,2,0,2,5,4 days 03:45:24.788000
+Minor,Improvement,vnadkarni,0,3,328.0,60,2,1091,1,0,1,0,1,5,4 days 20:46:29.871000
+Major,Bug,catalinalexandru.zamfir@gameloft.com,0,11,2023.0,88,3,1090,0,0,1,0,0,5,3 days 08:41:29.008000
+Major,Bug,vnadkarni,0,3,1100.0,63,1,1089,1,0,2,0,0,5,201 days 08:36:18.397000
+Major,Improvement,vnadkarni,0,6,1745.0,64,2,1088,1,0,1,0,0,5,6 days 06:01:30.193000
+Blocker,Bug,mpugachev,0,4,833.0,64,1,1087,1,0,1,0,5,5,9 days 01:22:10.964000
+Critical,Bug,mpugachev,0,2,197.0,58,1,1086,1,0,2,0,5,5,8 days 03:28:12.922000
+Major,New Feature,ewhauser,0,2,99.0,21,1,1085,1,0,1,0,4,5,4 days 17:56:06.533000
+Major,Bug,mpugachev,0,3,161.0,68,1,1084,1,0,2,0,4,5,9 days 04:08:28.316000
+Major,Bug,mpugachev,0,5,45.0,29,1,1083,1,0,2,0,4,5,9 days 05:15:00.006000
+Major,Bug,mpugachev,0,2,146.0,39,2,1082,1,0,2,0,4,5,9 days 06:27:23.505000
+Major,Bug,rfuller,0,8,607.0,54,5,1081,0,0,1,0,3,5,7 days 05:40:05.262000
+Major,Bug,kehli,0,4,1982.0,51,0,1080,1,0,1,0,6,5,3 days 02:06:36.865000
+Minor,Improvement,nurf,0,3,844.0,47,1,1079,1,0,2,0,4,5,11 days 19:38:42.996000
+Major,Bug,nurf,0,2,127.0,50,1,1078,1,0,1,0,4,5,11 days 19:44:54.579000
+Major,Bug,nurf,0,2,198.0,39,1,1077,1,0,2,0,4,5,11 days 19:40:09.259000
+Major,Bug,kaykay.unique,0,3,54.0,41,1,1076,1,1,1,0,6,4,18 days 16:44:39.147000
+Minor,Improvement,kaykay.unique,0,1,139.0,29,0,1075,1,0,1,0,6,4,9 days 17:12:54.159000
+Major,Improvement,hernan.otero,0,4,464.0,40,2,1074,1,1,1,0,4,4,20 days 03:07:38.400000
+Minor,Bug,jghoman,0,2,222.0,59,0,1071,1,1,1,0,0,4,15 days 01:26:22.632000
+Major,Bug,thiru_mg,0,3,111.0,49,0,1070,1,1,0,0,6,4,16 days 18:45:00.362000
+Major,Bug,thomasoa,0,4,913.0,85,1,1069,1,1,0,0,4,4,52 days 22:30:07.452000
+Major,Improvement,thiru_mg,0,3,159.0,66,0,1068,1,1,1,0,4,4,2 days 06:41:48.156000
+Major,Bug,dlord,0,9,6603.0,115,0,1066,0,0,1,0,3,4,22 days 18:04:02.832000
+Major,Bug,kehli,0,5,642.0,62,0,1065,1,0,1,0,2,4,24 days 20:36:32.245000
+Major,Improvement,kevinzhao,0,4,187.0,117,1,1062,1,1,1,1,1,4,29 days 12:50:40.801000
+Major,Improvement,kaykay.unique,0,1,308.0,29,0,1060,0,0,1,0,6,4,1 days 00:40:16.604000
+Major,Bug,kevinzhao,0,4,142.0,67,1,1056,1,1,1,0,4,4,34 days 19:18:21.166000
+Minor,Bug,thiru_mg,0,3,333.0,42,0,1055,1,1,1,0,5,4,4 days 23:08:57.888000
+Major,Bug,susanths,0,1,3933.0,72,1,1054,1,1,1,0,2,4,0 days 18:16:55.014000
+Major,New Feature,nagav.ashish,0,13,134.0,36,4,1052,1,1,1,2,4,3,51 days 23:10:36.929000
+Major,Bug,hasghari,1,4,418.0,61,2,1051,1,1,1,1,1,3,50 days 01:53:45.216000
+Major,Bug,abawany,0,8,708.0,81,2,1050,1,0,4,1,4,3,56 days 06:31:47.302000
+Minor,Bug,adwkenworthy,0,3,1234.0,80,1,1049,1,1,1,0,4,3,54 days 08:37:14.318000
+Major,Bug,dcreager,1,3,298.0,44,0,1048,1,0,1,0,3,3,36 days 23:18:25.721000
+Minor,Bug,gabriel.reid,0,6,964.0,82,2,1046,1,1,1,0,4,3,62 days 07:01:15.504000
+Minor,Bug,jeremy@lewi.us,0,9,1084.0,37,0,1045,1,1,1,0,2,3,2 days 05:46:15.527000
+Trivial,Improvement,qwertymaniac,0,1,247.0,59,1,1043,1,1,1,1,4,3,63 days 23:00:00.572000
+Trivial,Improvement,lewismc,0,2,130.0,49,1,1042,0,0,0,1,1,3,0 days 04:16:31.788000
+Minor,Bug,irvingd,0,2,1427.0,43,0,1041,1,1,1,0,3,3,1 days 00:17:47.262000
+Minor,Bug,vnadkarni,0,2,1303.0,79,0,1039,1,0,1,0,2,2,0 days 18:35:04.972000
+Major,Bug,vnadkarni,0,2,792.0,108,0,1038,1,0,1,0,2,2,0 days 19:41:55.303000
+Major,Bug,scott_carey,0,4,682.0,51,1,1037,1,1,1,0,3,2,0 days 23:49:44.767000
+Major,Bug,gffletch,1,11,249.0,52,2,1036,1,1,1,0,3,2,1 days 05:58:28.042000
+Major,New Feature,detonator413,0,3,955.0,54,3,1035,0,0,0,0,2,2,350 days 08:34:59.396000
+Major,Bug,vnadkarni,0,7,921.0,95,0,1034,1,0,1,0,2,2,8 days 00:10:29.895000
+Major,Bug,vnadkarni,0,3,2195.0,72,0,1033,1,0,1,0,6,2,9 days 02:40:54.532000
+Minor,Bug,dcreager,0,2,431.0,48,0,1031,1,0,1,0,2,2,13 days 23:22:20.750000
+Minor,Bug,janhoy,0,2,106.0,26,0,1030,0,0,0,1,1,2,7 days 23:33:23.715000
+Major,Bug,swilkinson,0,17,4634.0,87,0,1027,1,1,1,0,4,2,20 days 23:18:21.644000
+Minor,Bug,raymie,0,8,172.0,49,1,1021,1,0,0,0,2,2,1 days 15:52:44.653000
+Major,Bug,jbaldassari,0,4,1002.0,61,0,1020,1,1,1,0,1,2,0 days 15:24:56.939000
+Minor,Improvement,jbaldassari,0,3,140.0,51,0,1019,1,1,1,0,1,2,0 days 22:01:55.025000
+Trivial,Improvement,scott_carey,0,3,83.0,92,0,1018,0,0,1,0,1,2,0 days 21:59:07.009000
+Trivial,Bug,koert,0,6,283.0,30,0,1016,1,1,1,0,5,2,3 days 06:23:11.731000
+Major,Improvement,thiru_mg,0,3,1249.0,61,0,1015,1,0,0,0,5,2,5 days 04:35:41.167000
+Major,Bug,lmartinking,0,2,234.0,59,0,1014,1,0,0,1,1,1,1 days 16:32:08.916000
+Blocker,Bug,jbaldassari,0,6,1803.0,46,0,1013,1,1,1,0,0,1,9 days 03:39:49.130000
+Minor,Improvement,lars_francke,0,6,256.0,50,0,1012,1,1,1,0,4,1,12 days 02:42:23.685000
+Minor,Improvement,lars_francke,0,9,737.0,21,0,1011,1,1,1,0,4,1,11 days 02:15:59.003000
+Minor,Improvement,lars_francke,0,3,256.0,92,1,1010,1,0,1,0,2,1,13 days 09:42:55.265000
+Major,Improvement,jbaldassari,0,7,1148.0,78,3,1008,0,0,1,1,2,1,330 days 11:03:26.447000
+Major,Bug,jbaldassari,0,20,693.0,76,0,1007,0,0,1,1,2,1,14 days 15:01:25.675000
+Major,New Feature,raymie,0,40,155.0,29,12,1006,1,1,0,1,2,1,42 days 14:20:42.315000
+Minor,Improvement,craigtlandry,0,4,0.0,51,0,1005,1,1,1,1,1,1,14 days 01:08:36.989000
+Major,Bug,dcreager,0,2,242.0,50,0,1004,1,0,1,0,1,1,1 days 21:47:52.488000
+Major,Bug,dcreager,0,2,550.0,61,0,1003,1,0,1,0,1,1,1 days 21:51:32.501000
+Major,Bug,hammer,0,1,350.0,28,1,1002,0,0,0,0,1,1,0 days 15:25:27.881000
+Major,Improvement,shaunw,0,11,406.0,44,0,1001,1,1,1,1,4,1,17 days 11:33:52.071000
+Major,Bug,slebresne,0,3,352.0,52,1,1000,1,1,0,0,4,1,3 days 12:43:36.008000
+Major,Bug,jrutten,1,6,896.0,43,1,999,1,1,1,0,3,1,35 days 02:04:13.701000
+Major,Bug,nimeshs,0,4,338.0,117,1,998,1,1,1,0,2,1,0 days 04:12:46.157000
+Critical,Bug,scott_carey,0,10,195.0,80,0,996,1,1,2,0,1,1,21 days 00:40:02.984000
+Major,Improvement,scott_carey,0,12,3154.0,35,1,995,0,0,0,0,1,1,22 days 15:42:21.362000
+Minor,Bug,jbaldassari,0,6,958.0,57,0,994,1,1,2,0,0,1,1 days 07:08:14.793000
+Major,Bug,jbaldassari,0,6,429.0,68,0,993,1,1,2,0,0,1,1 days 11:54:35.951000
+Major,Improvement,scott_carey,0,5,562.0,85,3,988,1,1,1,0,3,1,328 days 23:11:25.905000
+Critical,Bug,mic159,1,12,1195.0,79,1,986,2,1,0,4,3,12,35 days 12:39:43.803000
+Major,Bug,vnadkarni,0,6,1729.0,83,0,984,1,0,3,0,0,12,7 days 16:07:15.943000
+Major,Improvement,torcq,0,10,2743.0,107,4,983,1,1,1,0,0,12,329 days 16:25:34.862000
+Minor,Improvement,bruno,0,4,1468.0,53,0,982,1,1,0,0,3,12,1 days 05:14:17.629000
+Blocker,Bug,russell.jurney,1,20,8984.0,50,6,981,1,0,2,5,3,12,296 days 14:00:05.442000
+Minor,Bug,mic159,0,6,662.0,50,0,980,1,0,1,2,1,12,57 days 23:59:41.579000
+Major,Bug,pdlug,0,2,580.0,51,1,979,1,0,1,0,1,12,434 days 06:27:25.937000
+Major,Bug,cutting,0,3,0.0,50,0,978,1,1,0,0,0,12,0 days 19:13:10.635000
+Minor,Improvement,hasghari,0,2,51.0,48,0,977,1,1,0,0,0,12,0 days 01:30:57.734000
+Minor,Improvement,bruno,0,1,481.0,46,0,976,1,1,0,0,0,12,0 days 07:42:14.353000
+Minor,Bug,brandonb,0,6,1290.0,85,1,972,1,1,1,0,3,12,1 days 14:08:37.037000
+Minor,Improvement,vchau,0,9,1112.0,33,0,971,1,1,1,1,3,12,62 days 21:42:43.266000
+Major,Improvement,nimmervoll,0,5,109.0,48,3,970,1,1,1,1,4,12,413 days 05:51:40.819000
+Minor,Bug,vnadkarni,0,8,969.0,82,0,968,1,0,3,0,4,12,53 days 11:16:02.940000
+Major,Bug,detonator413,0,1,2284.0,70,1,967,1,1,1,0,2,11,0 days 00:11:59.990000
+Major,Bug,detonator413,0,7,2284.0,70,2,966,1,1,1,0,2,11,7 days 09:49:53.916000
+Minor,Improvement,gffletch,0,11,325.0,69,0,965,1,1,1,0,1,11,10 days 00:08:23.768000
+Major,Improvement,kehli,2,12,1112.0,28,5,1026,1,0,1,1,4,2,99 days 20:09:30.884000
+Major,New Feature,hammer,0,8,126.0,31,5,974,1,0,0,0,0,12,785 days 11:59:34.218000
+Major,New Feature,scott_carey,0,0,36.0,41,1,958,0,0,0,0,1,11,0 days 01:35:11.740000
+Major,New Feature,lmartinking,1,8,854.0,29,5,957,1,0,0,3,0,11,28 days 19:33:46.942000
+Major,New Feature,lmartinking,2,9,94.0,29,3,896,1,0,1,2,1,9,668 days 12:23:40.348000
+Major,New Feature,joecrobak,1,9,455.0,53,4,867,1,1,1,0,3,7,634 days 00:01:18.105000
+Minor,Improvement,gffletch,0,7,275.0,69,1,963,1,1,1,0,0,11,7 days 03:05:18.098000
+Minor,Bug,gffletch,0,2,253.0,79,0,962,1,1,1,0,0,11,7 days 06:07:13.104000
+Trivial,Improvement,mic159,0,5,171.0,52,1,961,1,0,1,4,0,11,21 days 19:47:29.033000
+Minor,Improvement,lmartinking,1,6,305.0,34,1,960,1,0,1,2,4,11,18 days 15:33:55.084000
+Major,Improvement,thiru_mg,0,5,549.0,31,0,956,1,0,1,0,0,11,87 days 04:41:02.350000
+Minor,Bug,nsabovic,0,2,152.0,26,0,954,1,0,1,1,0,11,167 days 05:49:16.038000
+Minor,Improvement,craigtlandry,0,5,141.0,20,1,953,1,0,0,1,4,11,33 days 03:32:25.759000
+Major,Bug,nsabovic,0,3,199.0,54,0,952,1,0,1,2,4,11,170 days 09:17:10.224000
+Blocker,Bug,puredanger,0,13,3116.0,84,1,951,1,1,1,0,3,11,0 days 23:35:46.093000
+Major,Bug,mic159,0,2,466.0,50,0,950,1,0,1,3,3,11,1 days 15:02:24.223000
+Major,Bug,cutting,0,3,73.0,45,0,948,1,1,0,0,4,10,0 days 03:54:12.969000
+Major,Improvement,hernan.otero,0,16,3044.0,50,0,946,1,1,1,0,3,10,7 days 23:30:03.825000
+Major,Bug,thiru_mg,0,3,200.0,41,0,945,1,0,0,0,3,10,0 days 22:22:27.797000
+Major,Bug,cutting,0,4,139.0,47,0,944,1,1,1,0,1,10,3 days 05:51:12.564000
+Major,Bug,cutting,0,13,67.0,44,0,943,1,1,0,0,1,10,7 days 02:50:44.338000
+Major,Bug,decster,0,1,67.0,68,0,942,1,1,0,0,6,10,1 days 14:33:30.933000
+Major,Improvement,massie,0,5,895.0,74,0,941,1,1,1,0,5,10,6 days 00:13:37.685000
+Major,Improvement,thiru_mg,0,1,497.0,45,0,940,1,0,0,0,4,10,0 days 09:44:35.647000
+Minor,Improvement,thiru_mg,0,1,64.0,36,0,938,1,0,0,0,2,10,0 days 12:09:20.017000
+Minor,Improvement,thiru_mg,0,1,169.0,60,0,937,1,0,0,0,2,10,0 days 15:44:35.883000
+Major,Bug,thiru_mg,0,4,164.0,38,0,936,1,1,1,0,2,10,1 days 02:05:26.977000
+Blocker,Improvement,scott_carey,0,10,65.0,34,0,935,1,1,0,0,0,10,6 days 01:31:36.657000
+Major,Improvement,abawany,0,3,915.0,94,0,934,1,0,1,2,0,10,0 days 03:25:28.966000
+Major,Bug,thiru_mg,0,1,287.0,52,0,933,1,0,1,0,0,10,0 days 02:45:31.418000
+Major,Improvement,thiru_mg,0,1,0.0,64,0,932,1,0,0,0,6,10,0 days 12:11:09.710000
+Major,Bug,thiru_mg,0,1,0.0,60,1,931,1,0,0,0,6,10,0 days 12:17:03.808000
+Blocker,Bug,vnadkarni,0,6,2817.0,42,0,930,1,0,1,0,5,10,8 days 14:39:57.809000
+Major,Bug,dcreager,0,1,428.0,42,0,929,1,0,1,0,5,10,0 days 00:05:28.393000
+Minor,Bug,vnadkarni,0,2,254.0,48,0,928,1,0,1,1,4,10,0 days 13:57:58.457000
+Major,Bug,brocknoland,0,2,588.0,64,2,927,1,1,1,0,4,10,3 days 05:27:05.668000
+Major,Improvement,cutting,0,3,125.0,26,1,926,1,1,0,0,2,10,103 days 00:28:23.079000
+Major,Bug,nsabovic,0,2,320.0,53,0,925,1,0,1,1,2,10,1 days 06:04:31.514000
+Major,New Feature,cutting,0,3,292.0,59,0,924,1,1,0,0,2,10,5 days 00:51:41.456000
+Major,New Feature,dcreager,0,2,105.0,36,0,922,1,0,1,0,0,10,4 days 23:42:28.294000
+Major,New Feature,dcreager,0,2,424.0,52,0,921,1,0,1,0,0,10,4 days 23:46:00.690000
+Major,New Feature,dcreager,0,2,330.0,27,0,920,1,0,1,0,0,10,4 days 23:49:01.747000
+Major,New Feature,dcreager,0,2,127.0,36,0,919,1,0,1,0,0,10,4 days 23:47:59.670000
+Major,Improvement,thiru_mg,0,4,156.0,34,0,918,1,0,0,0,5,10,8 days 17:47:04.868000
+Major,Bug,thiru_mg,0,4,381.0,79,0,917,1,0,0,0,5,10,3 days 23:43:50.641000
+Major,Bug,thiru_mg,0,2,169.0,53,0,916,1,0,0,0,5,10,4 days 00:21:12.348000
+Major,Improvement,thiru_mg,0,3,125.0,39,0,915,1,0,0,0,5,10,4 days 04:17:50.482000
+Major,Bug,philip,0,2,933.0,74,0,914,1,1,0,0,4,10,0 days 13:22:34.294000
+Major,Bug,nsabovic,0,4,233.0,50,0,913,1,0,1,1,3,10,5 days 20:01:29.382000
+Major,Bug,thiru_mg,0,3,489.0,38,0,912,1,1,0,0,3,10,0 days 21:32:05.307000
+Major,Improvement,cutting,0,14,708.0,34,2,911,1,1,0,0,2,10,1 days 20:16:58.708000
+Major,Improvement,cutting,0,3,353.0,33,0,910,1,1,0,0,2,10,0 days 00:28:24.825000
+Major,Sub-task,cutting,0,1,553.0,92,0,909,1,1,0,0,2,10,1 days 22:36:19.431000
+Major,New Feature,nsabovic,0,4,200.0,50,0,908,1,0,1,1,2,10,3 days 11:31:55.068000
+Major,Improvement,cutting,0,3,99.0,36,0,907,1,1,0,0,1,10,0 days 19:50:53.497000
+Major,Bug,dkaminsky,1,3,361.0,37,1,906,1,1,0,0,1,10,0 days 20:54:46.109000
+Minor,Improvement,yangyangyyy,0,6,1586.0,63,0,905,1,1,0,0,1,10,0 days 23:39:19.695000
+Major,Bug,nsabovic,0,1,152.0,62,0,904,1,0,1,1,1,10,2 days 15:04:18.405000
+Major,Bug,nsabovic,0,2,187.0,45,0,903,1,0,1,1,1,10,2 days 14:57:02.910000
+Major,Bug,nsabovic,0,2,275.0,41,0,902,1,0,1,1,1,10,2 days 19:19:58.919000
+Major,Bug,thiru_mg,0,3,169.0,88,0,901,1,1,0,0,6,10,3 days 01:15:54.844000
+Major,Bug,thiru_mg,0,2,114.0,59,0,900,1,1,0,0,5,10,4 days 00:23:46.375000
+Major,Improvement,cutting,0,3,71.0,61,1,899,1,0,0,0,1,9,2 days 05:22:44.263000
+Critical,Bug,vadimtsarik,0,7,389.0,31,4,898,1,1,1,0,1,9,6 days 03:51:38.343000
+Major,Bug,gwu,0,3,357.0,42,0,897,1,1,1,0,1,9,10 days 18:15:51.901000
+Major,Bug,tomwhite,0,8,392.0,69,0,895,1,1,1,1,0,9,5 days 17:45:29.570000
+Major,Bug,dcreager,0,3,633.0,44,0,894,1,0,2,0,6,9,0 days 00:18:13.169000
+Major,Improvement,lmartinking,1,2,468.0,99,0,893,1,0,1,1,4,9,3 days 09:18:11.778000
+Major,Bug,mic159,0,2,1233.0,63,1,892,1,0,1,0,2,9,1 days 16:15:24.781000
+Major,Improvement,alex.holmes,0,7,2707.0,69,0,891,1,1,1,0,1,9,2 days 08:26:18.532000
+Minor,Improvement,sgargan,0,9,1277.0,51,0,890,1,1,1,2,6,9,8 days 19:05:53.943000
+Major,Improvement,cutting,0,4,114.0,66,0,889,1,1,0,0,4,9,2 days 20:36:00.365000
+Major,Improvement,saleemshafi,0,5,231.0,44,0,888,1,1,1,0,4,9,4 days 18:10:54.548000
+Trivial,Improvement,cwilkes,0,3,704.0,48,0,887,1,1,1,0,3,9,12 days 21:08:43.685000
+Major,Improvement,gffletch,0,20,1102.0,63,1,886,1,1,1,0,3,9,12 days 00:49:03.060000
+Major,Bug,tomwhite,0,3,228.0,53,0,884,1,1,2,0,1,9,1 days 01:14:41.879000
+Major,New Feature,tomwhite,0,5,117.0,35,0,881,1,1,0,0,1,8,21 days 23:20:28.167000
+Critical,Task,tucu00,0,2,366.0,29,0,880,1,0,1,0,1,8,2 days 01:25:11.267000
+Major,Bug,cutting,0,2,80.0,25,0,879,1,1,0,0,0,8,3 days 05:22:11.980000
+Major,Test,jeremy@lewi.us,0,15,160.0,38,0,878,1,1,1,0,3,8,55 days 07:08:57.028000
+Major,Improvement,billgraham,0,6,962.0,54,1,877,1,1,0,0,1,8,8 days 22:34:21.953000
+Critical,Task,tucu00,0,4,455.0,51,0,876,1,0,1,0,0,8,8 days 03:37:42.458000
+Major,New Feature,billgraham,0,3,116.0,47,0,875,1,1,0,0,0,8,1 days 05:35:46.012000
+Major,Improvement,cutting,0,3,217.0,55,0,874,1,1,0,0,3,8,41 days 00:15:24.537000
+Major,Improvement,marmbrus,0,4,651.0,71,1,873,1,1,0,0,2,8,1 days 17:18:53.874000
+Major,Improvement,billgraham,0,26,851.0,49,0,872,1,1,0,0,1,8,3 days 00:15:03.518000
+Major,Bug,billgraham,0,1,148.0,45,0,871,1,0,0,0,1,8,59 days 00:32:06.842000
+Major,Bug,thiru_mg,0,3,447.0,63,0,869,1,0,0,0,2,8,70 days 11:03:27.306000
+Blocker,Bug,puredanger,0,7,3413.0,65,1,868,1,1,1,0,0,8,14 days 21:16:46.140000
+Major,New Feature,joecrobak,0,5,227.0,30,2,866,1,0,0,0,3,7,41 days 01:49:12.691000
+Major,Improvement,dcreager,0,2,415.0,22,0,865,1,0,2,0,1,7,61 days 02:14:35.003000
+Major,Bug,isabel,0,4,432.0,82,0,864,1,1,0,0,6,7,3 days 02:27:59.246000
+Major,New Feature,dcreager,0,2,829.0,43,0,863,1,0,1,0,4,7,65 days 15:48:39.086000
+Minor,Bug,dcreager,0,2,301.0,41,0,861,1,0,1,0,3,7,0 days 01:47:24.077000
+Major,Bug,tebeka,0,16,1478.0,51,3,860,1,1,1,3,3,7,427 days 01:31:12.901000
+Major,Improvement,tebeka,0,5,144.0,55,1,858,0,0,0,2,3,7,67 days 05:18:15.110000
+Minor,Improvement,jendap,0,1,189.0,25,0,857,1,1,0,0,6,7,14 days 21:24:06.607000
+Major,Improvement,cutting,0,3,221.0,26,0,856,1,1,1,0,3,7,4 days 00:46:34.675000
+Minor,New Feature,jeremy@lewi.us,1,4,327.0,80,1,854,1,0,1,0,2,7,201 days 01:57:26.132000
+Major,Improvement,dkaminsky,0,34,460.0,36,1,853,1,1,1,0,2,7,37 days 00:16:02.136000
+Major,Bug,jmesnil,0,4,279.0,40,2,851,1,1,1,0,2,7,435 days 13:15:29.060000
+Major,Improvement,h2o,0,1,3617.0,57,0,848,1,1,1,0,4,7,145 days 14:13:44.418000
+Minor,Test,jeremy@lewi.us,0,4,2835.0,40,0,847,1,1,1,1,3,6,0 days 20:17:55.058000
+Major,Bug,puredanger,0,2,1028.0,91,0,846,1,1,1,0,3,6,60 days 12:02:23.405000
+Major,Bug,tebeka,0,3,109.0,38,0,845,1,0,1,1,2,6,1 days 03:03:39.478000
+Major,Improvement,billgraham,0,5,224.0,35,0,844,1,1,1,0,1,6,3 days 19:30:13.398000
+Major,Bug,h2o,0,14,639.0,61,0,842,1,1,1,0,4,6,7 days 03:39:21.244000
+Minor,Improvement,waterdragon,0,3,126.0,43,0,841,1,1,0,0,3,6,1 days 05:48:11.702000
+Critical,Improvement,ramanasv,1,3,1458.0,63,2,840,1,0,0,1,3,6,117 days 19:45:50.635000
+Major,Improvement,jbaldassari,0,33,3497.0,91,4,839,1,1,0,0,3,6,71 days 16:21:12.116000
+Major,Improvement,kkrugler,0,5,367.0,100,0,838,1,1,2,0,4,6,19 days 20:09:44.823000
+Major,New Feature,dcreager,0,5,447.0,24,0,837,1,0,1,0,1,6,36 days 10:37:21.184000
+Major,New Feature,tebeka,0,13,121.0,67,3,836,1,0,0,2,5,6,17 days 08:12:36.430000
+Major,Bug,ewhauser,1,5,417.0,34,0,835,1,0,0,0,5,6,186 days 21:29:20.248000
+Minor,Bug,tebeka,0,4,216.0,40,0,833,1,0,0,1,1,5,0 days 01:46:32.145000
+Major,Bug,cutting,0,4,68.0,68,1,832,1,1,0,0,1,5,2 days 01:34:41.457000
+Major,New Feature,tomwhite,0,2,198.0,61,0,830,1,1,0,0,3,5,3 days 14:12:17.304000
+Major,Improvement,dbritsch,0,2,547.0,74,0,828,1,1,1,5,2,5,0 days 19:02:01.958000
+Minor,Improvement,dona,0,4,256.0,48,0,826,1,0,0,0,4,5,9 days 19:06:58.077000
+Blocker,Bug,ramanasv,0,6,5006.0,83,0,825,1,0,1,0,3,5,43 days 03:16:46.522000
+Trivial,Bug,david206,0,2,116.0,48,2,824,1,1,0,1,2,5,42 days 12:55:35.249000
+Major,Bug,patrickangeles,0,5,245.0,26,0,822,2,1,1,0,1,5,0 days 11:30:19.819000
+Major,New Feature,awick,0,8,43.0,20,2,821,1,0,1,0,0,5,169 days 00:17:57.678000
+Critical,Bug,scott_carey,0,10,365.0,109,0,820,1,1,3,0,4,5,5 days 19:21:12.512000
+Major,Bug,dcreager,0,2,302.0,56,0,819,1,0,1,0,3,5,0 days 00:52:42.094000
+Major,Bug,dcreager,0,3,689.0,42,0,818,1,0,1,0,3,5,0 days 01:29:48.536000
+Minor,Bug,sgargan,0,4,400.0,51,0,815,1,1,1,2,1,5,0 days 00:14:38.746000
+Major,Bug,stuhood,0,4,277.0,59,0,814,1,1,0,0,4,4,4 days 19:10:56.988000
+Minor,Improvement,h2o,0,11,209.0,40,0,812,1,1,1,0,2,4,2 days 12:53:35.347000
+Minor,Task,alambert,0,2,192.0,37,0,811,1,0,1,0,1,4,6 days 20:43:49.149000
+Minor,Improvement,ewhauser,0,6,123.0,34,1,810,1,0,0,0,5,4,69 days 16:02:09.860000
+Major,Bug,decster,0,2,239.0,66,0,809,1,1,1,0,4,4,26 days 01:52:13.638000
+Major,New Feature,tomwhite,0,4,212.0,61,0,808,1,1,0,0,3,4,5 days 16:07:22.819000
+Major,New Feature,dona,0,3,383.0,62,0,807,1,0,0,0,2,4,0 days 01:37:16.379000
+Major,New Feature,cutting,6,40,143.0,30,33,806,2,1,0,0,1,4,510 days 22:16:49.707000
+Major,New Feature,cutting,0,6,267.0,53,5,805,1,1,0,0,1,4,145 days 21:14:45.402000
+Major,New Feature,cutting,0,19,252.0,49,7,804,1,1,0,0,1,4,167 days 22:52:06.548000
+Major,Improvement,spullara,2,17,583.0,66,8,803,1,1,1,0,2,4,181 days 03:32:18.927000
+Major,Improvement,cutting,0,3,165.0,65,1,802,1,1,0,0,1,4,6 days 22:35:44.809000
+Major,Bug,nrc,0,4,127.0,28,0,801,1,1,2,0,4,4,12 days 15:06:00.367000
+Major,Improvement,cutting,0,2,47.0,39,0,799,1,1,0,0,2,4,12 days 21:41:13.799000
+Major,Improvement,cutting,0,6,360.0,29,0,798,2,1,0,0,2,4,12 days 22:43:07.683000
+Minor,Bug,dkaminsky,0,4,116.0,37,0,796,1,1,1,0,1,4,99 days 17:16:00.523000
+Major,Improvement,thiru_mg,0,3,309.0,59,0,795,1,0,1,0,0,4,0 days 22:27:57.517000
+Minor,Improvement,thiru_mg,0,3,95.0,40,0,794,1,0,1,0,0,4,0 days 22:36:16.363000
+Critical,Bug,ygnhzeus,0,3,4511.0,83,1,793,1,1,1,4,3,3,29 days 16:23:07.732000
+Blocker,Bug,eychih,0,32,5722.0,68,1,792,1,1,2,0,2,3,91 days 21:35:27.521000
+Major,Wish,xiaoluye,1,11,440.0,102,0,791,1,1,1,0,2,3,30 days 03:37:46.160000
+Major,Bug,scott_carey,0,3,657.0,92,0,790,1,1,0,0,1,3,20 days 00:50:52.818000
+Major,Improvement,thiru_mg,0,5,51.0,23,0,789,1,0,0,0,0,3,1 days 13:35:41.422000
+Major,New Feature,cutting,1,9,142.0,22,4,788,2,1,0,0,3,3,13 days 01:51:47.233000
+Major,Improvement,mlartz,0,3,213.0,49,0,787,1,0,1,1,1,3,8 days 02:11:51.305000
+Minor,Bug,stuhood,0,3,408.0,57,0,786,1,1,0,0,1,3,7 days 00:53:13.730000
+Minor,Improvement,smartnut007,0,3,3731.0,43,1,785,1,1,1,3,0,3,8 days 01:20:07.493000
+Major,Improvement,esammer,1,17,71.0,42,3,784,1,1,1,1,6,3,199 days 15:28:25.661000
+Major,Improvement,thiru_mg,0,5,133.0,29,0,783,1,0,0,0,5,3,7 days 17:08:00.068000
+Major,Improvement,thiru_mg,1,5,114.0,27,0,781,1,0,1,0,6,3,5 days 23:41:40.634000
+Major,Bug,eychih,0,6,2407.0,36,0,780,1,1,1,0,4,3,19 days 22:55:40.680000
+Minor,Test,milindb,0,5,298.0,65,0,779,1,1,1,0,2,3,0 days 01:14:57.003000
+Minor,Bug,sgargan,2,2,185.0,42,0,776,1,1,1,1,2,3,113 days 13:11:00.996000
+Major,Bug,thiru_mg,0,5,464.0,34,0,775,1,1,1,0,5,3,2 days 21:59:49.607000
+Minor,Improvement,lars_francke,0,6,414.0,51,1,774,2,1,1,0,1,2,2 days 00:03:46.289000
+Trivial,Improvement,jendap,0,2,69.0,37,1,773,1,1,0,0,1,2,2 days 05:10:54.447000
+Blocker,Bug,brucem,0,5,162.0,29,1,772,1,1,1,0,0,2,3 days 00:50:57.473000
+Major,Improvement,scott_carey,0,6,1969.0,36,0,771,1,1,0,0,6,2,1 days 10:45:01.583000
+Blocker,Improvement,scott_carey,0,9,2153.0,73,1,769,1,1,0,0,3,2,8 days 19:52:29.158000
+Major,Improvement,ekohlwey,0,1,330.0,47,0,768,1,0,2,0,1,2,0 days 01:25:29.907000
+Minor,Improvement,scott_carey,0,3,174.0,55,0,765,1,1,0,0,0,2,0 days 17:43:01.273000
+Critical,Bug,qwertymaniac,0,6,3761.0,62,1,764,1,1,1,1,6,2,2 days 09:48:02.575000
+Major,Improvement,scott_carey,0,9,407.0,103,2,763,1,1,1,0,2,2,69 days 21:46:56.502000
+Blocker,New Feature,dcreager,0,9,1574.0,24,1,762,1,0,0,0,2,2,16 days 00:31:25.028000
+Major,Bug,rahrens,0,5,363.0,75,1,761,1,1,1,0,2,2,26 days 04:34:19.917000
+Major,Bug,xiaoluye,0,8,1013.0,86,1,759,1,1,1,0,1,2,7 days 06:25:38.110000
+Minor,Bug,stuhood,0,17,121.0,36,0,758,1,1,1,0,5,2,151 days 00:51:39.290000
+Major,New Feature,stuhood,0,7,147.0,56,0,757,1,1,0,1,4,2,3 days 11:49:09.155000
+Major,Improvement,cutting,0,2,267.0,75,0,756,1,1,0,0,1,2,19 days 21:35:40.483000
+Blocker,Bug,xiaoluye,1,8,273.0,74,1,755,1,1,1,0,1,2,19 days 22:32:00.382000
+Major,Improvement,bruno,0,1,470.0,56,1,754,1,1,1,0,1,2,23 days 10:39:14.869000
+Blocker,Improvement,scott_carey,1,28,651.0,40,2,753,1,1,0,0,1,2,23 days 15:30:50.849000
+Minor,Improvement,scott_carey,0,6,308.0,38,0,752,1,1,0,0,1,2,7 days 17:03:16.569000
+Blocker,Improvement,dcreager,0,6,972.0,41,0,751,1,0,0,0,4,1,27 days 22:21:03.050000
+Major,New Feature,dcreager,0,4,130.0,15,0,750,1,0,0,0,4,1,17 days 23:36:31.690000
+Major,Bug,dcreager,0,3,249.0,46,0,749,1,0,0,0,4,1,2 days 20:51:12.401000
+Major,Improvement,bruno,1,5,2104.0,78,1,747,1,1,1,0,3,1,154 days 05:20:59.449000
+Major,Bug,dcreager,0,12,886.0,23,0,746,1,0,0,0,0,1,168 days 23:00:54.184000
+Major,Bug,dcreager,0,1,311.0,40,0,745,1,0,0,0,0,1,0 days 00:40:55.095000
+Major,New Feature,dcreager,0,3,410.0,60,0,744,1,0,0,0,0,1,21 days 23:31:25.109000
+Critical,Bug,scott_carey,0,7,410.0,72,3,743,1,1,1,0,0,1,14 days 11:11:53.494000
+Major,Bug,dcreager,0,1,458.0,47,0,742,1,0,0,0,5,1,2 days 08:44:20.111000
+Blocker,Bug,cutting,0,9,536.0,31,0,741,1,0,0,0,3,1,5 days 05:34:51.494000
+Major,Bug,brucem,0,0,1595.0,34,0,740,0,0,0,0,3,1,0 days 00:04:31.453000
+Critical,Bug,devsarkar,0,3,371.0,96,0,738,1,1,1,0,2,1,54 days 10:58:56.140000
+Major,Sub-task,scott_carey,0,28,437.0,54,0,737,1,1,0,0,1,1,9 days 04:17:23.146000
+Major,Bug,mchugh,0,4,1497.0,54,0,736,1,0,1,0,1,1,5 days 17:01:18.971000
+Major,Bug,h2o,2,5,1716.0,31,0,735,1,1,1,0,4,1,13 days 09:44:55.164000
+Trivial,Improvement,h2o,0,4,302.0,43,0,734,1,1,1,0,4,1,0 days 03:58:26.671000
+Critical,Bug,h2o,0,9,433.0,59,0,733,1,1,1,0,4,1,0 days 04:12:36.515000
+Major,Improvement,cutting,0,1,64.0,47,0,731,1,0,0,0,1,1,0 days 23:30:00.508000
+Major,New Feature,cbradford,0,10,246.0,73,1,730,1,1,1,0,0,1,39 days 20:09:46.414000
+Major,New Feature,dcreager,0,3,553.0,24,1,729,1,0,0,0,5,1,2 days 22:58:29.552000
+Major,Task,cutting,0,1,185.0,51,0,728,1,0,0,0,5,1,4 days 20:31:24.480000
+Major,Improvement,dcreager,0,5,1501.0,34,1,727,1,0,0,0,2,1,5 days 16:58:23.106000
+Major,Improvement,xiaoluye,0,16,521.0,110,3,726,1,1,1,0,2,1,60 days 22:24:03.752000
+Minor,New Feature,dcreager,0,6,307.0,34,0,725,1,0,0,0,1,1,6 days 15:23:31.990000
+Minor,Bug,sgargan,0,8,590.0,73,0,723,1,1,1,0,6,1,5 days 17:44:52.996000
+Minor,Bug,sgargan,0,8,511.0,74,0,722,1,1,1,0,3,12,8 days 17:38:56.647000
+Minor,Improvement,joecrobak,0,4,241.0,52,0,719,1,1,1,0,3,12,15 days 02:20:26.053000
+Major,Bug,cwsteinbach,0,2,152.0,27,0,718,2,0,0,0,3,12,6 days 13:16:53.117000
+Major,Bug,joecrobak,0,6,2200.0,63,0,717,1,1,1,0,1,12,14 days 02:14:26.135000
+Blocker,Task,scott_carey,0,20,361.0,60,0,716,2,1,0,0,4,12,46 days 18:04:56.801000
+Major,Task,scott_carey,0,2,278.0,29,1,714,2,1,0,0,4,12,42 days 04:16:49.057000
+Major,Bug,jkreps,0,2,174.0,47,0,713,1,1,1,0,2,12,1 days 00:03:04.922000
+Blocker,Improvement,thiru_mg,0,7,62.0,32,0,711,1,0,1,0,0,12,69 days 01:38:21.502000
+Major,Bug,bshi,0,1,60.0,79,0,710,1,1,3,0,6,12,1 days 19:50:53.357000
+Minor,Improvement,justinazoff,1,10,240.0,20,2,709,1,0,1,0,6,12,115 days 22:56:38.051000
+Minor,Bug,sgargan,0,2,632.0,40,0,708,1,1,1,0,6,12,33 days 18:26:16.587000
+Major,Improvement,cutting,0,3,536.0,22,0,707,1,1,0,0,5,12,5 days 21:11:59.782000
+Major,Bug,scott_carey,0,4,570.0,53,1,706,1,1,1,0,3,12,0 days 23:04:26.251000
+Major,Bug,gillouxgaillard@wanadoo.fr,0,3,923.0,66,0,705,1,1,1,0,2,12,9 days 02:19:58.650000
+Major,Bug,urandom,0,9,239.0,29,0,704,1,1,1,0,1,11,9 days 19:53:02.073000
+Major,Bug,xiaoluye,0,4,593.0,90,1,702,1,1,1,0,2,11,5 days 01:29:43.355000
+Critical,Bug,brucem,1,14,216.0,75,0,701,1,1,1,0,1,11,93 days 00:08:23.152000
+Major,Improvement,thiru_mg,0,11,426.0,32,0,700,1,0,1,0,0,11,69 days 06:15:10.113000
+Major,Bug,prabhakhar,0,3,1570.0,81,0,699,1,1,1,0,4,11,2 days 08:29:55.395000
+Major,Test,cutting,0,4,410.0,50,0,698,1,1,0,0,3,11,4 days 20:17:14.308000
+Major,Bug,plinehan,0,2,119.0,75,0,696,1,1,0,0,2,11,0 days 15:31:57.368000
+Major,Bug,rahrens,1,7,2027.0,87,2,694,1,0,1,0,0,11,59 days 23:37:04.734000
+Minor,Bug,sgargan,0,4,394.0,67,0,693,1,1,0,0,3,11,0 days 22:29:36.833000
+Major,Improvement,cutting,1,6,69.0,34,1,692,1,1,0,0,3,11,34 days 22:27:36.488000
+Major,New Feature,cutting,0,5,85.0,41,0,689,1,1,0,0,3,11,35 days 03:10:48.641000
+Major,Bug,califloridan,0,5,389.0,56,0,688,3,1,1,0,0,11,77 days 02:49:38.806000
+Major,New Feature,cutting,0,4,182.0,47,0,687,1,1,0,0,0,11,43 days 06:59:47.367000
+Critical,Bug,rahrens,0,6,4065.0,97,1,685,1,1,1,0,2,10,1 days 03:54:52.386000
+Major,New Feature,plinehan,0,6,648.0,61,0,684,1,1,0,0,0,10,28 days 01:23:01.624000
+Trivial,Improvement,sgargan,0,3,354.0,53,1,683,1,1,1,0,6,10,2 days 00:51:39.004000
+Minor,Improvement,qwertymaniac,0,8,492.0,39,1,682,1,1,1,0,6,10,2 days 05:42:14.776000
+Minor,Bug,yaojingguo,0,2,334.0,23,0,681,1,0,1,0,3,10,0 days 07:34:06.550000
+Minor,New Feature,stuhood,0,10,513.0,29,2,679,1,0,0,0,6,10,193 days 21:32:02.859000
+Major,Sub-task,cutting,0,3,72.0,31,0,678,1,1,0,0,2,10,16 days 02:04:00.714000
+Major,Bug,dcreager,0,5,436.0,47,2,675,1,0,1,0,3,9,5 days 01:57:37.653000
+Trivial,New Feature,dln,1,3,163.0,32,1,674,1,0,0,0,5,9,5 days 05:15:48.024000
+Minor,Improvement,erikfrey,0,6,390.0,36,1,673,1,0,0,0,4,9,13 days 23:52:30.868000
+Major,Bug,rbodkin,0,9,101.0,68,0,671,1,1,0,0,6,9,18 days 21:20:37.188000
+Major,Improvement,rbodkin,0,5,296.0,55,0,670,1,1,0,0,4,9,2 days 23:19:15.576000
+Major,Bug,rbodkin,1,14,2376.0,48,3,669,1,1,0,0,4,9,103 days 15:52:36.692000
+Major,Improvement,scott_carey,0,11,213.0,71,0,668,1,1,0,0,3,9,5 days 13:37:12.607000
+Blocker,Bug,scott_carey,0,10,1221.0,88,0,667,1,1,1,0,3,9,0 days 20:52:40.760000
+Major,Bug,hammer,0,1,0.0,62,0,666,1,0,0,0,6,9,0 days 00:04:36.260000
+Major,Bug,thiru_mg,0,3,225.0,55,0,664,1,0,1,0,4,9,4 days 04:28:22.066000
+Major,Bug,brianf,0,15,350.0,98,1,663,1,0,1,0,3,9,127 days 05:34:39.432000
+Major,New Feature,cutting,0,4,357.0,57,0,662,1,1,0,0,2,9,9 days 04:33:04.551000
+Minor,Bug,phunt,0,2,721.0,44,0,657,1,0,1,0,1,9,6 days 12:30:32.107000
+Blocker,Bug,cutting,0,30,763.0,77,2,656,1,1,1,0,4,9,174 days 03:32:00.332000
+Major,Improvement,cutting,0,4,210.0,42,0,655,1,0,1,0,4,9,10 days 01:03:49.880000
+Major,Bug,urandom,0,3,128.0,55,0,653,1,0,1,0,3,9,0 days 07:17:33.942000
+Minor,Bug,stuhood,0,3,419.0,36,1,652,1,1,0,0,3,9,0 days 19:51:50.022000
+Blocker,Bug,urandom,0,11,212.0,33,3,650,1,1,0,0,2,9,1 days 05:21:58.424000
+Major,Improvement,stuhood,0,7,123.0,46,0,649,1,1,0,0,2,9,0 days 02:18:54.640000
+Major,Improvement,philip,0,8,1401.0,47,2,648,1,1,0,0,2,9,61 days 10:03:54.223000
+Major,Improvement,scott_carey,0,47,898.0,62,5,647,1,1,0,0,2,9,105 days 23:15:35.512000
+Major,Test,cutting,0,2,265.0,25,0,646,1,1,0,0,0,8,0 days 00:15:17.072000
+Major,Improvement,grzm,0,1,201.0,34,0,645,1,0,0,0,0,8,0 days 01:24:09.179000
+Major,Bug,scott_carey,0,2,1983.0,54,0,644,1,1,1,0,0,8,107 days 03:38:39.793000
+Major,Bug,cutting,0,2,304.0,35,0,643,1,1,1,0,0,8,129 days 22:07:01.828000
+Minor,Improvement,qwertymaniac,0,10,1212.0,82,0,642,2,1,1,0,5,8,62 days 16:19:53.660000
+Major,New Feature,cutting,1,16,224.0,28,6,641,1,1,0,0,4,8,21 days 00:24:23.730000
+Blocker,Bug,cutting,0,2,132.0,42,0,640,1,0,0,0,4,8,0 days 00:31:33.344000
+Major,Improvement,cutting,0,6,138.0,42,0,639,1,0,0,0,4,8,0 days 02:15:07.182000
+Major,New Feature,cutting,0,1,394.0,50,3,638,1,1,0,0,4,8,130 days 03:23:04.869000
+Major,New Feature,cutting,1,21,537.0,40,1,637,1,1,0,0,4,8,4 days 09:31:57.550000
+Major,Sub-task,pwendell,0,8,0.0,39,0,636,1,1,0,0,3,8,1 days 00:15:19.710000
+Major,Improvement,cutting,0,2,60.0,28,0,634,1,1,0,0,3,8,18 days 01:07:43.392000
+Major,Bug,jmhodges,0,4,77.0,66,0,633,1,0,1,0,3,8,0 days 18:17:53.932000
+Major,Bug,cutting,0,3,123.0,53,0,632,1,1,0,0,3,8,0 days 00:20:37.948000
+Major,Bug,pwendell,0,2,610.0,36,0,631,1,1,0,0,2,8,0 days 01:27:01.250000
+Major,Improvement,gavinmroy,0,1,158.0,25,1,630,1,0,1,0,2,8,138 days 16:15:24.997000
+Major,Improvement,gavinmroy,0,1,260.0,28,1,629,1,0,1,0,2,8,323 days 01:09:50.202000
+Major,New Feature,grzm,0,13,366.0,20,3,627,1,0,0,0,2,8,4 days 21:42:06.334000
+Minor,Improvement,alexb,0,3,134.0,44,0,626,1,0,0,0,2,8,0 days 08:36:10.368000
+Major,Bug,philip,0,1,85.0,43,0,622,1,0,0,0,1,8,0 days 04:48:34.465000
+Major,Bug,philip,0,4,732.0,61,1,620,1,0,0,0,4,8,3 days 11:28:18.663000
+Trivial,Improvement,qwertymaniac,0,2,281.0,58,0,619,1,0,1,0,3,8,0 days 02:31:12.463000
+Major,Bug,philip,0,5,501.0,33,0,618,0,0,1,0,3,8,1 days 08:33:41.489000
+Major,Improvement,jkristian,0,3,1020.0,31,0,617,1,1,1,0,1,8,6 days 03:40:54.966000
+Major,New Feature,pwendell,0,2,228.0,38,0,616,1,1,0,0,0,8,1 days 00:23:17.395000
+Major,Improvement,jkristian,0,5,216.0,28,0,615,1,1,1,0,0,8,2 days 04:52:49.237000
+Major,Sub-task,pwendell,0,4,0.0,25,0,614,1,1,0,0,4,8,13 days 02:17:47.120000
+Major,Sub-task,pwendell,0,5,0.0,44,1,613,1,1,0,0,4,8,9 days 13:09:40.677000
+Minor,Bug,darose,0,3,1151.0,39,0,612,1,1,1,0,4,8,5 days 21:35:16.704000
+Major,New Feature,pwendell,0,3,57.0,26,0,611,1,1,0,0,3,8,6 days 03:01:20.691000
+Major,Bug,cutting,0,3,93.0,45,0,609,1,1,0,0,4,8,4 days 02:41:40.839000
+Major,Bug,pwendell,0,1,205.0,58,0,608,1,1,0,0,3,8,20 days 04:41:38.902000
+Major,Sub-task,pwendell,0,10,0.0,42,0,606,1,1,0,0,2,8,8 days 22:38:23.319000
+Major,Improvement,cutting,0,11,286.0,38,2,605,1,1,0,0,2,8,5 days 22:47:21.850000
+Major,Bug,pwendell,0,2,209.0,52,0,604,1,1,0,0,1,8,0 days 05:32:55.686000
+Minor,Improvement,stuhood,0,5,553.0,67,3,603,1,1,0,0,1,8,0 days 07:09:07.929000
+Major,Improvement,yaojingguo,0,3,198.0,38,0,602,1,0,1,0,1,8,1 days 04:14:57.838000
+Minor,Improvement,darose,0,10,935.0,83,1,601,2,1,0,0,1,7,7 days 01:42:00.015000
+Major,New Feature,cutting,0,9,675.0,43,3,600,2,1,0,0,3,7,25 days 22:49:51.899000
+Major,Improvement,hammer,0,1,0.0,55,0,599,1,0,0,0,0,7,8 days 06:39:28.045000
+Major,Bug,jtravis,0,6,451.0,75,0,598,1,1,2,0,3,7,40 days 21:25:52.243000
+Minor,Bug,plinehan,0,7,331.0,45,2,596,1,1,1,0,2,7,6 days 14:12:13.384000
+Major,Sub-task,pwendell,0,13,0.0,42,4,595,1,1,0,0,0,7,31 days 18:58:21.960000
+Major,New Feature,sseverance,8,29,124.0,49,18,593,1,1,2,0,2,7,646 days 00:47:18.927000
+Major,Bug,spullara,0,2,3030.0,83,1,591,1,1,1,0,1,7,0 days 02:49:56.571000
+Major,Bug,cutting,0,4,84.0,36,0,590,1,1,0,0,3,7,53 days 00:32:42.438000
+Major,Bug,cjcdoomed,0,4,1232.0,135,1,589,1,1,5,0,3,7,3 days 07:37:02.536000
+Major,Improvement,hammer,0,15,0.0,62,1,588,1,0,0,0,2,6,56 days 09:49:13.873000
+Major,Sub-task,pwendell,0,10,0.0,39,1,587,1,1,0,0,3,6,33 days 21:46:49.061000
+Minor,Improvement,kkrugler,0,5,138.0,46,1,586,1,1,0,0,3,6,48 days 08:26:52.941000
+Major,New Feature,cutting,0,3,178.0,21,6,585,1,1,0,0,3,6,370 days 05:55:04.547000
+Major,Sub-task,pwendell,0,8,0.0,33,0,584,1,1,0,0,2,6,1 days 00:27:53.710000
+Minor,Bug,spullara,0,14,460.0,116,1,583,1,1,1,0,1,6,42 days 00:03:47.135000
+Major,Improvement,cutting,0,5,327.0,65,1,582,1,1,0,0,3,6,35 days 23:28:50.017000
+Major,New Feature,cutting,1,9,602.0,73,1,581,1,1,0,0,3,6,34 days 03:40:43.494000
+Major,New Feature,cutting,0,5,203.0,41,1,580,1,1,0,0,3,6,34 days 03:48:03.639000
+Major,Sub-task,pwendell,0,0,0.0,55,1,579,1,1,0,0,3,6,7 days 18:37:23.336000
+Major,Sub-task,pwendell,0,15,468.0,35,1,578,1,1,0,0,1,6,10 days 02:05:27.183000
+Major,New Feature,tomwhite,0,4,295.0,37,1,577,1,1,0,0,0,6,1 days 01:11:21.550000
+Major,Bug,tomwhite,0,4,114.0,90,5,575,1,1,0,0,0,6,952 days 06:30:19.649000
+Major,Bug,tomwhite,0,1,143.0,43,0,574,1,1,0,0,0,6,0 days 12:09:36.688000
+Major,Bug,hammer,0,14,75.0,87,2,573,2,1,0,0,4,6,47 days 14:29:57.569000
+Major,Bug,hammer,0,1,0.0,76,1,571,1,0,0,0,2,6,0 days 00:42:19.711000
+Major,New Feature,cutting,0,12,105.0,41,3,567,1,1,0,0,0,6,10 days 20:58:03.939000
+Major,Wish,hammer,0,5,430.0,69,1,566,1,1,0,0,0,6,0 days 15:10:16.180000
+Major,Bug,hammer,1,13,82.0,33,3,565,1,0,0,0,6,6,680 days 18:14:24.649000
+Major,Bug,jmhodges,0,4,106.0,39,0,562,1,0,1,0,4,6,0 days 00:50:39.384000
+Major,Improvement,hammer,0,4,0.0,58,0,560,1,0,0,0,3,6,0 days 06:26:16.442000
+Major,Improvement,hammer,0,3,104.0,111,1,559,1,0,0,0,3,6,0 days 13:32:51.442000
+Major,Bug,hammer,0,3,260.0,93,1,558,1,1,0,0,3,6,0 days 06:42:22.505000
+Major,Improvement,kevinoliver,0,21,252.0,31,3,557,1,1,1,1,2,6,69 days 02:08:09.046000
+Major,Improvement,wrightd,0,3,845.0,61,1,556,1,0,1,0,0,5,5 days 06:03:25.997000
+Major,Bug,jmhodges,0,1,357.0,22,0,555,1,0,1,0,6,5,0 days 00:07:28.860000
+Major,Bug,grantr,0,12,140.0,57,1,554,1,0,2,0,3,5,4 days 09:43:32.777000
+Major,Sub-task,brucem,0,3,0.0,25,0,552,1,0,0,0,1,5,704 days 11:06:44.587000
+Major,Improvement,brucem,0,9,68.0,32,0,551,1,0,2,0,1,5,704 days 17:08:19.127000
+Major,Improvement,brucem,0,1,372.0,27,0,550,1,0,0,0,1,5,231 days 16:30:12.618000
+Major,New Feature,brucem,0,4,89.0,54,1,549,1,0,0,0,6,5,233 days 06:02:46.338000
+Major,Bug,hammer,0,6,612.0,67,1,548,1,0,0,0,5,5,2 days 08:30:03.443000
+Blocker,Sub-task,owen.omalley,1,12,100.0,39,2,545,1,1,1,0,1,5,211 days 01:28:27.035000
+Major,New Feature,hammer,0,21,152.0,70,1,544,1,1,0,0,1,5,62 days 19:38:41.815000
+Major,Improvement,jmhodges,0,3,74.0,37,0,543,1,0,1,0,5,5,4 days 18:20:46.828000
+Major,Bug,dbritsch,0,2,431.0,19,1,542,1,1,1,0,4,5,0 days 00:24:30.186000
+Critical,Bug,cutting,0,11,726.0,40,1,541,1,1,0,0,3,5,102 days 22:41:50.312000
+Minor,New Feature,urandom,0,3,568.0,28,0,540,1,1,1,0,3,5,0 days 00:55:05.442000
+Major,New Feature,hammer,2,32,0.0,91,4,539,1,1,0,0,1,5,400 days 16:18:14.941000
+Major,Bug,jmhodges,0,5,104.0,53,2,537,1,0,1,0,2,5,156 days 14:02:35.674000
+Major,Bug,wanliyang,0,2,1622.0,21,0,535,1,0,1,0,4,4,4 days 07:51:38.612000
+Trivial,New Feature,qwertymaniac,0,10,1008.0,79,2,534,1,1,1,1,4,4,115 days 06:48:53.498000
+Major,New Feature,hammer,9,58,0.0,27,13,533,1,0,1,0,3,4,336 days 13:46:43.482000
+Major,Bug,wanliyang,0,3,1983.0,37,0,529,1,0,1,0,2,4,0 days 07:33:05.809000
+Major,New Feature,esteve,7,13,213.0,23,2,528,1,0,0,0,6,4,123 days 04:47:23.378000
+Minor,Bug,esteve,0,3,141.0,31,1,527,1,0,0,0,6,4,11 days 19:33:50.110000
+Minor,Improvement,esteve,0,4,170.0,63,1,526,1,0,0,0,6,4,11 days 19:29:35.434000
+Minor,Improvement,esteve,0,3,73.0,21,1,525,1,0,0,0,6,4,11 days 19:17:43.193000
+Major,Bug,thiru_mg,0,4,682.0,72,0,524,1,1,0,0,5,4,3 days 05:31:42.292000
+Major,Bug,thiru_mg,0,3,107.0,61,0,521,1,1,1,0,0,4,4 days 02:48:25.447000
+Major,Improvement,sbanacho,0,1,680.0,24,0,520,1,0,0,0,5,4,0 days 18:14:45.562000
+Major,Bug,jplevyak,0,2,301.0,78,0,518,1,0,0,0,3,4,1 days 23:23:48.995000
+Critical,Bug,scott_carey,0,5,174.0,37,1,517,1,1,1,0,3,4,3 days 18:06:28.940000
+Major,Bug,jmhodges,0,2,165.0,61,0,516,1,0,0,0,6,4,0 days 11:16:58.708000
+Major,Bug,sbanacho,0,2,305.0,36,0,515,1,0,0,0,6,4,0 days 00:40:27.792000
+Major,Improvement,jmhodges,0,2,45.0,55,0,514,1,0,0,0,4,4,3 days 08:54:14.385000
+Major,Improvement,cutting,0,14,291.0,69,2,513,1,1,0,0,3,4,104 days 19:02:36.842000
+Major,New Feature,cutting,0,10,342.0,49,8,512,1,1,0,0,1,4,69 days 23:58:52.930000
+Major,Improvement,jmhodges,0,4,59.0,43,1,511,2,0,1,0,1,4,21 days 09:01:07.619000
+Major,Bug,neopallium,0,4,143.0,41,1,510,1,0,1,0,1,4,141 days 20:00:47.088000
+Major,Improvement,sbanacho,0,2,903.0,61,0,508,1,0,0,0,0,4,2 days 23:20:06.997000
+Critical,Bug,jmhodges,0,5,100.0,55,0,505,1,1,1,0,0,4,1 days 15:32:48.229000
+Major,Improvement,jmhodges,0,1,75.0,61,0,504,1,0,1,0,0,4,1 days 23:03:35.634000
+Major,Bug,neopallium,0,10,150.0,37,1,502,1,0,1,0,6,4,0 days 12:43:11.704000
+Major,Bug,neopallium,0,5,72.0,75,0,501,1,0,1,0,5,4,144 days 05:38:17.361000
+Major,Bug,jmhodges,0,3,154.0,23,0,500,1,0,1,0,5,4,3 days 04:47:06.155000
+Major,Bug,cutting,0,6,315.0,66,2,499,1,1,1,0,4,4,41 days 00:46:57.148000
+Major,Improvement,sbanacho,0,5,595.0,39,0,498,1,0,0,0,4,4,144 days 02:52:46.632000
+Major,Improvement,sbanacho,0,1,504.0,30,0,497,1,0,0,0,4,4,2 days 23:55:31.807000
+Major,Bug,jmhodges,0,4,465.0,38,1,496,1,0,0,0,4,4,2 days 20:09:39.781000
+Major,Improvement,urandom,0,10,45.0,32,4,495,1,1,1,0,4,4,138 days 20:10:55.324000
+Minor,Improvement,urandom,0,11,80.0,42,4,494,1,1,1,0,4,4,90 days 19:23:07.168000
+Major,New Feature,cutting,0,12,76.0,38,9,493,1,1,0,0,1,3,1 days 21:02:17.857000
+Minor,Improvement,jmhodges,0,2,131.0,52,1,491,1,0,1,0,4,3,7 days 05:35:13.652000
+Major,Improvement,cutting,0,3,77.0,38,1,490,2,1,0,0,2,3,0 days 18:53:55.298000
+Major,Bug,jmhodges,0,3,89.0,47,1,489,1,0,1,0,2,3,9 days 17:25:24.456000
+Major,Bug,cutting,0,3,81.0,44,1,487,1,1,1,0,0,3,1 days 19:51:37.387000
+Minor,Improvement,jmhodges,0,3,147.0,29,1,486,1,0,1,0,6,3,13 days 00:32:31.792000
+Major,Wish,brucem,1,15,335.0,28,10,485,0,0,0,0,5,3,933 days 17:30:09.600000
+Major,Bug,sandys,0,2,6299.0,64,0,483,1,0,1,0,4,3,0 days 08:37:35.812000
+Major,Improvement,brucem,0,1,26.0,22,0,481,1,0,0,0,3,3,0 days 00:34:12.737000
+Major,Bug,brucem,0,1,144.0,50,0,480,1,0,0,0,2,3,0 days 01:12:40.579000
+Major,Bug,cutting,0,1,158.0,42,0,479,1,0,1,0,2,3,0 days 00:59:13.623000
+Major,Wish,plaes,0,5,72.0,26,0,478,1,0,0,0,2,3,273 days 13:40:10.177000
+Major,Wish,brucem,0,6,191.0,9,1,477,2,0,0,0,1,3,2 days 08:34:28.988000
+Major,Sub-task,brucem,0,2,222.0,33,0,475,1,0,0,1,1,3,578 days 05:59:43.723000
+Major,Sub-task,brucem,0,2,112.0,22,0,474,1,0,0,1,1,3,578 days 05:58:42.258000
+Major,Sub-task,brucem,0,3,54.0,47,0,473,1,0,0,1,1,3,578 days 06:02:14.827000
+Major,Sub-task,brucem,0,2,89.0,33,0,472,1,0,0,1,1,3,578 days 06:06:41.631000
+Major,Sub-task,brucem,0,2,0.0,28,0,471,1,0,0,1,1,3,578 days 06:07:46.806000
+Major,Sub-task,brucem,0,2,104.0,37,0,470,1,0,0,1,1,3,441 days 06:38:28.947000
+Major,Sub-task,brucem,0,2,81.0,55,0,469,1,0,0,1,1,3,441 days 06:59:03.738000
+Major,Sub-task,brucem,0,1,149.0,47,0,468,1,0,0,1,1,3,578 days 06:33:50.199000
+Major,Improvement,brucem,0,8,105.0,68,0,467,1,0,1,1,1,3,587 days 07:04:37.076000
+Major,Bug,jmhodges,0,8,879.0,68,2,465,1,0,1,0,0,3,19 days 23:10:11.659000
+Major,Improvement,brucem,0,6,129.0,63,1,464,1,0,0,0,0,3,486 days 18:35:10.140000
+Blocker,Improvement,jmhodges,0,2,346.0,48,1,463,1,0,1,0,6,3,348 days 10:29:56.345000
+Major,Bug,jmhodges,0,6,160.0,32,1,461,1,0,1,0,6,3,20 days 00:09:04.006000
+Major,Improvement,brucem,0,2,113.0,39,0,460,1,0,1,0,4,3,0 days 00:39:52.555000
+Major,New Feature,cutting,0,6,113.0,61,5,458,1,1,0,1,2,3,684 days 20:45:57.433000
+Major,New Feature,cutting,0,2,116.0,62,6,456,1,1,0,1,2,3,684 days 20:57:11.151000
+Minor,Improvement,dmdabbs,0,3,109.0,38,1,455,1,1,1,0,0,3,0 days 06:06:55.071000
+Minor,Improvement,ijuma,0,1,70.0,61,2,454,1,1,1,0,5,3,6 days 07:50:29.513000
+Major,Improvement,brucem,0,1,141.0,20,0,453,1,0,0,0,4,3,0 days 03:21:40.658000
+Major,Improvement,brucem,0,1,229.0,15,0,452,1,0,1,0,4,3,0 days 03:12:36.617000
+Major,Improvement,hammer,0,2,288.0,84,0,451,1,0,1,0,3,3,14 days 12:12:53.617000
+Blocker,Bug,phunt,0,10,1712.0,72,1,450,2,0,1,0,3,3,32 days 22:12:17.889000
+Major,New Feature,brucem,0,8,325.0,35,1,449,1,0,1,1,3,3,11 days 16:26:52.631000
+Major,Bug,brucem,0,4,26.0,55,0,448,1,0,1,0,2,3,0 days 19:19:22.003000
+Blocker,Bug,cutting,0,10,679.0,30,1,447,1,0,1,0,2,3,99 days 21:28:57.368000
+Major,Improvement,cutting,0,1,329.0,64,1,446,1,0,1,0,2,3,9 days 19:55:58.529000
+Major,New Feature,brucem,0,3,613.0,80,0,445,1,0,1,0,1,3,1 days 08:16:17.590000
+Major,Improvement,brucem,0,2,0.0,12,1,444,1,0,0,0,1,3,1 days 12:04:50.406000
+Major,Sub-task,brucem,0,3,234.0,67,0,443,1,0,0,0,1,3,1 days 15:31:52.107000
+Major,Sub-task,brucem,0,2,471.0,55,0,442,1,0,1,0,1,3,1 days 15:59:23.633000
+Major,Bug,brucem,0,5,207.0,42,1,441,1,0,1,0,1,3,693 days 05:03:52.092000
+Major,Bug,brucem,0,4,514.0,34,0,440,1,0,1,0,1,3,3 days 09:19:05.985000
+Minor,Improvement,brucem,0,6,129.0,56,0,439,1,0,1,0,1,3,0 days 17:03:29.025000
+Trivial,Improvement,amichai,0,4,2369.0,48,2,438,1,0,1,0,1,3,1 days 21:36:27.202000
+Trivial,Bug,amichai,0,2,16.0,22,2,437,2,0,1,0,1,3,0 days 23:58:18.181000
+Major,Bug,cutting,0,3,80.0,29,0,433,1,1,1,0,4,2,4 days 23:59:01.074000
+Major,New Feature,cutting,0,5,523.0,51,1,432,1,1,1,0,4,2,5 days 23:16:29.568000
+Major,Bug,cutting,0,2,118.0,41,0,431,1,1,1,0,3,2,4 days 23:59:49.944000
+Major,Improvement,massie,0,2,242.0,49,0,430,1,0,0,0,1,2,0 days 00:04:35.971000
+Major,Improvement,massie,0,4,0.0,47,1,428,1,0,0,0,0,2,0 days 20:04:18.227000
+Minor,Improvement,kingryan,0,4,152.0,33,1,426,1,0,0,0,0,2,2 days 07:05:29.873000
+Major,Bug,scott_carey,0,6,465.0,41,1,424,1,0,1,0,5,2,5 days 00:03:59.889000
+Major,Improvement,urandom,0,10,91.0,42,1,423,1,0,1,0,4,2,27 days 13:04:38.200000
+Major,Bug,sbanacho,0,2,558.0,34,0,422,1,0,0,0,4,2,0 days 01:26:00.711000
+Major,Bug,cutting,0,3,167.0,28,1,421,1,0,0,0,4,2,0 days 17:05:13.123000
+Major,Bug,massie,0,6,52.0,49,1,418,1,0,0,0,2,2,26 days 20:40:13.709000
+Major,Bug,scott_carey,0,2,352.0,59,0,417,1,1,4,0,1,2,2 days 02:29:11.420000
+Major,Bug,ryanobjc,0,5,271.0,58,1,416,1,1,1,0,0,2,1 days 02:05:51.950000
+Major,Improvement,hammer,0,9,1670.0,61,1,415,1,0,0,0,5,2,3 days 15:13:53.217000
+Major,New Feature,scott_carey,0,8,286.0,71,1,414,1,1,0,0,4,2,7 days 05:08:13.111000
+Major,Bug,jmhodges,0,1,60.0,46,0,413,1,0,0,0,1,2,0 days 01:08:02.725000
+Major,Improvement,massie,0,1,129.0,38,0,412,1,0,0,0,1,2,0 days 02:09:50.704000
+Major,Bug,jmhodges,0,4,73.0,34,1,411,1,0,0,0,1,2,0 days 17:03:03.093000
+Major,Improvement,massie,0,1,173.0,41,1,410,1,0,0,0,1,2,0 days 00:04:47.043000
+Major,Improvement,massie,0,1,86.0,83,1,409,1,0,0,0,5,2,0 days 00:06:16.033000
+Major,Bug,massie,0,2,42.0,29,0,408,1,0,0,0,5,2,0 days 00:02:39.929000
+Blocker,Bug,cutting,0,7,700.0,28,1,407,1,1,0,0,4,2,3 days 00:21:34.150000
+Major,New Feature,tlipcon,1,28,617.0,27,12,405,1,1,0,0,4,2,145 days 22:41:01.851000
+Major,Improvement,massie,0,1,144.0,53,1,403,1,0,0,0,4,2,0 days 03:52:41.693000
+Major,New Feature,massie,0,1,134.0,66,0,402,1,0,0,0,3,2,0 days 00:06:55.547000
+Major,Bug,tomwhite,0,2,89.0,86,1,401,1,0,1,0,3,2,0 days 02:28:43.469000
+Minor,Improvement,eli,0,2,161.0,36,1,400,1,0,0,0,3,2,1 days 15:22:23.600000
+Major,Test,hammer,0,10,0.0,64,1,399,1,0,0,0,3,2,6 days 14:57:58.843000
+Major,Bug,eli,0,2,51.0,33,1,398,1,0,0,0,3,2,1 days 14:51:29.625000
+Trivial,Improvement,hammer,0,1,161.0,58,0,397,1,0,0,0,3,2,0 days 00:06:51.873000
+Minor,Improvement,eli,0,3,0.0,41,2,396,1,0,0,0,3,2,525 days 20:23:33.419000
+Major,Improvement,eli,0,2,0.0,28,1,395,1,0,0,0,3,2,0 days 00:15:10.118000
+Major,Improvement,massie,0,1,231.0,61,1,394,1,0,0,0,2,2,0 days 00:32:22.375000
+Minor,New Feature,jmhodges,0,4,230.0,35,1,393,1,1,0,0,2,2,0 days 01:00:33.424000
+Critical,Improvement,scott_carey,0,47,2787.0,51,2,392,1,1,0,0,2,2,16 days 10:57:10.153000
+Major,Bug,thiru_mg,0,2,438.0,64,0,390,1,1,0,0,6,1,1 days 12:03:13.746000
+Major,Bug,thiru_mg,0,2,242.0,43,0,389,1,1,0,0,6,1,1 days 12:21:23.393000
+Major,Improvement,thiru_mg,0,7,3207.0,44,0,388,1,1,0,0,5,1,3 days 16:14:17.951000
+Minor,Bug,marmbrus,0,12,2020.0,77,1,387,1,1,1,0,4,1,3 days 23:45:48.035000
+Major,Improvement,philip,0,5,145.0,36,1,386,1,0,1,0,4,1,4 days 11:39:07.502000
+Major,Bug,thiru_mg,0,2,135.0,54,0,385,1,1,0,0,3,1,1 days 02:56:56.900000
+Major,Improvement,massie,0,1,196.0,45,0,384,1,0,0,0,3,1,0 days 02:26:48.802000
+Major,Improvement,thiru_mg,0,9,448.0,46,0,383,1,1,0,0,2,1,5 days 11:45:46.436000
+Minor,Bug,marmbrus,0,4,2149.0,68,1,382,1,1,1,0,2,1,0 days 15:04:42.266000
+Major,Improvement,massie,0,1,0.0,75,0,381,1,0,0,0,2,1,0 days 00:04:34.740000
+Major,Improvement,scott_carey,0,12,427.0,70,2,380,3,1,1,0,2,1,2 days 18:04:18.169000
+Major,Improvement,massie,0,1,267.0,57,0,379,1,0,0,0,1,1,0 days 00:08:24.656000
+Major,Improvement,massie,0,1,174.0,65,0,378,1,0,0,0,1,1,0 days 00:03:35.984000
+Major,Improvement,massie,0,1,217.0,48,0,377,1,0,0,0,1,1,0 days 00:06:07.820000
+Major,Bug,thiru_mg,0,4,147.0,40,0,375,1,1,0,0,0,1,1 days 14:18:42.591000
+Minor,Bug,thiru_mg,0,7,607.0,79,0,374,1,0,0,0,6,1,23 days 18:04:35.583000
+Major,Bug,cutting,0,3,411.0,35,0,373,1,1,0,0,5,1,3 days 12:34:50.786000
+Major,Task,tlipcon,1,12,263.0,40,2,372,1,1,0,0,5,1,146 days 19:06:31.073000
+Major,Improvement,massie,0,1,85.0,40,0,371,1,0,0,0,5,1,0 days 00:05:23.961000
+Major,Improvement,massie,0,1,547.0,44,0,370,1,0,0,0,4,1,0 days 00:08:11.433000
+Major,Improvement,massie,0,1,100.0,45,0,369,1,0,0,0,4,1,0 days 00:06:02.286000
+Blocker,Improvement,philip,0,4,297.0,77,1,368,1,0,1,0,4,1,4 days 00:20:39.144000
+Major,Improvement,massie,0,1,905.0,51,0,367,1,0,0,0,4,1,0 days 00:47:36.168000
+Major,Improvement,massie,0,1,231.0,41,1,364,1,0,0,0,3,1,0 days 05:28:28.243000
+Major,Improvement,philip,0,3,375.0,85,1,363,1,1,0,0,3,1,0 days 16:54:54.037000
+Major,Test,hammer,0,1,0.0,102,0,362,1,0,0,0,3,1,0 days 00:49:00.818000
+Blocker,Bug,scott_carey,0,5,2294.0,63,2,361,1,1,0,0,3,1,12 days 04:32:59.317000
+Major,Task,massie,0,1,231.0,48,1,360,1,0,0,0,2,1,0 days 00:06:10.199000
+Major,Improvement,massie,0,0,109.0,49,1,359,1,0,0,0,2,1,0 days 00:07:51.489000
+Major,Bug,massie,0,2,0.0,38,0,356,1,0,0,0,2,1,0 days 00:03:24.023000
+Minor,Bug,kevinoliver,0,4,301.0,68,0,355,1,1,1,0,1,1,5 days 11:09:55.524000
+Minor,Improvement,kevinoliver,0,7,309.0,50,2,354,1,1,1,0,1,1,6 days 17:46:58.445000
+Major,Improvement,massie,0,1,160.0,60,0,353,1,0,0,0,1,1,0 days 00:03:57.057000
+Major,Bug,massie,0,0,130.0,47,0,352,1,0,0,0,1,1,0 days 00:10:11.943000
+Major,Improvement,philip,0,3,71.0,80,0,351,1,1,0,0,1,1,0 days 01:59:55.536000
+Major,Sub-task,kevinoliver,0,7,139.0,68,1,350,1,1,1,0,1,1,14 days 05:07:39.053000
+Major,Improvement,sbanacho,0,3,591.0,34,1,349,0,0,0,0,0,1,28 days 21:41:33.897000
+Minor,Bug,stevel@apache.org,1,2,446.0,53,0,348,1,0,1,0,0,1,331 days 09:29:11.252000
+Major,Bug,massie,0,1,221.0,73,0,347,1,0,0,0,0,1,0 days 00:06:01.331000
+Major,New Feature,massie,0,1,378.0,49,1,346,1,0,0,0,0,1,0 days 00:28:03.528000
+Major,Improvement,thiru_mg,0,2,847.0,33,1,345,1,1,0,0,5,1,3 days 02:22:47.261000
+Major,Improvement,massie,0,3,1540.0,36,2,344,1,0,0,0,4,1,0 days 02:55:05.444000
+Minor,Improvement,philip,0,4,116.0,48,0,343,2,1,0,0,4,1,10 days 20:14:11.885000
+Major,Improvement,cutting,0,1,158.0,30,0,342,1,1,0,0,4,1,19 days 22:18:04.056000
+Major,Improvement,cutting,0,9,78.0,30,2,340,1,0,0,0,4,1,19 days 23:02:35.255000
+Major,Improvement,philip,0,3,49.0,55,0,339,1,0,1,0,4,1,3 days 03:02:43.834000
+Major,Bug,thiru_mg,0,8,268.0,41,0,338,1,1,0,0,4,1,0 days 00:35:35.102000
+Major,Bug,thiru_mg,0,1,233.0,54,0,337,1,1,0,0,4,1,0 days 17:43:01.558000
+Major,Bug,scott_carey,0,6,1544.0,39,2,336,1,1,1,0,4,1,3 days 16:34:05.465000
+Major,Bug,cutting,0,0,257.0,36,1,335,1,0,0,0,3,1,0 days 02:42:49.804000
+Major,Improvement,hammer,0,9,125.0,80,1,334,1,0,0,0,3,1,63 days 13:35:16.240000
+Major,Improvement,hammer,0,2,50.0,108,1,331,2,0,0,0,3,1,146 days 10:07:11.879000
+Major,Improvement,hammer,0,1,120.0,94,1,330,1,0,0,0,3,1,0 days 01:32:46.120000
+Major,Bug,hammer,0,1,38.0,62,0,329,1,0,0,0,3,1,0 days 00:35:16.353000
+Major,Improvement,thiru_mg,0,2,388.0,70,2,328,1,1,0,0,3,1,1 days 15:07:32.905000
+Major,Improvement,thiru_mg,0,16,344.0,52,4,327,1,1,0,0,3,1,21 days 14:04:44.630000
+Major,New Feature,hammer,0,1,0.0,42,0,326,1,0,0,0,3,1,0 days 15:32:09.462000
+Major,New Feature,hammer,0,1,0.0,28,0,325,1,0,0,0,3,1,35 days 17:55:06.297000
+Major,Improvement,hammer,0,4,17.0,85,1,324,1,1,0,0,3,1,47 days 22:54:09.387000
+Major,New Feature,hammer,0,10,0.0,43,2,323,1,1,0,0,2,1,19 days 21:40:15.201000
+Major,New Feature,hammer,0,4,0.0,82,1,322,1,0,0,0,2,1,21 days 09:47:01.868000
+Major,Test,hammer,0,23,0.0,32,1,321,2,1,0,0,2,1,21 days 22:43:21.893000
+Major,Improvement,cutting,0,4,514.0,31,0,320,1,1,0,0,2,1,0 days 02:51:32.830000
+Major,Test,cutting,0,2,59.0,28,1,317,1,1,0,0,2,1,0 days 04:25:24.171000
+Major,Bug,jfolson,1,4,906.0,101,3,1456,1,1,1,0,2,2,0 days 01:06:04.795000
+Blocker,Bug,hammer,0,14,381.0,100,2,318,1,0,0,0,2,1,34 days 04:02:48.946000
+Major,Improvement,thiru_mg,0,4,889.0,43,2,316,1,1,0,0,2,1,2 days 04:39:01.266000
+Major,Improvement,thiru_mg,0,7,621.0,41,1,315,1,1,0,0,2,1,1 days 05:43:50.482000
+Major,Improvement,kimballa,0,10,153.0,46,2,314,2,1,0,0,2,1,0 days 20:13:31.756000
+Major,Bug,thiru_mg,0,4,1391.0,88,1,313,1,1,0,0,2,1,2 days 00:52:04.363000
+Major,Improvement,cutting,0,3,91.0,30,1,310,1,0,0,0,1,1,0 days 03:09:25.524000
+Major,Bug,hammer,0,5,0.0,89,1,309,1,0,0,0,1,1,0 days 21:08:59.539000
+Major,Bug,hammer,0,1,330.0,68,1,308,1,0,0,0,1,1,2 days 18:39:19.740000
+Major,New Feature,hammer,0,1,87.0,22,0,307,1,0,0,0,0,1,0 days 00:15:17.732000
+Major,Improvement,kingryan,0,6,191.0,9,2,306,1,0,0,0,0,1,8 days 02:11:59.288000
+Major,Improvement,thiru_mg,0,3,228.0,70,1,304,1,1,0,0,6,1,2 days 20:13:16.324000
+Major,New Feature,hammer,0,1,0.0,73,0,302,1,0,0,0,6,1,0 days 00:07:25.587000
+Major,New Feature,hammer,0,12,0.0,73,1,301,1,0,1,0,6,1,796 days 17:07:53.924000
+Major,New Feature,hammer,0,7,135.0,55,2,300,1,0,0,0,5,1,796 days 17:12:26.325000
+Major,Test,hammer,0,2,200.0,54,1,299,1,0,0,0,5,1,1 days 08:22:47.165000
+Major,Improvement,philip,0,1,489.0,68,1,298,1,1,0,0,5,1,4 days 21:17:37.425000
+Minor,Improvement,philip,0,1,52.0,54,1,297,1,1,0,0,4,1,4 days 15:22:05.852000
+Minor,New Feature,philip,1,4,77.0,48,2,296,1,1,0,0,4,1,447 days 20:20:09.597000
+Major,Improvement,jmhsieh,0,5,1837.0,66,1,295,1,1,1,0,4,1,33 days 06:21:30.024000
+Major,Improvement,hammer,0,2,0.0,104,0,294,1,0,0,0,3,1,2 days 18:54:48.951000
+Major,Test,hammer,0,4,0.0,43,0,293,1,0,0,0,3,1,0 days 07:20:49.160000
+Major,Test,hammer,0,2,165.0,108,1,292,1,0,0,0,3,1,0 days 18:14:50.694000
+Major,Bug,urandom,0,3,265.0,33,1,291,1,1,1,0,1,1,1 days 19:09:38.574000
+Major,Bug,urandom,0,3,98.0,19,1,290,1,1,1,0,1,1,0 days 14:27:14.875000
+Major,Test,hammer,0,2,0.0,60,1,289,1,0,0,0,1,1,3 days 16:47:53.965000
+Major,Improvement,hammer,0,1,0.0,60,1,288,1,0,0,0,1,1,7 days 20:21:45.693000
+Major,Test,hammer,0,29,0.0,58,3,287,1,0,0,0,1,1,41 days 20:01:13.770000
+Major,New Feature,cutting,0,12,136.0,21,3,285,1,0,0,0,0,1,129 days 01:02:35.603000
+Major,Improvement,hammer,0,7,110.0,56,1,284,1,0,0,0,0,1,162 days 11:40:44.743000
+Minor,Bug,philip,0,2,449.0,43,0,282,1,1,0,0,0,1,8 days 17:05:24.670000
+Major,Bug,thiru_mg,0,1,665.0,51,0,281,1,1,0,0,0,1,6 days 14:00:12.796000
+Major,Bug,hammer,0,1,168.0,64,2,280,1,0,0,0,0,1,3 days 18:45:12.695000
+Minor,New Feature,philip,0,4,143.0,42,1,279,1,1,0,0,3,12,7 days 19:18:59.742000
+Major,Improvement,cutting,0,7,234.0,53,1,278,1,1,0,0,3,12,7 days 21:30:17.647000
+Major,Bug,philip,0,3,132.0,48,1,277,1,1,0,0,3,12,416 days 03:47:50.026000
+Minor,Bug,philip,0,2,168.0,52,0,276,1,1,0,0,3,12,0 days 00:17:59.083000
+Minor,New Feature,philip,0,4,55.0,40,1,275,1,1,0,0,3,12,8 days 00:24:11.454000
+Major,New Feature,cutting,0,3,129.0,41,2,274,1,1,0,0,3,12,13 days 04:33:02.792000
+Minor,New Feature,philip,0,5,256.0,68,1,273,1,1,0,0,3,12,8 days 17:20:22.344000
+Major,New Feature,philip,0,2,139.0,46,1,272,1,1,0,0,2,12,0 days 22:10:48.060000
+Major,New Feature,philip,0,6,349.0,67,1,271,1,1,0,0,2,12,5 days 22:32:13.417000
+Minor,Test,philip,0,2,209.0,62,0,269,1,1,0,0,2,12,1 days 00:17:09.474000
+Major,Improvement,massie,0,9,704.0,73,2,268,1,0,0,0,1,12,16 days 19:37:18.266000
+Major,New Feature,philip,0,7,277.0,72,1,267,1,1,0,0,1,12,2 days 00:54:03.360000
+Major,Improvement,hammer,0,5,96.0,99,1,264,1,0,0,0,2,12,13 days 05:32:40.159000
+Minor,Improvement,tlipcon,0,5,155.0,36,1,263,1,1,1,0,1,12,6 days 23:39:12.202000
+Major,Bug,hammer,0,1,243.0,25,0,262,1,0,0,0,1,12,7 days 18:48:37.300000
+Minor,New Feature,kevinoliver,0,20,266.0,29,2,261,1,1,0,0,4,12,52 days 08:39:36.516000
+Major,Improvement,kevinoliver,0,3,58.0,42,0,260,1,1,0,0,4,12,11 days 05:04:35.385000
+Trivial,Bug,kevinoliver,0,3,193.0,70,2,259,1,1,0,0,4,12,21 days 06:49:01.365000
+Major,New Feature,tlipcon,0,20,219.0,44,5,258,1,0,0,0,4,12,13 days 11:42:31.455000
+Trivial,Bug,kevinoliver,0,7,196.0,17,1,257,1,1,0,0,1,12,0 days 02:15:50.066000
+Major,Bug,cutting,1,4,154.0,42,1,256,1,1,0,0,0,12,1 days 02:43:48.956000
+Major,Bug,cutting,0,5,207.0,43,1,255,1,1,0,0,0,12,1 days 02:52:44.779000
+Major,New Feature,hammer,0,3,207.0,30,0,254,1,0,0,0,0,12,21 days 08:44:16.687000
+Major,Improvement,hammer,0,2,305.0,105,1,253,1,0,0,0,0,12,29 days 15:41:59.247000
+Minor,Improvement,rsgoodman,0,1,745.0,79,1,252,1,1,0,0,4,12,31 days 09:22:27.329000
+Major,New Feature,cutting,0,3,323.0,85,0,250,1,1,0,0,1,12,1 days 23:07:20.741000
+Major,Improvement,cutting,0,11,212.0,49,0,249,1,1,0,0,4,12,1 days 00:03:28.905000
+Major,Bug,philip,0,9,49.0,76,0,247,1,1,0,0,1,12,7 days 00:20:08.302000
+Minor,Improvement,thiru_mg,1,5,147.0,74,1,246,1,1,0,0,1,12,7 days 18:17:08.813000
+Minor,New Feature,philip,0,24,91.0,68,0,245,1,1,0,0,1,12,29 days 18:54:30.161000
+Minor,Improvement,philip,0,3,105.0,30,0,244,1,1,0,0,1,12,99 days 13:32:03.385000
+Major,Improvement,sbanacho,0,12,236.0,34,1,243,1,0,0,0,0,11,45 days 19:26:18.401000
+Major,New Feature,cutting,0,7,193.0,35,1,242,1,1,0,0,2,11,7 days 22:41:39.594000
+Major,Improvement,cutting,0,6,418.0,35,1,241,1,1,0,0,2,11,9 days 01:06:57.251000
+Major,Improvement,hammer,0,7,231.0,77,1,240,1,0,0,0,2,11,6 days 14:52:03.313000
+Blocker,Bug,owen.omalley,0,2,208.0,68,1,238,1,1,0,0,1,11,7 days 00:59:02.567000
+Major,Improvement,cutting,0,5,329.0,26,1,237,1,1,0,0,1,11,0 days 21:57:25.473000
+Major,Improvement,cutting,0,3,71.0,46,1,236,1,1,0,0,1,11,0 days 02:01:07.241000
+Major,Improvement,sbanacho,0,3,242.0,23,0,234,1,0,0,0,5,11,3 days 06:36:53.429000
+Major,Improvement,philip,0,2,393.0,21,1,233,1,1,0,0,5,11,4 days 16:50:14.472000
+Major,Bug,sbanacho,0,1,0.0,35,0,232,1,0,0,0,5,11,0 days 00:11:27.936000
+Major,Improvement,sbanacho,0,3,45.0,12,0,231,1,0,0,0,4,11,54 days 08:25:55.290000
+Major,Improvement,tomwhite,0,4,147.0,42,2,229,1,1,1,0,4,11,0 days 15:42:00.760000
+Major,Bug,tlipcon,0,2,308.0,50,1,227,1,0,1,0,4,11,0 days 17:05:33.267000
+Major,Improvement,metcalfc,0,1,328.0,55,1,226,1,0,0,0,4,11,56 days 12:56:39.990000
+Major,Bug,cutting,0,2,219.0,73,0,225,1,1,0,0,4,11,0 days 15:21:45.517000
+Major,Improvement,massie,0,1,221.0,68,0,224,1,0,0,0,4,11,0 days 00:12:04.905000
+Minor,Bug,philip,0,2,129.0,24,0,223,1,1,0,0,4,11,0 days 01:42:27.460000
+Major,Bug,hammer,0,3,0.0,41,0,222,1,0,0,0,4,11,0 days 00:18:20.325000
+Major,Improvement,philip,0,5,81.0,51,1,221,1,1,0,0,4,11,0 days 17:08:25.333000
+Major,Improvement,sbanacho,0,3,1448.0,47,1,220,1,0,0,0,3,11,1 days 03:23:24.063000
+Major,Improvement,hammer,0,17,225.0,106,1,219,1,0,0,0,3,11,46 days 07:18:43.935000
+Major,Improvement,hammer,0,1,67.0,65,1,218,1,0,0,0,3,11,46 days 05:27:28.739000
+Major,Improvement,hammer,0,2,0.0,30,1,216,1,0,0,0,3,11,0 days 16:30:46.771000
+Major,Improvement,hammer,0,2,210.0,134,0,215,1,0,0,0,3,11,46 days 07:32:14.759000
+Major,Improvement,cutting,0,2,91.0,35,0,213,1,0,0,0,2,11,5 days 23:48:39.803000
+Major,Bug,thiru_mg,0,1,230.0,70,1,212,1,0,0,0,2,11,2 days 12:33:00.319000
+Major,Bug,thiru_mg,0,4,178.0,40,1,211,1,0,0,0,2,11,1 days 06:02:34.820000
+Major,Bug,thiru_mg,0,7,1314.0,59,1,210,1,0,0,0,2,11,1 days 06:04:28.158000
+Major,Bug,phunt,0,11,140.0,56,1,208,1,0,1,0,2,11,78 days 14:06:37.736000
+Minor,Bug,phunt,0,3,205.0,54,1,207,1,0,1,0,2,11,53 days 11:34:37.351000
+Major,Bug,phunt,0,5,668.0,66,1,206,2,1,1,0,2,11,56 days 16:58:27.959000
+Major,Improvement,sbanacho,0,1,218.0,35,1,205,1,0,0,0,1,11,47 days 22:15:48.900000
+Major,Improvement,sbanacho,0,1,637.0,46,1,204,1,0,0,0,0,11,0 days 02:28:50.657000
+Major,Improvement,hammer,0,3,179.0,73,0,203,1,0,0,0,0,11,2 days 13:05:00.980000
+Minor,Improvement,hammer,0,14,137.0,34,1,202,1,0,0,0,0,11,3 days 15:42:26.236000
+Major,Improvement,hammer,0,4,235.0,57,1,201,1,0,0,0,0,11,2 days 13:54:23.857000
+Minor,Improvement,ehillenius,0,5,256.0,39,2,200,1,1,1,0,0,11,0 days 14:52:19.607000
+Major,Improvement,hammer,0,12,954.0,29,1,199,1,0,0,0,0,11,3 days 13:40:46.388000
+Major,Bug,phunt,0,2,394.0,78,1,198,1,0,1,0,6,11,63 days 23:36:43.310000
+Major,Improvement,sbanacho,0,1,334.0,50,1,197,1,0,0,0,5,11,1 days 19:37:43.380000
+Major,Improvement,massie,0,1,532.0,38,0,195,1,0,0,0,4,11,1 days 01:42:36.501000
+Major,Bug,sbanacho,0,1,165.0,33,0,194,1,0,0,0,3,11,0 days 00:59:18.984000
+Major,Bug,thiru_mg,0,3,129.0,37,0,193,1,0,0,0,3,11,0 days 16:53:50.769000
+Minor,Improvement,cutting,0,4,162.0,61,1,192,1,1,0,0,2,11,0 days 00:41:54.661000
+Major,Bug,cutting,0,3,276.0,32,0,191,1,0,0,0,2,11,1 days 00:52:31.552000
+Major,Improvement,sbanacho,0,2,197.0,45,0,190,1,0,0,0,1,11,1 days 19:54:51.092000
+Minor,Bug,cutting,0,1,207.0,19,0,189,1,0,0,0,1,11,0 days 04:54:36.039000
+Trivial,Bug,cutting,0,2,173.0,26,0,188,1,0,0,0,1,11,0 days 03:31:07.606000
+Major,Improvement,massie,0,6,137.0,76,0,187,1,0,0,0,1,11,0 days 10:23:19.006000
+Major,Improvement,massie,0,2,228.0,36,1,186,1,0,3,0,0,11,1 days 02:34:20.659000
+Major,Improvement,cutting,0,8,316.0,37,0,185,1,1,0,0,4,11,5 days 01:41:53.157000
+Minor,Bug,thiru_mg,0,8,1674.0,36,0,184,1,1,0,0,4,11,27 days 20:39:53.275000
+Major,Bug,cutting,0,14,264.0,53,0,182,1,1,0,0,3,11,6 days 00:44:14.797000
+Major,Task,gkesavan,0,4,798.0,55,0,181,1,0,0,0,2,11,70 days 05:39:26.711000
+Major,Improvement,sbanacho,0,1,185.0,36,0,180,1,0,0,0,1,11,0 days 00:12:06.624000
+Major,Improvement,massie,0,1,137.0,38,1,179,1,0,3,0,1,11,0 days 16:50:07.544000
+Major,Improvement,massie,0,1,148.0,67,0,178,1,0,3,0,0,11,1 days 03:25:03.891000
+Major,Improvement,cutting,0,2,58.0,34,0,177,1,1,0,0,4,10,6 days 01:47:06.443000
+Major,Bug,sbanacho,0,2,225.0,62,0,176,1,0,0,0,3,10,0 days 05:59:05.131000
+Major,Improvement,massie,0,1,312.0,75,0,175,1,0,3,0,3,10,2 days 03:02:55.142000
+Minor,Improvement,philip,0,3,142.0,44,0,174,1,1,0,0,2,10,133 days 17:34:41.510000
+Minor,New Feature,philip,0,2,78.0,27,0,173,1,1,0,0,2,10,133 days 17:36:12.838000
+Major,Improvement,massie,0,1,843.0,66,1,172,1,0,3,0,0,10,0 days 20:07:11.464000
+Major,Bug,mrfish,0,10,736.0,61,1,171,1,1,1,0,5,10,19 days 10:57:21.495000
+Major,Bug,mrfish,0,1,568.0,33,1,170,1,1,1,0,5,10,19 days 18:47:53.523000
+Trivial,Bug,hammer,0,2,44.0,25,1,169,1,0,0,0,4,10,13 days 12:43:05.809000
+Major,Improvement,massie,0,1,1316.0,63,0,168,0,0,3,0,3,10,0 days 20:54:06.864000
+Major,Improvement,philip,0,1,465.0,57,0,167,1,1,0,0,2,10,0 days 11:22:56.443000
+Major,Improvement,philip,0,2,536.0,74,0,166,1,1,0,0,2,10,0 days 11:04:27.891000
+Minor,Bug,philip,0,2,152.0,43,0,165,1,1,0,0,2,10,0 days 11:20:35.197000
+Major,Improvement,philip,0,2,296.0,70,0,164,1,1,0,0,2,10,21 days 18:45:42.872000
+Critical,Improvement,massie,0,41,1940.0,56,3,163,4,1,0,0,1,10,83 days 02:12:34.385000
+Major,Bug,massie,0,1,190.0,45,0,162,1,0,0,0,1,10,1 days 18:07:28.609000
+Major,Test,hammer,0,6,196.0,110,1,161,1,0,0,0,1,10,63 days 15:47:32.703000
+Major,Improvement,cutting,1,49,691.0,43,3,160,1,0,0,0,1,10,71 days 21:01:52.226000
+Major,Sub-task,chirino,1,10,0.0,49,5,159,1,1,0,0,1,10,421 days 04:27:47.177000
+Major,New Feature,hammer,0,6,68.0,34,1,158,1,1,0,0,1,10,17 days 04:43:36.421000
+Major,Improvement,sbanacho,0,3,312.0,24,0,157,1,0,0,0,1,10,8 days 02:07:23.993000
+Trivial,Bug,hammer,0,2,93.0,54,0,156,1,1,0,0,1,10,0 days 10:00:45.553000
+Major,Improvement,hammer,0,5,367.0,36,1,155,1,0,0,0,0,10,0 days 21:33:45.377000
+Major,New Feature,philip,0,7,373.0,38,1,154,1,1,0,0,4,10,34 days 22:22:13.266000
+Major,New Feature,philip,0,16,151.0,70,1,152,1,1,0,0,4,10,84 days 16:49:44.922000
+Major,New Feature,massie,0,7,1443.0,34,0,151,1,0,0,0,3,10,0 days 00:08:46.531000
+Major,Bug,cutting,0,12,121.0,50,2,150,1,1,1,0,3,10,243 days 06:51:06.171000
+Major,New Feature,philip,0,18,178.0,60,1,149,0,0,0,0,3,10,12 days 18:16:25.311000
+Major,Improvement,sbanacho,0,5,126.0,35,0,148,1,0,0,0,2,10,6 days 21:04:27.026000
+Major,Improvement,sbanacho,0,11,214.0,43,0,147,1,0,0,0,2,10,1 days 14:46:32.568000
+Major,New Feature,philip,0,13,1032.0,44,1,146,1,0,0,0,2,10,8 days 22:12:49.947000
+Minor,Improvement,philip,0,6,472.0,49,0,142,1,1,0,0,1,10,1 days 00:50:43.198000
+Major,Bug,isabel,0,2,384.0,91,1,141,1,1,1,0,1,10,1 days 11:13:05.922000
+Major,Improvement,cutting,0,2,41.0,44,0,140,1,1,0,0,3,10,0 days 23:48:07.012000
+Major,New Feature,cutting,0,2,190.0,42,1,139,1,1,0,0,3,10,1 days 00:19:20.620000
+Major,Bug,thiru_mg,0,1,618.0,46,0,138,1,1,0,0,2,10,0 days 00:38:54.520000
+Major,Bug,amareshwari,0,4,108.0,60,0,137,1,1,0,0,2,10,1 days 23:25:15.498000
+Major,Improvement,phunt,0,19,77.0,46,3,136,1,0,1,0,1,10,133 days 15:11:30.812000
+Blocker,New Feature,cutting,0,27,71.0,29,8,135,2,1,0,0,0,10,108 days 03:40:10.304000
+Major,Bug,thiru_mg,0,7,521.0,72,2,134,1,1,0,0,0,10,1 days 21:31:22.167000
+Major,Bug,jonbratseth,0,7,227.0,39,1,133,1,0,0,0,0,10,1 days 00:29:08.081000
+Major,Bug,sbanacho,0,4,407.0,68,0,132,1,0,0,0,4,10,5 days 05:02:36.069000
+Major,Improvement,gkesavan,0,2,99.0,52,0,131,1,1,1,0,2,9,6 days 10:02:41.643000
+Major,Bug,phunt,0,2,792.0,71,1,130,1,0,1,0,2,9,99 days 15:17:44.580000
+Major,New Feature,cutting,0,2,45.0,26,2,129,1,1,0,0,1,9,0 days 23:42:19.025000
+Minor,Improvement,yangyangyyy,0,1,584.0,27,2,128,1,1,0,0,0,9,107 days 04:36:55.021000
+Major,New Feature,yangyangyyy,0,4,363.0,62,2,127,1,1,0,0,0,9,0 days 07:41:07.196000
+Major,Improvement,floleibert,0,7,252.0,90,2,126,1,1,0,0,0,9,106 days 14:37:08.814000
+Major,Bug,cutting,0,2,92.0,43,1,125,1,0,1,0,4,9,0 days 02:24:53.077000
+Blocker,Bug,phunt,0,5,418.0,58,0,124,1,1,1,0,4,9,0 days 04:09:41.835000
+Blocker,Bug,phunt,0,4,711.0,67,0,123,1,1,1,0,4,9,0 days 13:33:40.358000
+Minor,Bug,phunt,0,2,664.0,57,0,122,1,1,1,0,3,9,0 days 03:35:24.181000
+Critical,Improvement,cutting,0,2,297.0,73,0,121,1,1,0,0,2,9,1 days 01:57:53.314000
+Major,Improvement,cutting,0,6,276.0,48,0,120,1,1,1,0,2,9,2 days 02:12:49.944000
+Major,Bug,cutting,0,2,72.0,45,0,119,1,1,1,0,1,9,1 days 04:29:19.317000
+Major,Bug,cutting,0,5,105.0,60,1,118,1,1,1,0,1,9,2 days 03:39:14.289000
+Major,Bug,sbanacho,0,6,359.0,38,0,117,1,0,0,0,0,9,1 days 23:03:36.225000
+Major,Improvement,sbanacho,0,4,244.0,35,1,116,1,0,0,0,5,9,2 days 22:42:21.122000
+Major,Improvement,cutting,1,2,1107.0,19,2,115,1,0,0,0,4,9,12 days 03:50:03.176000
+Major,Bug,massie,0,3,58.0,57,1,114,1,0,0,0,4,9,0 days 12:37:35.827000
+Major,Bug,sbanacho,0,1,348.0,45,0,113,1,0,0,0,1,9,13 days 21:37:14.555000
+Trivial,Improvement,sbanacho,0,2,70.0,52,0,112,1,0,0,0,4,9,3 days 21:53:09.687000
+Major,Improvement,cutting,0,1,0.0,31,0,111,1,0,0,0,2,9,1 days 22:21:13.840000
+Major,Improvement,cutting,0,2,564.0,59,0,110,1,1,0,0,1,9,0 days 23:39:29.695000
+Major,New Feature,cutting,0,4,259.0,40,0,109,1,0,0,0,4,8,6 days 04:34:06.615000
+Major,New Feature,cutting,0,5,459.0,21,2,108,1,1,0,0,4,8,3 days 01:29:00.021000
+Minor,Bug,cutting,0,1,180.0,73,0,107,1,1,1,0,3,8,0 days 00:03:52.577000
+Major,Bug,ehillenius,0,26,91.0,33,1,104,1,1,2,0,3,8,5 days 15:46:08.424000
+Major,New Feature,ehillenius,0,4,375.0,79,0,103,1,1,2,0,2,8,42 days 17:19:55.249000
+Trivial,Task,ehillenius,0,1,66.0,43,0,102,1,1,2,0,2,8,2 days 18:29:05.803000
+Major,Bug,ehillenius,0,3,478.0,59,0,101,1,1,2,0,2,8,37 days 17:43:40.615000
+Major,Wish,sbanacho,0,1,146.0,55,0,100,1,0,0,0,1,8,0 days 01:54:17.099000
+Major,Improvement,sbanacho,0,2,321.0,51,0,99,1,0,0,0,1,8,35 days 00:08:13.233000
+Major,Improvement,sbanacho,0,9,235.0,31,0,98,1,0,0,0,1,8,15 days 21:58:56.705000
+Major,Bug,sbanacho,0,2,358.0,21,0,97,1,0,0,0,1,8,0 days 03:22:13.061000
+Trivial,Improvement,ehillenius,0,4,304.0,47,0,96,1,1,2,0,1,8,38 days 05:26:01.761000
+Major,Bug,ehillenius,0,13,457.0,72,2,95,1,1,1,0,6,8,2 days 19:07:07.067000
+Major,Bug,ehillenius,0,7,700.0,64,2,94,1,1,2,0,5,8,9 days 07:57:41.027000
+Major,Bug,ehillenius,0,3,169.0,42,1,93,1,1,2,0,5,8,3 days 07:36:32.791000
+Major,New Feature,cutting,0,2,95.0,34,1,92,1,0,1,0,4,8,13 days 20:44:08.349000
+Major,Bug,cutting,0,4,374.0,46,2,90,1,1,1,0,4,8,4 days 01:19:41.955000
+Major,Improvement,cutting,0,4,181.0,57,0,89,1,1,0,0,2,8,0 days 05:28:40.511000
+Major,Bug,ravidotg,0,4,436.0,56,0,88,1,1,0,0,1,8,7 days 07:47:58.773000
+Major,Bug,cutting,0,4,39.0,28,0,87,1,1,0,0,4,7,11 days 17:10:36.063000
+Blocker,Bug,cutting,0,6,0.0,92,1,86,1,1,2,0,4,7,389 days 21:11:37.644000
+Major,Bug,thiru_mg,0,2,946.0,59,1,85,0,0,0,0,1,7,2 days 21:44:24.272000
+Major,Bug,raymie,0,1,429.0,35,1,84,1,0,0,0,1,7,3 days 06:26:07.209000
+Major,Improvement,cutting,0,2,147.0,56,1,83,1,1,1,0,3,7,26 days 03:57:15.256000
+Minor,Improvement,thiru_mg,0,6,290.0,60,0,82,1,1,0,0,3,7,5 days 13:39:47.954000
+Major,Test,cos,0,6,303.0,63,2,81,1,1,0,0,2,7,6 days 01:46:22.516000
+Major,Bug,sharadag,0,11,184.0,62,4,80,1,1,0,0,0,7,123 days 19:13:55.465000
+Major,Bug,thiru_mg,0,1,347.0,62,0,79,1,1,0,0,5,7,2 days 16:34:23.229000
+Major,Bug,sharadag,0,4,92.0,54,0,78,1,1,1,0,2,7,1 days 17:23:09.020000
+Major,Bug,massie,0,1,206.0,66,1,77,1,0,1,0,3,7,0 days 13:52:25.541000
+Major,Sub-task,gmporter,0,15,0.0,56,1,76,1,1,0,0,0,7,25 days 05:25:09.871000
+Major,Bug,raymie,0,9,830.0,43,2,75,1,0,0,0,0,7,186 days 07:42:46.825000
+Blocker,Bug,cutting,0,1,281.0,42,0,74,1,0,0,0,5,7,0 days 00:17:44.905000
+Major,Sub-task,massie,0,7,0.0,28,1,73,0,0,0,0,4,7,2 days 14:59:51.037000
+Major,Task,massie,0,1,66.0,24,1,72,1,0,1,0,4,7,11 days 02:29:32.017000
+Major,Improvement,sbanacho,0,7,239.0,51,0,71,1,0,0,0,4,7,11 days 04:22:43.214000
+Major,Sub-task,massie,0,1,83.0,46,1,70,1,0,0,0,4,7,0 days 22:24:41.712000
+Major,Sub-task,massie,0,1,201.0,79,1,69,0,0,1,0,4,7,1 days 11:22:25.242000
+Major,Improvement,massie,0,3,152.0,58,1,68,0,0,0,0,4,7,0 days 02:51:10.940000
+Major,Sub-task,gmporter,0,2,48.0,48,2,67,1,0,0,0,1,6,0 days 02:04:14.437000
+Major,New Feature,gmporter,0,16,141.0,55,2,66,5,1,0,0,1,6,1 days 01:21:15.457000
+Major,New Feature,cutting,0,4,80.0,38,2,65,1,1,0,0,0,6,16 days 01:48:18.182000
+Major,Bug,gmporter,0,7,218.0,60,1,64,1,0,0,0,0,6,7 days 19:29:05.327000
+Major,Improvement,cutting,0,1,730.0,58,0,63,1,1,0,0,3,6,63 days 02:29:00.727000
+Major,Improvement,sharadag,0,3,213.0,49,0,62,0,0,0,0,3,6,0 days 20:27:41.537000
+Major,Bug,thiru_mg,0,3,901.0,42,1,61,1,0,0,0,2,6,55 days 13:30:30.781000
+Major,Sub-task,massie,0,3,0.0,54,1,60,1,0,0,0,0,6,22 days 00:14:04.876000
+Major,Improvement,sbanacho,0,3,751.0,50,1,59,1,0,0,0,5,6,4 days 23:37:40.989000
+Major,New Feature,massie,0,13,356.0,17,2,58,1,0,0,0,5,6,3 days 17:36:05.039000
+Major,Improvement,cutting,0,3,342.0,57,0,57,1,1,0,0,4,6,3 days 23:10:31.356000
+Major,Improvement,cutting,0,2,359.0,28,2,56,1,1,0,0,3,6,0 days 22:33:53.511000
+Major,Improvement,cutting,0,1,209.0,23,1,55,1,0,0,0,2,6,0 days 21:00:55.551000
+Major,Improvement,cutting,0,2,117.0,21,1,54,1,1,0,0,1,6,31 days 07:10:57.082000
+Major,Improvement,cutting,0,3,49.0,32,1,53,1,1,0,0,1,6,0 days 23:20:56.679000
+Major,Bug,philip,0,1,84.0,33,2,51,1,0,0,0,5,6,1 days 12:10:59.667000
+Major,New Feature,philip,1,23,752.0,45,3,50,1,0,0,0,5,6,39 days 03:25:11.076000
+Major,Improvement,ijuma,0,6,402.0,26,2,49,1,0,0,0,2,6,12 days 23:18:48.556000
+Minor,Task,thiru_mg,0,1,99.0,87,0,48,1,1,1,0,5,6,2 days 17:41:27.454000
+Major,Bug,anomalizer,0,8,388.0,40,2,47,1,0,0,0,4,6,231 days 02:21:18.482000
+Major,Bug,sharadag,0,2,70.0,44,0,46,1,0,0,0,2,6,22 days 12:15:38.947000
+Major,Bug,sbanacho,0,2,328.0,42,0,45,1,0,0,0,2,6,0 days 17:19:13.559000
+Minor,Bug,cutting,0,3,184.0,41,0,44,1,0,0,0,1,6,0 days 05:02:35.573000
+Trivial,Bug,anomalizer,0,2,890.0,38,0,43,1,0,0,0,1,6,0 days 12:59:22.653000
+Minor,New Feature,sbanacho,0,7,990.0,8,1,42,1,0,0,0,0,6,1 days 00:34:14.568000
+Major,New Feature,cutting,0,5,99.0,58,2,41,1,1,0,0,0,6,93 days 00:18:39.378000
+Major,Bug,anomalizer,0,1,162.0,22,2,40,1,0,0,0,6,5,1 days 15:04:13.201000
+Major,Bug,sharadag,0,1,50.0,52,0,39,1,1,0,0,2,5,0 days 07:37:10.576000
+Major,Improvement,sharadag,0,2,24.0,22,0,38,1,0,0,0,1,5,0 days 08:43:13.947000
+Major,Improvement,massie,0,7,3065.0,40,1,37,1,0,0,0,4,5,3 days 19:50:37.242000
+Major,Bug,cutting,0,18,202.0,42,2,36,1,1,0,0,4,5,32 days 00:50:44.668000
+Major,Improvement,cwalters,0,2,83.0,24,1,34,1,1,0,0,4,5,7 days 03:42:08.037000
+Major,New Feature,massie,1,7,88.0,39,2,33,1,0,0,0,3,5,0 days 15:38:44.669000
+Major,Improvement,sharadag,0,7,78.0,53,1,32,1,1,0,0,2,5,20 days 09:02:49.530000
+Major,Bug,sharadag,0,3,92.0,59,0,31,1,1,0,0,2,5,0 days 08:52:49.982000
+Major,Bug,cutting,0,6,303.0,37,4,30,1,1,0,0,1,5,134 days 21:48:51.037000
+Major,Improvement,raymie,0,11,2090.0,52,2,29,1,1,0,0,1,5,44 days 06:17:46.741000
+Major,Improvement,sharadag,0,3,32.0,47,0,28,1,0,0,0,0,5,51 days 09:07:15.089000
+Major,New Feature,massie,0,20,3096.0,88,2,27,1,0,0,0,2,5,47 days 23:51:04.119000
+Major,Test,cos,0,19,397.0,57,2,26,2,1,0,0,4,5,16 days 23:48:10.188000
+Major,Improvement,raymie,0,15,1560.0,43,0,25,1,1,0,0,2,4,36 days 23:57:38.364000
+Major,Task,cutting,0,5,559.0,19,6,24,1,1,0,0,0,4,156 days 01:30:01.443000
+Major,Bug,raymie,0,13,583.0,48,2,22,1,0,0,0,5,4,41 days 07:40:18.598000
+Major,Improvement,cutting,0,3,372.0,56,0,21,1,1,0,0,4,4,18 days 20:45:43.985000
+Major,New Feature,cutting,0,2,85.0,24,0,19,1,1,0,0,4,4,81 days 02:14:13.286000
+Major,New Feature,cutting,0,10,39.0,13,0,18,1,0,0,0,4,4,25 days 03:33:15.192000
+Major,Improvement,cutting,0,6,158.0,24,0,17,1,0,0,0,4,4,17 days 23:36:10.920000
+Minor,Improvement,cutting,0,1,282.0,32,0,16,1,0,0,0,1,4,0 days 00:01:44.712000
+Major,Improvement,sharadag,0,3,0.0,50,0,15,1,0,1,0,2,4,6 days 17:27:38.952000
+Major,Bug,sharadag,0,3,85.0,52,0,14,1,1,0,0,1,4,0 days 10:34:22.138000
+Major,Improvement,sharadag,0,3,128.0,45,0,13,1,0,1,0,1,4,0 days 21:51:14.743000
+Major,Bug,hong.tang,0,8,116.0,39,0,12,1,1,1,0,1,4,38 days 16:10:27.829000
+Minor,Improvement,hong.tang,0,2,110.0,58,0,11,1,1,1,0,1,4,0 days 18:07:55.179000
+Major,Improvement,cutting,0,4,247.0,19,0,10,1,0,0,0,0,4,38 days 21:06:30.743000
+Major,Improvement,cutting,0,3,349.0,28,0,9,1,0,0,0,0,4,14 days 00:28:17.211000
+Major,Improvement,cutting,0,11,200.0,39,0,8,1,0,0,0,0,4,27 days 23:15:51.113000
+Major,Bug,hong.tang,0,1,486.0,37,0,7,1,1,0,0,5,4,1 days 15:25:02.085000
+Major,Improvement,hong.tang,0,16,535.0,103,0,6,1,1,1,0,5,4,3 days 04:10:30.932000
+Major,Test,sharadag,0,6,50.0,49,0,5,2,1,0,0,5,4,3 days 18:32:56.596000
+Major,Bug,phunt,0,2,501.0,36,0,4,1,1,1,0,4,4,3 days 22:51:55.964000
+Critical,Bug,phunt,0,4,263.0,54,0,3,1,1,1,0,4,4,0 days 03:17:01.682000
+Major,Improvement,cutting,0,7,204.0,22,1,2,1,0,0,0,3,4,53 days 20:29:14.909000
+Major,Bug,cutting,0,4,208.0,54,0,1,1,0,1,0,3,4,17 days 22:04:58.356000
+Major,Improvement,tomwhite,0,6,624.0,61,4,1449,1,1,1,0,2,1,6 days 08:55:08.220000
+Major,Bug,eljefe6a,0,4,183.0,32,4,1447,1,0,1,0,0,1,0 days 21:30:49.849000
+Minor,Bug,davidtaylor,0,5,151.0,34,4,1446,1,0,1,0,4,1,3 days 00:18:05.876000
+Major,Bug,gjbaxter@mac.com,0,5,1226.0,51,4,1445,0,0,0,0,3,1,4 days 01:21:49.069000
+Major,Bug,eljefe6a,0,6,279.0,33,5,1441,1,0,1,0,3,1,11 days 20:32:00.561000
+Minor,New Feature,qwertymaniac,0,9,161.0,37,4,1439,1,1,1,0,2,1,20 days 13:42:26.055000
+Trivial,Bug,davidtaylor,0,4,145.0,36,4,1436,1,0,1,0,0,1,15 days 03:02:35.749000
+Major,Bug,davidtaylor,0,5,341.0,35,4,1434,1,0,1,0,4,1,0 days 04:51:03.472000
+Major,Bug,aj987,0,6,207.0,37,4,1433,1,1,1,0,2,1,0 days 23:49:28.394000
+Major,Improvement,cutting,0,5,85.0,23,3,1432,1,1,0,0,2,1,1 days 03:16:35.127000
+Minor,Bug,robair,0,5,1793.0,42,4,1427,1,1,1,1,6,1,3 days 21:00:17.930000
+Major,Improvement,eljefe6a,0,4,336.0,36,4,1426,1,0,1,0,5,1,2 days 04:44:56.438000
+Major,Bug,ramanasv,0,10,328.0,39,5,1424,1,0,1,0,3,1,5 days 01:00:27.791000
+Minor,Improvement,qwertymaniac,0,9,493.0,66,4,1421,1,1,1,0,3,12,13 days 11:40:42.335000
+Major,New Feature,deepujain,0,11,2156.0,52,4,1418,0,0,1,0,4,12,18 days 07:26:33.864000
+Major,Bug,ramanasv,0,6,258.0,64,4,1415,1,0,1,0,1,12,24 days 03:14:36.141000
+Major,Improvement,drussel,0,9,520.0,29,5,1414,1,0,0,0,0,12,21 days 23:47:17.569000
+Major,Bug,russell.jurney,0,1,1594.0,70,1,1412,1,0,1,3,4,12,6 days 04:48:22.775000
+Minor,Improvement,tonyliu73,0,4,1013.0,84,3,1411,1,1,1,0,3,12,0 days 02:34:25.094000
+Major,Bug,esammer,0,11,463.0,68,5,1410,1,1,1,0,6,12,7 days 17:16:14.054000
+Major,New Feature,kryzthov,0,5,355.0,51,5,1409,1,1,0,0,2,12,12 days 16:18:54.840000
+Major,Bug,adamcataldo,0,1,190.0,61,2,1408,0,0,2,0,1,12,9 days 19:34:43.280000
+Major,Bug,zyoma,1,21,145.0,104,6,1406,1,0,1,1,0,11,19 days 22:32:38.508000
+Minor,Bug,mristima,0,17,377.0,84,6,1405,1,0,1,0,4,11,26 days 23:25:31.044000
+Major,Improvement,striderapache,0,7,304.0,46,4,1400,1,1,1,4,1,11,29 days 11:23:11
+Major,Test,robair,0,4,213.0,74,4,1399,1,1,1,0,0,11,9 days 21:42:57.994000
+Minor,Improvement,robair,0,5,49.0,49,4,1398,1,1,1,0,0,11,31 days 01:25:16.598000
+Minor,New Feature,robair,0,9,96.0,69,4,1397,1,1,1,0,0,11,32 days 02:43:30.157000
+Minor,New Feature,robair,1,8,227.0,47,5,1396,1,1,1,0,0,11,35 days 00:08:18.696000
+Minor,Improvement,david@carr.name,0,4,508.0,61,2,1394,0,0,0,0,1,11,1 days 01:34:56.624000
+Major,Bug,hshreedharan,0,2,655.0,75,2,1393,0,0,0,0,1,11,1 days 19:23:46.654000
+Blocker,Bug,balaji.seshadri,1,14,835.0,30,4,1392,1,1,0,0,0,11,1 days 23:07:38.653000
+Major,New Feature,hshreedharan,0,18,243.0,57,5,1388,0,0,0,0,3,10,20 days 23:34:06.028000
+Major,Bug,hshreedharan,0,18,355.0,76,5,1387,0,0,0,0,3,10,8 days 02:40:49.088000
+Major,Bug,kryzthov,0,11,499.0,51,3,1385,1,1,1,0,1,10,8 days 05:16:24.465000
+Major,Improvement,alexandre.normand,0,10,1045.0,94,5,1384,1,1,1,0,1,10,28 days 06:17:04.499000
+Major,Bug,kryzthov,0,31,523.0,19,5,1382,1,0,1,0,4,10,98 days 13:14:54.409000
+Minor,Bug,psangree,0,1,789.0,54,2,1380,1,1,1,0,0,9,101 days 03:53:35.963000
+Major,Improvement,mteodoro,0,6,163.0,47,5,1379,1,0,1,1,4,9,88 days 18:53:52.228000
+Major,Bug,graham sanderson,0,5,2996.0,144,4,1377,1,1,1,0,1,9,9 days 21:50:49.208000
+Minor,Bug,julian.zhou,0,5,1164.0,139,5,1374,1,1,2,0,1,9,1 days 11:43:57.143000
+Major,New Feature,njw45,0,9,524.0,14,4,1373,1,1,1,1,3,9,67 days 04:54:55.655000
+Major,Bug,thinker0,0,3,3240.0,53,4,1369,1,0,1,0,2,8,112 days 07:51:57.618000
+Major,Bug,kryzthov,0,15,0.0,70,6,1368,1,1,1,0,1,8,8 days 03:12:55.287000
+Major,Bug,mchugh,0,5,766.0,80,4,1366,1,0,1,2,0,8,17 days 06:15:56.318000
+Major,Bug,bw123,0,1,623.0,41,2,1364,1,0,1,0,2,8,119 days 00:21:42.008000
+Major,Bug,btibi,0,6,531.0,35,2,1361,1,0,1,0,2,8,126 days 01:30:51.966000
+Major,Improvement,facboy,0,1,113.0,44,1,1359,0,0,0,0,3,8,0 days 16:45:38.171000
+Major,Bug,yahoo_build,0,5,940.0,103,5,1358,1,0,1,0,2,7,146 days 15:04:02.026000
+Major,New Feature,mengxr,0,4,1032.0,73,2,1357,1,1,1,0,0,7,22 days 03:10:01.436000
+Major,Bug,apaulsen,0,4,955.0,64,4,1356,1,1,1,0,6,7,17 days 05:09:09.035000
+Major,Bug,kryzthov,0,5,95.0,49,4,1355,1,1,1,0,6,7,30 days 18:24:18.845000
+Major,Improvement,llasram,0,14,317.0,59,4,1353,1,1,1,0,3,7,20 days 05:41:01.327000
+Major,Improvement,cutting,0,6,145.0,66,3,1351,0,0,0,0,1,7,7 days 01:52:14.924000
+Major,Bug,mwagner,1,23,211.0,33,9,1348,0,0,0,0,2,6,183 days 19:14:18.831000
+Minor,Improvement,fsaintjacques,1,6,67.0,66,5,1344,1,1,1,0,1,6,192 days 08:18:03.697000
+Major,New Feature,vince83,5,19,3289.0,67,6,1341,1,1,0,0,1,5,71 days 09:24:13.119000
+Minor,Improvement,dmcintosh,0,17,359.0,34,4,1332,1,0,1,1,5,5,174 days 02:03:21.581000
+Major,Improvement,scott_carey,0,24,148.0,27,3,1325,0,0,0,0,1,5,82 days 01:51:51.699000
+Minor,Bug,trochee,2,29,829.0,70,6,1316,1,1,0,1,2,5,7 days 22:44:00.615000
+Major,Improvement,scott_carey,0,7,166.0,55,3,1313,0,0,0,0,1,4,1 days 08:41:32.460000
+Minor,Improvement,kryzthov,0,15,94.0,43,4,1299,1,1,1,0,2,4,6 days 11:51:09.869000
+Major,Bug,trochee,0,9,813.0,62,3,1296,1,0,1,0,2,4,13 days 21:41:28.371000
+Major,Bug,jbaldassari,0,8,6015.0,102,4,1293,1,1,1,0,2,4,83 days 11:36:34.805000
+Minor,Improvement,romixlev,0,84,743.0,79,4,1282,1,1,1,0,4,3,38 days 23:21:56.657000
+Minor,Improvement,alexandre.normand,0,47,577.0,98,5,1268,1,1,1,0,3,2,26 days 23:16:03.804000
+Major,Improvement,brocknoland,0,8,46.0,47,4,1225,1,0,1,1,1,1,345 days 17:00:45.737000
+Major,Bug,ssmith,1,7,5596.0,52,6,1144,1,1,1,0,1,8,336 days 06:46:05.026000
+Minor,Improvement,pdlug,1,30,430.0,71,8,1063,1,0,0,0,1,4,611 days 07:38:34.267000
+Major,New Feature,iocanel,0,27,249.0,20,6,987,1,1,0,0,2,1,737 days 17:47:17.585000
+Major,New Feature,hammer,4,51,0.0,17,11,975,1,0,1,0,0,12,773 days 09:41:41.627000
+Major,New Feature,patrickangeles,5,20,88.0,29,14,823,1,0,3,4,1,5,776 days 05:26:28
