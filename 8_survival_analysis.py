@@ -186,6 +186,30 @@ ac.write_metrics_table(
 )
 
 # ---------------------------------------------------------------------------
+# 6b. Predicted vs. Test Set (same chart as multi_lin_reg/regression trees)
+# ---------------------------------------------------------------------------
+df_test = pd.DataFrame({
+    'Actual': y_test_days,
+    'Cox PH': cox_pred,
+    'Random survival forest': rsf_pred,
+})
+df_test.plot(figsize=(12,8),marker='.')
+plt.xlabel("Test Set observations",fontsize=15)
+plt.ylabel("Duration (days)",fontsize=15)
+plt.title("Predicted vs. TestSet - survival models (day scale)",fontsize=16)
+plt.grid(True)
+plt.savefig('survival_analysis/predictedVStest_transf.png')
+plt.close()
+
+np.log1p(df_test).plot(figsize=(12,8),marker='.')
+plt.xlabel("Test Set observations",fontsize=15)
+plt.ylabel("LOG(Duration)",fontsize=15)
+plt.title("Predicted vs. TestSet - survival models (log scale)",fontsize=16)
+plt.grid(True)
+plt.savefig('survival_analysis/predictedVStest.png')
+plt.close()
+
+# ---------------------------------------------------------------------------
 # 7. Out-of-sample pilot models + evaluation bundle (for scripts 9 and 10)
 # ---------------------------------------------------------------------------
 # The forecasting pilot in 9_predicting.py predicts the 324 still-open issues.

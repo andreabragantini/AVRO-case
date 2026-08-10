@@ -18,11 +18,19 @@ Quantitative evaluation is done on a random 80/20 train/test split inside
 All five model families are applied to the same 324 open issues:
   - regression/tree: predicted TOTAL resolution time from creation (days)
   - Cox / random survival forest: predicted REMAINING days (conditional on how
-    long the issue has already been open) plus P(resolve in 30/90/180 days)
+    long the issue has already been open) plus P(resolve in 30/90/180 days).
+    For a like-for-like comparison on the same plot, the survival "total" is
+    elapsed_days + median_remaining_days.
 
 The fitted models are loaded from disk: scripts 6/7/8 saved them (and the
 out-of-sample pilot survival models) into their directories, so this script is
 fully standalone.
+
+Outputs (question2/):
+  - predictionComparison.png / predictionComparison_log.png  all five models on
+    the 324 open issues (day scale and log scale)
+  - forecasting_pilot_predictions.csv   unified per-issue table
+  - forecasting_pilot_results.txt       interesting cases + conclusions
 """
 import os
 from joblib import load
@@ -57,34 +65,15 @@ if not os.path.exists('question2'):
 # Build the SAME 32-feature encoding used by the training pipeline (avro_common
 # prepare_forecasting_pilot_features), so every model - including the survival
 # ones fitted on that exact encoding - sees features consistent with training.
-# The legacy hand-rolled pipeline in this script used test-set reporter counts,
+# NB: The legacy hand-rolled pipeline in this script used test-set reporter counts,
 # which disagreed with the survival training encoding.
 test_full = prepare_forecasting_pilot_features(forecasting_pilot, training.columns)
 test_linreg = test_full.reindex(columns=linreg.feature_names_in_, fill_value=0)
 
-#%% Prediction - regression / trees
+#%% Prediction - regression / trees (log-minutes scale, as trained)
 lr_pred = linreg.predict(test_linreg)    # multivariate linear model
 tree_pred = tree.predict(test_full)      # regression tree model
 rf_pred = rfr.predict(test_full)         # random forest regression model
-
-# comparison
-df_pred=pd.DataFrame({'LinearModel':lr_pred, 'RegrTree':tree_pred, 'RandomForest':rf_pred})
-
-# Plots
-df_pred.plot(figsize=(12,5),marker='.')
-plt.xlabel("Forecasting pilot observations",fontsize=15)
-plt.ylabel("LOG(Duration)",fontsize=15)
-plt.title("Forecasting Pilot Prediction - trasformed",fontsize=18)
-plt.savefig('question2/predictionComparison_log.png')
-plt.close()
-
-df_pred = np.exp(df_pred)
-df_pred.plot(figsize=(12,5),marker='.')
-plt.xlabel("Forecasting pilot observations",fontsize=15)
-plt.ylabel("Duration",fontsize=15)
-plt.title("Forecasting Pilot Prediction",fontsize=18)
-plt.savefig('question2/predictionComparison.png')
-plt.close()
 
 #%% Prediction - survival models (Cox / random survival forest)
 # Elapsed time since creation (days) for each still-open issue.
@@ -122,6 +111,8 @@ rsf_curves = [(np.asarray(sf.x), np.asarray(sf.y)) for sf in sfs]
 rsf_pilot = conditional_summary(rsf_curves, elapsed)
 
 #%% Unified forecasting-pilot table (all five models, original day scale)
+# Regression/tree models predict the TOTAL days from creation; the survival
+# "total" is elapsed + median remaining. Both are directly comparable.
 pilot = pd.DataFrame({
     'key': forecasting_pilot['key'],
     'status': forecasting_pilot['status'],
@@ -129,29 +120,118 @@ pilot = pd.DataFrame({
     'LinearModel_total_days': np.round(np.exp(lr_pred) / 1440, 1),
     'RegrTree_total_days': np.round(np.exp(tree_pred) / 1440, 1),
     'RandomForest_total_days': np.round(np.exp(rf_pred) / 1440, 1),
-    'cox_median_remaining': np.round(cox_pilot[:, 0], 1),
-    'cox_P_30d': np.round(cox_pilot[:, 1], 3),
-    'cox_P_90d': np.round(cox_pilot[:, 2], 3),
-    'cox_P_180d': np.round(cox_pilot[:, 3], 3),
-    'rsf_median_remaining': np.round(rsf_pilot[:, 0], 1),
-    'rsf_P_30d': np.round(rsf_pilot[:, 1], 3),
-    'rsf_P_90d': np.round(rsf_pilot[:, 2], 3),
-    'rsf_P_180d': np.round(rsf_pilot[:, 3], 3),
+    'Cox_total_days': np.round(elapsed + cox_pilot[:, 0], 1),
+    'Cox_median_remaining': np.round(cox_pilot[:, 0], 1),
+    'Cox_P_30d': np.round(cox_pilot[:, 1], 3),
+    'Cox_P_90d': np.round(cox_pilot[:, 2], 3),
+    'Cox_P_180d': np.round(cox_pilot[:, 3], 3),
+    'RSF_total_days': np.round(elapsed + rsf_pilot[:, 0], 1),
+    'RSF_median_remaining': np.round(rsf_pilot[:, 0], 1),
+    'RSF_P_30d': np.round(rsf_pilot[:, 1], 3),
+    'RSF_P_90d': np.round(rsf_pilot[:, 2], 3),
+    'RSF_P_180d': np.round(rsf_pilot[:, 3], 3),
 })
 pilot.to_csv('question2/forecasting_pilot_predictions.csv', index=False)
 print('\nSaved unified forecasting-pilot predictions -> question2/forecasting_pilot_predictions.csv')
 
-print('\nAverage survival forecast for the 324 open issues:')
+#%% Prediction comparison plots - ALL five models (survival as total days)
+comp = pd.DataFrame({
+    'LinearModel': np.exp(lr_pred) / 1440,
+    'RegrTree': np.exp(tree_pred) / 1440,
+    'RandomForest': np.exp(rf_pred) / 1440,
+    'Cox PH': elapsed + cox_pilot[:, 0],
+    'Random survival forest': elapsed + rsf_pilot[:, 0],
+})
+comp.plot(figsize=(12,5),marker='.')
+plt.xlabel("Forecasting pilot observations",fontsize=15)
+plt.ylabel("Duration (days)",fontsize=15)
+plt.title("Forecasting Pilot Prediction - all five models (day scale)",fontsize=16)
+plt.grid(True)
+plt.savefig('question2/predictionComparison.png')
+plt.close()
+
+np.log1p(comp).plot(figsize=(12,5),marker='.')
+plt.xlabel("Forecasting pilot observations",fontsize=15)
+plt.ylabel("LOG(Duration)",fontsize=15)
+plt.title("Forecasting Pilot Prediction - all five models (log scale)",fontsize=16)
+plt.grid(True)
+plt.savefig('question2/predictionComparison_log.png')
+plt.close()
+
+#%% Write results + conclusions to a text file
 summary = pd.DataFrame({
     'median_remaining_days': [np.median(cox_pilot[:, 0]), np.median(rsf_pilot[:, 0])],
     'P(resolve in 30d)': [cox_pilot[:, 1].mean(), rsf_pilot[:, 1].mean()],
     'P(resolve in 90d)': [cox_pilot[:, 2].mean(), rsf_pilot[:, 2].mean()],
     'P(resolve in 180d)': [cox_pilot[:, 3].mean(), rsf_pilot[:, 3].mean()],
 }, index=['Cox PH', 'Random survival forest']).round(3)
-print(summary.to_string())
 
-# Status split: do issues currently "Patch Available" get a shorter horizon?
-print('\nBy current status (Patch Available vs other open statuses):')
+interesting_idx = [321, 120, 235, 231, 77, 243, 113]
+interesting = pilot.loc[interesting_idx, [
+    'key', 'status', 'elapsed_days', 'LinearModel_total_days', 'RegrTree_total_days',
+    'RandomForest_total_days', 'Cox_median_remaining', 'Cox_total_days',
+    'RSF_median_remaining', 'RSF_total_days',
+]]
+
+conclusions = [
+    ('321 (AVRO-1124)', 'Open / New Feature / Major',
+     'Regression and tree models predict a quick resolution (~2-3 weeks from '
+     'creation), but this issue has already been Open for ~569 days and is very '
+     'popular (18 votes, 50 comments, 46 watchers). The survival models agree '
+     'with the intuition of the discussion: they expect roughly 77-116 more days '
+     '(total ~646-685 days). The short regression/tree totals look unrealistic here; '
+     'the survival view better matches the long, active history of the issue.'),
+    ('120 (AVRO-939)', 'Patch Available / New Feature / Major',
+     'Unassigned ("Patch Available" for ~280 days). Trees and linear model '
+     'predict ~12-22 days total, i.e. that it is basically already resolved. '
+     'The survival models are far more pessimistic: 231-354 more days '
+     '(total ~511-634 days). The status has not changed in almost a year, so the '
+     'survival forecast - long remaining time despite the patch - is the cautionary '
+     'reading.'),
+    ('235 (AVRO-283)', 'Open / Improvement / Major',
+     'Stuck in Open for ~1275 days (>3.5 years) with a medium popular thread. '
+     'The regression/tree models return absurdly short totals (2.5-3.8 days): '
+     'those models have no notion of how long the issue has already been open. '
+     'The survival models return 0 remaining days - the conditional survival '
+     'curve has already dropped below 50%, i.e. statistically the issue is '
+     'unlikely to ever be resolved. This is the clearest illustration of why the '
+     'survival conditioning on elapsed time matters.'),
+    ('231 (AVRO-341)', 'Open / Improvement / Major',
+     'Unassigned for ~322 days. Regression/trees predict ~3-5 days total, again '
+     'ignoring the elapsed time. Survival predicts 105-256 more days (total '
+     '~427-578 days). The unassigned, ~1-year-old status supports the longer '
+     'survival horizon.'),
+    ('77 (AVRO-1113)', 'Open / Bug / Minor',
+     'A brand-new, unassigned Minor bug (elapsed ~1 day, no votes/comments). '
+     'All five models agree on a short horizon (~4-11 days total). New, quiet, '
+     'low-priority issues are expected to be fixed quickly or quietly triaged; '
+     'the models are consistent here.'),
+    ('243 (AVRO-266)', 'Open / Improvement / Major',
+     'Another long-stuck improvement (~720 days elapsed, 1 comment). Regression/'
+     'trees predict ~5-7 days total, which is not credible given the age. The '
+     'survival models give ~54-56 more days (total ~773-776 days), a much more '
+     'realistic horizon for an issue that has effectively stalled.'),
+    ('113 (AVRO-1455)', 'Patch Available / Bug / Major',
+     'A brand-new Bug (~1 day old) by frequent contributor tomwhite, already with '
+     'a Patch Available. All models predict a fast resolution (linear 2.8 days, '
+     'survival 5-14 remaining days). Here regression/tree and survival agree: '
+     'new issue + active contributor + patch ready = quick fix.'),
+]
+
+lines = []
+lines.append('QUESTION 2 - FORECASTING PILOT: PREDICTED RESOLUTION TIMES')
+lines.append('=' * 66)
+lines.append('\nNOTE: these are the 324 issues still OPEN at snapshot time (no ground truth).')
+lines.append('This is a qualitative sanity check, not a model evaluation (see 6/7/8 scripts).')
+lines.append('Regression/tree "total" = predicted resolution time from creation.')
+lines.append('Survival "total" = elapsed + median remaining days (conditional on age).\n')
+
+lines.append('---- Interesting cases ----')
+lines.append(interesting.to_string(index=True))
+lines.append('\n---- Average survival forecast for the 324 open issues ----')
+lines.append(summary.to_string())
+
+print()
 for model, arr in [('Cox PH', cox_pilot), ('RSF', rsf_pilot)]:
     is_patch = (pilot['status'] == 'Patch Available').to_numpy()
     row = {}
@@ -159,84 +239,15 @@ for model, arr in [('Cox PH', cox_pilot), ('RSF', rsf_pilot)]:
         row['{} n'.format(label)] = int(mask.sum())
         row['{} med_rem_days'.format(label)] = round(float(np.median(arr[mask, 0])), 1)
         row['{} P(90d)'.format(label)] = round(float(arr[mask, 2].mean()), 3)
-    print('  {}: {}'.format(model, row))
+    lines.append('\n{} by current status: {}'.format(model, row))
 
-#%% Interesting cases (day scale, all five models)
-print('\nPredicted resolution times for the discussed forecasting cases:')
-df_pred['LinearModel'] = pd.to_timedelta(df_pred['LinearModel'], unit='m')
-df_pred['RegrTree'] = pd.to_timedelta(df_pred['RegrTree'], unit='m')
-df_pred['RandomForest'] = pd.to_timedelta(df_pred['RandomForest'], unit='m')
+lines.append('\n' + '=' * 66)
+lines.append('UPDATED CONCLUSIONS')
+lines.append('=' * 66)
+for title, header, text in conclusions:
+    lines.append('\n--- {} ({}) ---'.format(title, header))
+    lines.append(text)
 
-interesting = df_pred.loc[[321, 120, 235, 231, 77, 243, 113]]
-interesting = (interesting.astype('timedelta64[h]') / 24).round(1)
-interesting.columns = ['LinearModel_total_days', 'RegrTree_total_days', 'RandomForest_total_days']
-# cox_pilot/rsf_pilot rows align with forecasting_pilot rows, so use position
-# directly (the interesting cases are forecasting_pilot rows 321, 120, ...).
-interesting['Cox_median_remaining'] = cox_pilot[[321, 120, 235, 231, 77, 243, 113], 0].round(1)
-interesting['RSF_median_remaining'] = rsf_pilot[[321, 120, 235, 231, 77, 243, 113], 0].round(1)
-print(interesting.to_string())
-
-#%% 3 Interesting Cases
-test = pd.read_csv('data_sets/forecasting_pilot.csv')
-
-df_pred.loc[321,:]
-test.loc[321,:]
-''' This alert has an "Open" status, has "Major" priority and as of "NewFeature" issue type.
-Assignee and reporter are the same non-frequent contributor. 
-It has a high number of votes, comments 
-and watchers sign of great interest from the comunity.
-The linear regression returns an "explosive" predictions but however also the tree
-methods predicts quite a long resolution times.
-In fact, looking back at the original dataset, therefore an information not
-processed by my models, this alert have been in the Open status for almost 2 years.
-This might sound as the issue is not really proceeding and might remain like so for much longer.'''
-
-df_pred.loc[120,:]
-test.loc[120,:]
-''' This alert has an "PatchAvailable" status, has "Major" priority and as of "NewFeature" issue type.
-It has not been assigned yet, which is normally a sign of longer times,
-but there is already an available solution. Probably cutting is taking care of it.
-Also this thread is pretty popular on the website as it has lots of comments,
-watchers and votes. The status suggests that it is going to be solved possibly soon.
-However, the issue seems stuck in the same status for almost 2 years without progressing.
-This behaviour again pushes the linear regression to return an "inflate" results
-while the trees method are more optimistic, predicting a more or less close resolution.''' 
-
-df_pred.loc[235,:]
-test.loc[235,:]
-''' This alert has an "Open" status, has "Major" priority and as of "Improvement" issue type.
-Assignee and reporter are the same frequent contributor (hammer). 
-It has a medium number of votes, comments and watchers.
-It is stuck in this status without solutions for more than 3 years, in my humble opinion
-it is hard that it is going to be solved any sooner.
-The linear model return a completely wrong results of 50 days while tree methods
-advices a longer, although not huge, resolution times. Surprisingly in this case
-a more reliable estimate is given by the single tree.'''
-
-
-df_pred.loc[231,:]
-test.loc[231,:]
-''' same as above but linear model is less wrong'''
-
-
-df_pred.loc[77,:]
-test.loc[77,:]
-''' This alert has an "Open" status, has "Major" priority and as of "Improvement" issue type.
-It has not been assigned yet, which is already a sign of longer times.
-In this case my models all predict very short resolution times.
-Given the fact that the issue is left unassigned for almost 4 years, those
-prediction are surely wrong.'''
-
-df_pred.loc[243,:]
-test.loc[243,:]
-''' same as above'''
-
-
-df_pred.loc[113,:]
-test.loc[113,:]
-''' This alert has an "PatchAvailable" status, has "Major" priority and as of "Bug" issue type.
-Assignee and reporter are the same frequent contributor (tonwhite), possible sign 
-of a quick resolution of the issue.
-The model is in this status only since 5 days and there is already a Patch Available. 
-Everything seems going for a quick resolution of the issue.
-In fact, all models return quite low predicted resolution times.'''
+with open('question2/forecasting_pilot_results.txt', 'w') as f:
+    f.write('\n'.join(lines) + '\n')
+print('Saved interesting cases + conclusions -> question2/forecasting_pilot_results.txt')

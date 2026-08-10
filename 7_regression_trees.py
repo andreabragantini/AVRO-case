@@ -202,21 +202,28 @@ plt.legend()
 #plt.savefig('regression_tree/fittedVStraining.png')  # training fit; test fit is what matters
 plt.close()
 
-# predicted VS test set
-df.reset_index(drop=True).plot(figsize=(12,8),marker='.')
+# predicted VS test set (same chart as multi_lin_reg/predictedVStest.png)
+df_test = pd.DataFrame({
+    'Actual': y_test.reset_index(drop=True),
+    'RegrTree': tree.predict(X_test),
+    'RandomForest': rfr.predict(X_test),
+})
+df_test.plot(figsize=(12,8),marker='.')
 plt.xlabel("Test Set observations",fontsize=15)
 plt.ylabel("LOG(Duration)",fontsize=15)
-plt.title("Predicted vs. TestSet",fontsize=18)
-#plt.savefig('regression_tree/predictedVStest.png')  # same concept as multi_lin_reg/predictedVStest.png
+plt.title("Predicted vs. TestSet - regression trees (log scale)",fontsize=16)
+plt.grid(True)
+plt.savefig('regression_tree/predictedVStest.png')
 plt.close()
 
-# predicted VS test set - TRASFORMED
-df = np.exp(df)
-df.reset_index(drop=True).plot(figsize=(12,8),marker='.')
+# predicted VS test set - TRASFORMED (original day scale, same as multi_lin_reg)
+df_test_exp = np.exp(df_test) / 1440.0
+df_test_exp.plot(figsize=(12,8),marker='.')
 plt.xlabel("Test Set observations",fontsize=15)
-plt.ylabel("Duration",fontsize=15)
-plt.title("Predicted vs. TestSet",fontsize=18)
-#plt.savefig('regression_tree/predictedVStest_transf.png')  # same concept as multi_lin_reg/predictedVStest_transf.png
+plt.ylabel("Duration (days)",fontsize=15)
+plt.title("Predicted vs. TestSet - regression trees (day scale)",fontsize=16)
+plt.grid(True)
+plt.savefig('regression_tree/predictedVStest_transf.png')
 plt.close()
 
 
