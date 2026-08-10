@@ -13,7 +13,7 @@ closed/resolved issues for the training phase-
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
-from avro_common import print_section
+from utils.avro_common import print_section
 
 print_section('3. BIVARIATE ANALYSIS')
 

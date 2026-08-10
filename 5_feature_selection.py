@@ -16,7 +16,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from mlxtend.feature_selection import ExhaustiveFeatureSelector as EFS
 from mlxtend.feature_selection import SequentialFeatureSelector as SFS
-from avro_common import print_section
+from utils.avro_common import print_section
 
 print_section('5. FEATURE SELECTION')
 

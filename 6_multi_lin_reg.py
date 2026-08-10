@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from avro_common import print_section
+from utils.avro_common import print_section
 
 print_section('MODEL DESIGN - MULTIPLE LINEAR REGRESSION')
 
@@ -94,7 +94,7 @@ print('MAE on day scale: {:.1f} days'.format(metrics.mean_absolute_error(days_ac
 print('Median AE on day scale: {:.1f} days'.format(np.median(np.abs(days_actual - days_pred))))
 
 # Comparable metrics table (shared format across model directories)
-from avro_common import compute_model_metrics, write_metrics_table
+from utils.avro_common import compute_model_metrics, write_metrics_table
 linreg_metrics = compute_model_metrics(
     days_actual, days_pred, r2_log=metrics.r2_score(y_test, y_pred)
 )

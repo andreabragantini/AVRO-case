@@ -21,12 +21,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-import json_helpers
+import utils.json_helpers
 
 if not os.path.exists("exploratory_analysis"):
     os.makedirs("exploratory_analysis")
 
-issues = json_helpers.load_issues()
+issues = utils.json_helpers.load_issues()
 print(f"Number of issues: {len(issues)}")
 
 # 1) Structure of a single issue
@@ -40,7 +40,7 @@ print(
 )
 
 # 2) Field availability across the whole dataset
-features = json_helpers.build_feature_frame()
+features = utils.json_helpers.build_feature_frame()
 features = features.replace([np.inf, -np.inf], np.nan)
 availability = pd.DataFrame(
     {
@@ -54,7 +54,7 @@ print(availability.round(3).to_string())
 # 3) Components distribution
 comp_counts = {}
 for issue in issues:
-    for name in json_helpers.component_names(issue):
+    for name in utils.json_helpers.component_names(issue):
         comp_counts[name] = comp_counts.get(name, 0) + 1
 top_components = sorted(comp_counts.items(), key=lambda kv: kv[1], reverse=True)
 print("\nTop components:")

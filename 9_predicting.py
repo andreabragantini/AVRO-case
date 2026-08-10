@@ -37,7 +37,7 @@ from joblib import load
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from avro_common import print_section, prepare_forecasting_pilot_features
+from utils.avro_common import print_section, prepare_forecasting_pilot_features
 
 print_section('PREDICTING (FORECASTING PILOT)')
 

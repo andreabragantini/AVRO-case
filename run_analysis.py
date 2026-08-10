@@ -46,7 +46,7 @@ SCRIPTS = [
     "2_preprocessing.py",
     "3_bivariate_analysis.py",
     "4_encoding.py",
-    "5_feature_selection.py",
+    #"5_feature_selection.py",
     "ridge_lasso.py",
     "6_multi_lin_reg.py",
     "7_regression_trees.py",

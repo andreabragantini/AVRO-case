@@ -17,7 +17,7 @@ from sklearn import linear_model
 from sklearn.linear_model import Lasso, Ridge
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
-from avro_common import print_section
+from utils.avro_common import print_section
 
 print_section('REGULARIZATION CHECK (RIDGE / LASSO)')
 

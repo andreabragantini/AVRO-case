@@ -16,7 +16,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 import os
-from avro_common import print_section
+from utils.avro_common import print_section
 
 print_section('2. PREPROCESSING')
 

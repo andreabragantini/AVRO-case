@@ -36,7 +36,7 @@ from sksurv.metrics import concordance_index_censored
 from sksurv.nonparametric import kaplan_meier_estimator
 from sksurv.util import Surv
 
-import avro_common as ac
+import utils.avro_common as ac
 
 print_section = ac.print_section
 

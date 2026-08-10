@@ -16,7 +16,7 @@ from joblib import dump
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
-from avro_common import print_section
+from utils.avro_common import print_section
 
 print_section('REGRESSION TREES')
 
@@ -134,7 +134,7 @@ print('R-squared score (training): {:.3f}'.format(rfr.score(X_train, y_train)))
 print('R-squared score (test): {:.3f}'.format(rfr.score(X_test, y_test)))
 
 # Comparable metrics table (shared format across model directories)
-from avro_common import compute_model_metrics, write_metrics_table
+from utils.avro_common import compute_model_metrics, write_metrics_table
 tree_metrics = compute_model_metrics(
     np.exp(y_test) / 1440, np.exp(tree.predict(X_test)) / 1440,
     r2_log=tree.score(X_test, y_test),

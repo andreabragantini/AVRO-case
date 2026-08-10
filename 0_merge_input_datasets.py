@@ -16,8 +16,8 @@ reads as its input.
 
 import pandas as pd
 
-import json_helpers
-from avro_common import print_section
+import utils.json_helpers
+from utils.avro_common import print_section
 
 print_section("0. INPUT DATASETS - JSON")
 
@@ -37,10 +37,10 @@ FEATURES_TO_MERGE = [
 ]
 
 # 1) Build the feature frame from the JSON (indexed by issue key)
-features = json_helpers.build_feature_frame()
+features = utils.json_helpers.build_feature_frame()
 features = features[FEATURES_TO_MERGE]
 print(f"\nExtracted {len(features)} rows and {len(features.columns)} features "
-      f"from {json_helpers.JSON_DATA_PATH}")
+      f"from {utils.json_helpers.JSON_DATA_PATH}")
 
 # 2) Load the raw CSV (left pristine) and merge on the issue key
 dataset = pd.read_csv(RAW_CSV_PATH)

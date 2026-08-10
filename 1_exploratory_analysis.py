@@ -15,7 +15,7 @@ from statsmodels.graphics.gofplots import qqplot
 from scipy.stats import shapiro
 import seaborn as sns
 sns.set()
-from avro_common import print_section
+from utils.avro_common import print_section
 
 print_section('1. EXPLORATORY ANALYSIS')
 

@@ -7,7 +7,7 @@ It performs one-hot encoding of the categorical variables in the dataset
 and saves the resulting dataset to data_sets/encoded.csv.
 """
 import pandas as pd
-from avro_common import print_section
+from utils.avro_common import print_section
 
 print_section('4. ENCODING')
 

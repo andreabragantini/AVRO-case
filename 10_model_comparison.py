@@ -29,7 +29,7 @@ from sksurv.ensemble import RandomSurvivalForest
 from sksurv.metrics import concordance_index_censored
 from sksurv.util import Surv
 
-import avro_common as ac
+import utils.avro_common as ac
 
 print_section = ac.print_section
 
