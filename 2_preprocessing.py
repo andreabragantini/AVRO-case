@@ -1,8 +1,16 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Apr 12 23:33:53 2020
-
 @author: andre
+This script is part of the main analysis pipeline. 
+It performs data pre-processing on the full merged dataset (avro-issues-merged.csv) 
+drops some useless predictors, and perform the split between training and forecasting-pilot sets. 
+It also creates the target variable (time to solve an alert) 
+and saves the resulting datasets to data_sets/.
+Two approaches are implemented to select the training set: 
+1) Only "Fixed" alerts are selected
+2) All alerts that have a resolution date are selected (used by the pipeline)
+Approach 1 is kept for reference only, is superseded by the 2nd approach.
 """
 import pandas as pd
 import matplotlib.pyplot as plt

@@ -1,10 +1,16 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Apr 13 12:01:47 2020
-
 @author: andre
 MODEL DESIGN - MULTIPLE LINEAR REGRESSION
+This script is part of the main analysis pipeline.
+It performs multiple linear regression on the training dataset (encoded.csv) using
+the features selected in the feature selection step (5_feature_selection.py) 
+and saves the results to multi_lin_reg/.
 """
+import os
+from joblib import dump, load
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -29,18 +35,16 @@ predictors = data.iloc[:,:-1]
 predictors.columns
 
 # create directory
-import os
 if not os.path.exists('multi_lin_reg'):
     os.makedirs('multi_lin_reg')
 
 #%% Results from features selection
-# 'b1' comes from the feature-selection step (5_feature_selection.py) which is
-# run in the same shared session by run_analysis.py. Fall back to the known
-# good features when running this script standalone.
-_b1 = globals().get('b1')
-if _b1 is not None:
+# Load the SFS_f feature indices saved by 5_feature_selection.py so this script
+# runs standalone. Fall back to the known good features if the file is absent.
+try:
+    _b1 = load('feature_selection/b1_features.joblib')
     col = list(predictors.columns[_b1])
-else:
+except (FileNotFoundError, KeyError):
     col = ['description_length', 'summary_length', 'issue_type_Short']
 
 predictors[col].describe()
@@ -63,6 +67,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=0.2,random_st
 linreg = LinearRegression()
 linreg.fit(X_train, y_train)
 
+# persist the fitted model so the predicting/comparison scripts can run standalone
+dump(linreg, 'multi_lin_reg/linreg.joblib')
+print('Saved fitted model -> multi_lin_reg/linreg.joblib')
+
 # compute and print the R Square
 print('R-squared score (training): {:.3f}'.format(linreg.score(X_train, y_train)))
 print('R-squared score (test): {:.3f}'.format(linreg.score(X_test, y_test)))
@@ -84,6 +92,17 @@ days_actual = np.exp(y_test) / 1440
 days_pred = np.exp(y_pred) / 1440
 print('MAE on day scale: {:.1f} days'.format(metrics.mean_absolute_error(days_actual, days_pred)))
 print('Median AE on day scale: {:.1f} days'.format(np.median(np.abs(days_actual - days_pred))))
+
+# Comparable metrics table (shared format across model directories)
+from avro_common import compute_model_metrics, write_metrics_table
+linreg_metrics = compute_model_metrics(
+    days_actual, days_pred, r2_log=metrics.r2_score(y_test, y_pred)
+)
+write_metrics_table(
+    'multi_lin_reg/model_metrics.txt',
+    [('Linear regression (OLS)', linreg_metrics)],
+    title='Multiple linear regression - model metrics (test set, day scale)',
+)
 
 #%% Multiple Linear Regression - statsmodel.OLS()
 import statsmodels.formula.api as sm

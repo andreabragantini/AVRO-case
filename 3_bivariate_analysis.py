@@ -4,6 +4,7 @@ Created on Sun Apr 12 22:42:32 2020
 
 @author: andre
 BIVARIATE ANALYSIS
+After the target variable has been created in 2_preprocessing.py, we can now perform a bivariate analysis to study the relation between the target variable and its predictors.
 In this script a bivariate analysis is performed to better study the relation
 between our target variable ("duration") and its numerical or categorical predictors.
 NB: This means that we are looking only at our new processed dataset of 

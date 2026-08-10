@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Apr 16 19:39:20 2020
-
 @author: andre
-RIDGE REGRESSION
-LASSO REGRESSION
+RIDGE REGRESSION - LASSO REGRESSION
+This script is part of the main analysis pipeline.
+It performs Ridge and Lasso regression on the training dataset (encoded.csv)
+and saves the results to feature_selection/.
 """
 
 import os
@@ -28,6 +29,7 @@ y = data["duration"]
 if not os.path.exists("feature_selection"):
     os.makedirs("feature_selection")
 
+#--------------------------------------------------------------------------------
 #%% RIDGE REGRESSION
 # Least Angle Regression model a.k.a. LARS package
 scaler = MinMaxScaler()
@@ -87,9 +89,7 @@ fig5.figure.savefig('feature_selection/ridge_train_test_r2_vs_alpha.png', bbox_i
 
 ### Plot the coefficient shrinkage using the LARS package
 from sklearn import linear_model
-###############################################################################
 # Compute paths
-
 n_alphas = 200
 alphas = np.logspace(0, 8, n_alphas)
 
@@ -99,11 +99,7 @@ for a in alphas:
     ridge.fit(X_train_scaled, y_train)
     coefs.append(ridge.coef_)
 
-###############################################################################
 # Display results
-
-ax = plt.gca()
-
 ax = plt.gca()
 ax.figure.set_size_inches(12,8)
 ax.plot(alphas, coefs)
@@ -119,6 +115,7 @@ plt.savefig('feature_selection/ridge_coefficient_paths.png', bbox_inches='tight'
 to left, where you have increasing alpha. 
 As alpha increases the coefficients shrink to 0.'''
 
+#--------------------------------------------------------------------------------
 #%% LASSO REGULARIZATION
 '''The Lasso is another form of regularization, also known as L1 regularization. 
 Unlike the Ridge Regression where the coefficients of features which do not 
@@ -170,13 +167,12 @@ fig7.figure.savefig('feature_selection/lasso_train_test_r2_vs_alpha.png', bbox_i
 ### Plot the coefficient shrinkage using the LARS package
 print("Computing regularization path ...")
 alphas, _, coefs = linear_model.lars_path(X_train_scaled, y_train.to_numpy(), method='lasso', verbose=False)
-
 xx = np.sum(np.abs(coefs.T), axis=1)
 xx /= xx[-1]
 
+# Display results
 plt.figure(figsize=(12,8))
 plt.plot(xx, coefs.T, marker='.')
-
 ymin, ymax = plt.ylim()
 plt.vlines(xx, ymin, ymax, linestyle='dashed')
 plt.xlabel('|coef| / max|coef|')

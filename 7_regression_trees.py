@@ -4,14 +4,15 @@ Created on Mon Apr 13 18:44:02 2020
 
 @author: andre
 REGRESSION TREES
-the DecisionTreeClassifier class for classification problems
-the DecisionTreeRegressor class for regression.
+DecisionTreeClassifier class for classification problems
+DecisionTreeRegressor class for regression.
 In any case you need to one-hot encode categorical variables before you fit a tree with sklearn.
 RANDOM FOREST REGRESSION
 """
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from joblib import dump
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
@@ -49,6 +50,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # fit the regressor with X and Y data  from training set
 tree.fit(X_train, y_train)
+
+# persist the fitted model so the predicting/comparison scripts can run standalone
+dump(tree, 'regression_tree/tree.joblib')
 
 # predict
 y_pred = tree.predict(X_test)
@@ -104,6 +108,9 @@ rfr = RandomForestRegressor(max_depth=50, random_state=0,max_features='sqrt',
 # fit the regressor with X and Y data  from training set
 rfr.fit(X_train, y_train)
 
+# persist the fitted model so the predicting/comparison scripts can run standalone
+dump(rfr, 'regression_tree/rfr.joblib')
+
 # predict
 y_pred = rfr.predict(X_test)
 
@@ -125,6 +132,21 @@ print('Median AE on day scale: {:.1f} days'.format(np.median(np.abs(days_actual 
 # compute and print the R Square
 print('R-squared score (training): {:.3f}'.format(rfr.score(X_train, y_train)))
 print('R-squared score (test): {:.3f}'.format(rfr.score(X_test, y_test)))
+
+# Comparable metrics table (shared format across model directories)
+from avro_common import compute_model_metrics, write_metrics_table
+tree_metrics = compute_model_metrics(
+    np.exp(y_test) / 1440, np.exp(tree.predict(X_test)) / 1440,
+    r2_log=tree.score(X_test, y_test),
+)
+rfr_metrics = compute_model_metrics(
+    days_actual, days_pred, r2_log=rfr.score(X_test, y_test)
+)
+write_metrics_table(
+    'regression_tree/model_metrics.txt',
+    [('Decision tree', tree_metrics), ('Random forest', rfr_metrics)],
+    title='Regression trees - model metrics (test set, day scale)',
+)
 
 #%% Feature Importance
 # (feature importances are shown in the saved bar chart: regression_tree/ParametersImportance_rfr.png)

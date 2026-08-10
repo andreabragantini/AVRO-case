@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Apr  8 23:39:52 2020
-
 @author: andre
+This script is part of the main analysis pipeline. 
+It performs one-hot encoding of the categorical variables in the dataset
+and saves the resulting dataset to data_sets/encoded.csv.
 """
 import pandas as pd
 from avro_common import print_section
@@ -36,40 +38,11 @@ should reduce the levels by using combining methods and then use dummy encoding.
 # Dummy Encoding
 # NOTE: pd.get_dummies(drop_first=True) is used so that the dummy column names
 # (e.g. reporter_cutting, priority_Minor) match the ones produced on the
-# forecasting-pilot set in 9_predicting.py. The previous manual loop named
-# columns by index (priority_0, reporter_1, ...) which never matched the
-# forecasting-pilot encoding, so every categorical feature was silently zeroed out
-# in the forecasting pilot. The manual loop is kept below for reference.
+# forecasting-pilot set in 9_predicting.py. 
 data = pd.get_dummies(data, columns=['priority', 'issue_type', 'reporter'], drop_first=True)
-
-# # Manual one-hot encoding (reference only - kept but not used):
-# # priority
-# l = list(set1)
-# for i, level in enumerate(l[:-1]):
-#     data['priority_{}'.format(i)] = 0
-#     boolean = data['priority'] == level
-#     data.loc[boolean, 'priority_{}'.format(i)] = 1
-# data = data.drop('priority',axis = 1)
-#
-# # issue_type
-# l = list(set2)
-# for i, level in enumerate(l[:-1]):
-#     data['issue_type_{}'.format(i)] = 0
-#     boolean = data['issue_type'] == level
-#     data.loc[boolean, 'issue_type_{}'.format(i)] = 1
-# data = data.drop('issue_type',axis = 1)
-#
-# # reporter
-# l = list(set3)
-# for i, level in enumerate(l[:-1]):
-#     data['reporter_{}'.format(i)] = 0
-#     boolean = data['reporter'] == level
-#     data.loc[boolean, 'reporter_{}'.format(i)] = 1
-# data = data.drop('reporter',axis = 1)
-
 data.columns
 
-#%% Move target variable to the end of dataframe
+# Move target variable to the end of dataframe
 data = data[[c for c in data if c not in ['duration']] + ['duration']]
 
 #%% Save encoded dataset

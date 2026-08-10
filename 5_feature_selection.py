@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Apr  8 00:02:05 2020
-
 @author: andre
+This script is part of the main analysis pipeline.
+It performs feature selection on the training dataset (encoded.csv) using 
+different sequential search techniques (SFS, SBS, SFFS, SFBS) 
+and saves the results to feature_selection/.
 """
+import os
+from joblib import dump
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -26,7 +32,6 @@ predictors = data.iloc[:,:-1]
 predictors.columns
 
 # create directory
-import os
 if not os.path.exists('feature_selection'):
     os.makedirs('feature_selection')
 
@@ -79,6 +84,7 @@ I have taken the -ve of this neg_mean_squared_error. This should give mean_squar
 #print("Features selected in forward fit")
 #print(x.columns[b])
 
+#--------------------------------------------------------------------------------
 #%% FORWARD FIT - Sequential Search (SFS)
 print_section('Sequential Forward Selection (SFS_f)')
 sfs_f = SFS(lr, 
@@ -117,6 +123,7 @@ print("Best number of features: {}".format(idx))
 b1=list(a[idx]['feature_idx'])
 print("Selected columns ({}): {}".format(len(b1), list(x.columns[b1])))
 
+#--------------------------------------------------------------------------------
 #%% BACKWARD FIT - Sequential Search (SBS)
 # Create the SBS model
 print_section('Sequential Backward Selection (SBS)')
@@ -153,6 +160,7 @@ b2=list(a[idx]['feature_idx'])
 print("Selected columns ({}): {}".format(len(b2), list(x.columns[b2])))
 
 # Create a model
+#--------------------------------------------------------------------------------
 #%% Sequential Floating Forward Selection - SFFS
 '''The Sequential Feature search also includes ‘floating’ variants which 
 include or exclude features conditionally, once they were excluded or included. 
@@ -194,6 +202,7 @@ print("Best number of features: {}".format(idx))
 b3=list(a[idx]['feature_idx'])
 print("Selected columns ({}): {}".format(len(b3), list(x.columns[b3])))
 
+#--------------------------------------------------------------------------------
 #%% Sequential Floating Backward Selection - SFBS
 
 # Create the floating backward search
@@ -230,6 +239,7 @@ print("Best number of features: {}".format(idx))
 b4=list(a[idx]['feature_idx'])
 print("Selected columns ({}): {}".format(len(b4), list(x.columns[b4])))
 
+#--------------------------------------------------------------------------------
 #%% Wrapping final results from SFS tecniques
 
 # save the comparison plot with legend
@@ -266,6 +276,11 @@ selection_matrix = np.array([l1,l2,l3,l4]).transpose()
 results = pd.DataFrame(data=selection_matrix, columns=columns, index=selected)
 print('\nWhich features are selected by each technique (1 = selected):')
 print(results)
+
+# Persist the SFS_f indices so 6_multi_lin_reg.py can run standalone instead of
+# relying on variables passed through the shared session.
+dump(b1, 'feature_selection/b1_features.joblib')
+print('\nSaved SFS_f feature indices -> feature_selection/b1_features.joblib')
 
 
 
