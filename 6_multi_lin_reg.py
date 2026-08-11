@@ -39,19 +39,28 @@ if not os.path.exists('multi_lin_reg'):
     os.makedirs('multi_lin_reg')
 
 #%% Results from features selection
-# Load the SFS_f feature indices saved by 5_feature_selection.py so this script
-# runs standalone. Fall back to the known good features if the file is absent.
+# 5_ridge_lasso.py cross-checks the feature sets by 5-fold CV R^2 and persists
+# the winning indices to feature_selection/final_features.joblib. Use that when
+# present; otherwise fall back to the sequential-selection winner saved by
+# 5_feature_selection.py (feature_selection/best_sequential.joblib) so this
+# script still runs standalone.
 try:
-    _b1 = load('feature_selection/b1_features.joblib')
+    _b1 = load('feature_selection/final_features.joblib')
     col = list(predictors.columns[_b1])
+    print('Using CV-chosen feature set -> feature_selection/final_features.joblib ({} features)'.format(len(col)))
 except (FileNotFoundError, KeyError):
-    col = ['description_length', 'summary_length', 'issue_type_Short']
+    try:
+        _b1 = load('feature_selection/best_sequential.joblib')
+        col = list(predictors.columns[_b1])
+        print('Using best sequential feature set -> feature_selection/best_sequential.joblib ({} features)'.format(len(col)))
+    except (FileNotFoundError, KeyError):
+        col = ['description_length', 'summary_length', 'issue_type_Short']
 
 predictors[col].describe()
       
 #====================================================================================
 #%% Multiple Linear Regression - Sklearn
-# Use the forward feature-selection output when available.
+# Use the CV-chosen feature set (falling back to SFS) when available.
 print_section('Multiple Linear Regression (sklearn)')
 selected = predictors[col]
 
@@ -110,6 +119,7 @@ write_metrics_table(
 import statsmodels.formula.api as sm
 
 print_section('Multiple Linear Regression (statsmodels OLS)')
+# OLS - Ordinary Least Squares
 
 # Creating a formula string for using in the statsmodels.OLS()
 formula_str = data.columns[-1]+' ~ '+'+'.join(col)                             # selected feature model

@@ -1,287 +1,310 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Apr  8 00:02:05 2020
-@author: andre
-This script is part of the main analysis pipeline.
-It performs feature selection on the training dataset (encoded.csv) using 
-different sequential search techniques (SFS, SBS, SFFS, SFBS) 
-and saves the results to feature_selection/.
-"""
-import os
-from joblib import dump
+5_feature_selection.py - Sequential feature selection (educational comparison)
+===============================================================================
 
-import pandas as pd
+ROLE IN THE PIPELINE
+--------------------
+This script sits right after the encoding step (4_encoding.py) and before the
+model-design step (6_multi_lin_reg.py). It reduces the 32 encoded features to a
+smaller, interpretable set using FOUR different *sequential* search techniques,
+compares them, and persists the winning subset to disk.
+
+WHY FEATURE SELECTION AT ALL?
+-----------------------------
+A linear model with all 32 features is still usable, but a smaller subset is
+easier to interpret and can generalise better. Feature selection answers the
+question: "which subset of the available columns actually carries signal?"
+
+THE FOUR TECHNIQUES (all from the mlxtend package)
+--------------------------------------------------
+All four are *wrapper* methods: they score a candidate subset by actually
+fitting a LinearRegression and measuring its cross-validation error. They only
+differ in HOW they move through the space of subsets:
+
+1. SFS_f - Sequential Forward Selection.
+   Start with an empty set. At every step add the ONE feature that improves the
+   CV score the most. Never removes anything afterwards. Greedy.
+
+2. SBS - Sequential Backward Selection.
+   Start with ALL features. At every step REMOVE the one feature whose removal
+   hurts the CV score the least. Also greedy, but in the opposite direction.
+
+3. SFFS - Sequential Floating Forward Selection.
+   Like SFS_f, but AFTER each addition it may remove a feature again if that
+   improves the score. The "floating" step lets it escape bad greedy choices.
+
+4. SFBS - Sequential Floating Backward Selection.
+   Like SBS, but after each removal it may add a feature back if that helps.
+
+Floating variants search more of the space, so they usually find at least as
+good a subset - at the cost of more computation.
+
+CROSS-VALIDATION AND THE SCORING CONVENTION
+-------------------------------------------
+Every candidate subset is scored with 5-fold cross-validation (cv=5). The
+mlxtend/sklearn convention is that HIGHER scores are always better, so the
+mean-squared-error is returned as its negation, 'neg_mean_squared_error'
+(i.e. a *negative* MSE). We undo the negation (multiply by -1) wherever we want
+a plain "lower is better" MSE to read naturally.
+
+WHY NO STANDARDISATION HERE?
+----------------------------
+LinearRegression solves a least-squares problem, and least squares is
+*scale-invariant*: multiplying a feature by a constant does not change the
+predictions or the R^2/MSE. So we can feed the raw encoded values straight in.
+(Standardisation only matters for penalised models such as Ridge/Lasso, whose
+penalty acts on the coefficients directly - see 5_ridge_lasso.py.)
+
+WHY NOT AN EXHAUSTIVE SEARCH (EFS)?
+-----------------------------------
+An exhaustive search tries EVERY possible subset (2^32 ~ 4 billion here), which
+is computationally impossible. That is why mlxtend's ExhaustiveFeatureSelector
+is deliberately NOT used. Sequential searches walk a tiny fraction of that space
+and are the standard practical compromise.
+
+HOW THE WINNER IS CHOSEN (the selection rule)
+---------------------------------------------
+Each technique picks its own best feature count k (the one with the lowest mean
+5-fold CV MSE). We then compare those four "best subsets" against each other.
+Because every technique uses the SAME 5-fold split (sklearn's default KFold is
+deterministic and unshuffled), the four mean CV scores are directly comparable,
+so picking the lowest one is a fair, principled choice - unlike arbitrarily
+favouring one technique.
+
+OUTPUTS (feature_selection/)
+    CVscoresVSfeatures_comparison.png   - the 4 CV-MSE-vs-#features curves
+    sequential_subsets.joblib           - every technique's best subset + scores
+    best_sequential.joblib              - indices of the overall winning subset
+    (the legacy feature_selection/b1_features.joblib is NO LONGER written;
+     its role is superseded by best_sequential.joblib)
+"""
+
+import os
+
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.linear_model import LinearRegression
-from mlxtend.feature_selection import ExhaustiveFeatureSelector as EFS
+import pandas as pd
+from joblib import dump
 from mlxtend.feature_selection import SequentialFeatureSelector as SFS
+from sklearn.linear_model import LinearRegression
+
 from utils.avro_common import print_section
 
-print_section('5. FEATURE SELECTION')
+print_section('5. FEATURE SELECTION (sequential searches)')
 
+# ---------------------------------------------------------------------------
+# 1. Load the encoded data
+# ---------------------------------------------------------------------------
+# encoded.csv holds the log-transformed numeric features, the one-hot encoded
+# categoricals and the target in the LAST column. The target ("duration") is the
+# resolution time in log(minutes); all other columns are candidate features.
 data = pd.read_csv('data_sets/encoded.csv')
-data.columns
+X = data.iloc[:, :-1]          # candidate features
+y = data['duration']           # target
+feature_names = list(X.columns)
+n_features = X.shape[1]
 
-# convert duration data from str to timedelta64
-#data['duration'] = pd.to_timedelta(data['duration'], unit='d')
-# convert from timedelta64 to float64
-#target = data['duration'] / np.timedelta64(1, 'h')
-
-predictors = data.iloc[:,:-1]
-predictors.columns
-
-# create directory
+# create the output directory (the runner also pre-creates it)
 if not os.path.exists('feature_selection'):
     os.makedirs('feature_selection')
 
-###############################################################################
-#               FEATURES SELECTION
-###############################################################################
+# ---------------------------------------------------------------------------
+# 2. Configuration of the four techniques
+# ---------------------------------------------------------------------------
+# Each entry is (label, forward, floating):
+#   forward  = add features one by one (True)  or remove them one by one (False)
+#   floating = allow undo moves (True) or never undo (False)
+TECHNIQUES = [
+    ('SFS_f', True,  False),   # Sequential Forward Selection
+    ('SBS',   False, False),   # Sequential Backward Selection
+    ('SFFS',  True,  True),    # Sequential Floating Forward Selection
+    ('SFBS',  False, True),    # Sequential Floating Backward Selection
+]
 
-y = data['duration']
-x = data.iloc[:,:-1]
-#x = data.iloc[:,6:13]
 
-lr = LinearRegression()
+def run_sequential(forward, floating, label):
+    """Run one sequential search and summarise its results.
 
-''' PAY ATTENTION:
-The Python packages EFS/SFS for feature selection include N Fold Cross Validation 
-for both forward and backward. Cross-Validation errors are quantified with "scores".
-It is often take the MSE to quantify the deviation from the validation set in CV.
-Note: The Cross validation error (score) for SFS in Sklearn is negative, 
-possibly because it computes the ‘neg_mean_squared_error’. 
-In fact, all scorer objects follow the convention that higher return values are better 
-than lower return values. Thus, metrics which measure the distance between 
-the model and the data, like metrics.mean_squared_error, are available as 
-neg_mean_squared_error which return the negated value of the metric.
-I have taken the -ve of this neg_mean_squared_error. This should give mean_squared_error.
-'''
+    Parameters
+    ----------
+    forward : bool
+        True for forward search (add features), False for backward (remove).
+    floating : bool
+        True to allow conditional add/remove "undo" moves.
+    label : str
+        Human-readable name, used only for messages and the plot.
 
-##%% BEST FIT - Exhaustive search (EFS)
-##Perform an Exhaustive Search
-#efs1 = EFS(lr, 
-#           min_features=1,
-#           max_features=x.shape[1],
-#           scoring='neg_mean_squared_error',
-#           print_progress=True,
-#           cv=5)
-#
-## Create a efs fit
-#efs1 = efs1.fit(x.values, y.values)
-#
-## BEst fit steps with CrossValidation
-#metrics = pd.DataFrame.from_dict(efs1.get_metric_dict(confidence_interval=0.90)).T
-#print(metrics)
-#
-#
-#print('Best negtive mean squared error: %.2f' % efs1.best_score_)
-### Print the IDX of the best features 
-#print('Best subset:', efs1.best_idx_)
-#
-## Features from forward fit
-#b = list(efs1.best_idx_) 
-#print("Features selected in forward fit")
-#print(x.columns[b])
+    Returns
+    -------
+    ks : list of int
+        Every feature count that was evaluated (1 .. n_features). These are
+        also the keys of the metric dict, which is why we sort them instead of
+        assuming the position of the best one (see note below).
+    mean_cv : list of float
+        Mean 5-fold CV MSE for each count in `ks` (lower is better).
+    best_k : int
+        Feature count with the lowest mean CV MSE.
+    best_idx : list of int
+        Column indices of the best subset (used to persist the selection).
+    best_mse : float
+        Mean CV MSE of the best subset.
 
-#--------------------------------------------------------------------------------
-#%% FORWARD FIT - Sequential Search (SFS)
-print_section('Sequential Forward Selection (SFS_f)')
-sfs_f = SFS(lr, 
-          k_features=(1,predictors.shape[1]), 
-          forward=True, # Forward fit
-          floating=False, 
-          scoring='neg_mean_squared_error',
-          cv=5)
+    Note about the "off-by-one" trap
+    --------------------------------
+    The metric dict returned by mlxtend is keyed by the NUMBER of features in
+    that step (1, 2, ..., n_features). If we stored the MSE series in a plain
+    list, position 0 would correspond to 1 feature, position i to i+1 features,
+    and naively using np.argmin(...) as a dict key would silently grab the WRONG
+    subset (one feature short). Sorting the keys and working with the actual
+    feature count avoids that class of bug entirely.
+    """
+    sfs = SFS(
+        LinearRegression(),          # estimator used to score every subset
+        k_features=(1, n_features),  # explore every count from 1 to all features
+        forward=forward,
+        floating=floating,
+        scoring='neg_mean_squared_error',  # higher-better convention (negated)
+        cv=5,                              # identical 5-fold split for all runs
+        n_jobs=-1,                         # use all CPU cores to speed this up
+    )
+    sfs = sfs.fit(X.values, y.values)
+    metric = sfs.get_metric_dict()   # {feature_count: {'cv_scores': [...], ...}}
 
-# Fit this on the data
-sfs_f = sfs_f.fit(x.values, y.values)
-# Get all the details of the forward fits
-a=sfs_f.get_metric_dict()
-n=[]
-o=[]
+    # Reconstruct the "mean CV MSE vs #features" curve, undoing the negation
+    # so a lower number means a better (smaller) error.
+    ks = sorted(metric.keys())
+    mean_cv = [-np.mean(metric[k]['cv_scores']) for k in ks]
 
-# Compute the mean cross validation scores
-for i in np.arange(1,predictors.shape[1]):
-    n.append(-np.mean(a[i]['cv_scores']))  
-m=np.arange(1,predictors.shape[1])
+    # Best count = the one with the smallest mean CV MSE.
+    best_pos = int(np.argmin(mean_cv))
+    best_k = ks[best_pos]
+    best_mse = mean_cv[best_pos]
+    best_idx = list(metric[best_k]['feature_idx'])
 
-# Plot the CV scores vs the number of features
-fig1=plt.plot(m,n,label='SFS_f')
-plt.title('Mean CV Scores vs N# of features')
-plt.xlabel('N# features')
-plt.ylabel('MSE')
+    return ks, mean_cv, best_k, best_idx, best_mse
 
-# Forward steps with Cross-Validation
-metrics = pd.DataFrame.from_dict(sfs_f.get_metric_dict(confidence_interval=0.90)).T
-# (step-by-step CV metrics table omitted for brevity)
 
-# Get the index of the minimum CV score
-idx = np.argmin(n)
-print("Best number of features: {}".format(idx))
-#Get the features indices for the best forward fit and convert to list
-b1=list(a[idx]['feature_idx'])
-print("Selected columns ({}): {}".format(len(b1), list(x.columns[b1])))
+def choose_winner(results):
+    """Pick the best technique.
 
-#--------------------------------------------------------------------------------
-#%% BACKWARD FIT - Sequential Search (SBS)
-# Create the SBS model
-print_section('Sequential Backward Selection (SBS)')
-sfs_b = SFS(lr, 
-          k_features=(1,predictors.shape[1]), 
-          forward=False, # Backward
-          floating=False, 
-          scoring='neg_mean_squared_error',
-          cv=5)
+    The rule: lowest best-k mean CV MSE wins. If two techniques are
+    indistinguishable (within a tiny tolerance), prefer the one using fewer
+    features - the simpler model is preferred when everything else is equal.
+    """
+    best_label = None
+    best_mse = np.inf
+    best_k = np.inf
+    for label, res in results.items():
+        better_score = res['best_mse'] < best_mse - 1e-12
+        tie_break = abs(res['best_mse'] - best_mse) <= 1e-12 and res['best_k'] < best_k
+        if better_score or tie_break:
+            best_label = label
+            best_mse = res['best_mse']
+            best_k = res['best_k']
+    return best_label
 
-# Fit the model
-sfs_b = sfs_b.fit(x.values, y.values)
-a=sfs_b.get_metric_dict()
-n=[]
-o=[]
+# ---------------------------------------------------------------------------
+# 3. Run all four techniques
+# ---------------------------------------------------------------------------
+# results[label] holds everything we need: the curve (ks, mean_cv), the chosen
+# subset (best_idx) and its score (best_k, best_mse).
+results = {}
+plt.figure(figsize=(12, 8))
+for label, forward, floating in TECHNIQUES:
+    print_section('Sequential {} ({})'.format(
+        'Forward Selection' if forward else 'Backward Selection', label))
 
-# Compute the mean of the validation scores
-for i in np.arange(1,predictors.shape[1]):
-    n.append(-np.mean(a[i]['cv_scores'])) 
-m=np.arange(1,predictors.shape[1])
+    ks, mean_cv, best_k, best_idx, best_mse = run_sequential(
+        forward, floating, label)
+    results[label] = {
+        'ks': ks, 'mean_cv': mean_cv,
+        'best_k': best_k, 'best_idx': best_idx, 'best_mse': best_mse,
+    }
 
-# Plot the Validation scores vs number of features
-fig2=plt.plot(m,n,label='SFS_b')
+    # One curve per technique on the shared comparison plot.
+    plt.plot(ks, mean_cv, marker='.', label='{} (best k={}, MSE={:.4f})'.format(
+        label, best_k, best_mse))
 
-# Backward steps with Cross-Validation
-metrics = pd.DataFrame.from_dict(sfs_b.get_metric_dict(confidence_interval=0.90)).T
-# (step-by-step CV metrics table omitted for brevity)
+    print('Best number of features: {}'.format(best_k))
+    print('Best mean CV MSE: {:.4f}'.format(best_mse))
+    print('Selected columns ({}): {}'.format(len(best_idx),
+                                             ', '.join(feature_names[i] for i in best_idx)))
 
-# Get the index of minimum cross validation error
-idx = np.argmin(n)
-print("Best number of features: {}".format(idx))
-#Get the features indices for the best backward fit and convert to list
-b2=list(a[idx]['feature_idx'])
-print("Selected columns ({}): {}".format(len(b2), list(x.columns[b2])))
-
-# Create a model
-#--------------------------------------------------------------------------------
-#%% Sequential Floating Forward Selection - SFFS
-'''The Sequential Feature search also includes ‘floating’ variants which 
-include or exclude features conditionally, once they were excluded or included. 
-The SFFS can conditionally include features which were excluded from the previous step,
-if it results in a better fit. 
-This option will tend to a better solution, than plain simple SFS.'''
-
-# Create the floating forward search
-print_section('Sequential Floating Forward Selection (SFFS)')
-sffs = SFS(lr, 
-          k_features=(1,predictors.shape[1]), 
-          forward=True,  # Forward
-          floating=True,  #Floating
-          scoring='neg_mean_squared_error',
-          cv=5)
-
-# Fit a model
-sffs = sffs.fit(x.values, y.values)
-a=sffs.get_metric_dict()
-n=[]
-o=[]
-
-# Compute mean validation scores
-for i in np.arange(1,predictors.shape[1]):
-    n.append(-np.mean(a[i]['cv_scores'])) 
-m=np.arange(1,predictors.shape[1])
-
-# Plot the cross validation score vs number of features
-fig3=plt.plot(m,n, label='SFFS')
-
-# Backward steps with Cross-Validation
-metrics = pd.DataFrame.from_dict(sffs.get_metric_dict(confidence_interval=0.90)).T
-# (step-by-step CV metrics table omitted for brevity)
-
-# Get the index of minimum cross validation error
-idx = np.argmin(n)
-print("Best number of features: {}".format(idx))
-#Get the features indices for the best forward fit and convert to list
-b3=list(a[idx]['feature_idx'])
-print("Selected columns ({}): {}".format(len(b3), list(x.columns[b3])))
-
-#--------------------------------------------------------------------------------
-#%% Sequential Floating Backward Selection - SFBS
-
-# Create the floating backward search
-print_section('Sequential Floating Backward Selection (SFBS)')
-sfbs = SFS(lr, 
-          k_features=(1,predictors.shape[1]), 
-          forward=False,  # Backward
-          floating=True,  #Floating
-          scoring='neg_mean_squared_error',
-          cv=5)
-
-# Fit a model
-sfbs = sfbs.fit(x.values, y.values)
-a=sfbs.get_metric_dict()
-n=[]
-o=[]
-
-# Compute mean validation scores
-for i in np.arange(1,predictors.shape[1]):
-    n.append(-np.mean(a[i]['cv_scores'])) 
-m=np.arange(1,predictors.shape[1])
-
-# Plot the cross validation score vs number of features
-fig3=plt.plot(m,n,label='SFBS')
-
-# Backward steps with Cross-Validation
-metrics = pd.DataFrame.from_dict(sffs.get_metric_dict(confidence_interval=0.90)).T
-# (step-by-step CV metrics table omitted for brevity)
-
-# Get the index of minimum cross validation error
-idx = np.argmin(n)
-print("Best number of features: {}".format(idx))
-#Get the features indices for the best backward fit and convert to list
-b4=list(a[idx]['feature_idx'])
-print("Selected columns ({}): {}".format(len(b4), list(x.columns[b4])))
-
-#--------------------------------------------------------------------------------
-#%% Wrapping final results from SFS tecniques
-
-# save the comparison plot with legend
+# Finish the comparison plot (legend, axes, grid, title).
+plt.scatter([results[l]['best_k'] for l in results],
+            [results[l]['best_mse'] for l in results],
+            marker='o', s=90, facecolors='none', edgecolors='red',
+            label='best count per technique')
+plt.xlabel('Number of features')
+plt.ylabel('Mean CV MSE')
+plt.title('Sequential feature selection: mean CV MSE vs number of features')
+plt.grid(True, alpha=0.3)
 plt.legend()
 plt.savefig('feature_selection/CVscoresVSfeatures_comparison.png', bbox_inches='tight')
+plt.close()
 
+# ---------------------------------------------------------------------------
+# 4. Final comparison table + principled winner
+# ---------------------------------------------------------------------------
 print_section('Final feature selection summary')
 
-# selected features by different sequential searches
-b1 # SFS_f
-len(b1)
-x.columns[b1]
+summary = pd.DataFrame([
+    {
+        'technique': label,
+        'best_k': res['best_k'],
+        'best_mse': res['best_mse'],
+        'features': len(res['best_idx']),
+    }
+    for label, res in results.items()
+]).sort_values('best_mse').reset_index(drop=True)
+print('\nPer-technique results (sorted by mean CV MSE, lower is better):')
+print(summary.to_string(index=False))
 
-b2 # SFS_b
-len(b2)
-x.columns[b2]
+winner = choose_winner(results)
+winner_idx = results[winner]['best_idx']
+print('\n>>> Winner: {} with {} features and mean CV MSE {:.4f}'.format(
+    winner, len(winner_idx), results[winner]['best_mse']))
+print('    Winning feature set: {}'.format(
+    ', '.join(feature_names[i] for i in winner_idx)))
 
-b3 # SFFS (floating)
-len(b3)
-x.columns[b3]
-
-b4 # SFBS (floating)
-len(b4)
-x.columns[b4]
-
-# Display results in array
-selected = sorted(set(x.columns[b1]) | set(x.columns[b2]) | set(x.columns[b3]) | set(x.columns[b4]))
-l1 = [1 if i in set(x.columns[b1]) else 0 for i in selected ]
-l2 = [1 if i in set(x.columns[b2]) else 0 for i in selected ]
-l3 = [1 if i in set(x.columns[b3]) else 0 for i in selected ]
-l4 = [1 if i in set(x.columns[b4]) else 0 for i in selected ]
-columns = ['SFS_f','SFS_b','SFFS','SFBS']
-selection_matrix = np.array([l1,l2,l3,l4]).transpose()
-results = pd.DataFrame(data=selection_matrix, columns=columns, index=selected)
+# Which features are selected by each technique (1 = selected, 0 = not).
+all_selected = sorted({
+    name
+    for res in results.values()
+    for name in (feature_names[i] for i in res['best_idx'])
+})
+selection_matrix = pd.DataFrame(
+    {
+        label: [1 if name in {feature_names[i] for i in res['best_idx']} else 0
+                for name in all_selected]
+        for label, res in results.items()
+    },
+    index=all_selected,
+)
 print('\nWhich features are selected by each technique (1 = selected):')
-print(results)
+print(selection_matrix)
 
-# Persist the SFS_f indices so 6_multi_lin_reg.py can run standalone instead of
-# relying on variables passed through the shared session.
-dump(b1, 'feature_selection/b1_features.joblib')
-print('\nSaved SFS_f feature indices -> feature_selection/b1_features.joblib')
+# ---------------------------------------------------------------------------
+# 5. Persist the results so the later scripts can run standalone
+# ---------------------------------------------------------------------------
+# Every technique's best subset plus its score, for later reference and for
+# 5_ridge_lasso.py to know which technique won.
+dump(
+    {
+        label: {
+            'feature_idx': res['best_idx'],
+            'k': res['best_k'],
+            'mse': res['best_mse'],
+        }
+        for label, res in results.items()
+    },
+    'feature_selection/sequential_subsets.joblib',
+)
+print('\nSaved per-technique best subsets -> feature_selection/sequential_subsets.joblib')
 
-
-
- 
+# The overall winner as a plain list of indices - the canonical "sequential
+# selection result" consumed by 5_ridge_lasso.py and (as a fallback) by
+# 6_multi_lin_reg.py.
+dump(winner_idx, 'feature_selection/best_sequential.joblib')
+print('Saved winning feature indices -> feature_selection/best_sequential.joblib')

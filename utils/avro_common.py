@@ -108,20 +108,6 @@ def write_metrics_table(path, rows, title=""):
         f.write(text + "\n")
     print("\nWrote metrics table -> {}".format(path))
 
-SELECTED_FEATURES = [
-    "issue_type_Short",
-    "priority_Minor",
-    "reporter_cutting",
-    "reporter_dcreager",
-    "reporter_hammer",
-    "reporter_massie",
-    "reporter_sbanacho",
-    "reporter_scott_carey",
-    "reporter_sharadag",
-    "reporter_tomwhite",
-    "reporter_vnadkarni",
-]
-
 
 def load_raw_dataset():
     return pd.read_csv(MERGED_DATA_PATH)
