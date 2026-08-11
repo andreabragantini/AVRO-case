@@ -49,6 +49,7 @@ except (FileNotFoundError, KeyError):
 
 predictors[col].describe()
       
+#====================================================================================
 #%% Multiple Linear Regression - Sklearn
 # Use the forward feature-selection output when available.
 print_section('Multiple Linear Regression (sklearn)')
@@ -104,6 +105,7 @@ write_metrics_table(
     title='Multiple linear regression - model metrics (test set, day scale)',
 )
 
+#====================================================================================
 #%% Multiple Linear Regression - statsmodel.OLS()
 import statsmodels.formula.api as sm
 
@@ -139,8 +141,13 @@ def yes_no(b):
 df_result['Statistically significant?']= df_result['pvalues'].apply(yes_no)
 df_result
 
+#====================================================================================
 #%% Analysis of Residuals
 print_section('Residual diagnostics')
+
+# create directory to store residuals plots
+if not os.path.exists('multi_lin_reg/residuals'):
+    os.makedirs('multi_lin_reg/residuals', exist_ok=True)
 
 # Residuals vs. predicting variables plots
 for c in col:
@@ -157,7 +164,7 @@ for c in col:
     plt.hlines(y=0,xmin=xmin*0.9,xmax=xmax*1.1,color='red',linestyle='--',lw=3)
     plt.xlabel(c,fontsize=14)
     plt.ylabel('Residuals',fontsize=14)
-    plt.savefig(f'multi_lin_reg/residualsVS{c}.png')
+    plt.savefig(f'multi_lin_reg/residuals/residualsVS{c}.png')
     plt.close()
 
 # Fitted VS Residuals
@@ -170,7 +177,7 @@ plt.xlabel("Fitted values",fontsize=15)
 plt.ylabel("Residuals",fontsize=15)
 plt.title("Fitted vs. residuals plot",fontsize=18)
 plt.grid(True)
-plt.savefig('multi_lin_reg/resVSfit.png')
+plt.savefig('multi_lin_reg/residuals/resVSfit.png')
 plt.close()
     
 # Histogram of normalized residuals
@@ -179,7 +186,7 @@ plt.hist(fitted.resid_pearson,bins=20,edgecolor='k')
 plt.ylabel('Count',fontsize=15)
 plt.xlabel('Normalized residuals',fontsize=15)
 plt.title("Histogram of normalized residuals",fontsize=18)
-plt.savefig('multi_lin_reg/resHist.png')
+plt.savefig('multi_lin_reg/residuals/resHist.png')
 plt.close()
 
 # QQ plot of residuals
@@ -193,7 +200,7 @@ plt.xlabel("Theoretical quantiles",fontsize=15)
 plt.ylabel("Sample quantiles",fontsize=15)
 plt.title("Q-Q plot of normalized residuals",fontsize=18)
 plt.grid(True)
-plt.savefig('multi_lin_reg/resQQplot.png')
+plt.savefig('multi_lin_reg/residuals/resQQplot.png')
 plt.close()
 
 # Shapiro Test on Residuals
@@ -205,6 +212,7 @@ if p<0.01:
 else:
     print("The normality assumption may not hold")
 
+#====================================================================================
 #%% Prediction
 print_section('Prediction on test set')
 y_pred = fitted.predict(X_test)
