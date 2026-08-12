@@ -1,0 +1,92 @@
+
+========================================================================
+Ridge regression (L2) - cross-validated alpha
+========================================================================
+CV-selected alpha: 138.9495
+Ridge R^2 on test set (log-minutes): 0.128
+
+========================================================================
+Lasso regression (L1) - cross-validated alpha
+========================================================================
+CV-selected alpha: 0.1151
+Lasso R^2 on test set (log-minutes): 0.120
+
+Features kept by Lasso at alpha=0.1151 (11 of 32):
+  description_length, issue_number, num_affected_versions, num_labels, created_month, priority_Trivial, issue_type_Short, reporter_dcreager, reporter_jmhodges, reporter_massie, reporter_sbanacho
+
+========================================================================
+Lasso vs best sequential feature set - feature agreement
+========================================================================
+SBS (winner of 5_feature_selection.py) (16 of 32):
+  issue_type_Short, num_affected_versions, num_components, num_labels, priority_Minor, priority_Trivial, reporter_cutting, reporter_dcreager, reporter_hammer, reporter_jbaldassari, reporter_massie, reporter_philip, reporter_pwendell, reporter_sbanacho, reporter_thiru_mg, reporter_tomwhite
+
+Agreement (kept by BOTH Lasso and SBS (winner of 5_feature_selection.py)): 7 of 16
+  issue_type_Short, num_affected_versions, num_labels, priority_Trivial, reporter_dcreager, reporter_massie, reporter_sbanacho
+
+Kept ONLY by Lasso: 4
+  created_month, description_length, issue_number, reporter_jmhodges
+
+Kept ONLY by SBS (winner of 5_feature_selection.py): 9
+  num_components, priority_Minor, reporter_cutting, reporter_hammer, reporter_jbaldassari, reporter_philip, reporter_pwendell, reporter_thiru_mg, reporter_tomwhite
+
+========================================================================
+Ridge strongest features (by |standardized coefficient|)
+========================================================================
+Top 10 features by |coefficient| (Ridge, alpha=138.9495):
+  -0.737  reporter_massie
+  -0.499  issue_type_Short
+   0.216  num_labels
+   0.205  num_affected_versions
+  -0.174  reporter_sbanacho
+  -0.160  priority_Trivial
+  -0.155  reporter_dcreager
+   0.142  created_month
+  -0.138  reporter_jmhodges
+  -0.120  reporter_cutting
+
+========================================================================
+Final feature set: 5-fold CV R^2 cross-check
+========================================================================
+               feature set  n_features  cv_R2_mean  cv_R2_std
+Lasso & sequential overlap           7    0.145859   0.084380
+                     Lasso          11    0.144962   0.084515
+           Best sequential          16    0.138687   0.075610
+              All features          32    0.120947   0.083916
+
+Winning feature set: Lasso & sequential overlap (0.146 CV R^2, 7 features)
+Saved winning feature indices -> feature_selection/final_features.joblib
+
+========================================================================
+Lasso sparsity vs alpha
+========================================================================
+   alpha  n_features_kept
+0.000100               32
+0.000147               32
+0.000215               32
+0.000316               32
+0.000464               32
+0.000681               32
+0.001000               32
+0.001468               32
+0.002154               32
+0.003162               32
+0.004642               32
+0.006813               31
+0.010000               29
+0.014678               27
+0.021544               26
+0.031623               23
+0.046416               22
+0.068129               20
+0.100000               13
+0.146780                9
+0.215443                4
+0.316228                4
+0.464159                2
+0.681292                1
+1.000000                0
+Computing Lasso regularization path ...
+
+Saved 4 diagnostic plots to feature_selection/.
+
+Saved feature-selection summary -> feature_selection\feature_selection_summary.txt

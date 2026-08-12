@@ -1,0 +1,51 @@
+QUESTION 2 - FORECASTING PILOT: PREDICTED RESOLUTION TIMES
+==================================================================
+
+NOTE: these are the 324 issues still OPEN at snapshot time (no ground truth).
+This is a qualitative sanity check, not a model evaluation (see 6/7/8 scripts).
+Regression/tree "total" = predicted resolution time from creation.
+Survival "total" = elapsed + median remaining days (conditional on age).
+
+---- Interesting cases ----
+           key           status  elapsed_days  LinearModel_total_days  RegrTree_total_days  RandomForest_total_days  Cox_median_remaining  Cox_total_days  RSF_median_remaining  RSF_total_days
+321  AVRO-1124             Open         569.1                    15.6                 20.5                     14.1                 115.7           684.9                  76.9           646.0
+120   AVRO-939  Patch Available         280.0                    24.5                 20.5                     11.7                 230.9           510.9                 354.0           634.0
+235   AVRO-283             Open        1275.3                     3.5                  3.5                      3.8                   0.0          1275.3                   0.0          1275.3
+231   AVRO-341             Open         322.2                     5.7                  3.2                      5.4                 104.9           427.1                 256.1           578.3
+77   AVRO-1113             Open           1.2                     5.4                  6.9                      4.2                   8.7             9.8                   9.9            11.1
+243   AVRO-266             Open         719.8                     5.4                  6.9                      5.2                  56.4           776.2                  53.6           773.4
+113  AVRO-1455  Patch Available           1.0                     5.4                  6.9                      3.1                  14.0            15.1                   5.1             6.2
+
+---- Average survival forecast for the 324 open issues ----
+                        median_remaining_days  P(resolve in 30d)  P(resolve in 90d)  P(resolve in 180d)
+Cox PH                                 36.372              0.432              0.633               0.769
+Random survival forest                 23.071              0.471              0.666               0.797
+
+Cox PH by current status: {'Patch Available n': 42, 'Patch Available med_rem_days': 68.4, 'Patch Available P(90d)': 0.58, 'Other open n': 282, 'Other open med_rem_days': 33.6, 'Other open P(90d)': 0.641}
+
+RSF by current status: {'Patch Available n': 42, 'Patch Available med_rem_days': 51.7, 'Patch Available P(90d)': 0.607, 'Other open n': 282, 'Other open med_rem_days': 20.9, 'Other open P(90d)': 0.675}
+
+==================================================================
+UPDATED CONCLUSIONS
+==================================================================
+
+--- 321 (AVRO-1124) (Open / New Feature / Major) ---
+Regression and tree models predict a quick resolution (~2-3 weeks from creation), but this issue has already been Open for ~569 days and is very popular (18 votes, 50 comments, 46 watchers). The survival models agree with the intuition of the discussion: they expect roughly 77-116 more days (total ~646-685 days). The short regression/tree totals look unrealistic here; the survival view better matches the long, active history of the issue.
+
+--- 120 (AVRO-939) (Patch Available / New Feature / Major) ---
+Unassigned ("Patch Available" for ~280 days). Trees and linear model predict ~12-22 days total, i.e. that it is basically already resolved. The survival models are far more pessimistic: 231-354 more days (total ~511-634 days). The status has not changed in almost a year, so the survival forecast - long remaining time despite the patch - is the cautionary reading.
+
+--- 235 (AVRO-283) (Open / Improvement / Major) ---
+Stuck in Open for ~1275 days (>3.5 years) with a medium popular thread. The regression/tree models return absurdly short totals (2.5-3.8 days): those models have no notion of how long the issue has already been open. The survival models return 0 remaining days - the conditional survival curve has already dropped below 50%, i.e. statistically the issue is unlikely to ever be resolved. This is the clearest illustration of why the survival conditioning on elapsed time matters.
+
+--- 231 (AVRO-341) (Open / Improvement / Major) ---
+Unassigned for ~322 days. Regression/trees predict ~3-5 days total, again ignoring the elapsed time. Survival predicts 105-256 more days (total ~427-578 days). The unassigned, ~1-year-old status supports the longer survival horizon.
+
+--- 77 (AVRO-1113) (Open / Bug / Minor) ---
+A brand-new, unassigned Minor bug (elapsed ~1 day, no votes/comments). All five models agree on a short horizon (~4-11 days total). New, quiet, low-priority issues are expected to be fixed quickly or quietly triaged; the models are consistent here.
+
+--- 243 (AVRO-266) (Open / Improvement / Major) ---
+Another long-stuck improvement (~720 days elapsed, 1 comment). Regression/trees predict ~5-7 days total, which is not credible given the age. The survival models give ~54-56 more days (total ~773-776 days), a much more realistic horizon for an issue that has effectively stalled.
+
+--- 113 (AVRO-1455) (Patch Available / Bug / Major) ---
+A brand-new Bug (~1 day old) by frequent contributor tomwhite, already with a Patch Available. All models predict a fast resolution (linear 2.8 days, survival 5-14 remaining days). Here regression/tree and survival agree: new issue + active contributor + patch ready = quick fix.
